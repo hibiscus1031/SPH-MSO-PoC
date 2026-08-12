@@ -1,0 +1,25 @@
+{
+  "schema_version": "MSO02C_G2_RELEASE_EVIDENCE_ERRATUM_V1",
+  "status": "FROZEN_BEFORE_FULL_INFERENCE_HELPER_EXECUTION",
+  "affected_uncommitted_execution_commit": "a8153cfbcd55f0d141e8fd92f213ee70b5568eca",
+  "finding": "The second bootstrap evidence release executed 10,000 aggregate recomputations, but several inferential tests used fixed constants instead of the common-mask, ddof=1, studentized max-t, nearest-rank UCB, log-relative, and exact-zero helper paths.",
+  "release_terminal_valid": false,
+  "real_target_or_observable_payload_read_count": 0,
+  "consumed_replay_count": 0,
+  "scientific_formula_change_count": 0,
+  "candidate_selection_change_count": 0,
+  "affected_uncommitted_sha256": {
+    "00_project_contract/amendments/ca_mso01_zero_safe_dnn_semantics.md": "fec81d9dceeb4edc93b19adf0eb063e564effda81f700ea69174963b75454650",
+    "06_experiments/mso02c/g2/aggregation_semantics_audit.csv": "bce378f653e00d197146ce9e5149ab5fe4a62f65d3d4e248a7278dbe88cfbedf",
+    "06_experiments/mso02c/g2/bootstrap_compatibility_audit.csv": "0559ab7da28b63206428d13c902b5b74cc4ac7dd41a5b8058ea42274d38508cc",
+    "06_experiments/mso02c/g2/candidate_metric_selection_matrix.csv": "78fa72bd3ceaa525a2cdc7d3fff800f4bf28c20e5c3c45a1b63d331d712b5884",
+    "06_experiments/mso02c/g2/synthetic_execution_audit.json": "2a7cc6edcbd5985bd4b0570fbdd254b0c0adaefce4577e544f72ba4cdcaadfc7",
+    "06_experiments/mso02c/g2/synthetic_metric_stress_tests.csv": "b16afb51fab21356d36f1e76f44f8950b22a01dc4b71b9a48cb18526afaa69cc",
+    "06_experiments/mso02c/g2/threshold_derivation_report.md": "3236e547094b40a3301b678fbca8946f2bb7ed34a68e4d304d470e552b3f03ab",
+    "06_experiments/mso02c/g2/zero_semantics_audit.csv": "6c9885a8735fa975108267517d3e2e88fb4f221a9918c40cc19f8e2f9b11db52",
+    "07_reports/mso02c_g2_zero_safe_metric_selection_report.md": "a0583f288cc44844f8c23d3d813ccef86a6f91ea08b3e7deb84aa4be62d8648a",
+    "08_manifests/mso02c_g2_manifest.json": "ebab9cd8c1f4c6aed8de9ab7f88db229cae8670ae844f2e08a932d5a56df9f61",
+    "08_manifests/mso02c_g2_status_ledger.json": "b6f833bc10a4a9f683e303fa31cb9664120cb1b7820fad74eb472d68e97fc7e4"
+  },
+  "required_correction": "Use a fixed-seed diverse 10,000-draw lineage/case bootstrap and route positive and counterexample fixtures through the actual inference helpers before regenerating all outputs."
+}

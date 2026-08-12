@@ -9,6 +9,7 @@ import json
 import math
 import os
 import platform
+import random
 import subprocess
 import sys
 from collections import defaultdict
@@ -296,43 +297,147 @@ def bootstrap_cases() -> list[dict[str, Any]]:
     return cases
 
 
-def resampled_cases(cases: list[dict[str, Any]], selector: int) -> list[dict[str, Any]]:
+def bootstrap_structure(cases: list[dict[str, Any]]) -> dict[tuple[int, str], dict[str, list[dict[str, Any]]]]:
     grouped: dict[tuple[int, str], dict[str, list[dict[str, Any]]]] = defaultdict(lambda: defaultdict(list))
     for case in cases:
         grouped[(case["fold"], case["family"])][case["lineage"]].append(case)
-    out: list[dict[str, Any]] = []
-    for stratum in sorted(grouped):
-        lineages = sorted(grouped[stratum])
+    return grouped
+
+
+def draw_plan(grouped: dict[tuple[int, str], dict[str, list[dict[str, Any]]]], rng: random.Random) -> list[tuple[int, str, int, str, tuple[int, ...]]]:
+    plan: list[tuple[int, str, int, str, tuple[int, ...]]] = []
+    for fold, family in sorted(grouped):
+        lineages = sorted(grouped[(fold, family)])
         for occurrence in range(len(lineages)):
-            selected = lineages[0 if selector == 0 else occurrence % len(lineages)]
-            source = grouped[stratum][selected]
-            for case_occurrence in range(len(source)):
-                out.append(source[0 if selector == 0 else case_occurrence % len(source)])
+            selected = lineages[rng.randrange(len(lineages))]
+            source = grouped[(fold, family)][selected]
+            case_indices = tuple(rng.randrange(len(source)) for _ in range(len(source)))
+            plan.append((fold, family, occurrence, selected, case_indices))
+    return plan
+
+
+def materialize_plan(grouped: dict[tuple[int, str], dict[str, list[dict[str, Any]]]], plan: list[tuple[int, str, int, str, tuple[int, ...]]]) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    for fold, family, occurrence, selected, case_indices in plan:
+        source = grouped[(fold, family)][selected]
+        for case_occurrence, source_index in enumerate(case_indices):
+            original = source[source_index]
+            clone = dict(original)
+            clone["lineage"] = f"{family}_fold{fold}_draw_lineage_occurrence{occurrence}"
+            clone["case_id"] = f"{clone['lineage']}_case_occurrence{case_occurrence}"
+            out.append(clone)
     return out
+
+
+def plan_sha256(plan: list[tuple[int, str, int, str, tuple[int, ...]]]) -> str:
+    serialized = json.dumps(plan, separators=(",", ":"), ensure_ascii=True)
+    return hashlib.sha256(serialized.encode("ascii")).hexdigest()
+
+
+def inferential_state(degenerate_count: int, valid_draw_count: int) -> str:
+    return "NOT_EVALUABLE" if degenerate_count > 200 or valid_draw_count < 2 else "EVALUABLE"
+
+
+def common_component_mask(draws: list[list[Fraction | None]]) -> list[bool]:
+    return [all(value is not None for value in row) for row in draws]
+
+
+def sample_sd(values: list[float]) -> float:
+    if len(values) < 2:
+        raise ValueError("insufficient draws")
+    center = sum(values) / len(values)
+    return math.sqrt(sum((value - center) ** 2 for value in values) / (len(values) - 1))
+
+
+def simultaneous_upper(points: list[float], draws: list[list[float]]) -> dict[str, Any]:
+    if len(points) != 3 or not draws or any(len(row) != 3 for row in draws):
+        raise ValueError("three-component max-t shape failure")
+    columns = [[row[q] for row in draws] for q in range(3)]
+    ses = [sample_sd(column) for column in columns]
+    studentized: list[float] = []
+    for row in draws:
+        contributions: list[float] = []
+        for q in range(3):
+            if ses[q] == 0:
+                if not all(value == points[q] for value in columns[q]):
+                    return {"status": "NOT_EVALUABLE_ZERO_SE_NONIDENTICAL", "upper": None}
+                contributions.append(0.0)
+            else:
+                contributions.append((points[q] - row[q]) / ses[q])
+        studentized.append(max(contributions))
+    index = math.ceil(0.95 * len(studentized)) - 1
+    critical = max(0.0, sorted(studentized)[index])
+    return {"status": "EVALUABLE", "upper": [points[q] + critical * ses[q] for q in range(3)], "critical": critical, "se": ses, "index": index}
+
+
+def relative_log_upper(ss_point: list[float], ms_point: list[float], paired_draws: list[tuple[list[float], list[float]]]) -> dict[str, Any]:
+    if any(ss <= 0 or ms <= 0 for ss, ms in zip(ss_point, ms_point, strict=True)):
+        return {"status": "NOT_EVALUABLE_NONPOSITIVE_POINT", "upper": None}
+    points = [math.log(ms / ss) for ss, ms in zip(ss_point, ms_point, strict=True)]
+    log_draws: list[list[float]] = []
+    for ss_draw, ms_draw in paired_draws:
+        if any(ss <= 0 or ms <= 0 for ss, ms in zip(ss_draw, ms_draw, strict=True)):
+            return {"status": "NOT_EVALUABLE_NONPOSITIVE_DRAW", "upper": None}
+        log_draws.append([math.log(ms / ss) for ss, ms in zip(ss_draw, ms_draw, strict=True)])
+    bound = simultaneous_upper(points, log_draws)
+    return {"status": bound["status"], "upper": None if bound["upper"] is None else [math.exp(value) for value in bound["upper"]]}
+
+
+def exact_zero_ms_state(paired_draws: list[tuple[Fraction, Fraction]]) -> str:
+    return "EXACT_ZERO_MS_DOMINANCE" if paired_draws and all(ss > 0 and ms == 0 for ss, ms in paired_draws) else "NOT_EVALUABLE_EXACT_ZERO_NOT_STABLE"
 
 
 def executed_bootstrap_suite() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     cases = bootstrap_cases()
     if len(cases) != 96 or {(c["fold"], c["family"]) for c in cases} != {(f, f"F{g}") for f in range(6) for g in range(1, 5)}:
         raise RuntimeError("MSO02C_G2_BOOTSTRAP_24_CELL_FIXTURE_FAILURE")
+    grouped = bootstrap_structure(cases)
+    rng = random.Random(int.from_bytes(hashlib.sha256(b"MSO02C_G2|SYNTHETIC_BOOTSTRAP|V1").digest(), "big"))
+    plans = [draw_plan(grouped, rng) for _ in range(10_000)]
+    if len({plan_sha256(plan) for plan in plans}) < 100:
+        raise RuntimeError("MSO02C_G2_BOOTSTRAP_DRAW_DIVERSITY_FAILURE")
     point = evaluate("C", cases)
-    draws = [evaluate("C", resampled_cases(cases, selector % 2)) for selector in range(10_000)]
+    draws = [evaluate("C", materialize_plan(grouped, plan)) for plan in plans]
     recompute_pass = all(draw["status"] == "EVALUABLE" for draw in draws) and any(draw["value"] != point["value"] for draw in draws)
-    paired_pass = all(evaluate("C", resampled_cases(cases, selector % 2))["value"] == draws[selector]["value"] for selector in range(10_000))
-    boundary_200 = sum([False] * 9_800 + [True] * 200) <= 200
-    boundary_201 = sum([False] * 9_799 + [True] * 201) > 200
-    common_masks = [[True, True, True], [True, False, True], [True, True, True]]
-    union_mask = [all(row) for row in common_masks]
+    component_factors = [Fraction(1, 2), Fraction(3, 5), Fraction(7, 10)]
+    ss_point = [float(point["value"] * factor) for factor in component_factors]
+    ms_point = [0.8 * value for value in ss_point]
+    ss_matrix = [[float(draw["value"] * factor) for factor in component_factors] for draw in draws]
+    ms_matrix = [[0.8 * value for value in row] for row in ss_matrix]
+    paired_identity_hashes = [plan_sha256(plan) for plan in plans]
+    paired_pass = len(paired_identity_hashes) == 10_000 and all(len(identity) == 64 for identity in paired_identity_hashes)
+
+    zero_cases = [case_record(f"z{index}", f"F{index % 4 + 1}", index % 6, f"zl{index}", [(1, 0)]) for index in range(24)]
+    zero_result = evaluate("C", zero_cases)
+    valid_statuses = [draw["status"] for draw in draws]
+    statuses_200 = valid_statuses[:9_800] + [zero_result["status"]] * 200
+    statuses_201 = valid_statuses[:9_799] + [zero_result["status"]] * 201
+    degenerate_200 = sum(status != "EVALUABLE" for status in statuses_200)
+    degenerate_201 = sum(status != "EVALUABLE" for status in statuses_201)
+    boundary_200 = inferential_state(degenerate_200, len(statuses_200) - degenerate_200) == "EVALUABLE"
+    boundary_201 = inferential_state(degenerate_201, len(statuses_201) - degenerate_201) == "NOT_EVALUABLE"
+
+    common_input: list[list[Fraction | None]] = [[Fraction.from_float(value) for value in row] for row in ss_matrix[:3]]
+    common_input[1][1] = None
+    common_masks = common_input
+    union_mask = common_component_mask(common_masks)
     common_mask_pass = union_mask == [True, False, True]
-    zero_se_draws = [Fraction(1, 2)] * 10
-    zero_se_pass = all(value == Fraction(1, 2) for value in zero_se_draws)
-    max_t_matrix = [[Fraction(1), Fraction(0), Fraction(-1)], [Fraction(2), Fraction(1), Fraction(0)]]
-    max_t_pass = [max(row) for row in max_t_matrix] == [Fraction(1), Fraction(2)]
-    log_relative_pass = abs((math.log(0.8) - math.log(1.0)) - math.log(0.8)) < 1e-15
-    exact_zero_draws = [(Fraction(1), Fraction(0))] * 10
-    exact_zero_pass = all(ss > 0 and ms == 0 for ss, ms in exact_zero_draws)
-    zero_denominator_draw = evaluate("C", [case_record("z", "F1", 0, "lz", [(1, 0)])])
-    zero_draw_pass = zero_denominator_draw["status"] == "NO_AGGREGATE_RANDOM_CONTRAST_NOT_EVALUABLE"
+    constant_cases = [case_record(f"k{index}", f"F{index % 4 + 1}", index % 6, f"kl{index}", [(Fraction(1, 2), 1)]) for index in range(24)]
+    constant_grouped = bootstrap_structure(constant_cases)
+    constant_draws = [float(evaluate("C", materialize_plan(constant_grouped, draw_plan(constant_grouped, random.Random(index))))["value"]) for index in range(10_000)]
+    zero_se_good = simultaneous_upper([0.5, 0.5, 0.5], [[value, value, value] for value in constant_draws])
+    zero_se_bad = simultaneous_upper([0.5, 0.5, 0.5], [[0.6, 0.6, 0.6] for _ in range(10_000)])
+    zero_se_pass = zero_se_good["status"] == "EVALUABLE" and zero_se_good["upper"] == [0.5, 0.5, 0.5] and zero_se_bad["status"] == "NOT_EVALUABLE_ZERO_SE_NONIDENTICAL"
+    max_t_bound = simultaneous_upper(ss_point, ss_matrix)
+    max_t_pass = max_t_bound["status"] == "EVALUABLE" and max_t_bound["index"] == 9_499 and max_t_bound["critical"] >= 0 and all(upper >= point for upper, point in zip(max_t_bound["upper"], [0.45, 0.56, 0.62], strict=True))
+    max_t_pass = max_t_bound["status"] == "EVALUABLE" and max_t_bound["index"] == 9_499 and max_t_bound["critical"] >= 0 and all(upper >= point for upper, point in zip(max_t_bound["upper"], ss_point, strict=True))
+    paired_positive = list(zip(ss_matrix, ms_matrix, strict=True))
+    log_relative = relative_log_upper(ss_point, ms_point, paired_positive)
+    log_relative_pass = log_relative["status"] == "EVALUABLE" and all(value > 0 for value in log_relative["upper"])
+    exact_zero_draws = [(Fraction.from_float(row[0]), Fraction(0)) for row in ss_matrix]
+    exact_zero_counterexample = exact_zero_draws[:-1] + [(Fraction(1), Fraction(1, 100))]
+    exact_zero_pass = exact_zero_ms_state(exact_zero_draws) == "EXACT_ZERO_MS_DOMINANCE" and exact_zero_ms_state(exact_zero_counterexample) == "NOT_EVALUABLE_EXACT_ZERO_NOT_STABLE"
+    zero_draw_pass = zero_result["status"] == "NO_AGGREGATE_RANDOM_CONTRAST_NOT_EVALUABLE"
     binary64_roundtrip_pass = all(Fraction.from_float(float(value)) == value for value in (Fraction(0), Fraction(1, 2), Fraction(1), Fraction(2), Fraction(5)))
     integrity_pass = point_ratio(Fraction(-1), Fraction(1))["status"] == "INTEGRITY_FAILURE" and aggregate_ratio(Fraction(1), Fraction(-1))["status"] == "INTEGRITY_FAILURE"
     checks = [
@@ -351,8 +456,16 @@ def executed_bootstrap_suite() -> tuple[list[dict[str, Any]], dict[str, Any]]:
         ("BINARY64_EXACT_RATIONAL_ROUNDTRIP", binary64_roundtrip_pass),
         ("NEGATIVE_INPUT_INTEGRITY_FAILURE", integrity_pass),
     ]
-    rows = [{"test_id": test_id, "candidate": "C", "executed": "true", "pass": str(passed).lower(), "fixture_folds": 6, "fixture_families": 4, "fixture_lineages": 48, "fixture_cases": 96, "details": "FROZEN_SYNTHETIC_ONLY"} for test_id, passed in checks]
-    return rows, {"test_count": len(checks), "all_pass": all(passed for _, passed in checks), "draw_count": 10_000, "degenerate_boundary_pass": boundary_200 and boundary_201}
+    detail_by_id = {
+        "PAIRED_DRAW_IDENTITIES": f"unique_draw_hashes={len(set(paired_identity_hashes))}",
+        "DEGENERATE_BOUNDARY_200_EVALUABLE": f"degenerate={degenerate_200};state={inferential_state(degenerate_200, 10_000-degenerate_200)}",
+        "DEGENERATE_BOUNDARY_201_NOT_EVALUABLE": f"degenerate={degenerate_201};state={inferential_state(degenerate_201, 10_000-degenerate_201)}",
+        "MAX_STUDENTIZED_COMPONENT_MAX": f"index={max_t_bound['index']};critical={max_t_bound['critical']:.17g}",
+        "POSITIVE_LOG_RELATIVE_TRANSFORM": f"upper={','.join(format(value,'.17g') for value in log_relative['upper'])}",
+        "ZERO_SE_IDENTICAL_DRAWS_BOUND_EQUALS_POINT": f"good={zero_se_good['status']};counterexample={zero_se_bad['status']}",
+    }
+    rows = [{"test_id": test_id, "candidate": "C", "executed": "true", "pass": str(passed).lower(), "fixture_folds": 6, "fixture_families": 4, "fixture_lineages": 48, "fixture_cases": 96, "details": detail_by_id.get(test_id, "FROZEN_SYNTHETIC_EXECUTED")} for test_id, passed in checks]
+    return rows, {"test_count": len(checks), "all_pass": all(passed for _, passed in checks), "draw_count": 10_000, "unique_draw_identity_count": len(set(paired_identity_hashes)), "degenerate_boundary_pass": boundary_200 and boundary_201, "max_t_index": max_t_bound["index"], "max_t_critical": max_t_bound["critical"]}
 
 
 def main() -> None:
