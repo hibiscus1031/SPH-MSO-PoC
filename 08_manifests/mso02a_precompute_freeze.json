@@ -1,0 +1,28 @@
+{
+  "artifact_sha256": {
+    "00_project_contract/mso02a_fresh_atlas_and_representation_freeze_contract.md": "228b9f7b837454cdc7eaccc52c28dce271b3416fccaf39e9cfd85f1bb9c379be",
+    "05_registries/mso02a_candidate_lineage_fold_registry.json": "a15afd2a7f3a5078e04efe7004f8174cf6853d37e4853a9f6d238a0ac7edabc3",
+    "05_registries/mso02a_primary_candidate_registry.json": "d807ffafb85bc397a0199924e8ab782eb6d4aeb1a05c35f91de39aff384b99ed",
+    "05_registries/mso02a_reserve_candidate_registry.json": "d75abf1a9dc243bcd2c0075ac4cb241e7fa37dcfdde56eaf7cad6b15d6484445",
+    "06_experiments/mso02a/ms_observable_schema.json": "51ff5e04dde4b862f3cab19c80e2aea93c151006fe7b3f497001e43475ec18cb",
+    "06_experiments/mso02a/run_mso02a_freeze.py": "77e7c181448ccb960099ca81e97cc96a6d6c221d7c2c1511d8bcbfbe5ad7218a",
+    "06_experiments/mso02a/ss_observable_schema.json": "b2237506cac4bbc67dfda981f15daea47c32535259d394b962263a82190e2ec4"
+  },
+  "continuum_operator_read_count": 0,
+  "defect_generation_count": 0,
+  "h3_evaluation_count": 0,
+  "oracle_fit_count": 0,
+  "pre_mso02_baseline_commit": "5869125a0a687db89e1beea4a2d077815c6228b0",
+  "reference_archive_read_count": 0,
+  "schema_version": "1.0.0",
+  "seed_derivation": {
+    "concatenated_seed_material": "c00261aac588f8b1f34e0a606259512ea8d45cf3e9cb0a10f40ab0970a2f7d95bf2fad0dfaf03db02d21db30c4f35a145187df557dcd60b26a4e0ee7f5348306MSO02A_FRESH_ATLAS",
+    "literal_domain": "MSO02A_FRESH_ATLAS",
+    "mso00_manifest_file_sha256": "c00261aac588f8b1f34e0a606259512ea8d45cf3e9cb0a10f40ab0970a2f7d95",
+    "mso01_manifest_file_sha256": "bf2fad0dfaf03db02d21db30c4f35a145187df557dcd60b26a4e0ee7f5348306",
+    "seed_digest_sha256": "bc3c60662af1c4f4f1134d4ab7893000fec0ac34bea9154bbfa103349cf53913"
+  },
+  "stage": "MSO-02A",
+  "status": "FROZEN_BEFORE_FRESH_CASE_OPERATOR_EVALUATION",
+  "target_file_open_count": 0
+}

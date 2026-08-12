@@ -1,0 +1,116 @@
+{
+  "arms": {
+    "MS": {
+      "feature_dimension": 110,
+      "folds": [
+        {
+          "development_sample_row_count": 4992,
+          "finite": true,
+          "held_out_fold": "FOLD_0",
+          "k10_radius_max": 335605273452591.3,
+          "k10_radius_p95": 13191598485160.729
+        },
+        {
+          "development_sample_row_count": 4944,
+          "finite": true,
+          "held_out_fold": "FOLD_1",
+          "k10_radius_max": 1.465199096965111e+17,
+          "k10_radius_p95": 1.9104078371637436e+16
+        },
+        {
+          "development_sample_row_count": 5216,
+          "finite": true,
+          "held_out_fold": "FOLD_2",
+          "k10_radius_max": 324055676420903.75,
+          "k10_radius_p95": 13604389450976.596
+        },
+        {
+          "development_sample_row_count": 5152,
+          "finite": true,
+          "held_out_fold": "FOLD_3",
+          "k10_radius_max": 2990182477311930.5,
+          "k10_radius_p95": 281035443100881.12
+        },
+        {
+          "development_sample_row_count": 5200,
+          "finite": true,
+          "held_out_fold": "FOLD_4",
+          "k10_radius_max": 3.5576314975575836e+16,
+          "k10_radius_p95": 2720935242708004.0
+        },
+        {
+          "development_sample_row_count": 5216,
+          "finite": true,
+          "held_out_fold": "FOLD_5",
+          "k10_radius_max": 1.1813843512431e+16,
+          "k10_radius_p95": 1079048415452601.8
+        }
+      ]
+    },
+    "SS": {
+      "feature_dimension": 39,
+      "folds": [
+        {
+          "development_sample_row_count": 4992,
+          "finite": true,
+          "held_out_fold": "FOLD_0",
+          "k10_radius_max": 335605273452591.3,
+          "k10_radius_p95": 13191598485159.615
+        },
+        {
+          "development_sample_row_count": 4944,
+          "finite": true,
+          "held_out_fold": "FOLD_1",
+          "k10_radius_max": 6.221519107664032e+16,
+          "k10_radius_p95": 2852489511485535.5
+        },
+        {
+          "development_sample_row_count": 5216,
+          "finite": true,
+          "held_out_fold": "FOLD_2",
+          "k10_radius_max": 324055676420903.75,
+          "k10_radius_p95": 13604389448353.137
+        },
+        {
+          "development_sample_row_count": 5152,
+          "finite": true,
+          "held_out_fold": "FOLD_3",
+          "k10_radius_max": 1139397775819815.0,
+          "k10_radius_p95": 61343626278562.22
+        },
+        {
+          "development_sample_row_count": 5200,
+          "finite": true,
+          "held_out_fold": "FOLD_4",
+          "k10_radius_max": 1.310712279738128e+16,
+          "k10_radius_p95": 454545860334842.06
+        },
+        {
+          "development_sample_row_count": 5216,
+          "finite": true,
+          "held_out_fold": "FOLD_5",
+          "k10_radius_max": 4129164424855382.0,
+          "k10_radius_p95": 148736891255876.0
+        }
+      ]
+    }
+  },
+  "conditional_variance_computed": false,
+  "coverage_radius_definition": "training-side leave-one-lineage-out 95th percentile K=10 radius",
+  "diagnostic_sample_particles_per_case": 16,
+  "distance": "EUCLIDEAN_AFTER_ARM_SPECIFIC_TRAIN_FOLD_MEDIAN_IQR",
+  "exclusions": [
+    "same_case",
+    "same_disorder_seed",
+    "same_field_lineage"
+  ],
+  "primary_k": 10,
+  "schema_version": "1.0.0",
+  "sensitivity_k": [
+    5,
+    20
+  ],
+  "stage": "MSO-02A",
+  "status": "TARGET_BLIND_GEOMETRY_PRECOMPUTED",
+  "target_disagreement_computed": false
+}

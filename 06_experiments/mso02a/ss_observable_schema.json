@@ -1,0 +1,246 @@
+{
+  "arm": "SS",
+  "columns": [
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__mass",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__rho",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__support_h",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__dx",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__rho0",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__c0",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__kinematic_viscosity",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__h_over_dx",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_nonself_neighbor_count",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_neighbor_count_over_nominal",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_cov_xx_over_h2",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_cov_xy_over_h2",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_cov_yy_over_h2",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_cov_eig_min_over_h2",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_cov_eig_max_over_h2",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_cov_eig_ratio",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_anisotropy_condition",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_neighbor_distance_cv",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_kernel_s0_minus_1",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_kernel_s0",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_first_moment_error_xx",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_first_moment_error_xy",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_first_moment_error_yx",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_first_moment_error_yy",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_first_moment_error_fro",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_grad_constant_x_times_h",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_grad_constant_y_times_h",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__base_grad_constant_norm_times_h",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__local_dv_mean_x",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__local_dv_mean_y",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__local_dv_rms",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__local_dv_second_xx",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__local_dv_second_xy",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__local_dv_second_yy",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__L_1p00__density_rate",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__L_1p00__pressure_acceleration_x",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__L_1p00__pressure_acceleration_y",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__L_1p00__viscosity_acceleration_x",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    },
+    {
+      "deployment_available": true,
+      "formal_input": true,
+      "name": "obs__L_1p00__viscosity_acceleration_y",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION"
+    }
+  ],
+  "feature_dimension": 39,
+  "join_keys_are_formal_inputs": false,
+  "normalization": "TRAIN_FOLD_MEDIAN_IQR_WITH_UNIT_FALLBACK_RETAIN",
+  "schema_version": "1.0.0",
+  "stage": "MSO-02A",
+  "status": "FROZEN_BEFORE_FRESH_CASE_OPERATOR_EVALUATION",
+  "target_or_reference_columns": []
+}

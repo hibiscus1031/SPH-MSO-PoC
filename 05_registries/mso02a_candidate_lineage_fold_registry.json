@@ -1,0 +1,1984 @@
+{
+  "assignment_is_target_blind": true,
+  "cases_never_cross_folds": true,
+  "fold_count": 6,
+  "lineages": [
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d91fd0d22b8ca928188301762d69d730d0f5525f34cd102f68b6027db1715ade",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|14cc9dad0dc786e64707dc7dc5e9e3d3f834f095f82a4887d31c184a9c924309",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0d1dd8051400fd95ac564786dee4baa1682cf2b46961926529a29dec141e3eed",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8e26bfd3c5e68b6812024dee2802f1e7524f3a477fc85121a7b296b05be37f69",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ae82d9dffe5f2918699a11f52006a1bfd3b2ca1aa03745069f6a433f373b8683",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3cf701b1ea03bd8a1b205f3caa96c5da295823d3fc2dee91b547f4cf20d09376",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4a4879050ff89bef458c1356d4b83475e04ed9a774e335ab909d99a95a5a0b7b",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c696ac3e874e51cbf2d903145e274ed10745ed5b812ad1123b712cd9c088ad1",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7b2127ebaa8ad8ee99045d9c31f7ad00c2721444b86ecb945be54b187c8ae146",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|01bd9e9bd778916dbc68eb8914d86278f47a29a52b8309c51429af39148d0bf4",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a59facb117879094a6cdfb563f42224f84e21fe7fd3553628e3133e984de7041",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a71746b469b58585d7e5b53b9c574d9b103f25ad69adecfe63a0b6c6cad8566",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d986e00c98a69dc27b0c105d6434a1dc5fa7bad687bc6b6aca41107826374068",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|453f58eb46b93904442e9b8ca2233867597a6a2e0585afb50e5af539903dece3",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|733b051462622de52c9302cdaec7eab31df58e018ef9f5c8a794fa3d8b336fdf",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|de037af7ace355f1e4a70faf6f49990c3187a239ef945fa11f0451e63082af8d",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d42f9329fdfb7f031b0fe816facbc0098c05892fe04149f4e5161ae9fa85f6f9",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|394164f3248d40b5960a5d2e2dba011b4b9b156420115a4689768214eb105942",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d39b8ebeea686d9f327fd9ffc5fc8c607ad25e691c284fe51e314724c39f76ad",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|299dce1ad012ab114953cc06b8df77f116ec1665e8a914cb26f0347707f816e7",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|23c84cd9559cb656f5a50c4806f84c3b3be67a79cf468d176b8d55ff38fd9a34",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1c57915c5e2f37d04f8c0d2bc033447866df6f76bce4a3581a090147e22c9ba9",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e192d091ac7fdb751697e862e28fd55621254ef8068d8837dc2d8921c2dc56f8",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0c2b76a0fb4b4b83be516b44975c97ce115cacf829ffebe677efe580c2da6322",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b2edde0961446b6832b3746fe0451f38aa4e6e602a3ce41fda94c7d343b0eb87",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1b33c5464b9d27271afa857f4526aae38aac477c532b0a93a01aa3e8718d1728",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6c7bd5af518680eac3c9fba5efaa21118b693909076b688289b15d99cf88e6bd",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7bd8e8d58618815ddc1384963528f8494fff86732356587760f7306aa2f9ef94",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c8d86f4b8b81728b74e58015fe977eedcb0b0bc06b2413afe0690a7d93c55bae",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0a20d5f71132f5540dbafd7bc825206cbf27e34f2f8cbc28db041f976a214fe8",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|981e966e6653e5fd89e60962d73cf7b259e3878b1f48f6251725cdab357f233c",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|03b8b4da4de2f6a35737ef929d4cdd50375cd41dfe77d3a9178c885a73b13972",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|54dc7807d1b4de1cb54d947aec028f406c9030993bda60f2714a1e8fa169e4ec",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8124aff8cb3bcc15e1247f6b26c51fa66506cf74a4d9c69ca92c9a66cac4398c",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d5612b78bd9527bb954823922218ffb967d259d6af400a1bb879dd286e242a61",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e55527e8bba2ef7402a45948a8d101befccd2154ee5dafeba22affeafb92aa4",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0537d49281901eac9579539559107e557f9e24b045241133dfdebd9e8527c5db",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b08ff5ef678f088d24eddcbc603091dd0e20d562c923f0445047f100ce8b6e32",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|23200733a333bc85dfece6ec0dcab254cf9acb5400c759908533eb383f67ded3",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ee4af12517be4943d01e51d4430121aad9b42e4baa8e5a47b85af8120d1b24f3",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|39c17f0c54ec3db3d242b8e050a9b85cfa73d03de1500c332d2bea21bd709d2f",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9999d96e379c66d401150767fd9d348133bbbae56cdb7bad2b963de5dbda8517",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f7965116b8ce96c865c41af5b076aa6e1b83ddd1dda0640013eb55b48f992024",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6909703ee2f2a716771ef96e1c83c04bd5ea6e2448a766b0c0b34921ce591148",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|bee245e1d616c3b65fb49e6aa0cf9a53ce15e07f2193b38779fb53b286ad992f",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|bdc9a59a5cce58400b6381a130e68bda8cdc12bf4a36749b79fdb2a9901acc00",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a994a5026bf5f453bd759d6b7ff838f03481a94fa2bd42ee24c08f5475159b18",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f7b691e349df146b13c6744ba11ff4c7e58146678874e1120718fedaf828bb51",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e19a8867014946c49eb44d00f9433a6d9035d86e2ea4005c2e9077ff725b5b2e",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a8d786d34440b2ff7d8eb31ead31baf19a7a7d0663f0aee030360afe40ef8a3",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d1b754a10f028de3beca3fc37ad110f67dda489f36eec1692eda71d47ffcc2dc",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8b0a96d10cc76bd4bf62aa37af552eb52d18454c5915ae19195fd4ab36927292",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8591995278d9f24a1da1662a734e886561c320356021530547b13b12a2ad518f",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4d2de76abff9ab0e3b54f424038e09e9d60234d4e834688afd0708cd0dde10af",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|762935e5020db0fcc444ce7fc1f612f30f3d9cf63a9078390f5255b0e22e1c2b",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|092ebc2c2e18864504bed82975734e2af17bfe2d0f1fd396031e4551e8bd9574",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8476a6fe6bf84ccebec4e8a63523224a7a3c7d5954940d27ad8b638b8a6cbfc9",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b8579281a0350e4c8cac1848402ae7d548f836daefca7e2cdcfba6bd78e77da0",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3565747f7a7c56625ddb9f278f194fa15f1ff294457e8d1d96673e3de3787187",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b4fb57cfa4442c0c54e4c7d2db6d70246c8a59b98d984aeed3fbba0497b48d97",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|438ceba9908d3b4629b750f9f53dc467ea1a0dcd7051dd41e40ec045f7ad62f5",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|424f0573c001b8f64244dcbd646d2b43b5d229c939afdf5e3a961e5244d83ae8",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7bbb174acd91a3064f97fa1f3177843eaac681bb7fa617444cbd1ea443dd137e",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9fbdea171537c125c4845db54f993c570921cfd557b6803221f4aec9f5d2fb8b",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|377928c55c734813946d875e665d45dc331980d3dcc7e9927b10b8163e36e34c",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b65e12a3866ebec9c7ce9bc9d52644d14a6dcbcf5ede2692dfc73c128e61702b",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0bbc210557a3130dcc61e84927f7b62ab7cc611801a658d3d4128eac02df0cce",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cc3ccdb144a883cb2fd8cf492bd0d64b9529d5b750e7e731a8041d3d154f51f9",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2ec99e80467416d668211a75c3db7f915ea1ebfbe6b5bb3d9588f9633bd862dd",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|18ce31d973507787e59dfdb35ca12a050f6af1338304723271567541d8778d0c",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7213c9e3c1a00555f746ce8ab83be6a27878ca23b6dde2d5837befb59f8ce3f0",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|00cfa44d7f6d396f4ba203b1ac3a7fc7e98bbccbb764d32b4fdd77f0f6d3b3df",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0ec1f462eddbaedb1cb552f0408db1f5b049166a2d000344456f7a726ab18a7b",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b9d1876c0b11d429108acd5908017b81d748c89b22d6bbef263a40d2b4f93027",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|228fb33f9186d7496d7231d1cfae3dd8e7619abf8141abe7c232aa855fb3b050",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|39c2f065162a4159f65ccf81caa9b987c43aa332af9620ad2e9abc8206a3126f",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3b07271f125675730bdc111f0521dc54668803fdf6ce060c06ad1214a85c1230",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7f4cd8f346929412ca0a028d268a0c905e615cc6fe74a5d154f108afae36d1c9",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3a7f02618dc0dd43f2a33e070f657b306201b2157fb62e2e815fe86cf1dd3750",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|968f559773f48e45efb507d4efff7d4964eb07265f8ec7e7de716508d7dbb1f9",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1f7555c2fe3d5790557a7098ce330d74f853181cb246d96e7428ca80d7ba2c5b",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|358f06e17b0cd492160d1a25cf449376c252bc724162e986b496ab445f0a28be",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3686785662515dda81e66d0878574bc968e913c4b9cb0c0951b20aca3f4f5045",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9aa84a6f40fc071176a881fa375c4f99f99643df1d5198e2fbcf6fcabb5092a1",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b13642546a132eaac239ffafe257094ee6860d5350d699ebd9371d04a58bc7a5",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|22d9636c25c556fae1b1d803bff9b03c289ece0335cf63c05e9ec1e576b5eee4",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a4ac59219353adc4268899e69513b8931ac076b34f0b5aebc1bb1be3aef48436",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1605847b435ffd248e0e16332bd73065797ba0b3a85d4dfdbac5a4bc8bcb934f",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9f08dc0f81d8351582617b1b7a1e51f4f351c459c3c373196de4053671ac10af",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ac7f1fbcbc3fb2a84ee9216898f834c10291d17a5aada6ba87347a592dfeb7bc",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4e309c36704c6bcba3ea0f916b293601b7749dcbd55c458e8470353d26427410",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0354a9234e10a71db32ce30d8410b31b273721895c96c5cca64424ae3be8b3aa",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b2215b45075883ef1d1e66290a1314fb6045849972ec8cb2659c21eb7a67cf47",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a8f44dfa8374892ccbff71b3050736c4da060b02e97f7159545a7f8b4450c29d",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8ad5b606a9fcb44e28b4673fa1b3d6a43969e9a74d000a5b50576286ca517ab0",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6bbbe55e1e11cd4235c77efda5a5cfb62adc030f6f22bc7bccefcffb8b486467",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|38ab3c876df1a1d8d318d7e53bc21cefaf113a27898fe24f2ab3a170292ee465",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|374af59f3c018466b20007f616363d0449dfbd1df6328c46e91a56ca20f88444",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9a69bb0512e6ece175df33e019396be667b7fb1696f54ed962dc7009e7e98ebb",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2e60ac8163bb24deceb3106117726627ad5737228901668d178fa3afc49d07dc",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ee13ddc027ffdfe0ea8c189f69ea08d65649f1dd4eb1ac32820b58edd17ed4f0",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dbcb265e832eabac351eeb265a4b9eb2048c822538edab9cb7817ee19eb6e621",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b97c36ae2d720908a47c1dc7559629656c4028a179244ac8071a22d749d49aaf",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1bdafc0ab522f69d40ab2fec37c0501d79bdc1139c1b5ebb7562c656b12eb181",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|204a2ed9ca044fa2b99da6e1bd71687b55678df0335477e5aebe143c7c885cd4",
+      "fold": "FOLD_2",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|54818de442f98fae859717a06d33fc7d00528d8eeb2caa87c96a743faa957759",
+      "fold": "FOLD_3",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0a32fba3ea82dcaa1e6ad56e47b3c89a8f398fcf8308ed60aa866a963d56a609",
+      "fold": "FOLD_4",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a4a8eebce922bd196966e5df9b0609de8fda857c5a57c7d6ec8ac17feb6db19c",
+      "fold": "FOLD_5",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7bf466e01b4452b963567b9fe8ff982754e15f5a11ccfd553d7a678359069318",
+      "fold": "FOLD_0",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4566bd5aed64fd9da87b6c8453630b31177db20c94d3e744ca4a6a2d794b031c",
+      "fold": "FOLD_1",
+      "macro_family": "F1",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3f12adbac8d9aed9959d092c7d66bbcedeba9f4f2e73f44ba2234fd16c280e1a",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|79411a315be0df927544bf1bd028087b1ac99d622c148ca23cb96a1511810de8",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|57a412b56a092038dc96c7b5d49f00f51b7b7eea59d524cb8ac219b4a973d86a",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|758c323ede243a6d23ac09a90d17763242aa7a8b60cc75ba76b1e5e2615bdb90",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e8619ccc1a1181e2be447b9768c80058a9bd88cddd998109fa0b558f6f3cfb31",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|70fad1214f28a16572dc2bf6b941b0257152f9e69f6efe0e6b5e9536b7c9216f",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8160f383e8c444cb83a23e972df23a42ef573947bfd88e1ef09c924453a54b74",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fc96fbc00df11527833e71ddf1823d574e8d5c9852e7d5cf05933a9e82fa73ec",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e940bc79385d10f3134327cc6ec0a4b160d3faef1ad5a899817dc525d1f158d7",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1c5bd576f46da6ab83f0560e46107f8bb9c19bf7f95e3a566323af4892533151",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0fdc795cdf6bad1e6d3567c60fadc7ebf7c6382dd16ee71a5a00da70fb6b9314",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b5829f2096ac6afd41fad0de2c30b89ccf02b4524724b7e1d572c62980d90900",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3c68a718efaf1e6855749d4f2bdd9493867ba690acebf0871e28da3740d4cff4",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3a04653136addf44b83eb19bbae10b83d0bf55df346dee1ddd1f83f6046a20ec",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0320f8ef87ed1f8736d89e82a443ef682f59f5718e561c03e4b6024597213c2f",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d7e5f264a870025f979386fc06c8aac14e2480ba8b2ed46ab254e8f01f550ebf",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f1c26a77b4eaf2df159cf772b2dedf64c82084aaee5078cfbe4e515fc7e865cb",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|704d70dea978dcbd698565d64a7e5b76682e47cf045692611bf69da8cdddc991",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6f16df15e78bfdabcf5dae5a30657f74ca80d0aacbbe11f2b0a726f71c8450e3",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d59b20ce14c529e1c742efbde5e16cfefa569f004037852725f03cec3a25b143",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fc4130b5db56c326f74813cc5db0aa89f06259c4a204f610ffd73f806fca3c66",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7ee4685bd55668856d4963693176cebf1b1738e32563f91d34d70a72aec16dc4",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|04fae7aa6cffaad68cee592a66636859cbb4711574fdc6148fa5fb26b34a047a",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|88066082c65830115940818d263d6809d134394a898ef90577b447ec26997928",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ada12058874045ecb7666c34ff3cdfca495b4302a44dbcf7e1bbc75049cea049",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|beb1e73a27d80d001d75a59b082151f5cf3db595924b258822cd9062fdd132ca",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|59f328e825f37196d07daea14ddcdff58ac85b17340fe396c5852b211121a473",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f685242319f2e54992ef7598debd184a649e9b2e72bd6afed05f5d9f54abd161",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3a003b5d004e32e97f51a465533ab8153872cb9bf9ea5ee2e00ab7124947fd1f",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|441fdcabb89a108e9ed39ed118e4defcdf9aefaf6ee129fea00cd6ebf899cd64",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6e03512d0f21113cf3f110e479ebe32194b2b675241b304dd00f64c9bd89aaaf",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4713f6234ec42318809cfc211ba32e7b0d49e11cd083f7311eb1370274b9a160",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c0125bd7dae61cfc700cd7086d4858948ade2baded534474368ea4cfa73c9bac",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5e5eebe623cddeafcae7efb449e1690cca11b0c6c15f01c5800b658a37367422",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a4d2d5816c6ac0d1f4822afb21ec54eb3bd055474946ef0637d312830e525811",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d9f5ed77d50a773a49f080256ef07504c4f6c7640706632b2de481d8d5dbdbe3",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|aea48ac2021e08669dd530f20a700598bd5d299351d9e7027a4882edf62720e6",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|61dabd2ad5e67008e50dfbf5820c1e938b7d567fd0ec80d9dd7f64ed0cb2d57c",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6e47fd84d7dfb38a2532d786c04f8566b40b3654321e0c5e91278c07238fb59e",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4b95f900b63247b668f8e53a08566d6192e1a1b218a434e1c3ae19aa733f2458",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a1710e4ea88f7482745276e7feafeb0920435765844a286c625cc713e3e3df98",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cf7ba66e88949ecea30804dcf09eaf2c69ab7a8965dc76b51d3402e607b08a11",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c308b4e689e06f6fd83a430c441fc6ddcf226b43bf8d5b7a30004c080cd808b",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|515b962bfc224b41185bd0a05c1558a856bbc3c7932bd2042657fa042c16c2d7",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cdb0f445921fd4159db4ce3534aba2851566a7070ec58219b2e6803b3a74ac54",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|289c08435e630594dbdcf8320ef45a7f1c10f9f36c17ee8593a04709e590986c",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|eda651c3c8efe4e2ea4b8838194869a634b3deb1254a8b504f2a5af52a31bcfa",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e797f86a3010e9f50ea5e54bb866bdc62fed0b1e580812dc0260bdad3346448b",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9af87a6bce0c31f7a6beb8676561bba9ef47e3d5c41221318df8b6ce5060314b",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5a562a863107efecf761865e7ffe780f0278b7371d3d2b047494c2cd6157c2d4",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a45071f5ff36a26639e73bcdf249d645c1cad983a62ca616a1d80db12ed1154c",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b6cd41aa78c146588c2fd226a10454eef3f571cc42fa7089dc71d9624e4c21ed",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c9effaf9f8d99dafb4339357104e580526691236671870d679eac7675878cb14",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d3b17aa9f300945981a9ed52c3ed55789a9711ac99d73c2e42869979e1918c6f",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ffbeef212e4e816048cb47cb00ac7695fe37f4901fe8bd711154006d8368876f",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9495d1263e9d5130a4466658e829f566f282f3d7d5a3f021374a9b92a3ed5649",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|78d0c8fb4dbeb1d06b8efb2905357efd1d574c2651b42a3522add49140b4fa39",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|92a1e4f7e911f1495262339102ed1369d8e3d6519951deb1beab01d4acc8c92d",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f4cf987a3b9c78223f18707112af276f685a5c470f5f5d833662abdf636d1247",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e71b22127f9b4a40a5d93de60e99f36f1c431e6e0e3eb6eb5cd5324321975cc5",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|af4ac60331854b9a33b3dd90929dc08f6f43c046dccb187701a1e7c842e0f865",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|922653583e5db3a17067924dd7d99f095cfc7390341feb2f587af05ffdc397b6",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e5f7e05cfe11767aad886a62ab15609d814f7c303dd5f9f7a2274e5ace2a065e",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d15b885e86fa0b7cc77d07896df439f63152bb6f68da3b8c10a20a73f551e365",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6078e8f3c36ea479d6d59451e21741ccc35cbb746bb76fc898dba2dda2b8a8b1",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6f548b1d8a9d1b75d4eed15042c87e57bd79d7e774c4eaf78f88e124da940b10",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|839b4744caca01903d377f834e758369fc902ac9823d72f7d4a5225d98a2473a",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5c254c53bfb8a2acc2b83dc93661e5c0fe4ffd63636b92313f7bd2735db749d9",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b309a36217a635499601c6d5fcf8d775e3158d462b9711da0b7e04f052b93fd6",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5560e5a8b7ace0cc7c9b3b27206488fc1f311a2e0ec070a0580dd58a0c6bbc40",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fa2073afe1077232793dbe442ec7d17fe07200fa65ff9a1a3c4c85f7353da01f",
+      "fold": "FOLD_4",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|27a990f3bdc23d1ebac125a4fb02d4e8a7b44fbb468f3d70dd527eb5906d7589",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|bf259535dd40004c6043754406b8958b995d81fa2385fb02351ac27ad2013fbc",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e5548b81db30c72336a2cfa3753080cb4cb9e5be5895c02c609fcbc405bb5df9",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b3671e77cd4f2e5c2c644e606b90e01fc1eb6a86a0b0816d66ffb1577caf905c",
+      "fold": "FOLD_2",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|24669a2713db5b8cfed2fc3f23eb2613bcd890b0f88956d6add4bd48323a9e6c",
+      "fold": "FOLD_3",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f7545a936f67eaca43c37a7856e7409304d51b074ba40a1cc29db900f74f56c8",
+      "fold": "FOLD_5",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c26223ee58f44bcc4bfb9b840b131bac2e22755997979d2a320256dd0e0dc5f",
+      "fold": "FOLD_0",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|07baf1635a7a58cc286c945ebf2f29981b719fd773c4d60fc924baf9f88e9edc",
+      "fold": "FOLD_1",
+      "macro_family": "F2",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|551a5ca37accf88c657cbddfe873289908e5daa78bc9beaa097e23202f1284d0",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|263ea51cdf25d4b220fc68512786b2b84ea466bfdaa58c08646c25a623f602bf",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|02af8fc8fdaaf157851a8e83e4ddea5dc9b0a3eccaf84d81548cde087cb7e597",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|29ed2b7d4218df37c4a1baacbb6f1fe4237e5da21b59e33db5f6dced7add0a59",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7b90ef57ac5adea782ed77f5e887b46fffcbc0351907cc461028126f8ab6fc1e",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|19b86a814a12cbccbf76cf98086b20d9458cb7a21e11419bac7da092aa392be5",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d00c6798fc2ead78f5c87bff5e2fc1c8851f387bac735cccd89c6f71d4a7587c",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9ee828216b120e27b8b7eedd471d2662a7d0817c1e5752cce6cce2be620d997c",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|255409f16208806db9f4e7695f4f62f907a74e1ab108d7dd1fdcb60c27976c17",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3759160802fc383d7f69e12da1ce20447265af36e62e7f59f7b7e2b121dfbd50",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b35b0ee92e60d2293a02130a1c62949b0f9bdf13eb8e2c07bd9ba6f2a286f270",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|55d34f67bea40bd1d4caf6a451ab0d98a726cac05025c8b0f5a1dddd861ee003",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|bb37b54ce9715ff2188cc1411aae8ee90ffb5926bc3a83eb62c6a7fb3b69ceae",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5c68ce71b66cb7ba23233d483616565cecc57e7c0abd9b442c80b3569cac505c",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0563e938ae80d9319536bd0100a6bef2817d7567f87e87a2bbf4763b2b1e98b4",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4189da80d192394b72ff7fefb1e37e6f718160a92daee974c87bff25ee0d4f0b",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f54c335afb806ae736e5fe3ed4af998d5e8597634a29a7a4edd365110b7b7eda",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fdc1c80c2f9068c235182a8d39c6ee291f3e79d189479b1d19af9a24d7dc628f",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8227741205f08757121403ce215e9fab093a040af087953905abd79b1cc802c5",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|52e563007df892f6b76bbc75c21aeb276c7e4d0b2807ed33565e9f86e05d59f1",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5128a4c890d7c50a9efd0785272ab283eeb7a1496a2713d27bafe961b9e87660",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7fd7cf5e76928ec1c52d5db6093702c08089cab06274ff6ccff05bdfe8db10cc",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3f2c911ab74caa9cd763455022a5dadcd172a741b51ffd58f661e3845ae397d7",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cbed4358f17d41feb1bad8e60142ab2d377e7c9b6d8c4d778086a9debd05b89f",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b68e24afa03be463926f37348e95ba5425f3db0fc954c965a65931a954638a6a",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|afab834ae407419434c4ec31b93da19ebdf2b45dc27fa764d1f61c3f2e9cce3b",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|702c93f91cbdb9e9af0e635689c43fc92a780ebb993ff1283e521f24e8df3258",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|871a8093183db768422f4cf271a48d4f872a86e341c68efc072aad87969f26be",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d7baddfda5c54a4c4ff069be3e1e83dbf082ca07f6dc2425782c46c7d00ac332",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2dd486f04f135649302811297ebb65c460a0e7b553b26e5f76e8cdc5b8771630",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|436a7477bb9dcb0244cd85ee9f71487eb2bee4f35f88ce2019654a9be0f93ad7",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d4edd26f49c53218f347abf6aa7289191eb85e7cf1a37afa1cc74ac05bc47943",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4df74a0c30e223d806e6d4c98c885153e328b50794fb6c5b90852785bfe8e447",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|115110a21fa31bc05a325ab6eb409b0df3fcba9a4cc783389c2dc4998ea93dfc",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0def29614b9d20cfb940c634f7bff4563c4989274120407c47498cc816fba779",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e82260e9131d32f9b11793aebd7fd85832813bb9c78a62e6987f9718be5e4475",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8fa951983c83057ff111392a0a01eafcc08cc73afbc1bca07796b5d0ebd46fee",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fb6b3eba8a0f816d7f994994c2fb32830f5e9295057544c7ebab947e5235f686",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b8d9f332678030d7895bd91737d5d2d8dc27c8c14a024d9d7235067848d9d9f1",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b6de82a11ff1726c1f67d6e3709d0eca4f4e172bea8406217cc2fe8b6e1a7433",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2392f26534d26dc345fa4e23dd3088294558b57f85716946d6f23c3863d8dc56",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|91290474094edc8874a0a2dce4bf98d15c5e234f0b5438849c8a0a68a17427be",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5e6f2c9406458bcc493fe3e1f5494a0c8c4ce326d8fcf58ade0a7a2af31fa202",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c14cf6f5e6f346d741eba1f3c8cc43d188d8befaa6e53e2943eb146e864afdc5",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|993bc62b7ebb5d53d24d7f8cd45ecb8d4e6820b40610e0720ec01f5aa4d5cfb5",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d0fb142191b10c9dee99847b4cb0eb7564b47b0ca551e466695f835f05f07f13",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|378cdab016606b2770ce685884052943c7c3b3a6297d8a8c5bb9f40163d5bfe1",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ff529ebc1c7706a59e72cfaba460f9d7e3c654384d42bb068f28c000c3e03237",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|faf11e903e403d99eb4ad8eae76737d8a6c9b9ccf09d6be1a22cda108ccf768d",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4ca1fc7abaaf4f373bab781a89e8db673e75864af5f64d11f5745cf64371345e",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3ced42bc86cc5913e0df09a01a51708a878c5d2c872a6a5603f96de172f76a6d",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c4bc5ef7d44dee05e737c7db40e5925e97ab35fda821bed967bad9332a3aadf",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|98fd0315cb62d7a3da91bd5762e20985192d022c1e4fd28f1d8c63ea9f90e98d",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|14482ea365c06cc9c7ec26d82bcde3070dec32a12cfbfd3e541e7927d4e6ad1b",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed9e2549605f4b34a5a47abfede48866f7d8cc3461b2bef24f5af4995179799",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|be0e23bd3568277194aad736b3a3d170267ab9600f396b1dffe758aec202a1a5",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|67706c723672c6b4321ff9955a5258812f983d056f920bb03a077595b5839281",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|23fc563faad27dce4fa15d151f1f8c48115f2d5dc322b39262fbc27ec4791372",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c1ac855b8de636c30e04d36a5f51c98d5578b975fc464da438523ceafecc7231",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f5cc4d440999f227770f5400b84b1936d6de3fafa068eaef75e0b8d7c1466547",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f9aa80ea63f7f7e85ed33aa94e71f1e2a3525be72e4a2f1b35b168eb813dc129",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b8b13c949eefb1514f92a32c389f0060d206fe61636418ca1f030fb80cc7efdd",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|169c6b1f1747bd27f50173ae34f80ee9d0d47b41b0a755fe4e5c91c536b7a5a7",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|88e85bccc28f85ca4bdf4dce7857551c935822ffdd790adadf269be9f5a7ac73",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|502199b401b72eaa2f6b365e5776d6d36a742f9618dcbf5e2d1635866037e0de",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8f96460f5e25434ea38efc75b2a38eba48ed159ccc71195a9890899219539f9a",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|57136e5c44d083248d7f1a1028369355e8f9e4e38fed12ea76d80ac252401839",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a2335fa75fc7b820a63679d655ee408c782720f8d4a600b9216d74280ceba1aa",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5a3fa3e54ec35fb9edf60a1351bb66c44f2570f61989a66442a4ba973858d6b3",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|eb3ba3026d42bf4e89220abf1f56c78ada310a71ca6d5e4e7954496f156bd9f4",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|544f84317124579e7d4861374a35be8346756b1323e754194384670be5f816fc",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|af04b9ae482cb4725b985c54658b87deaa77cd445779eab39bcb1e19b9000a7e",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d54c09507357beed58db47c1c7927ba4afd01dced2d21c4444c0509f6bc9e6c4",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|78e79de414b69086270cda1c91dc116a750292ec7abd91b971d65bc5f550b0be",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6fad483fb5460038ab781b60288daac213500fab92cffb8e093a85ee8f99ff7b",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5fc303f8a001f6b9f9a9c257c8e74f903a43a02526742e0da72458a66c27aba5",
+      "fold": "FOLD_2",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cd92a023be3be6e7e4ea58a0d99676f0d9ef44761ee8868ff2949b5d04c77873",
+      "fold": "FOLD_3",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2425bb39e453cae7ce854ae0c35ef432982c04c479f5edac68f5c36d7bc6c0ff",
+      "fold": "FOLD_4",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a35fcbf18bc18f7537e15fd7089b6436d5167d23bea5ff7ac428a14bad449da8",
+      "fold": "FOLD_5",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b29bf3aa10c9317ee9f3f532f2134bf7d442c94779d98bea7756240ed8d1de30",
+      "fold": "FOLD_0",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|85677c449a050040c5b65b1099e4c9204f28ce95a2912885a82aaa956e7657a1",
+      "fold": "FOLD_1",
+      "macro_family": "F3",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "macro_family": "F4",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "macro_family": "F4",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "macro_family": "F4",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "macro_family": "F4",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "macro_family": "F4",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "macro_family": "F4",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "macro_family": "F4",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "macro_family": "F4",
+      "primary_lineage": true
+    },
+    {
+      "candidate_case_count": 8,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "fold": "FOLD_2",
+      "macro_family": "F4",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 8,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "fold": "FOLD_3",
+      "macro_family": "F4",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 8,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "fold": "FOLD_4",
+      "macro_family": "F4",
+      "primary_lineage": false
+    },
+    {
+      "candidate_case_count": 8,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "fold": "FOLD_5",
+      "macro_family": "F4",
+      "primary_lineage": false
+    }
+  ],
+  "schema_version": "1.0.0",
+  "stage": "MSO-02A",
+  "status": "FROZEN_BEFORE_FRESH_CASE_OPERATOR_EVALUATION"
+}

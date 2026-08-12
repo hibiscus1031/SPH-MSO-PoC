@@ -1,0 +1,3084 @@
+{
+  "case_equal": true,
+  "cases": [
+    {
+      "case_id": "MSO02A|PRIMARY|F1|27df42dc9ee18fc950aa85d11eecccad7b529187e1e3d608172ecaf2ea53cbac",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7bd8e8d58618815ddc1384963528f8494fff86732356587760f7306aa2f9ef94",
+      "fold": "FOLD_3",
+      "formal_case_index": 0,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|bffd67ac747351002b1b2d1407eda3d61047b309884e7df47390715abfc4d16e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|bdc9a59a5cce58400b6381a130e68bda8cdc12bf4a36749b79fdb2a9901acc00",
+      "fold": "FOLD_3",
+      "formal_case_index": 1,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|23a9c049ae7b972c984fa3e12bb117442e165ebbdaa960770297d5a377bcbfcf",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|14cc9dad0dc786e64707dc7dc5e9e3d3f834f095f82a4887d31c184a9c924309",
+      "fold": "FOLD_1",
+      "formal_case_index": 2,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|c9061a9536becea34ffe84c44510140f4afb0b5d4f5edfdede87bc713212e2ef",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|22d9636c25c556fae1b1d803bff9b03c289ece0335cf63c05e9ec1e576b5eee4",
+      "fold": "FOLD_0",
+      "formal_case_index": 3,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|da434f0d773ef411eb143598d9858f232408e6af8e6bdf6b64a1ad5b8b0af0b7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|968f559773f48e45efb507d4efff7d4964eb07265f8ec7e7de716508d7dbb1f9",
+      "fold": "FOLD_5",
+      "formal_case_index": 4,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|9156d9eacfc1c36ceb4c898eef5e29d129c4785f401dcda0a8566a4f81d97b22",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|981e966e6653e5fd89e60962d73cf7b259e3878b1f48f6251725cdab357f233c",
+      "fold": "FOLD_1",
+      "formal_case_index": 5,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|6b108ae97243ccbc228e218ae8797b1628a740df4fd25e4d48d8e69d084cd987",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4a4879050ff89bef458c1356d4b83475e04ed9a774e335ab909d99a95a5a0b7b",
+      "fold": "FOLD_1",
+      "formal_case_index": 6,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|99e8d754a6284b9b3350e4a0c663f5d27303ec9be89210deb6e8adbdbfa37f97",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2ec99e80467416d668211a75c3db7f915ea1ebfbe6b5bb3d9588f9633bd862dd",
+      "fold": "FOLD_0",
+      "formal_case_index": 7,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|3e26ac4d5afb6cfe791fdab75aac03cff749d0a47df8c59f4208c3852c0ca2b8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|228fb33f9186d7496d7231d1cfae3dd8e7619abf8141abe7c232aa855fb3b050",
+      "fold": "FOLD_0",
+      "formal_case_index": 8,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|5f23a45e7307b995131d597d86b0af2641c88727e534434bb7a844b042eb9df3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|03b8b4da4de2f6a35737ef929d4cdd50375cd41dfe77d3a9178c885a73b13972",
+      "fold": "FOLD_3",
+      "formal_case_index": 9,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|1e4cda9748d79de21d477f97c3536fc687e42ac2a0aa8b290fb3d8f645cbf286",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0537d49281901eac9579539559107e557f9e24b045241133dfdebd9e8527c5db",
+      "fold": "FOLD_3",
+      "formal_case_index": 10,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|38c8e42822331bf603216acbb41e63d8386c965cb59b00297e2bac576a6b8a9a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c8d86f4b8b81728b74e58015fe977eedcb0b0bc06b2413afe0690a7d93c55bae",
+      "fold": "FOLD_4",
+      "formal_case_index": 11,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|7571f8370a88596f7feaf889095cbb9b4ae4c32662e8954455aa76613e215335",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ae82d9dffe5f2918699a11f52006a1bfd3b2ca1aa03745069f6a433f373b8683",
+      "fold": "FOLD_4",
+      "formal_case_index": 12,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|744b2148dff9490f7db5e43218ab243a24697f6344421b35cdecbbb613639351",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b4fb57cfa4442c0c54e4c7d2db6d70246c8a59b98d984aeed3fbba0497b48d97",
+      "fold": "FOLD_3",
+      "formal_case_index": 13,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|f3654e05f701265f52b562b706d800d3bb39f7a6f80c5b1331f2477cefbc4066",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3b07271f125675730bdc111f0521dc54668803fdf6ce060c06ad1214a85c1230",
+      "fold": "FOLD_2",
+      "formal_case_index": 14,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|9674c271c19eb652c8199d58707f06af09f3f6fa9d44157335c06d63ee0aace9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ee4af12517be4943d01e51d4430121aad9b42e4baa8e5a47b85af8120d1b24f3",
+      "fold": "FOLD_1",
+      "formal_case_index": 15,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|ad80655408a98337102ede0057415c138d1465db3f0dd9d97b6c80b960c3cee0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c696ac3e874e51cbf2d903145e274ed10745ed5b812ad1123b712cd9c088ad1",
+      "fold": "FOLD_2",
+      "formal_case_index": 16,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|a551d72482150e751da51e9541387aaeb699524ceac49555e605355d95d71bdc",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|23200733a333bc85dfece6ec0dcab254cf9acb5400c759908533eb383f67ded3",
+      "fold": "FOLD_0",
+      "formal_case_index": 17,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|b1bfea32c8e111d02aac954d3474a489865aabd30058263040f297cbd64584cf",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9aa84a6f40fc071176a881fa375c4f99f99643df1d5198e2fbcf6fcabb5092a1",
+      "fold": "FOLD_4",
+      "formal_case_index": 18,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|76ecca06580ca10c5188b36225517d3b191c410f1bf70deec06e523786877858",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|733b051462622de52c9302cdaec7eab31df58e018ef9f5c8a794fa3d8b336fdf",
+      "fold": "FOLD_4",
+      "formal_case_index": 19,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|e114cbd99880956349221c3edde3b0638a71bf1ab5536e92be912c94d1b15b7c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|00cfa44d7f6d396f4ba203b1ac3a7fc7e98bbccbb764d32b4fdd77f0f6d3b3df",
+      "fold": "FOLD_3",
+      "formal_case_index": 20,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|b5789df710114ed89792e4764a5db64d59930b270b3966969b2b2c9d25b70b01",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b13642546a132eaac239ffafe257094ee6860d5350d699ebd9371d04a58bc7a5",
+      "fold": "FOLD_5",
+      "formal_case_index": 21,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|93ad586fca5e19d3cc4f6e6992ad5c775e00c959894e5374f30e421239908240",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|092ebc2c2e18864504bed82975734e2af17bfe2d0f1fd396031e4551e8bd9574",
+      "fold": "FOLD_5",
+      "formal_case_index": 22,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|deda12855f21ca75286e8c868eb91b9afdccfcd8a9bc866557c51d9ca6d3579f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|39c17f0c54ec3db3d242b8e050a9b85cfa73d03de1500c332d2bea21bd709d2f",
+      "fold": "FOLD_4",
+      "formal_case_index": 23,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|d65e5b81ee303a5d55ef8da4d8edfa77f1eb95af83445f880a142bf4ba3cb5fe",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|23c84cd9559cb656f5a50c4806f84c3b3be67a79cf468d176b8d55ff38fd9a34",
+      "fold": "FOLD_4",
+      "formal_case_index": 24,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|407754227e7bce46f4d7aeefdf971ee83ef10a63281419a7be8bc1337539d031",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8e26bfd3c5e68b6812024dee2802f1e7524f3a477fc85121a7b296b05be37f69",
+      "fold": "FOLD_3",
+      "formal_case_index": 25,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|b357ddf6be50b16eb0f27db9fd52ae30f0f46b1d854a9638955d27a3ec0ba0b0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a4ac59219353adc4268899e69513b8931ac076b34f0b5aebc1bb1be3aef48436",
+      "fold": "FOLD_1",
+      "formal_case_index": 26,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|e1a94ece2d1d9388050360681f17a0cde2c2f1cb81e346e78f2cc52d8af40c66",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0c2b76a0fb4b4b83be516b44975c97ce115cacf829ffebe677efe580c2da6322",
+      "fold": "FOLD_5",
+      "formal_case_index": 27,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|411b9e7edae0847d60845cc24cce76aa795733abb109710aeef815fc0f4d44c8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|424f0573c001b8f64244dcbd646d2b43b5d229c939afdf5e3a961e5244d83ae8",
+      "fold": "FOLD_5",
+      "formal_case_index": 28,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|66deba68071b31a5ade78bf1afe125a096afcc2c469be4ff9bf707a3a78ff6fd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|377928c55c734813946d875e665d45dc331980d3dcc7e9927b10b8163e36e34c",
+      "fold": "FOLD_2",
+      "formal_case_index": 29,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|11a034265bba9263bb29859f7c426fe06a74e1e326990cc1b564dc39125d44bf",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|39c2f065162a4159f65ccf81caa9b987c43aa332af9620ad2e9abc8206a3126f",
+      "fold": "FOLD_1",
+      "formal_case_index": 30,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|2b0381008fd81e7f1a786b0120c5fbf22a337375a3cec5e45170f0c7e2630cc3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c8d86f4b8b81728b74e58015fe977eedcb0b0bc06b2413afe0690a7d93c55bae",
+      "fold": "FOLD_4",
+      "formal_case_index": 31,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|773e8266f977440c4ca550be4895cddbce5fd7af3e7d4ed98566585dfe673c02",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6c7bd5af518680eac3c9fba5efaa21118b693909076b688289b15d99cf88e6bd",
+      "fold": "FOLD_2",
+      "formal_case_index": 32,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|c928d953605c9e1f8ba285d741e93e8dda6f42ce7edd0205e1dd6fc1fc4e3903",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|54dc7807d1b4de1cb54d947aec028f406c9030993bda60f2714a1e8fa169e4ec",
+      "fold": "FOLD_5",
+      "formal_case_index": 33,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|2a720ef46781db997148d8893e6d9c47c8c1ccf14c0669d09366a82273997193",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6909703ee2f2a716771ef96e1c83c04bd5ea6e2448a766b0c0b34921ce591148",
+      "fold": "FOLD_1",
+      "formal_case_index": 34,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|a5506da8d9486b2a170e083b94dd429946c7a9ef59381e1085beb8cd034b2e25",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7f4cd8f346929412ca0a028d268a0c905e615cc6fe74a5d154f108afae36d1c9",
+      "fold": "FOLD_3",
+      "formal_case_index": 35,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|85c4a1987dd38032eee7334c33c80e9f3a454ffa5fbff254b13d62f9a7cd1684",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a71746b469b58585d7e5b53b9c574d9b103f25ad69adecfe63a0b6c6cad8566",
+      "fold": "FOLD_1",
+      "formal_case_index": 36,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|a601f16cf8f76acc9ed3d6e90ce12986d2fad1956231d1a841a05058c939e6fd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b2edde0961446b6832b3746fe0451f38aa4e6e602a3ce41fda94c7d343b0eb87",
+      "fold": "FOLD_0",
+      "formal_case_index": 37,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|116ab0629d6843b4172bccfc2c014fa0fbc1fd9f2259df0aac7449a0cd3c01d6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0d1dd8051400fd95ac564786dee4baa1682cf2b46961926529a29dec141e3eed",
+      "fold": "FOLD_2",
+      "formal_case_index": 38,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|49da342d3ce22711ccf49908937d037a433a9f1b5baec95dd415a6258a13cf3c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1f7555c2fe3d5790557a7098ce330d74f853181cb246d96e7428ca80d7ba2c5b",
+      "fold": "FOLD_0",
+      "formal_case_index": 39,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|f1c5c6e14a8cfdde87854a686df48afd18bdbb8518056fb05431720a55555d60",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f7b691e349df146b13c6744ba11ff4c7e58146678874e1120718fedaf828bb51",
+      "fold": "FOLD_5",
+      "formal_case_index": 40,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|9c5d5fcf4d515dc2bd5f231b055beea28c179be3927dc4d87181c5d9a428f371",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f7b691e349df146b13c6744ba11ff4c7e58146678874e1120718fedaf828bb51",
+      "fold": "FOLD_5",
+      "formal_case_index": 41,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|ab0bccf64faa1e9e975ec5cee8556cda9d876a60087242c1b3b9e3de2781e654",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|299dce1ad012ab114953cc06b8df77f116ec1665e8a914cb26f0347707f816e7",
+      "fold": "FOLD_3",
+      "formal_case_index": 42,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|4476747c77a5f8d6364320296f15998114f031d3a1230ccb416265c5ec4bdb46",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|438ceba9908d3b4629b750f9f53dc467ea1a0dcd7051dd41e40ec045f7ad62f5",
+      "fold": "FOLD_4",
+      "formal_case_index": 43,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|8a789d3fd0eacaf7262fed631e0a5af9942762fea082f12d700d589d18077299",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9999d96e379c66d401150767fd9d348133bbbae56cdb7bad2b963de5dbda8517",
+      "fold": "FOLD_5",
+      "formal_case_index": 44,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|d2b8fb08e5d831c2e5b64c51f9837bfa7e7b5c5b201acc178fb83d074187d230",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|394164f3248d40b5960a5d2e2dba011b4b9b156420115a4689768214eb105942",
+      "fold": "FOLD_1",
+      "formal_case_index": 45,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|be6e07d9d19f8c1bc53b84d6273fddff57df1f2ee72a69a1b007069edc9a0779",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8476a6fe6bf84ccebec4e8a63523224a7a3c7d5954940d27ad8b638b8a6cbfc9",
+      "fold": "FOLD_0",
+      "formal_case_index": 46,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|586f48582757c7762eff1a57d84a92cd8c2b91ceacf58c75fee67ba32bb0d5b4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d39b8ebeea686d9f327fd9ffc5fc8c607ad25e691c284fe51e314724c39f76ad",
+      "fold": "FOLD_2",
+      "formal_case_index": 47,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|50816084e70642ac34750e3acf299840930c8b0f23aeb964661860802113171c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d39b8ebeea686d9f327fd9ffc5fc8c607ad25e691c284fe51e314724c39f76ad",
+      "fold": "FOLD_2",
+      "formal_case_index": 48,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|cd9b6a8635b5410d6f4d4b1d94b893c859cd9a173891af248151c45f3dbd3023",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a994a5026bf5f453bd759d6b7ff838f03481a94fa2bd42ee24c08f5475159b18",
+      "fold": "FOLD_4",
+      "formal_case_index": 49,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|4c41f178686c429ae5d8436018c8c72abaf46a64c1b9ae65b6d661016c51c35f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d986e00c98a69dc27b0c105d6434a1dc5fa7bad687bc6b6aca41107826374068",
+      "fold": "FOLD_2",
+      "formal_case_index": 50,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|3864d5782c34ffc5879eff5aa5705461b92182f910edabb914a9506c35a87def",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b08ff5ef678f088d24eddcbc603091dd0e20d562c923f0445047f100ce8b6e32",
+      "fold": "FOLD_4",
+      "formal_case_index": 51,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|665f272e145d18d7c31dc4472dcb5b1a9e6a3f7b001dcfbd904be9359dd4ee8e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0537d49281901eac9579539559107e557f9e24b045241133dfdebd9e8527c5db",
+      "fold": "FOLD_3",
+      "formal_case_index": 52,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|533c8214fecafaa7b4f8e6c6c1b011f309eb9984f3cf8e82982e67d1ef69d23c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f7965116b8ce96c865c41af5b076aa6e1b83ddd1dda0640013eb55b48f992024",
+      "fold": "FOLD_0",
+      "formal_case_index": 53,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|b233ad24657724df3c11e6fc52e7e51197b01c456d52b33a61c64467c0e85030",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|de037af7ace355f1e4a70faf6f49990c3187a239ef945fa11f0451e63082af8d",
+      "fold": "FOLD_5",
+      "formal_case_index": 54,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|b47e118df485fd6acf51b2b2b51946bb05eda64a284f9a8a6dcf8b03d426f8b4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a59facb117879094a6cdfb563f42224f84e21fe7fd3553628e3133e984de7041",
+      "fold": "FOLD_0",
+      "formal_case_index": 55,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|020cb6b401520a04156915d035b63bfaa6553d929849f84d4b9fc6db21f4acc1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6c7bd5af518680eac3c9fba5efaa21118b693909076b688289b15d99cf88e6bd",
+      "fold": "FOLD_2",
+      "formal_case_index": 56,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|c05788b157a6072a8acd1c30cea29bb0c432da90406a4bcc08f0470aa3ac8841",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3565747f7a7c56625ddb9f278f194fa15f1ff294457e8d1d96673e3de3787187",
+      "fold": "FOLD_2",
+      "formal_case_index": 57,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|d33da1935c7c53fb2c7dc9c2954406679d36caa2d9a3d595989e49d85bb7ced7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d5612b78bd9527bb954823922218ffb967d259d6af400a1bb879dd286e242a61",
+      "fold": "FOLD_1",
+      "formal_case_index": 58,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|88927ca157891017f734563b71d11103e0868faf82ccdb09119db0133c275186",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|01bd9e9bd778916dbc68eb8914d86278f47a29a52b8309c51429af39148d0bf4",
+      "fold": "FOLD_5",
+      "formal_case_index": 59,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|76b32e9177ce6608cf1d6a0da8874ffd2ca442b10a3a0c549d778d5af3b143b0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8b0a96d10cc76bd4bf62aa37af552eb52d18454c5915ae19195fd4ab36927292",
+      "fold": "FOLD_0",
+      "formal_case_index": 60,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|0e61c9c6bf0ed5ade026d585b043b200f9a54a120e486733805e7140a5f5582b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7bbb174acd91a3064f97fa1f3177843eaac681bb7fa617444cbd1ea443dd137e",
+      "fold": "FOLD_0",
+      "formal_case_index": 61,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|5f12b646955a1c947d59112f1d4b32fba71b4b9a951cb1d6e3fc7c86cc43e735",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cc3ccdb144a883cb2fd8cf492bd0d64b9529d5b750e7e731a8041d3d154f51f9",
+      "fold": "FOLD_5",
+      "formal_case_index": 62,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|fdda713a6f41ad9d53637e52588f71e3233e327e587e53db8864f9d4f31a6513",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7213c9e3c1a00555f746ce8ab83be6a27878ca23b6dde2d5837befb59f8ce3f0",
+      "fold": "FOLD_2",
+      "formal_case_index": 63,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|c746753e2e030484150c8f943a9e0a7be85001dd4fe98d4bb0749ee015d2b8b0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|453f58eb46b93904442e9b8ca2233867597a6a2e0585afb50e5af539903dece3",
+      "fold": "FOLD_3",
+      "formal_case_index": 64,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|830647d225eb7457ee9fce265dfb29deb57812fc9cbfb5d6fabad0e7f5e8dbd1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3cf701b1ea03bd8a1b205f3caa96c5da295823d3fc2dee91b547f4cf20d09376",
+      "fold": "FOLD_5",
+      "formal_case_index": 65,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|8dc044e544ee558ba05e7006991539832d0f764898a05e3253d528527ae34f49",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b8579281a0350e4c8cac1848402ae7d548f836daefca7e2cdcfba6bd78e77da0",
+      "fold": "FOLD_1",
+      "formal_case_index": 66,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|582cf4f4a2a11284c4224948f30ea17bdcc53ee39548da544d4f25d1a4cab2c6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a8d786d34440b2ff7d8eb31ead31baf19a7a7d0663f0aee030360afe40ef8a3",
+      "fold": "FOLD_2",
+      "formal_case_index": 67,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|09cfc962e6148f266ce0ba3d7b91a6264401fb52f92383573b9c5ae9886bd901",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|de037af7ace355f1e4a70faf6f49990c3187a239ef945fa11f0451e63082af8d",
+      "fold": "FOLD_5",
+      "formal_case_index": 68,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|01634114f5702e1cf07825f045e2db40379127b513350e284734426fef66ac8f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e55527e8bba2ef7402a45948a8d101befccd2154ee5dafeba22affeafb92aa4",
+      "fold": "FOLD_2",
+      "formal_case_index": 69,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|2234b4db877d2ad3bde5a5e84656e2eaf320b4fbc53374a555d15d13478576a7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d1b754a10f028de3beca3fc37ad110f67dda489f36eec1692eda71d47ffcc2dc",
+      "fold": "FOLD_3",
+      "formal_case_index": 70,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|bda11ea7d36dbb44d289fcd0a3e01196cda5d1739af37f178388be63a1bd177a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e192d091ac7fdb751697e862e28fd55621254ef8068d8837dc2d8921c2dc56f8",
+      "fold": "FOLD_4",
+      "formal_case_index": 71,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|fbbbb1ed03124a36be1b69dfe633b36217557a554bc155beacb6a4db96d28850",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0bbc210557a3130dcc61e84927f7b62ab7cc611801a658d3d4128eac02df0cce",
+      "fold": "FOLD_4",
+      "formal_case_index": 72,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|432448b276b61fd182cfe6539150e3a6749836322c7abda0526f4eecd0594a95",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|54dc7807d1b4de1cb54d947aec028f406c9030993bda60f2714a1e8fa169e4ec",
+      "fold": "FOLD_5",
+      "formal_case_index": 73,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|16c0c55c891262fc743acefc7c595017578cc9d918543e89056c715eced51423",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1c57915c5e2f37d04f8c0d2bc033447866df6f76bce4a3581a090147e22c9ba9",
+      "fold": "FOLD_1",
+      "formal_case_index": 74,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|dcc635eec0663a5c6fc070fe5b74ea7f3979db09ad132ad384f9d85b41803488",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e19a8867014946c49eb44d00f9433a6d9035d86e2ea4005c2e9077ff725b5b2e",
+      "fold": "FOLD_1",
+      "formal_case_index": 75,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|886e953d8b127105cbef7a56999f5f613dc7d64292b26d56ffb0aa94de8daab3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0a20d5f71132f5540dbafd7bc825206cbf27e34f2f8cbc28db041f976a214fe8",
+      "fold": "FOLD_0",
+      "formal_case_index": 76,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|6767b47612868270688ea4c5c031681073ca3a71ca66aaa302c7a568f043c32a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a994a5026bf5f453bd759d6b7ff838f03481a94fa2bd42ee24c08f5475159b18",
+      "fold": "FOLD_4",
+      "formal_case_index": 77,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|2acb5b462c184f07aa80853b9b3475e910159f373afb2838fa15c8235c9770b7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8124aff8cb3bcc15e1247f6b26c51fa66506cf74a4d9c69ca92c9a66cac4398c",
+      "fold": "FOLD_0",
+      "formal_case_index": 78,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|791bc7be4739c88786f590e5013cfa7332736e9a094e7c3e53bfd7fba1e2c585",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9fbdea171537c125c4845db54f993c570921cfd557b6803221f4aec9f5d2fb8b",
+      "fold": "FOLD_1",
+      "formal_case_index": 79,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|ded4bab4e3d2429fe10ba8932cf8358c0eff7ab9767786dbe91e87b6db9f778e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8591995278d9f24a1da1662a734e886561c320356021530547b13b12a2ad518f",
+      "fold": "FOLD_1",
+      "formal_case_index": 80,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|009babe5d048eb575a3073c0a484083b49614ef38b2ceaefaa3344288c490c5e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d91fd0d22b8ca928188301762d69d730d0f5525f34cd102f68b6027db1715ade",
+      "fold": "FOLD_0",
+      "formal_case_index": 81,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|7ae5625ccaeb491623797bca8da0f3c3db9c2b0692d099b255b508371665b2cb",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4d2de76abff9ab0e3b54f424038e09e9d60234d4e834688afd0708cd0dde10af",
+      "fold": "FOLD_2",
+      "formal_case_index": 82,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|e4023a3592ab6269758be005d6bef7f24b7b8e9eccf1e4964116684541f30963",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b9d1876c0b11d429108acd5908017b81d748c89b22d6bbef263a40d2b4f93027",
+      "fold": "FOLD_5",
+      "formal_case_index": 83,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|06cf75637c2a3d3f3573ff97b6e359aec491b6279e5c26f01acbc1439755971a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0ec1f462eddbaedb1cb552f0408db1f5b049166a2d000344456f7a726ab18a7b",
+      "fold": "FOLD_4",
+      "formal_case_index": 84,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|9b2e6dc38ed595ac8070e62dba8c6898b75adea277187c29912a64ef338720df",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7b2127ebaa8ad8ee99045d9c31f7ad00c2721444b86ecb945be54b187c8ae146",
+      "fold": "FOLD_4",
+      "formal_case_index": 85,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|557ac1427cc22dd817655bd2ed7c40f97ccc5b4b2e84e78f47450771d6b93376",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d42f9329fdfb7f031b0fe816facbc0098c05892fe04149f4e5161ae9fa85f6f9",
+      "fold": "FOLD_0",
+      "formal_case_index": 86,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|0a80853938a248d72e7aa59feb0fd581a64e29b619cc090fee65487fae22edd2",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|18ce31d973507787e59dfdb35ca12a050f6af1338304723271567541d8778d0c",
+      "fold": "FOLD_1",
+      "formal_case_index": 87,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|fdad7688f3ef8d8f86ddd1813a744c7355f443501a46206a3fbb80e8d9346766",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|762935e5020db0fcc444ce7fc1f612f30f3d9cf63a9078390f5255b0e22e1c2b",
+      "fold": "FOLD_4",
+      "formal_case_index": 88,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|07d189569806b6a5d3e1520c526968b5ae6ba019e798d03e2761579b6a6dfd3f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|bee245e1d616c3b65fb49e6aa0cf9a53ce15e07f2193b38779fb53b286ad992f",
+      "fold": "FOLD_2",
+      "formal_case_index": 89,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|1acd36c5029d3a5bf529b564c2adefdddceef8f48e9b2634c3d85e8596beb699",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|299dce1ad012ab114953cc06b8df77f116ec1665e8a914cb26f0347707f816e7",
+      "fold": "FOLD_3",
+      "formal_case_index": 90,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|3a1f7dbfb327db3e8898ef55bca8751c8a0a58970280aaafb42beef817831e7a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3686785662515dda81e66d0878574bc968e913c4b9cb0c0951b20aca3f4f5045",
+      "fold": "FOLD_3",
+      "formal_case_index": 91,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|f5712ff20e8cbc7008362527fa124e5fcc8c441c64eb0663f87637932fefa91b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1b33c5464b9d27271afa857f4526aae38aac477c532b0a93a01aa3e8718d1728",
+      "fold": "FOLD_1",
+      "formal_case_index": 92,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|12d34133cee453cbdd687661ffc2910719872640e6fee943721090e658f73579",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3a7f02618dc0dd43f2a33e070f657b306201b2157fb62e2e815fe86cf1dd3750",
+      "fold": "FOLD_4",
+      "formal_case_index": 93,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|3cd072fd899b19c6d0d37b0d88f81c2b2f5ac31c133a8ac46b35850c9e5130d2",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|358f06e17b0cd492160d1a25cf449376c252bc724162e986b496ab445f0a28be",
+      "fold": "FOLD_2",
+      "formal_case_index": 94,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F1|201634997306de6a4f5fa8a0e95e9a5d707b63400045d8f449ee3bf8a00e3b10",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b65e12a3866ebec9c7ce9bc9d52644d14a6dcbcf5ede2692dfc73c128e61702b",
+      "fold": "FOLD_3",
+      "formal_case_index": 95,
+      "macro_family": "F1",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|23b417b4ef0160f04098bbc11651e8eaffa50dbbee368e4d7b8363cb6a44d01b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|441fdcabb89a108e9ed39ed118e4defcdf9aefaf6ee129fea00cd6ebf899cd64",
+      "fold": "FOLD_3",
+      "formal_case_index": 96,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|9e15815858b2a4f1b8e2aba526662c25a9f64033a48324276aaabbb1b595eb89",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|515b962bfc224b41185bd0a05c1558a856bbc3c7932bd2042657fa042c16c2d7",
+      "fold": "FOLD_0",
+      "formal_case_index": 97,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|a644b7c775c9220ee482eb068eee4cba6dcbdbfb37dea3fd5b3e74c11f2a3cbd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|57a412b56a092038dc96c7b5d49f00f51b7b7eea59d524cb8ac219b4a973d86a",
+      "fold": "FOLD_2",
+      "formal_case_index": 98,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|143fb311d108dce4f2833acd3d595424361b5ecd1dc72c9be99c976a87f1623a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3f12adbac8d9aed9959d092c7d66bbcedeba9f4f2e73f44ba2234fd16c280e1a",
+      "fold": "FOLD_0",
+      "formal_case_index": 99,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|d789f89db98ef5b0cd037593d44125c14af4270a18ad98d6cd38dfc477aa58a4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f1c26a77b4eaf2df159cf772b2dedf64c82084aaee5078cfbe4e515fc7e865cb",
+      "fold": "FOLD_1",
+      "formal_case_index": 100,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|c65ac2c8a1ac9a4215aed727932730ea3949e884466c9efd58935794fc230b2d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|289c08435e630594dbdcf8320ef45a7f1c10f9f36c17ee8593a04709e590986c",
+      "fold": "FOLD_2",
+      "formal_case_index": 101,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|9f7dad556454d3a199175a22a9f2b0c753ed904b8b9a0908fce5a5cb59a6b799",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d9f5ed77d50a773a49f080256ef07504c4f6c7640706632b2de481d8d5dbdbe3",
+      "fold": "FOLD_5",
+      "formal_case_index": 102,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|0734ded2e07b61554344f9cc58ca28f160a97c12ab61960df6f2f88d58b9776b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d59b20ce14c529e1c742efbde5e16cfefa569f004037852725f03cec3a25b143",
+      "fold": "FOLD_0",
+      "formal_case_index": 103,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|f3e5062d738d5d466bb4a6b3f9b11603c5b92d3d2b7fa623e07fc6de1c26fa3b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4713f6234ec42318809cfc211ba32e7b0d49e11cd083f7311eb1370274b9a160",
+      "fold": "FOLD_0",
+      "formal_case_index": 104,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|34a4c0854c5b032effb1ddc7f62bb3ddf676656f8c396b79611e525992aa8b57",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|704d70dea978dcbd698565d64a7e5b76682e47cf045692611bf69da8cdddc991",
+      "fold": "FOLD_2",
+      "formal_case_index": 105,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|81b10b49348b67c58dad96883b127299c7f383a1ad613ccc2d08b58b36652809",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|57a412b56a092038dc96c7b5d49f00f51b7b7eea59d524cb8ac219b4a973d86a",
+      "fold": "FOLD_2",
+      "formal_case_index": 106,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|d52a332f84046d8f96d910e1531711ff0299a79c5ab13a5cf6e7fccaf089253d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|beb1e73a27d80d001d75a59b082151f5cf3db595924b258822cd9062fdd132ca",
+      "fold": "FOLD_4",
+      "formal_case_index": 107,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|2d544e2dda1303c8b16d1e28b6b03a63270e12a4f3a931bd87a274ba7cb610d4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|922653583e5db3a17067924dd7d99f095cfc7390341feb2f587af05ffdc397b6",
+      "fold": "FOLD_5",
+      "formal_case_index": 108,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|ed935651790313dc271426a1435931ef6a58ef99bcc91d9c296bfffad87982d8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cdb0f445921fd4159db4ce3534aba2851566a7070ec58219b2e6803b3a74ac54",
+      "fold": "FOLD_1",
+      "formal_case_index": 109,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|ba55cdbc97afb8907b54d9562f393a8610abbd5ccbf7affadab508f9b17a9038",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0fdc795cdf6bad1e6d3567c60fadc7ebf7c6382dd16ee71a5a00da70fb6b9314",
+      "fold": "FOLD_4",
+      "formal_case_index": 110,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|fbebe9b7436c203e1e31ff17746f385719fdda1fbb1221233579b1ee0c59c5d3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c0125bd7dae61cfc700cd7086d4858948ade2baded534474368ea4cfa73c9bac",
+      "fold": "FOLD_4",
+      "formal_case_index": 111,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|117d2eef5039463dc5cabd9160b7fe5a5f4b9b56e3f170c2ea9bf79126435e68",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3a04653136addf44b83eb19bbae10b83d0bf55df346dee1ddd1f83f6046a20ec",
+      "fold": "FOLD_3",
+      "formal_case_index": 112,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|34c53812819cfb25fd39bc6c6aab4f92b207c9176cfb3349b999cf95353afe79",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3a003b5d004e32e97f51a465533ab8153872cb9bf9ea5ee2e00ab7124947fd1f",
+      "fold": "FOLD_2",
+      "formal_case_index": 113,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|85a6ab6d0c7f38c53971220804ce250f1608c23dff61f611ac2597615d9a3244",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5a562a863107efecf761865e7ffe780f0278b7371d3d2b047494c2cd6157c2d4",
+      "fold": "FOLD_4",
+      "formal_case_index": 114,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|74b492df730042d4536997383a5672420d71019f74ecfa5666d8b769d921c4d1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e797f86a3010e9f50ea5e54bb866bdc62fed0b1e580812dc0260bdad3346448b",
+      "fold": "FOLD_4",
+      "formal_case_index": 115,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|61630fd0ed03644305ee5bc91058073d086bcabc4b66ff3674c4610afb84fce9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8160f383e8c444cb83a23e972df23a42ef573947bfd88e1ef09c924453a54b74",
+      "fold": "FOLD_0",
+      "formal_case_index": 116,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|9568147e1359a849299aa66092247ee1f1d71ea94530c3551ac6a3ccae98a9f6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e940bc79385d10f3134327cc6ec0a4b160d3faef1ad5a899817dc525d1f158d7",
+      "fold": "FOLD_2",
+      "formal_case_index": 117,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|0727b97861737a963f49e6ca50934feb905d0f5b3c7a4847d5a281f82647b979",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5c254c53bfb8a2acc2b83dc93661e5c0fe4ffd63636b92313f7bd2735db749d9",
+      "fold": "FOLD_4",
+      "formal_case_index": 118,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|8ba95c4d719679e736c66f5231dee19c7a749325c413e4d04582ae9f65ba4708",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ffbeef212e4e816048cb47cb00ac7695fe37f4901fe8bd711154006d8368876f",
+      "fold": "FOLD_5",
+      "formal_case_index": 119,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|4508ba5d37820a488cea5fda4a1ba1e117dad2b203124691e2a4a2aad99d6d72",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5e5eebe623cddeafcae7efb449e1690cca11b0c6c15f01c5800b658a37367422",
+      "fold": "FOLD_1",
+      "formal_case_index": 120,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|2fa19953b7eab974441a69dc46b69ef431d7556818696e40e23d2af2bce010dd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d9f5ed77d50a773a49f080256ef07504c4f6c7640706632b2de481d8d5dbdbe3",
+      "fold": "FOLD_5",
+      "formal_case_index": 121,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|4bb55e07f3db412790e6efc90a99a744dba11c1aaebfc193031874e2c9d746cf",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6078e8f3c36ea479d6d59451e21741ccc35cbb746bb76fc898dba2dda2b8a8b1",
+      "fold": "FOLD_4",
+      "formal_case_index": 122,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|4a24ff2d92fb3dd1383ded4ea336224f24f35b357fee7d32484e3a804d4a9dae",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6e03512d0f21113cf3f110e479ebe32194b2b675241b304dd00f64c9bd89aaaf",
+      "fold": "FOLD_5",
+      "formal_case_index": 123,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|e75831d15f5acbb0bff2fd29892ee99928aa88a7acc37bac939a511adfb34f2c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7ee4685bd55668856d4963693176cebf1b1738e32563f91d34d70a72aec16dc4",
+      "fold": "FOLD_3",
+      "formal_case_index": 124,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|1d5277552f629204c03b384bd3859bc2a8471006ee69a541612fdf260e5fcd31",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|839b4744caca01903d377f834e758369fc902ac9823d72f7d4a5225d98a2473a",
+      "fold": "FOLD_2",
+      "formal_case_index": 125,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|cb1e905944b22f0d5e9a364e8548dd3dd88f86b1bdb17e77c6d81a6bf99353d9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b6cd41aa78c146588c2fd226a10454eef3f571cc42fa7089dc71d9624e4c21ed",
+      "fold": "FOLD_1",
+      "formal_case_index": 126,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|3bbe6e0db3c78d1c8e182a96288d632bf5d6765b7e7f211cc7b22993b81f3f16",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a4d2d5816c6ac0d1f4822afb21ec54eb3bd055474946ef0637d312830e525811",
+      "fold": "FOLD_4",
+      "formal_case_index": 127,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|e920287d27324ae925ac41f56ac8a68158ad0c880f532871aaf9d4274dd7f17d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4713f6234ec42318809cfc211ba32e7b0d49e11cd083f7311eb1370274b9a160",
+      "fold": "FOLD_0",
+      "formal_case_index": 128,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|6f32c01f7e276209145f9b93745f46b56f81ff98d4bdc60dab6bc6cfa939f7cd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ada12058874045ecb7666c34ff3cdfca495b4302a44dbcf7e1bbc75049cea049",
+      "fold": "FOLD_2",
+      "formal_case_index": 129,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|271af9431a12a81d277c72d8d151c579ef48ea751eea540e345225c57d1dc880",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a45071f5ff36a26639e73bcdf249d645c1cad983a62ca616a1d80db12ed1154c",
+      "fold": "FOLD_5",
+      "formal_case_index": 130,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|266753e11e619952d83c4544c873604ced6944ffa91f6b251df0bde9e7bc0973",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ffbeef212e4e816048cb47cb00ac7695fe37f4901fe8bd711154006d8368876f",
+      "fold": "FOLD_5",
+      "formal_case_index": 131,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|c43f513dbf1b4e178b5570c6da4f96a55405acf7c084e31d7e4d806d391041b8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|78d0c8fb4dbeb1d06b8efb2905357efd1d574c2651b42a3522add49140b4fa39",
+      "fold": "FOLD_3",
+      "formal_case_index": 132,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|1b17d8dca9e0e5b8cbfdc2c3af37d12c9840531e74e79246c2b176638f3107d3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9af87a6bce0c31f7a6beb8676561bba9ef47e3d5c41221318df8b6ce5060314b",
+      "fold": "FOLD_0",
+      "formal_case_index": 133,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|634fc43c6a57f1918cbcf6231be577f8797de61a35e8da24af688728708177fb",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6e47fd84d7dfb38a2532d786c04f8566b40b3654321e0c5e91278c07238fb59e",
+      "fold": "FOLD_0",
+      "formal_case_index": 134,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|975d81ef01def97e1b5d890c91b96e035e00d7b3952f9e10a2b58a537fe3ffb4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1c5bd576f46da6ab83f0560e46107f8bb9c19bf7f95e3a566323af4892533151",
+      "fold": "FOLD_3",
+      "formal_case_index": 135,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|f7dd6afdad35f08f5fab038b60c9181ffadab55ac41885535595fb03c6bba86b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|eda651c3c8efe4e2ea4b8838194869a634b3deb1254a8b504f2a5af52a31bcfa",
+      "fold": "FOLD_3",
+      "formal_case_index": 136,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|b0ec4e184b53cc6ec0912108c3f7587ba6793e6668ae2aeda1063656a3220510",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|61dabd2ad5e67008e50dfbf5820c1e938b7d567fd0ec80d9dd7f64ed0cb2d57c",
+      "fold": "FOLD_3",
+      "formal_case_index": 137,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|5526061cde05bddc8239d60d544798696be531c8ee37e59a8efbe1b59e134710",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3c68a718efaf1e6855749d4f2bdd9493867ba690acebf0871e28da3740d4cff4",
+      "fold": "FOLD_0",
+      "formal_case_index": 138,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|7c7adc33721be42c9527358d6401bb229a35f184f91066892eaf2859351e28cf",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|beb1e73a27d80d001d75a59b082151f5cf3db595924b258822cd9062fdd132ca",
+      "fold": "FOLD_4",
+      "formal_case_index": 139,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|a424f7f64ff3b71888a3ac707b7779ecc2cdf618d93e784274557de39c94ff40",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e5f7e05cfe11767aad886a62ab15609d814f7c303dd5f9f7a2274e5ace2a065e",
+      "fold": "FOLD_0",
+      "formal_case_index": 140,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|f5f07db6180e034cd4a22a72cae93c50017a9d92fe56167b7500f952615dfad8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c308b4e689e06f6fd83a430c441fc6ddcf226b43bf8d5b7a30004c080cd808b",
+      "fold": "FOLD_5",
+      "formal_case_index": 141,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|f04598221e1f5ca84f9e260e12f035ec2027ecfa6cd1fefbfe84b8c04e1768f0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4b95f900b63247b668f8e53a08566d6192e1a1b218a434e1c3ae19aa733f2458",
+      "fold": "FOLD_1",
+      "formal_case_index": 142,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|6e9e321c7746d09819b11754452ecfc69fd71b079621b93cba33e0780abc4b27",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f4cf987a3b9c78223f18707112af276f685a5c470f5f5d833662abdf636d1247",
+      "fold": "FOLD_1",
+      "formal_case_index": 143,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|947c5e731495cdb6abaabeb6281a31c1c54677343b97acd9ff96ecf8c2b3cbd0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|88066082c65830115940818d263d6809d134394a898ef90577b447ec26997928",
+      "fold": "FOLD_5",
+      "formal_case_index": 144,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|cdb750a0cc00aa704ebcf8ca97ecf514b5b000d74fd93cd2e7fa8b550bf889cc",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f685242319f2e54992ef7598debd184a649e9b2e72bd6afed05f5d9f54abd161",
+      "fold": "FOLD_1",
+      "formal_case_index": 145,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|1cd90b960ef65ccb6e981a6389e411a95c7bc9c5bc6e15da2692767ff8d27f50",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d15b885e86fa0b7cc77d07896df439f63152bb6f68da3b8c10a20a73f551e365",
+      "fold": "FOLD_3",
+      "formal_case_index": 146,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|013295cfdd0aa334074ea4bfee86461d029ffdf1747eaf0893924bbc244eae1a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|92a1e4f7e911f1495262339102ed1369d8e3d6519951deb1beab01d4acc8c92d",
+      "fold": "FOLD_0",
+      "formal_case_index": 147,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|0503a522399c0d5a200c9654d651cb488a9d823b8aa0f5cf10eec2f1ac069ac1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0320f8ef87ed1f8736d89e82a443ef682f59f5718e561c03e4b6024597213c2f",
+      "fold": "FOLD_4",
+      "formal_case_index": 148,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|5b415ff864fd128e4168b0a7272e5f64df7480f08b09b4a95098a3a8303dde0c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5e5eebe623cddeafcae7efb449e1690cca11b0c6c15f01c5800b658a37367422",
+      "fold": "FOLD_1",
+      "formal_case_index": 149,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|69f6fc95999f8b80c6fc0170a0cfa9e26979546c01c1c1c46099e79839adf89d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fc96fbc00df11527833e71ddf1823d574e8d5c9852e7d5cf05933a9e82fa73ec",
+      "fold": "FOLD_1",
+      "formal_case_index": 150,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|82f3ff4a2653ddf14886e04f0d1b66279d2bc604ca479b608114e096baa3f2fa",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|59f328e825f37196d07daea14ddcdff58ac85b17340fe396c5852b211121a473",
+      "fold": "FOLD_0",
+      "formal_case_index": 151,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|825ba3f8d91d9cabf4b5874909300a667ca9f39abe5cabfbc25e922020a7464d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a1710e4ea88f7482745276e7feafeb0920435765844a286c625cc713e3e3df98",
+      "fold": "FOLD_3",
+      "formal_case_index": 152,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|5858a6bfa69567c95642aa07c238fdff4fa51b812ffa9fb24d381a130d1f4a01",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fc4130b5db56c326f74813cc5db0aa89f06259c4a204f610ffd73f806fca3c66",
+      "fold": "FOLD_1",
+      "formal_case_index": 153,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|11efb28fb89d5ed2d8e2f67c435459a1111975d0ca52ee55a769fa7fd80f17d1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e8619ccc1a1181e2be447b9768c80058a9bd88cddd998109fa0b558f6f3cfb31",
+      "fold": "FOLD_4",
+      "formal_case_index": 154,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|d3b9cb247607dd88ccddc83e2ae04c2d93227a313d58de21451dc94faf92362b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|922653583e5db3a17067924dd7d99f095cfc7390341feb2f587af05ffdc397b6",
+      "fold": "FOLD_5",
+      "formal_case_index": 155,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|44044acdcf25459cdccb35f1e2546f851a49b5cb8117f983cc8374b0b5f7e4d1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e71b22127f9b4a40a5d93de60e99f36f1c431e6e0e3eb6eb5cd5324321975cc5",
+      "fold": "FOLD_2",
+      "formal_case_index": 156,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|eddf331a3033c8ebade947800c5316f5498b42bbbe1ab37fa632f6f05c1bee2f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fc96fbc00df11527833e71ddf1823d574e8d5c9852e7d5cf05933a9e82fa73ec",
+      "fold": "FOLD_1",
+      "formal_case_index": 157,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|17e5833165bb966697933fcfbaf11f448a01fc4ac9fcf375d499617281248eb4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|70fad1214f28a16572dc2bf6b941b0257152f9e69f6efe0e6b5e9536b7c9216f",
+      "fold": "FOLD_5",
+      "formal_case_index": 158,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|9ef4e9d74589ff304e54cd729188bf8906117b9a07bf6de925d5eb62fff9f3dd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9495d1263e9d5130a4466658e829f566f282f3d7d5a3f021374a9b92a3ed5649",
+      "fold": "FOLD_0",
+      "formal_case_index": 159,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|93ebdd205498a053121ba0de56e9c2a7d9450afa758752b62611af74915f00cd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fc4130b5db56c326f74813cc5db0aa89f06259c4a204f610ffd73f806fca3c66",
+      "fold": "FOLD_1",
+      "formal_case_index": 160,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|655a26fd32bf0b4878bca9d1d1f4b6a0ad67b55e93a306a95e01573706467869",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|04fae7aa6cffaad68cee592a66636859cbb4711574fdc6148fa5fb26b34a047a",
+      "fold": "FOLD_4",
+      "formal_case_index": 161,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|51da2275ca149bb9f005cd4748f55954acc861704920a8411704bfeb61f39371",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d3b17aa9f300945981a9ed52c3ed55789a9711ac99d73c2e42869979e1918c6f",
+      "fold": "FOLD_3",
+      "formal_case_index": 162,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|b5e16ab56f821283fd84d0acf39ad2a4eba1fc362bbcc24a08feb13cb1941a56",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7ee4685bd55668856d4963693176cebf1b1738e32563f91d34d70a72aec16dc4",
+      "fold": "FOLD_3",
+      "formal_case_index": 163,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|60bcdd7f31b148c0b1f50a33af559ae244601abfafddd2f0ddd226ea8f031f3b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|78d0c8fb4dbeb1d06b8efb2905357efd1d574c2651b42a3522add49140b4fa39",
+      "fold": "FOLD_3",
+      "formal_case_index": 164,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|652ac6008edd0b39625a2b5a24081eab9c449036ae3b5c356993264170e15845",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b5829f2096ac6afd41fad0de2c30b89ccf02b4524724b7e1d572c62980d90900",
+      "fold": "FOLD_5",
+      "formal_case_index": 165,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|9e51d4827e24f4769985a9170f0e396b66379e727a6157cbfbbca732bc881cf7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d15b885e86fa0b7cc77d07896df439f63152bb6f68da3b8c10a20a73f551e365",
+      "fold": "FOLD_3",
+      "formal_case_index": 166,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|5a78825e9c6404e38cb84d19612e8adf07a98e64a17e1016f2f0a08532ca0ae0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|aea48ac2021e08669dd530f20a700598bd5d299351d9e7027a4882edf62720e6",
+      "fold": "FOLD_2",
+      "formal_case_index": 167,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|edf599a38bfa550878d37b0fee080c1e2e07a398bddef0f55c8e22d0f97299eb",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cdb0f445921fd4159db4ce3534aba2851566a7070ec58219b2e6803b3a74ac54",
+      "fold": "FOLD_1",
+      "formal_case_index": 168,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|fb54ced9414231d2be5f7e3b8d07c8b96b9aca393ea7064c40a6dca0b3b23ed0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|441fdcabb89a108e9ed39ed118e4defcdf9aefaf6ee129fea00cd6ebf899cd64",
+      "fold": "FOLD_3",
+      "formal_case_index": 169,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|9d3b8ec6291d67905e774dadca3ba55df9d3922c6631a4f960f6357a79470c0d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e71b22127f9b4a40a5d93de60e99f36f1c431e6e0e3eb6eb5cd5324321975cc5",
+      "fold": "FOLD_2",
+      "formal_case_index": 170,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|510e17cf40fc1f4c35b88d1bc795f1025c3eb53d38cead5bafdca4da37495a6d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|aea48ac2021e08669dd530f20a700598bd5d299351d9e7027a4882edf62720e6",
+      "fold": "FOLD_2",
+      "formal_case_index": 171,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|3c5a5097f443d9ce335a675d91da6b26fc186e67a558fb3fd602f9643e5fb3e6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6e03512d0f21113cf3f110e479ebe32194b2b675241b304dd00f64c9bd89aaaf",
+      "fold": "FOLD_5",
+      "formal_case_index": 172,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|853bf79caa10ada69899386cf6f404823d8d3401ba0a79d3f545b89807e97d7e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f4cf987a3b9c78223f18707112af276f685a5c470f5f5d833662abdf636d1247",
+      "fold": "FOLD_1",
+      "formal_case_index": 173,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|1a518feef9e3a00761303be277c0db0759536094346f8f3c609ea72acb48fead",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|758c323ede243a6d23ac09a90d17763242aa7a8b60cc75ba76b1e5e2615bdb90",
+      "fold": "FOLD_3",
+      "formal_case_index": 174,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|607cbb86350a6ca93b26c9ae2fcf8e3e97323dd268cbfe4ccc623b7b32214021",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|70fad1214f28a16572dc2bf6b941b0257152f9e69f6efe0e6b5e9536b7c9216f",
+      "fold": "FOLD_5",
+      "formal_case_index": 175,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|3794f66286af93ff154378c138146f560f356aafada13087e75783bb506d745e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c9effaf9f8d99dafb4339357104e580526691236671870d679eac7675878cb14",
+      "fold": "FOLD_2",
+      "formal_case_index": 176,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|5fce35b38b7a48865d0b4b51f53caaaf072b2c40f657284a3558f275bcdb6b32",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e940bc79385d10f3134327cc6ec0a4b160d3faef1ad5a899817dc525d1f158d7",
+      "fold": "FOLD_2",
+      "formal_case_index": 177,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|1cedb6086eb661871852ea69bb3cc212bfc9eadbf15e83745181af24d3ab06c0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d59b20ce14c529e1c742efbde5e16cfefa569f004037852725f03cec3a25b143",
+      "fold": "FOLD_0",
+      "formal_case_index": 178,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|8d4b8cc44b6fd2ec078d52f01bce3cbd31f428fdcda3e4068c852d3234743465",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9af87a6bce0c31f7a6beb8676561bba9ef47e3d5c41221318df8b6ce5060314b",
+      "fold": "FOLD_0",
+      "formal_case_index": 179,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|61f923961743d5d522f7a648b26c3fb0eeac2ebbee5a4c0fd22abb0b6fe90626",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6f548b1d8a9d1b75d4eed15042c87e57bd79d7e774c4eaf78f88e124da940b10",
+      "fold": "FOLD_1",
+      "formal_case_index": 180,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|183dd768e7b6e8bc606f638fdc269677edf449e79ff4397d174304f458f9a5f3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f685242319f2e54992ef7598debd184a649e9b2e72bd6afed05f5d9f54abd161",
+      "fold": "FOLD_1",
+      "formal_case_index": 181,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|2a6420738cc1cdb92b88ec771e30cd7099073224575a842943bc0d588ff721ef",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8160f383e8c444cb83a23e972df23a42ef573947bfd88e1ef09c924453a54b74",
+      "fold": "FOLD_0",
+      "formal_case_index": 182,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|c0547bbf991b080a121ebf851e68523a9f145b5b4d3e3e516a623e0907d12481",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5a562a863107efecf761865e7ffe780f0278b7371d3d2b047494c2cd6157c2d4",
+      "fold": "FOLD_4",
+      "formal_case_index": 183,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|b2582bbaa68fc837d19284375ad1fd87badf6dc034da1f204a7517a5e98c2fe6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|441fdcabb89a108e9ed39ed118e4defcdf9aefaf6ee129fea00cd6ebf899cd64",
+      "fold": "FOLD_3",
+      "formal_case_index": 184,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|d64f8ea58c8df9634b6f1c912f013464a57a9afe3c6d28ec9c189425e0b279a2",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3a003b5d004e32e97f51a465533ab8153872cb9bf9ea5ee2e00ab7124947fd1f",
+      "fold": "FOLD_2",
+      "formal_case_index": 185,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|05cda83f15ae72fdaaa5688bdf797d521ca943572f24be4ca85b26451b15937b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d7e5f264a870025f979386fc06c8aac14e2480ba8b2ed46ab254e8f01f550ebf",
+      "fold": "FOLD_0",
+      "formal_case_index": 186,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|f64d1392bf509162551535f04b6599c289403e96c3f175a8a161d3d1088db8bd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cf7ba66e88949ecea30804dcf09eaf2c69ab7a8965dc76b51d3402e607b08a11",
+      "fold": "FOLD_4",
+      "formal_case_index": 187,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|658933dbeeb921d284a9f1ba14f2424958fdf2a1bf28772f3b3df7b05ab4484d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|af4ac60331854b9a33b3dd90929dc08f6f43c046dccb187701a1e7c842e0f865",
+      "fold": "FOLD_4",
+      "formal_case_index": 188,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|0368a01f6da84ee8779208869e1d2c2d2d313329089975516cd2d306518b0394",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|88066082c65830115940818d263d6809d134394a898ef90577b447ec26997928",
+      "fold": "FOLD_5",
+      "formal_case_index": 189,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|04b643266531e0fce0d7f93dfb42f17369e9b649906e6270233c1f04ce0bac2f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6f16df15e78bfdabcf5dae5a30657f74ca80d0aacbbe11f2b0a726f71c8450e3",
+      "fold": "FOLD_3",
+      "formal_case_index": 190,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F2|ab527dea649f7d8159ea5e754d1118011034f90cb0e1a8dfb039a8634d50e9ae",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|79411a315be0df927544bf1bd028087b1ac99d622c148ca23cb96a1511810de8",
+      "fold": "FOLD_1",
+      "formal_case_index": 191,
+      "macro_family": "F2",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|4d8e73a9f391e3563a2c81693bb61997ce3c9da554b2be36338ff43534115188",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5128a4c890d7c50a9efd0785272ab283eeb7a1496a2713d27bafe961b9e87660",
+      "fold": "FOLD_4",
+      "formal_case_index": 192,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|6d7b11a7fcbba4268e1e5cbffe05e0e01d2e5196c153fa14e2d02c360674f6f6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7fd7cf5e76928ec1c52d5db6093702c08089cab06274ff6ccff05bdfe8db10cc",
+      "fold": "FOLD_5",
+      "formal_case_index": 193,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|fc794f72a83ac8c3a9d92aac50c9111cabb7ee10d557eeed07de9a0bb1d6b563",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8f96460f5e25434ea38efc75b2a38eba48ed159ccc71195a9890899219539f9a",
+      "fold": "FOLD_3",
+      "formal_case_index": 194,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|1aa9561af875899b8ee5c765002f0012d5dc9f00407c174d1a849b45fff2fbb7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d0fb142191b10c9dee99847b4cb0eb7564b47b0ca551e466695f835f05f07f13",
+      "fold": "FOLD_2",
+      "formal_case_index": 195,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|a3dddee75f9d68b61a98c228c20035f76d5393cd365a2af176463e53bc8b4e68",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9ee828216b120e27b8b7eedd471d2662a7d0817c1e5752cce6cce2be620d997c",
+      "fold": "FOLD_5",
+      "formal_case_index": 196,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|b5891352d76cac78a686bce83916de92326ed0ab646441123ae7f560c272dde9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|14482ea365c06cc9c7ec26d82bcde3070dec32a12cfbfd3e541e7927d4e6ad1b",
+      "fold": "FOLD_2",
+      "formal_case_index": 197,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|a95f88e1c8410d44fd1764d836fbcae07d07d5617b5cb9780cfbfcbb4a7fad32",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|67706c723672c6b4321ff9955a5258812f983d056f920bb03a077595b5839281",
+      "fold": "FOLD_1",
+      "formal_case_index": 198,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|73539c8a9ff40a72e80f9cf01f506d480e475206ab97f6f1783855fa55093cb9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|02af8fc8fdaaf157851a8e83e4ddea5dc9b0a3eccaf84d81548cde087cb7e597",
+      "fold": "FOLD_2",
+      "formal_case_index": 199,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|9f0a1225fcc39b42649101e5f9d3d234d0b2dc96e8536c1bab082cae08e1545a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5128a4c890d7c50a9efd0785272ab283eeb7a1496a2713d27bafe961b9e87660",
+      "fold": "FOLD_4",
+      "formal_case_index": 200,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|f3e51d82ed65eef5a593c180d18af1614dd5870d440c7930d85e5389cbffc1c8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5c68ce71b66cb7ba23233d483616565cecc57e7c0abd9b442c80b3569cac505c",
+      "fold": "FOLD_1",
+      "formal_case_index": 201,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|54f15cad89c162bb1489f8b3dec1d3ee3d2006ad08426f2992397eeaa11fd8f6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b68e24afa03be463926f37348e95ba5425f3db0fc954c965a65931a954638a6a",
+      "fold": "FOLD_5",
+      "formal_case_index": 202,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|7138d738ec920da8126e02ec12c0b8d64c6faaff8d913ebae91ceaaca912f4a2",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|14482ea365c06cc9c7ec26d82bcde3070dec32a12cfbfd3e541e7927d4e6ad1b",
+      "fold": "FOLD_2",
+      "formal_case_index": 203,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|b471a2f203886e94e0e0da71beded19cac7ad5df485ac2fb8ec555c22b45b995",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3ced42bc86cc5913e0df09a01a51708a878c5d2c872a6a5603f96de172f76a6d",
+      "fold": "FOLD_5",
+      "formal_case_index": 204,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|2b3a1823c2926b39c82ef85835861b50dc69c29baf20782f20a71a5926c070a0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b35b0ee92e60d2293a02130a1c62949b0f9bdf13eb8e2c07bd9ba6f2a286f270",
+      "fold": "FOLD_3",
+      "formal_case_index": 205,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|34f49fce6a10af8951d9477e79275645eaf77e86889b447a8770c273cd176635",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b6de82a11ff1726c1f67d6e3709d0eca4f4e172bea8406217cc2fe8b6e1a7433",
+      "fold": "FOLD_2",
+      "formal_case_index": 206,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|7c41e810b2ab2133c21b47857be2db476f7b208365e209bd0bcac843b005b5f0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|67706c723672c6b4321ff9955a5258812f983d056f920bb03a077595b5839281",
+      "fold": "FOLD_1",
+      "formal_case_index": 207,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|d8596c9e1cd2fb9cc46ee50795c303fe11ef4d934584df6d7e080e174abc3dda",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|702c93f91cbdb9e9af0e635689c43fc92a780ebb993ff1283e521f24e8df3258",
+      "fold": "FOLD_0",
+      "formal_case_index": 208,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|854c1c3311456918382953a13258c9c42b521a7673a5cfe0e1158b8264057fba",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|115110a21fa31bc05a325ab6eb409b0df3fcba9a4cc783389c2dc4998ea93dfc",
+      "fold": "FOLD_3",
+      "formal_case_index": 209,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|4e4a363d987270255d60317e9b37deace68e857e9171f8fe2975659bcd2b902c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8227741205f08757121403ce215e9fab093a040af087953905abd79b1cc802c5",
+      "fold": "FOLD_0",
+      "formal_case_index": 210,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|8bf49491202c3822fe6e27bb85f493bd93f3bddd6a388926487f7310718269c9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4189da80d192394b72ff7fefb1e37e6f718160a92daee974c87bff25ee0d4f0b",
+      "fold": "FOLD_3",
+      "formal_case_index": 211,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|843ed1586d40631e040edc0d5389bb69a0d5ba81d44120d3560e265753aefa56",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3f2c911ab74caa9cd763455022a5dadcd172a741b51ffd58f661e3845ae397d7",
+      "fold": "FOLD_0",
+      "formal_case_index": 212,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|7013251c8974f05a65ca27a627b440935cf7bf3cbee51285acfb5c9ef311c993",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|169c6b1f1747bd27f50173ae34f80ee9d0d47b41b0a755fe4e5c91c536b7a5a7",
+      "fold": "FOLD_4",
+      "formal_case_index": 213,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|07ba94376412275eda7b60c1307449e7cde0d47a408801a5c1b1cf41996fc7ea",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e82260e9131d32f9b11793aebd7fd85832813bb9c78a62e6987f9718be5e4475",
+      "fold": "FOLD_5",
+      "formal_case_index": 214,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|87ff8d9537a5c8dcf4aef4d012b8341720179c5a72fdb9ecbf07a986dc3b0ce7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f54c335afb806ae736e5fe3ed4af998d5e8597634a29a7a4edd365110b7b7eda",
+      "fold": "FOLD_4",
+      "formal_case_index": 215,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|04cf9fb8d2595970fc8a278eab00ec7d4ecf21b9c5c56853cb64b4f0c824a497",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d00c6798fc2ead78f5c87bff5e2fc1c8851f387bac735cccd89c6f71d4a7587c",
+      "fold": "FOLD_0",
+      "formal_case_index": 216,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|1727446920e64620166773b4eb5acf008753d3bac4b5de5cc12bbdda7dbd2227",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|502199b401b72eaa2f6b365e5776d6d36a742f9618dcbf5e2d1635866037e0de",
+      "fold": "FOLD_0",
+      "formal_case_index": 217,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|fb554028a325502c06831ffe7a21343f7f15ce99064e8f15f28aae73879b207a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|23fc563faad27dce4fa15d151f1f8c48115f2d5dc322b39262fbc27ec4791372",
+      "fold": "FOLD_3",
+      "formal_case_index": 218,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|02bd68b55b3e7b7e042382c76a10df76172b6b77d1e008e15765158192e07575",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d4edd26f49c53218f347abf6aa7289191eb85e7cf1a37afa1cc74ac05bc47943",
+      "fold": "FOLD_0",
+      "formal_case_index": 219,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|0e9cb6133c8953965896c5500917ba18def5860817d74de8ffa9e34330afed92",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c4bc5ef7d44dee05e737c7db40e5925e97ab35fda821bed967bad9332a3aadf",
+      "fold": "FOLD_0",
+      "formal_case_index": 220,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|b10e9026b17cd3a0239aab2023e295cb52f1f6c347ce1b957ce318708767a0d4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|29ed2b7d4218df37c4a1baacbb6f1fe4237e5da21b59e33db5f6dced7add0a59",
+      "fold": "FOLD_3",
+      "formal_case_index": 221,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|7321152d8470ac9122e3c84d55ea81cdab6684eaf5074d13fe57bb1b5f2bc37f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|263ea51cdf25d4b220fc68512786b2b84ea466bfdaa58c08646c25a623f602bf",
+      "fold": "FOLD_1",
+      "formal_case_index": 222,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|dd8c369d99785d0bc26e9f1af6a2819b95b7425d0510153af9f2140288b56d6d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f5cc4d440999f227770f5400b84b1936d6de3fafa068eaef75e0b8d7c1466547",
+      "fold": "FOLD_5",
+      "formal_case_index": 223,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|a70a83e79cf6f36a9e2163a64e7919cd9bb2fbe0ed6d13d1e353f9dd7ab3e398",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|faf11e903e403d99eb4ad8eae76737d8a6c9b9ccf09d6be1a22cda108ccf768d",
+      "fold": "FOLD_1",
+      "formal_case_index": 224,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|b21b54b33b711fa0118255598265dc29d99d636d3d2b1f438ced8bcfef6ae081",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|263ea51cdf25d4b220fc68512786b2b84ea466bfdaa58c08646c25a623f602bf",
+      "fold": "FOLD_1",
+      "formal_case_index": 225,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|54f5b4fcd08c841cb110fcfacbc44e47b95f6d84a1d5c444ee6318c82c15f502",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cbed4358f17d41feb1bad8e60142ab2d377e7c9b6d8c4d778086a9debd05b89f",
+      "fold": "FOLD_2",
+      "formal_case_index": 226,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|25c12674879d33c3f60d3634695283f6545e1749687808dea938f6b98aaa4e37",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|544f84317124579e7d4861374a35be8346756b1323e754194384670be5f816fc",
+      "fold": "FOLD_5",
+      "formal_case_index": 227,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|43f43096b070edc150fd6cf46f3117e458e3c23da8b244cfd36677f83a182ba9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|57136e5c44d083248d7f1a1028369355e8f9e4e38fed12ea76d80ac252401839",
+      "fold": "FOLD_0",
+      "formal_case_index": 228,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|3c66f9b3ba14c66802d4e1285d360792f3aea11cd04bd246b846c043276fdd73",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|98fd0315cb62d7a3da91bd5762e20985192d022c1e4fd28f1d8c63ea9f90e98d",
+      "fold": "FOLD_1",
+      "formal_case_index": 229,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|c0060b4729d481d8c0a0a697f1bf3338de3fdd053ebc4f33d9580700e16e1791",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|91290474094edc8874a0a2dce4bf98d15c5e234f0b5438849c8a0a68a17427be",
+      "fold": "FOLD_4",
+      "formal_case_index": 230,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|af0f07e22600ebf467f4be18a6d51fcf6fb1f0da9886f96e9d7810d110db3759",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|88e85bccc28f85ca4bdf4dce7857551c935822ffdd790adadf269be9f5a7ac73",
+      "fold": "FOLD_5",
+      "formal_case_index": 231,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|9363cdb2355b810e73f33cfc16f13b4551c48618da8b445ae57b057d4923becc",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8fa951983c83057ff111392a0a01eafcc08cc73afbc1bca07796b5d0ebd46fee",
+      "fold": "FOLD_0",
+      "formal_case_index": 232,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|30782502fa80aac72bdd585bcf321a5759096eae52597aba3a40a4df13e5169a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fb6b3eba8a0f816d7f994994c2fb32830f5e9295057544c7ebab947e5235f686",
+      "fold": "FOLD_0",
+      "formal_case_index": 233,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|5a43974f157e5fc079cbe515a8e427422b1e98d45dc654fd13d565a18a71cfc2",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|551a5ca37accf88c657cbddfe873289908e5daa78bc9beaa097e23202f1284d0",
+      "fold": "FOLD_0",
+      "formal_case_index": 234,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|f71e3b45f8bb4dd73e504eac8995aace7edb4592dd4da95a54768b649bda60c7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4ca1fc7abaaf4f373bab781a89e8db673e75864af5f64d11f5745cf64371345e",
+      "fold": "FOLD_4",
+      "formal_case_index": 235,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|f144879d731ea35889042b612a2cd2c06e7ff554567284e08eba6a6a62a9e1a1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4df74a0c30e223d806e6d4c98c885153e328b50794fb6c5b90852785bfe8e447",
+      "fold": "FOLD_2",
+      "formal_case_index": 236,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|8de5cde2a2975df0b562f97ce9dcc4a7756414b060fe6bd890b04179fda6b059",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b8d9f332678030d7895bd91737d5d2d8dc27c8c14a024d9d7235067848d9d9f1",
+      "fold": "FOLD_1",
+      "formal_case_index": 237,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|0a1bbb860db7f683c65213b8f5eef231ccd700c30b5ce761c9a276436d57cc46",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|115110a21fa31bc05a325ab6eb409b0df3fcba9a4cc783389c2dc4998ea93dfc",
+      "fold": "FOLD_3",
+      "formal_case_index": 238,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|7ea03cb410ca5c10ac8f7c44d9a5463c116d2a9dd7ec668ffad122dfb848da4a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0563e938ae80d9319536bd0100a6bef2817d7567f87e87a2bbf4763b2b1e98b4",
+      "fold": "FOLD_2",
+      "formal_case_index": 239,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|999527ac717adf6dfb26bdf9681487cb50f130e7885fcbb073a6e05a83799de2",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4189da80d192394b72ff7fefb1e37e6f718160a92daee974c87bff25ee0d4f0b",
+      "fold": "FOLD_3",
+      "formal_case_index": 240,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|4501d4eb0cb3fe5f3fa91790c7c905ed1de0b742f8801c0cbea8beed32c4d40d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d00c6798fc2ead78f5c87bff5e2fc1c8851f387bac735cccd89c6f71d4a7587c",
+      "fold": "FOLD_0",
+      "formal_case_index": 241,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|692b3bec200061dc8e808f3d38dca72e2583ac7c695189ef177968dc819208f9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b8b13c949eefb1514f92a32c389f0060d206fe61636418ca1f030fb80cc7efdd",
+      "fold": "FOLD_2",
+      "formal_case_index": 242,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|add71bc1fd53fea4caa00e910b2a4c49db9ddfe18821f884cb06db4fc9673ef3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|55d34f67bea40bd1d4caf6a451ab0d98a726cac05025c8b0f5a1dddd861ee003",
+      "fold": "FOLD_4",
+      "formal_case_index": 243,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|cd8b2955b7d462444365d4e291ed557a843980cbf37fb7f3549fe9842ff35047",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2dd486f04f135649302811297ebb65c460a0e7b553b26e5f76e8cdc5b8771630",
+      "fold": "FOLD_4",
+      "formal_case_index": 244,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|592b01859cea7b803e85c881538aa0c0976df00d5957c818e59f385e37c61c41",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|169c6b1f1747bd27f50173ae34f80ee9d0d47b41b0a755fe4e5c91c536b7a5a7",
+      "fold": "FOLD_4",
+      "formal_case_index": 245,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|56acaecc5e880b6e535eae09417c22892353acc64307be8da4264d6c4eabe92c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b68e24afa03be463926f37348e95ba5425f3db0fc954c965a65931a954638a6a",
+      "fold": "FOLD_5",
+      "formal_case_index": 246,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|39cfa08454afca54a086a00d985b5989c0ebd712f9ae2a4ba435f6913d816bde",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|378cdab016606b2770ce685884052943c7c3b3a6297d8a8c5bb9f40163d5bfe1",
+      "fold": "FOLD_3",
+      "formal_case_index": 247,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|078b4b8205bdaff0f56c87855a972335f7553fb47ee8beec5b411246b6dc50c8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2392f26534d26dc345fa4e23dd3088294558b57f85716946d6f23c3863d8dc56",
+      "fold": "FOLD_3",
+      "formal_case_index": 248,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|ce9381aa7f3c07a3165babc30bc1f4ee1e5c1f51349309348842505b65de91c0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e82260e9131d32f9b11793aebd7fd85832813bb9c78a62e6987f9718be5e4475",
+      "fold": "FOLD_5",
+      "formal_case_index": 249,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|62689d837e5854a011664f058b474729a890aec526bc2cc08ea7b2150047df89",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a2335fa75fc7b820a63679d655ee408c782720f8d4a600b9216d74280ceba1aa",
+      "fold": "FOLD_1",
+      "formal_case_index": 250,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|5afb4db75f2d663c2f06b3d7adc9cd014ff10d0febbbdcdd3e6544219f727191",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f9aa80ea63f7f7e85ed33aa94e71f1e2a3525be72e4a2f1b35b168eb813dc129",
+      "fold": "FOLD_0",
+      "formal_case_index": 251,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|1101d2408448893db136387c722c01ac95d033ff847fdd40c6d937f11e5d2d33",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fdc1c80c2f9068c235182a8d39c6ee291f3e79d189479b1d19af9a24d7dc628f",
+      "fold": "FOLD_5",
+      "formal_case_index": 252,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|14f1d25260ad6527375b95667a17301673e41fda18f519e37a893d6a7c96149d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5e6f2c9406458bcc493fe3e1f5494a0c8c4ce326d8fcf58ade0a7a2af31fa202",
+      "fold": "FOLD_5",
+      "formal_case_index": 253,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|a183591796fcc0a351a8bec64ac601772cb68e154f7e55b17c5b3da2627277b9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|91290474094edc8874a0a2dce4bf98d15c5e234f0b5438849c8a0a68a17427be",
+      "fold": "FOLD_4",
+      "formal_case_index": 254,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|111b357192b208354c79e1e6cbc94fcec8c55c2e2b2a75fe59b1ade045c924d1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5a3fa3e54ec35fb9edf60a1351bb66c44f2570f61989a66442a4ba973858d6b3",
+      "fold": "FOLD_2",
+      "formal_case_index": 255,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|23dfd592f9eb36ec4810bdf517cbaa2358a54af92d8af604b3289173b34efb5c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0563e938ae80d9319536bd0100a6bef2817d7567f87e87a2bbf4763b2b1e98b4",
+      "fold": "FOLD_2",
+      "formal_case_index": 256,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|3c86cd9e42b6140c1a17b24ceb51df995e26ba7af8946cab67364b4e028ee058",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|378cdab016606b2770ce685884052943c7c3b3a6297d8a8c5bb9f40163d5bfe1",
+      "fold": "FOLD_3",
+      "formal_case_index": 257,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|9a5d7bb87cc15c67e673ca094607b9947e8d8d84c76c66405f78f79695edbec8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed9e2549605f4b34a5a47abfede48866f7d8cc3461b2bef24f5af4995179799",
+      "fold": "FOLD_3",
+      "formal_case_index": 258,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|c51e9877eba6b00d7882d83ec5e69bcf60de0cf1a0215870998af75a96faba55",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ff529ebc1c7706a59e72cfaba460f9d7e3c654384d42bb068f28c000c3e03237",
+      "fold": "FOLD_1",
+      "formal_case_index": 259,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|927289861271d6668c7dec274004e690f6e8e2a07ffa42513faecfa9f0a743c7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|52e563007df892f6b76bbc75c21aeb276c7e4d0b2807ed33565e9f86e05d59f1",
+      "fold": "FOLD_1",
+      "formal_case_index": 260,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|b50311a4cab3fd48b129084f558b15b673de4abca596b18bafabab064e1cb54e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c14cf6f5e6f346d741eba1f3c8cc43d188d8befaa6e53e2943eb146e864afdc5",
+      "fold": "FOLD_0",
+      "formal_case_index": 261,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|e17f5a14ebf35ad3b2387e44d19f56c1b51d9b0b4b1104968a73a745d79c8a01",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3759160802fc383d7f69e12da1ce20447265af36e62e7f59f7b7e2b121dfbd50",
+      "fold": "FOLD_2",
+      "formal_case_index": 262,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|e67f169a2b46186951c3fa3ea826fe0ad67f8860d439f25ecd202da8333a9da5",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|afab834ae407419434c4ec31b93da19ebdf2b45dc27fa764d1f61c3f2e9cce3b",
+      "fold": "FOLD_3",
+      "formal_case_index": 263,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|c76e387d5be4dc3fad3090feeb76ffc7cfd032bc1eed3bae5f44792a00fc610c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4189da80d192394b72ff7fefb1e37e6f718160a92daee974c87bff25ee0d4f0b",
+      "fold": "FOLD_3",
+      "formal_case_index": 264,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|35aa5cedc67efdc9d403f45f12b5785ae5478bc719758056c6d1c433240a940c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|871a8093183db768422f4cf271a48d4f872a86e341c68efc072aad87969f26be",
+      "fold": "FOLD_1",
+      "formal_case_index": 265,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|6c4f07c9b6f53f335aa1bccf080847d101ebc9ac7ab22b9923ce9c8810bc52c1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3f2c911ab74caa9cd763455022a5dadcd172a741b51ffd58f661e3845ae397d7",
+      "fold": "FOLD_0",
+      "formal_case_index": 266,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|14778d0aa9ee73f02d0bcef1cddf781830d2e0663ba3be528ddc7186d3a935d6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c1ac855b8de636c30e04d36a5f51c98d5578b975fc464da438523ceafecc7231",
+      "fold": "FOLD_4",
+      "formal_case_index": 267,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|674321829630c546a492eee81d5fe3174b59fb04d23fb6d20892ab80d6b90b91",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|eb3ba3026d42bf4e89220abf1f56c78ada310a71ca6d5e4e7954496f156bd9f4",
+      "fold": "FOLD_4",
+      "formal_case_index": 268,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|cef46fb6f264f29a3b523a8cfaf1ff9a26922b5d4042e899cb6112ac1f6edb91",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|255409f16208806db9f4e7695f4f62f907a74e1ab108d7dd1fdcb60c27976c17",
+      "fold": "FOLD_1",
+      "formal_case_index": 269,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|921f5356fa7f7c8ebde36cbb88fd3554531eee3d1d61c1f0db247a024869d843",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|993bc62b7ebb5d53d24d7f8cd45ecb8d4e6820b40610e0720ec01f5aa4d5cfb5",
+      "fold": "FOLD_1",
+      "formal_case_index": 270,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|898bd56d44cd4beb1b0abcccb017866fa8f787bddad32137e0efcde4f5521ad1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|be0e23bd3568277194aad736b3a3d170267ab9600f396b1dffe758aec202a1a5",
+      "fold": "FOLD_4",
+      "formal_case_index": 271,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|a536f395eddb3495d4bc034af7462f00cde6f178966062c718bffbbfbda0295a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|67706c723672c6b4321ff9955a5258812f983d056f920bb03a077595b5839281",
+      "fold": "FOLD_1",
+      "formal_case_index": 272,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|ffc66a465f5e7477338d0ec91a9ca398d9f97a8f1d185375d350f1da37c8b0e5",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|02af8fc8fdaaf157851a8e83e4ddea5dc9b0a3eccaf84d81548cde087cb7e597",
+      "fold": "FOLD_2",
+      "formal_case_index": 273,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|b0083ed47fad3ba011714d58743ac27d4e555a1bc1c3a264ab54ca9f25475708",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7b90ef57ac5adea782ed77f5e887b46fffcbc0351907cc461028126f8ab6fc1e",
+      "fold": "FOLD_4",
+      "formal_case_index": 274,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|5e9ed7e7992098335286887fc28dc74c65179f809d7ebcb0974686b485d87ef5",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|52e563007df892f6b76bbc75c21aeb276c7e4d0b2807ed33565e9f86e05d59f1",
+      "fold": "FOLD_1",
+      "formal_case_index": 275,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|029db7a09fd8c3be7a03c372ed294b10d86d8d762315a945c1aa38fffb4b9827",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b8b13c949eefb1514f92a32c389f0060d206fe61636418ca1f030fb80cc7efdd",
+      "fold": "FOLD_2",
+      "formal_case_index": 276,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|4eed79d7ce3519b421f5e5a7cd8b681b1eeeb60660b92b9e3922d746b2abda4d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d7baddfda5c54a4c4ff069be3e1e83dbf082ca07f6dc2425782c46c7d00ac332",
+      "fold": "FOLD_3",
+      "formal_case_index": 277,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|96e26c47690f5790292d8ad3ea3b5592d7f3d61557d539aea4d75b0371e28eb0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0def29614b9d20cfb940c634f7bff4563c4989274120407c47498cc816fba779",
+      "fold": "FOLD_4",
+      "formal_case_index": 278,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|6ecfe08712c7987095b63b2c83e1278abe75a21865402f08a7df40cc935652be",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|bb37b54ce9715ff2188cc1411aae8ee90ffb5926bc3a83eb62c6a7fb3b69ceae",
+      "fold": "FOLD_0",
+      "formal_case_index": 279,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|d4f68a83df8f903233a97428021aad2227ac2754458daec5555ddf18d36e49e0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|19b86a814a12cbccbf76cf98086b20d9458cb7a21e11419bac7da092aa392be5",
+      "fold": "FOLD_5",
+      "formal_case_index": 280,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|5e8352447190e9570f3f02c20074295945ff5785077bfaa34e65c199dff35f18",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|29ed2b7d4218df37c4a1baacbb6f1fe4237e5da21b59e33db5f6dced7add0a59",
+      "fold": "FOLD_3",
+      "formal_case_index": 281,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|595119c7cc0ec7c531ef4464e6c1ac88eaa3c3416ae83f7c2e98181d3334649a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|436a7477bb9dcb0244cd85ee9f71487eb2bee4f35f88ce2019654a9be0f93ad7",
+      "fold": "FOLD_5",
+      "formal_case_index": 282,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|3a2ec6cdb80f15b0abba6e821ee7bffabf501cb563f72e83d629ebbea26eaae4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5e6f2c9406458bcc493fe3e1f5494a0c8c4ce326d8fcf58ade0a7a2af31fa202",
+      "fold": "FOLD_5",
+      "formal_case_index": 283,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|217e266af000a1c0a5576613694107a41042f540a4a4374cd6d3a4ab6654e690",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|23fc563faad27dce4fa15d151f1f8c48115f2d5dc322b39262fbc27ec4791372",
+      "fold": "FOLD_3",
+      "formal_case_index": 284,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|e1c34b18f58d7870dd8e7f7ce56260fc9b3e5c1baca800d76a0f3ac04b53af57",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8f96460f5e25434ea38efc75b2a38eba48ed159ccc71195a9890899219539f9a",
+      "fold": "FOLD_3",
+      "formal_case_index": 285,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|cbc1a9c0245339ab978759a75e5c70219279a7977cafb11a7b60309380844ce5",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cbed4358f17d41feb1bad8e60142ab2d377e7c9b6d8c4d778086a9debd05b89f",
+      "fold": "FOLD_2",
+      "formal_case_index": 286,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F3|24ec4e5d3868933a60e4d58c89035c16ef5b4cf431a2d1a9892623e394553339",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|871a8093183db768422f4cf271a48d4f872a86e341c68efc072aad87969f26be",
+      "fold": "FOLD_1",
+      "formal_case_index": 287,
+      "macro_family": "F3",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|515ef158114ada96158ce902fc5a0d546909df411a6e9669446dd654951533d6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 288,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|975f052b9a8dbac7096ed334421575b4b2c497f57e46024be6fddbc08da7f90d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 289,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|c1afda2bb532dca3271efd8ddbaaf53f47e99c638463e4bf5c23b0c7035313b3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 290,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|be6820873a519d280adf903dfa5c8a5c371368e6bfdc34ef231de5199665e9a6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 291,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|1243f4abff41556eb4d9dfdf0307390ca0d2ed4a8c22950f470f6e5750763233",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 292,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|53dbb4db8fd6a698354ef65d787f6ef1280e1fbc6773bf1c0cc63c4fc1c6cdf5",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 293,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|b33ca6dd4f6cf604f8e52e6f9635ba8cedc3046664863dde7acceb5d0bfdda5f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 294,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|7074fb550a3b532f2d625bdf298e6e5a8769645ede8d1587997a5703a315d2bb",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 295,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|8bec9ab46d369b1fe0e45403e59c62b02cfb6f2c491d453645cb377c73705e86",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 296,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|bcd4e47ffdd1d80d2a3bfbb82bedb7afdd3cfb3c93c90e9f296e67f3d4ed1a54",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 297,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|992f85a4ec29e21e99571ae2e1e087081e5e979be1064d48ed6a959570c353a6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 298,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|18b1dc438c7cfb3b90b1d52d926e280a9f3c8c9a85a364c8b61277a09fdaea3a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 299,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|aefcb74fbfa13d8b431f3483bab20411e836d3483205f0c4817c74ec9eddb976",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 300,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|0c41f79aaccf0766e8462b1049327d14d437ac090b7c2df30262dbb8fad33568",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 301,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|b601976d154f461d7b10277aedfdd9d5f0573fb14851c9d2539d41c59848ef52",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 302,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|834643ec7e0157f014e3a518eba6ce23f21d8e31b13a20c35480611ea28e28c9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 303,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|67d2e6b735594e4fbc4243b2f95776cdb98abe7b0b5d7800d857dbc491cc3e66",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 304,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|d08cd2eb3c7acbfb5685b30b0090badda9dd807661774f1293ec0d459ecd6837",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 305,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|14305be74072f767f96679857af6cd75fe66271a409a3f8686e8860b4b1f0fb9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 306,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|3786f069cc8f9de73dc429c787a430a60a50b5d1561ce97f903887b963484e5b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 307,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|773899c25d176ee4b66bb54f1377e18d9a10e7bda7e89e3c9a49599945c18c8d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 308,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|174ed960dfc6d1562417cd30f81ebfe25b4f7d875aca1ad53b2cdfb3a4fb6bf0",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 309,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|7ee88a73cec054a29edde172d02d3818bbef021b1be9a141d488ad57a366603a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 310,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|392532ff1d1e0a8043dc8d911c070004c33b62da19a1103ff66e63898b724893",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 311,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|9ceb65eaa0d75c9623676bbb0a6bfae805a23721e742762f564aaa726133f0cf",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 312,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|b15150ff6c0d5f96bd2901ea9740ec0ef058a1860f44b86551f3a4b06e7a97be",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 313,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|34dd439ac9b5e39de635499c599e5b3e0ec22eb7375dea062e72dbb58f8dc87e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 314,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|14d2a69f58a6fd91397d31978e27fa4125a0fbb2da62ff1accaf249c4a390dfb",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 315,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|8f9ec4e0a45555002d738926a628dd7855cf7ebbd87ae76f65cc803eea59b537",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 316,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|e6fdd77115b827f6e88a3aca37ce8cd361b1b00abe3a792726daeaaa622cd189",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 317,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|f27f7d5747405486686c32aee04743cc7863a2677541693eb378ea031a7850c8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 318,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|afba0e0d5deafa35d0175f678d7512c9a8ca6e891b753dfffe8d24d8306d977b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 319,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|45120e6b2eabee72e0743a6139ffc2835c70130c7629ab561bc8c6303acf9bdf",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 320,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|c9dbc3ddd4f353bd08a08b95f1e35ffc8b4d05625974429f2582e1ee29ff1ff4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 321,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|a9022453a0f52a46b659fbace95f6f491308c38a397ee2d39f38a67e9ea207e7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 322,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|b16589ab1ad76bd2d0d0c4b9d974b27fde5f0074bc5ecf5882ecd6db2a5c940d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 323,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|136227a7d75a68cf7ae9c1cc732e549f5682dfe8e01b220b5656c6a99e20b402",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 324,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|b5ff09ed790df9b0b3b3a4bde4aabab90a3102380e2c9c23b1833a6e6d5b6a42",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 325,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|9c3b447555e2e78cbf780e38ee32e65135e2cc09fd26646fe9299277dbfc714d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 326,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|19fa026cdac79b98464cbca2067b6c0c5918343aba7d3f6b3809330fad93e474",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 327,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|59a087c6c06f576707eabd4d1ea05f5f99ed12bd0ad6e2fed8a9acaac4b510fe",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 328,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|721a2d5ce3bab76170fdf7f490031d6f30945794d12807d18e2ad67be79ceef4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 329,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|452c65d195c7484270e4008a6f4c3f65625ff1dfbed3089a94495ba8754bdf55",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 330,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|a8f70018ad2793592cee6365d1511e42c065829c506de5f1f47be9d544754521",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 331,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|ab0e5273777e054d1dc229e56f02dcf9d0a3576f5739715831d9ab64b60547b7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 332,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|1b545599819ca0421c6806e567ec09927e32f55c09fb9dd6ca9a3ec06c2203f5",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 333,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|a4e93572e5bd9b3219c2da4f049349b7b935e6306bb43ac0c832c692377dd5cc",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 334,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|efaf7cc6c8efe6aa8f44198dc52ef2166ec6f441d02380b67ed9bd8653f64e9a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 335,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|2be364f9a7ac3a7c2d580af0a2ae81ffb9e40d15a5a3a781e3d6b201708ae3d9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 336,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|bc36a0983469a95153e5074a990c62a353b421aaefc6ba09b47c4435e2e7198b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 337,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|22f1390a38e88389377963a2345f7bbb028a264e785bb7027b7e203a9477d579",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 338,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|935d3e0a1c121539a2200d3a5c08426996ace6933c59f24f0478e069b8258e6d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 339,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|d453413fb6ed7846b49edcf67acbe215cf2d4c639f8fd99d930ceab0f41c11a2",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 340,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|e0458fb85853e1441e4843331ef56fb85fb40dac492fea3d52f18a8bafdc410b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 341,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|82212d97ac365e31f910fd7974f4dd46324444204f459694d784ad02fb856d1e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 342,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|cdfe71835df229f83661b0356857bdb13342c01719f561d71718f186dc267d3e",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 343,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|6c338ed3b3cd7b2df3cd7895110560ccbf6d85457ad39e723599912557a9f04b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 344,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|a198787d6cc12169307dcb26cc2f672a9db79d509d622b719be1e6268fa98b03",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 345,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|43d5561e3819c8f3c4daac6e4ffaa319e8858958bc45e31c71573f4b5dd03fc4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 346,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|d8b50c425204799540145a3f5be5f9fbbd775aa4f2ea750eba99840a3e452f13",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 347,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|dfac2693b6005e52fb8ed97f26c0879ce87e107daca6280b2187d258969e5a39",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 348,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|6943a17719c5f3838c862e6dd7c7ea94f2e288b11b851eb2babda3088b221250",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 349,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|6815fa14cf492f638f966c621c85f1bada68df4d17ffb4960122e6e711279806",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 350,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|bb8afab4e26e94ddde60e34d6af9dd8655dad490b30ccd0c5e44e4da357ab84a",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 351,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|e46d6d9da5882967b824ece890d6b50108cc1d03c1f6780232fb453de77016e1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 352,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|19faf3c3640e35bd056eb32f484234cfb138a091585a4453012ed9e91eb63caf",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 353,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|f1c267b2f61af0556a40ce4bbe9adbcf7d1fd630d7a364ef59317ad12f6f7ca5",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 354,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|2b111cc019f6eb4dd6084e44909c8d0bd8bd3dd3a4aab397d601a9d755a54191",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 355,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|4b1a14490aef66795bf843ca0c67c79f0329af7632a4cc958c268ec81c7b1bb3",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 356,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|8bc9d5997b7e23920956812edcf6f62f816b3ce57a13c4d3be62ab4673946106",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 357,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|2cb8a21eb79558df929f28c72e6f21e7496b8dfe4d1520b7e20acc85afef4eb1",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 358,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|7250b29c3bf30c25de09a95f4199bc6229b1690f7dab4a75660f701fd0744b32",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 359,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|c4a09ef8b4e70b49510386a7e4fae7562e9c5de9ac57ac40d2ce835dfa4b6e9c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 360,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|cb3c868bfb48cfcbd50939809c0256a959bfc20e6320b58618179de0997e9d23",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 361,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|badd7f6442abe96e0bf4b4861555e2682d60865ad46a333b19e07734ead73a3b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 362,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|9215f21d4620fe3cdcb7c051e423cc36a10df171607eabadf6b1bba4dc6540a9",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 363,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|7402647a6b9dce9cdc0ab30870fac0f2f91f2e0b28b4a78007766769b0f46bf8",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 364,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|37b67d78f9324ed1dc519c93b90bd0faeb445112043efbdd77467c8c60f481fd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 365,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|a48d22ad30e6d223688fb1dc587dc3f921fd65acd7d8df7bfc88cf225c4a9855",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 366,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|7c8ebabf74f190ae924f23c49c57458cfa087c1433b093cdf75fdaf8684dc3a4",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 367,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|d778b6c5b3244c1bb3b8de532c7c230c1cf103b653eff7703140cb5b323da306",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 368,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|7ac3d599a1e3b8890980ab6412c95861599490a757067c8ac96e9695a179b09f",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 369,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|6f59ff1cb3abae2d098e959505fda3c6ddcb7587d5e45277930d3dc0917a24fd",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dde042aacf54c0e2884d477225a84e015a520dfb7cf3f7bced6e28d0613a6e18",
+      "fold": "FOLD_2",
+      "formal_case_index": 370,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|bcf9aa17a2cf762ae7973eef4238d1e05efa86cd42494d1436b67725ef5391c7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 371,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|d544ea0e1dc33dcc4e4361bacabf551d4ce373d988452ebf2fb371368c71d536",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a34ef014a4ae604b30bdf8b14d376af7d0d5683686d9a437b64a8afbce868c4a",
+      "fold": "FOLD_0",
+      "formal_case_index": 372,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|4c0630de7f144a227fe956d8145a1d9b246e1a8677e3289aa7a5f16523c6d6cc",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 373,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|35c812d26e28e466539a911ff3cef436cbbde914f9e88c0505dcb07fcccecf77",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 374,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|7a667a45d85487143165dd75c32a19f7a81415c5dc5ce2eee86b2640ec274a4c",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 375,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|2400308127629ee0554c4d5f5de07fbc0f4719175a844be05c11c95facca189d",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 376,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|f3c900d651ee45312402f0c38b699b0e894d430942eddb899f1911290a6330a6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0359f46c408fd87247eb896fc367769effed487db995ab5a144174833561f0d8",
+      "fold": "FOLD_3",
+      "formal_case_index": 377,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|d99e23e60a2a8f3d8caafd8e411cd69a3f73dfdc3c07f1d26554a146832b8dd5",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 378,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|75d26f6a80de660f5bf8f24137463e5d9a0a6f947d84e44c7b9b584b9fdc9bd7",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1a2dcff7254dc1227c107a21e6a270581c668c6b769441a6ba923b276c0065b8",
+      "fold": "FOLD_1",
+      "formal_case_index": 379,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|d298d942f322cf953ff6601dc6d1ab4d010145ca276761ad687afb5afc431655",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e5ad8e83683c026df084dd73fda4da765338e98bd6f7dca2281b9cebe9adc8e",
+      "fold": "FOLD_0",
+      "formal_case_index": 380,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|30843dc561032e5006c915f4a81699076bed45d5e8ab3ab9368230217c32d11b",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8268be7cec0b9c5a4eb497ac38e8418f7c656992a0ff2d13857d85dea7ca362a",
+      "fold": "FOLD_4",
+      "formal_case_index": 381,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|4e48b2dd407c5795509a91d60a060e6c273df3464af87b8a4552b4bae87e8c43",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e26d6593c1617ff39509555baa333fe5d5138efbc841890b1dbb85905103b037",
+      "fold": "FOLD_5",
+      "formal_case_index": 382,
+      "macro_family": "F4",
+      "particle_count": 576
+    },
+    {
+      "case_id": "MSO02A|PRIMARY|F4|b00849048c59b9dd3ad9797ed7d9a040a71ad79cb67d0ffe05572dc567141ea6",
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|33df3171ad1652627919e731cf9215ef8e1a314518342dfafccaf525480b89f2",
+      "fold": "FOLD_1",
+      "formal_case_index": 383,
+      "macro_family": "F4",
+      "particle_count": 576
+    }
+  ],
+  "fold_count": 6,
+  "fold_equal": true,
+  "lineage_held_out": true,
+  "schema_version": "1.0.0",
+  "ss_ms_identical": true,
+  "stage": "MSO-02A",
+  "status": "FROZEN_BEFORE_TARGET_ACCESS"
+}

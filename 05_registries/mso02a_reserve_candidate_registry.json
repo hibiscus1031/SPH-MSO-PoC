@@ -1,0 +1,5699 @@
+{
+  "case_count": 128,
+  "cases": [
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|a069ba53a4c0074e4d60daecdb4ff9ce80e4efb4c908000fd097fa6c3f12ae9d",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 0,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0a32fba3ea82dcaa1e6ad56e47b3c89a8f398fcf8308ed60aa866a963d56a609",
+      "field_subtype": "single_mode",
+      "generation_order": 0,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|57307516328b9bde2e34f837369683657ba43f3a988fb87acc935ebec7b7765d",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b2215b45075883ef1d1e66290a1314fb6045849972ec8cb2659c21eb7a67cf47",
+      "field_subtype": "single_mode",
+      "generation_order": 1,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|f221de13f42a2bb98d606368ce308a4f2cd4c19556eb2d2c15e57f59b873bb27",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d42f9329fdfb7f031b0fe816facbc0098c05892fe04149f4e5161ae9fa85f6f9",
+      "field_subtype": "single_mode",
+      "generation_order": 2,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|191d99a5bf921aa5afec07788f1d11039bbef02c54389c47eaf25b2b5b312a7e",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4566bd5aed64fd9da87b6c8453630b31177db20c94d3e744ca4a6a2d794b031c",
+      "field_subtype": "single_mode",
+      "generation_order": 3,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|7daae3c0deca4f14d190339ab0d80afb9d781b8b4d96888b13ce47953e02e63e",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 4,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|39c2f065162a4159f65ccf81caa9b987c43aa332af9620ad2e9abc8206a3126f",
+      "field_subtype": "single_mode",
+      "generation_order": 4,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|68f0ccc0244c9df1dc0d82ed3fa1ee3c5066e69058344101498de0c5ffbf5e6b",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 5,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a8f44dfa8374892ccbff71b3050736c4da060b02e97f7159545a7f8b4450c29d",
+      "field_subtype": "single_mode",
+      "generation_order": 5,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|09b7e77a222eecbf9d59df1e9375dddcf09cfc2d4315afe5fcccc5228692a65b",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 6,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9e55527e8bba2ef7402a45948a8d101befccd2154ee5dafeba22affeafb92aa4",
+      "field_subtype": "single_mode",
+      "generation_order": 6,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 24.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|b35a81d257fb5735f9c41bd280c8d314c46437fc8d79b7b85aa758dbc2808325",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 7,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ac7f1fbcbc3fb2a84ee9216898f834c10291d17a5aada6ba87347a592dfeb7bc",
+      "field_subtype": "single_mode",
+      "generation_order": 7,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|14ff044e1a9f8cae7131e60d981f50965c62e0b51356ba3a22ef0119af453519",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 8,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a4a8eebce922bd196966e5df9b0609de8fda857c5a57c7d6ec8ac17feb6db19c",
+      "field_subtype": "single_mode",
+      "generation_order": 8,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|fedd0e8ecc657094cf6cc4222eaf4cf2ef4e9daf53173c10709eddf9cc623498",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 9,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0354a9234e10a71db32ce30d8410b31b273721895c96c5cca64424ae3be8b3aa",
+      "field_subtype": "single_mode",
+      "generation_order": 9,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|d4a6b1d51e3674d2e1b53738e3b642b93030cf81f532f0673c055b23a9940d76",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 10,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0c2b76a0fb4b4b83be516b44975c97ce115cacf829ffebe677efe580c2da6322",
+      "field_subtype": "single_mode",
+      "generation_order": 10,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|ca343464241438450bcf888f747a8201bddf0d2a91058026e07c65631c4a543e",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 11,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|ee13ddc027ffdfe0ea8c189f69ea08d65649f1dd4eb1ac32820b58edd17ed4f0",
+      "field_subtype": "single_mode",
+      "generation_order": 11,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          0
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 24.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|60b69654385ce589550175a85d804f47d1efbce5f3cbf49771481aa85a047cfb",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f7965116b8ce96c865c41af5b076aa6e1b83ddd1dda0640013eb55b48f992024",
+      "field_subtype": "single_mode",
+      "generation_order": 12,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          0
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 24.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|f74368681796bd82edfbc31ebf152c86a54c4b05b57673758e257697f20b51e7",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 13,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|204a2ed9ca044fa2b99da6e1bd71687b55678df0335477e5aebe143c7c885cd4",
+      "field_subtype": "single_mode",
+      "generation_order": 13,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|154068112aefee1e14375ed05c9901a998c6786254f9714e7f037b505753e708",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 14,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|dbcb265e832eabac351eeb265a4b9eb2048c822538edab9cb7817ee19eb6e621",
+      "field_subtype": "single_mode",
+      "generation_order": 14,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 24.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|88d3d4f9fad9ed271ecfb9dade2b861df49afac56b7ac5e8de7134ec91568c85",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 15,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b97c36ae2d720908a47c1dc7559629656c4028a179244ac8071a22d749d49aaf",
+      "field_subtype": "single_mode",
+      "generation_order": 15,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|17dba3f1f608e0d4721609c14a8e16112c3c0bf817b1110718645d17ad019fbe",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 16,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d91fd0d22b8ca928188301762d69d730d0f5525f34cd102f68b6027db1715ade",
+      "field_subtype": "single_mode",
+      "generation_order": 16,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          0
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 24.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|4e6e4b863ccc4a0b0babbbb06a049045c5295d750c0b6d98e9d5bdd0f25f9b39",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 17,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8e26bfd3c5e68b6812024dee2802f1e7524f3a477fc85121a7b296b05be37f69",
+      "field_subtype": "single_mode",
+      "generation_order": 17,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|d61c4d8335896b655b76fc87aeae9e8c7b0536fddd8724a600e2273b73536f9a",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 18,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6bbbe55e1e11cd4235c77efda5a5cfb62adc030f6f22bc7bccefcffb8b486467",
+      "field_subtype": "single_mode",
+      "generation_order": 18,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|62655d55e10f060ae51ee1096564839920c7d0b6ea4e88adfcbf6a79abb0689e",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 19,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1605847b435ffd248e0e16332bd73065797ba0b3a85d4dfdbac5a4bc8bcb934f",
+      "field_subtype": "single_mode",
+      "generation_order": 19,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 24.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|c693544b7d7b5406c16fc5df6e5af479974907604b17e5939c6924695b1336d9",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 20,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|38ab3c876df1a1d8d318d7e53bc21cefaf113a27898fe24f2ab3a170292ee465",
+      "field_subtype": "single_mode",
+      "generation_order": 20,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|65c1f150db173b509180839908f05765d05fb850001159dfcc5ba66b36710083",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 21,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4e309c36704c6bcba3ea0f916b293601b7749dcbd55c458e8470353d26427410",
+      "field_subtype": "single_mode",
+      "generation_order": 21,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|338efa306ee51bc1b521ba72aae17f459e878ffce032dd751da0521c9dae466c",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 22,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9f08dc0f81d8351582617b1b7a1e51f4f351c459c3c373196de4053671ac10af",
+      "field_subtype": "single_mode",
+      "generation_order": 22,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|fefea1ef465979de8340d6c73a2a457da31c95e4240879f595bfb07d7f5a6887",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 23,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d1b754a10f028de3beca3fc37ad110f67dda489f36eec1692eda71d47ffcc2dc",
+      "field_subtype": "single_mode",
+      "generation_order": 23,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|2d0bc865cb82ec2c383e821550bf0895d961f7283dcc221819b0ffa08811d8f7",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 24,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|54818de442f98fae859717a06d33fc7d00528d8eeb2caa87c96a743faa957759",
+      "field_subtype": "single_mode",
+      "generation_order": 24,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|1ab64c4c57814bfba63b1756bab7d4bf7a2c6f221e2e4866de8f77519bd8fb45",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 25,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2e60ac8163bb24deceb3106117726627ad5737228901668d178fa3afc49d07dc",
+      "field_subtype": "single_mode",
+      "generation_order": 25,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|0ef34ee83c85f30882cba7e770a492b4631e9cd0c116bf454598e577aa700028",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 26,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7bf466e01b4452b963567b9fe8ff982754e15f5a11ccfd553d7a678359069318",
+      "field_subtype": "single_mode",
+      "generation_order": 26,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|b966b8506cd8bb11d915cf48b0b7cd1352e9831c6a37320eddd254833eec2016",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 27,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9a69bb0512e6ece175df33e019396be667b7fb1696f54ed962dc7009e7e98ebb",
+      "field_subtype": "single_mode",
+      "generation_order": 27,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|6835f66afd3161bd8f46c098d4273fe474aef11cc27f1e3307105095952505f5",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 28,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|374af59f3c018466b20007f616363d0449dfbd1df6328c46e91a56ca20f88444",
+      "field_subtype": "single_mode",
+      "generation_order": 28,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|8cc45c6fa72115e4a0d8857cdeaa88385def9886041ea6146165071fad4bc3af",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 29,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9a69bb0512e6ece175df33e019396be667b7fb1696f54ed962dc7009e7e98ebb",
+      "field_subtype": "single_mode",
+      "generation_order": 29,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|31b18f2e4923444290f46645e1ccfbb184923f7648e054e4ac673ffab234c456",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 30,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|8ad5b606a9fcb44e28b4673fa1b3d6a43969e9a74d000a5b50576286ca517ab0",
+      "field_subtype": "single_mode",
+      "generation_order": 30,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F1|39351fe12299811afd22e1b248a6c68549b2e6dfc029a4cd1053193933d173a7",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 31,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1bdafc0ab522f69d40ab2fec37c0501d79bdc1139c1b5ebb7562c656b12eb181",
+      "field_subtype": "single_mode",
+      "generation_order": 31,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F1",
+      "mode_indices": [
+        [
+          2,
+          0
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|21bf0b9e954f34f112c2e2b28908ecbc5538e580ab79d91f6e92ff07785ba89e",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 0,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|27a990f3bdc23d1ebac125a4fb02d4e8a7b44fbb468f3d70dd527eb5906d7589",
+      "field_subtype": "multi_mode",
+      "generation_order": 32,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|92c78bed0cf1594ed1000a50587efa8b391e8af83cbf6246973b6eafa041a1c0",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|839b4744caca01903d377f834e758369fc902ac9823d72f7d4a5225d98a2473a",
+      "field_subtype": "multi_mode",
+      "generation_order": 33,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|6949cf03031ebc1faf5b7b36ab089f7a5803bd16782c3291b06e9bfe59d13a70",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fa2073afe1077232793dbe442ec7d17fe07200fa65ff9a1a3c4c85f7353da01f",
+      "field_subtype": "multi_mode",
+      "generation_order": 34,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|c628a931fab6a39ea6d645f06de40c214f36625cc0745aa2485b9b1bd734ad0b",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|922653583e5db3a17067924dd7d99f095cfc7390341feb2f587af05ffdc397b6",
+      "field_subtype": "multi_mode",
+      "generation_order": 35,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|8466973b26743a82da613a16fc1fa0589b458a3d4163d7e366a62a43d73d5d5a",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 4,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b6cd41aa78c146588c2fd226a10454eef3f571cc42fa7089dc71d9624e4c21ed",
+      "field_subtype": "multi_mode",
+      "generation_order": 36,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|b8822a5bcd06eeb6e5907fee446fb1dd3de6fb3ba26d0930a8fb790a303a7998",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 5,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fc96fbc00df11527833e71ddf1823d574e8d5c9852e7d5cf05933a9e82fa73ec",
+      "field_subtype": "multi_mode",
+      "generation_order": 37,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|d01fd5d8f924e5aa2e67bfcd185d7c53ee1548a82d4c583124606181280e286c",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 6,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|f7545a936f67eaca43c37a7856e7409304d51b074ba40a1cc29db900f74f56c8",
+      "field_subtype": "multi_mode",
+      "generation_order": 38,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|269795cd6171f8445bf721cde2ac593c15343bf44c5182f3f080990a89f18437",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 7,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|07baf1635a7a58cc286c945ebf2f29981b719fd773c4d60fc924baf9f88e9edc",
+      "field_subtype": "multi_mode",
+      "generation_order": 39,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|dc1d7643b61e7841a0f71fd6f7ca90a8440419bf88e51e44e4f3f0d683696d79",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 8,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|289c08435e630594dbdcf8320ef45a7f1c10f9f36c17ee8593a04709e590986c",
+      "field_subtype": "multi_mode",
+      "generation_order": 40,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|6eda4a6b90255e0471a2e7f45faf32ed254a754f52b2028202fa07585ddcda63",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 9,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|fa2073afe1077232793dbe442ec7d17fe07200fa65ff9a1a3c4c85f7353da01f",
+      "field_subtype": "multi_mode",
+      "generation_order": 41,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|ef3c2c313a4509607bbc4cf4bdb607f789a091f3563d55f52b7978501b9ab167",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 10,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b5829f2096ac6afd41fad0de2c30b89ccf02b4524724b7e1d572c62980d90900",
+      "field_subtype": "multi_mode",
+      "generation_order": 42,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|4ba46053624119cb0d7be4d381d89e93b418be7e27f09302aaed3a5d8ec0fad4",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 11,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b5829f2096ac6afd41fad0de2c30b89ccf02b4524724b7e1d572c62980d90900",
+      "field_subtype": "multi_mode",
+      "generation_order": 43,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|7d9b8114ac6d27fe05bc956815d9c61003bfcb616d0a8a5f9ee47469a11d4839",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5560e5a8b7ace0cc7c9b3b27206488fc1f311a2e0ec070a0580dd58a0c6bbc40",
+      "field_subtype": "multi_mode",
+      "generation_order": 44,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|22e52150481f8641fdb228f1bcc71671a79bc383c40849ad4bb11270e6d58adb",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 13,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|758c323ede243a6d23ac09a90d17763242aa7a8b60cc75ba76b1e5e2615bdb90",
+      "field_subtype": "multi_mode",
+      "generation_order": 45,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|07d7c6997f9e6ceca0d09027fbcbd2bf8113dd01c0bd76d3e92d84ad36b5abc8",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 14,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e8619ccc1a1181e2be447b9768c80058a9bd88cddd998109fa0b558f6f3cfb31",
+      "field_subtype": "multi_mode",
+      "generation_order": 46,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|431f04f621b0352f93a3628f642fc72ee7969a439611cb55f631b020557f9a75",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 15,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5a562a863107efecf761865e7ffe780f0278b7371d3d2b047494c2cd6157c2d4",
+      "field_subtype": "multi_mode",
+      "generation_order": 47,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|fb9e0e20da2a8207de70f5308eab85b9e22795edd14ff965d893e4c5652e1cb8",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 16,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c9effaf9f8d99dafb4339357104e580526691236671870d679eac7675878cb14",
+      "field_subtype": "multi_mode",
+      "generation_order": 48,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|da4a979a55d3560d7f4140240ded19a571c7bb1d2344e435026d59e04aa3b10e",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 17,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0320f8ef87ed1f8736d89e82a443ef682f59f5718e561c03e4b6024597213c2f",
+      "field_subtype": "multi_mode",
+      "generation_order": 49,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|51640b31290a5c9990d7a7a88efc453bc91bb2a07cbe26e07c625ba58f9b9bf7",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 18,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b309a36217a635499601c6d5fcf8d775e3158d462b9711da0b7e04f052b93fd6",
+      "field_subtype": "multi_mode",
+      "generation_order": 50,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|97c9f83a9adbef0ab767557c800dc109f5032067e600fcd4e64dc1668e5bffc6",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 19,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3a003b5d004e32e97f51a465533ab8153872cb9bf9ea5ee2e00ab7124947fd1f",
+      "field_subtype": "multi_mode",
+      "generation_order": 51,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|94431d055272ffda4e2cca705d000b543a416d9a4c9c069bb683552e584d99c7",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 20,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6f548b1d8a9d1b75d4eed15042c87e57bd79d7e774c4eaf78f88e124da940b10",
+      "field_subtype": "multi_mode",
+      "generation_order": 52,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|20bdbc68be759958054ec892d3328e2a4257afdc10a538dcc513a7eb1f3ba115",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 21,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|24669a2713db5b8cfed2fc3f23eb2613bcd890b0f88956d6add4bd48323a9e6c",
+      "field_subtype": "multi_mode",
+      "generation_order": 53,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|44852ba82ad2c1e289f3275399e2fa929672ee7fdee26c8caf963f67a7e72038",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 22,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a4d2d5816c6ac0d1f4822afb21ec54eb3bd055474946ef0637d312830e525811",
+      "field_subtype": "multi_mode",
+      "generation_order": 54,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|604245aefeecf385cd3acce0fa6b3ca40c5810ef2e6f22cb65858b3ef6f0dcbe",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 23,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c26223ee58f44bcc4bfb9b840b131bac2e22755997979d2a320256dd0e0dc5f",
+      "field_subtype": "multi_mode",
+      "generation_order": 55,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|57826666b368b2be0c44d8a506e2f255a8c1ec5c9c8a2bacf6b1ef8a0b13fe58",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 24,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4713f6234ec42318809cfc211ba32e7b0d49e11cd083f7311eb1370274b9a160",
+      "field_subtype": "multi_mode",
+      "generation_order": 56,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|4fce64dc90312263faccfdf1780991c1045f3cd5e789ca9c11743f1da8525df0",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 25,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e5548b81db30c72336a2cfa3753080cb4cb9e5be5895c02c609fcbc405bb5df9",
+      "field_subtype": "multi_mode",
+      "generation_order": 57,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|385f576eb9787975586441bf5fc740356dc42d365d02f5e40f9e821c165ec658",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 26,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|e5f7e05cfe11767aad886a62ab15609d814f7c303dd5f9f7a2274e5ace2a065e",
+      "field_subtype": "multi_mode",
+      "generation_order": 58,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|85544e195dcc8ca5222e59ff8e54f47b1a66ab465986ad67335cecc214714326",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 27,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b3671e77cd4f2e5c2c644e606b90e01fc1eb6a86a0b0816d66ffb1577caf905c",
+      "field_subtype": "multi_mode",
+      "generation_order": 59,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|0c801827b5afca6e70df6200b043f052763c38585f5cc62e63f47b3d15396604",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 28,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|704d70dea978dcbd698565d64a7e5b76682e47cf045692611bf69da8cdddc991",
+      "field_subtype": "multi_mode",
+      "generation_order": 60,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|20f2e68ff4ddfb7c1f4338b95f049bed1e583004f1343185cfb37a888e971621",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 29,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|bf259535dd40004c6043754406b8958b995d81fa2385fb02351ac27ad2013fbc",
+      "field_subtype": "multi_mode",
+      "generation_order": 61,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734,
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|d2dd19c909b74bb74f8e964b40169f799b6f5306e0e88bac8423d9e5254cc0e3",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 30,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c308b4e689e06f6fd83a430c441fc6ddcf226b43bf8d5b7a30004c080cd808b",
+      "field_subtype": "multi_mode",
+      "generation_order": 62,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 12.0,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F2|3f7c8f98ec0f156f0bd39de7355da659f890bb8189deeef3d52946795f87469b",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 31,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|eda651c3c8efe4e2ea4b8838194869a634b3deb1254a8b504f2a5af52a31bcfa",
+      "field_subtype": "multi_mode",
+      "generation_order": 63,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F2",
+      "mode_indices": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624,
+        4.794883234544771,
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|67fd865aa298c42d20be559c508ef7d70c36839b00371b4917a6cf07bda9e65a",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 0,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5a3fa3e54ec35fb9edf60a1351bb66c44f2570f61989a66442a4ba973858d6b3",
+      "field_subtype": "single_mode",
+      "generation_order": 64,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|40c5aabf69dd0d7575d68e75c4d9d3582ba2c8b7ca4b1115c7d583444e2be489",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0def29614b9d20cfb940c634f7bff4563c4989274120407c47498cc816fba779",
+      "field_subtype": "single_mode",
+      "generation_order": 65,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|2f6e14727ac069338cdcc03ff741cad2c7a1740ff70f222cc65cb20e0da428a3",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|871a8093183db768422f4cf271a48d4f872a86e341c68efc072aad87969f26be",
+      "field_subtype": "single_mode",
+      "generation_order": 66,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|773df2c1b63d260cc9da88dc9d7d4257940f8d09ac9f20ee8a26ec5eb102362c",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5e6f2c9406458bcc493fe3e1f5494a0c8c4ce326d8fcf58ade0a7a2af31fa202",
+      "field_subtype": "single_mode",
+      "generation_order": 67,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|4147c619f0cd770ef5216e10a419b6dffd51f022ba41034ca59b3cf6ee1cbf33",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 4,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|6fad483fb5460038ab781b60288daac213500fab92cffb8e093a85ee8f99ff7b",
+      "field_subtype": "single_mode",
+      "generation_order": 68,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|60656eaddfb23725b887a7e2572b85c3dc6ce538c165d7c425faf2e37486f34c",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 5,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|88e85bccc28f85ca4bdf4dce7857551c935822ffdd790adadf269be9f5a7ac73",
+      "field_subtype": "single_mode",
+      "generation_order": 69,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|0c53ca0710a3245fa2445bbef7dfe34d57edcf7d4fb383181aef01bc6a0dbcd1",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 6,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|b29bf3aa10c9317ee9f3f532f2134bf7d442c94779d98bea7756240ed8d1de30",
+      "field_subtype": "single_mode",
+      "generation_order": 70,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|311f1d30487b33bc7add14ebb21c85c6e159c1a197718e6842ec1c35429ba5ac",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 7,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|52e563007df892f6b76bbc75c21aeb276c7e4d0b2807ed33565e9f86e05d59f1",
+      "field_subtype": "single_mode",
+      "generation_order": 71,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|cbd932cb8bd9675f717b8b5de72e59651d24e5c61ea6e01054984fa239019733",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 8,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a2335fa75fc7b820a63679d655ee408c782720f8d4a600b9216d74280ceba1aa",
+      "field_subtype": "single_mode",
+      "generation_order": 72,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.005,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|631c628490be26bc284376933f9f935de806029678e9c2fa6fd3da2b3a8c82ef",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 9,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|378cdab016606b2770ce685884052943c7c3b3a6297d8a8c5bb9f40163d5bfe1",
+      "field_subtype": "single_mode",
+      "generation_order": 73,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|489637549a2474f495bbeb4e09d2f64d3203bdc626f6b414a6d932267f2bca40",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 10,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|af04b9ae482cb4725b985c54658b87deaa77cd445779eab39bcb1e19b9000a7e",
+      "field_subtype": "single_mode",
+      "generation_order": 74,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|4ee770ac2eff041bdf14ee6bfca6749a8c59c4f5bb5052a1df53563e93223a20",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 11,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2425bb39e453cae7ce854ae0c35ef432982c04c479f5edac68f5c36d7bc6c0ff",
+      "field_subtype": "single_mode",
+      "generation_order": 75,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|9abd9c981ff0ede872c4c2045d6948f953a029d740028d99de3f5b92f45e6786",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|4df74a0c30e223d806e6d4c98c885153e328b50794fb6c5b90852785bfe8e447",
+      "field_subtype": "single_mode",
+      "generation_order": 76,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|23a6c1bebfb601b7285f86f4b7e89f3fda4f6a0b9292bc1c154e501153c75184",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 13,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|7b90ef57ac5adea782ed77f5e887b46fffcbc0351907cc461028126f8ab6fc1e",
+      "field_subtype": "single_mode",
+      "generation_order": 77,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|e4a6ed47ee8790f6ea7f3b52270693f80dff9683bef1051ef5ecfdfe0694700f",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 14,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|544f84317124579e7d4861374a35be8346756b1323e754194384670be5f816fc",
+      "field_subtype": "single_mode",
+      "generation_order": 78,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|b57cdd8122919e8fbedbf0d10dd19111ca0d41cd63d28045f33144b43a668c07",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 15,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c14cf6f5e6f346d741eba1f3c8cc43d188d8befaa6e53e2943eb146e864afdc5",
+      "field_subtype": "single_mode",
+      "generation_order": 79,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|b1433c08c801e1d3176472bf83f2e338b847e7d358e6cea714b55dc81981307e",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 16,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cd92a023be3be6e7e4ea58a0d99676f0d9ef44761ee8868ff2949b5d04c77873",
+      "field_subtype": "single_mode",
+      "generation_order": 80,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|66ec0226900858dc20f20229a287f046a19b998ae0a2f865e976dd3bd72d346b",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 17,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|3ced42bc86cc5913e0df09a01a51708a878c5d2c872a6a5603f96de172f76a6d",
+      "field_subtype": "single_mode",
+      "generation_order": 81,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|afcb19a590904bfdf6db57a330e1b581f494a7ab08ffc65eeacf871cf05be13a",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 18,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5fc303f8a001f6b9f9a9c257c8e74f903a43a02526742e0da72458a66c27aba5",
+      "field_subtype": "single_mode",
+      "generation_order": 82,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|20999a12726b048dd5caf0c5f88ef9b24710bdae92943542762d10ae45809f0c",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 19,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|c14cf6f5e6f346d741eba1f3c8cc43d188d8befaa6e53e2943eb146e864afdc5",
+      "field_subtype": "single_mode",
+      "generation_order": 83,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|d284bff69b4bd0efd2cb902e38924bdb34aa9b02011ba87880e6258481c107c7",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 20,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d54c09507357beed58db47c1c7927ba4afd01dced2d21c4444c0509f6bc9e6c4",
+      "field_subtype": "single_mode",
+      "generation_order": 84,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|509bfd64b324479691932c6ad054bb2c78450ee9f61c99970bc84ec41ee4c7d5",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 21,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a35fcbf18bc18f7537e15fd7089b6436d5167d23bea5ff7ac428a14bad449da8",
+      "field_subtype": "single_mode",
+      "generation_order": 85,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|86a4744caeda5ccd5b5183054dbec279ae3546b10e151a8c9021186719153fe1",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 22,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|5128a4c890d7c50a9efd0785272ab283eeb7a1496a2713d27bafe961b9e87660",
+      "field_subtype": "single_mode",
+      "generation_order": 86,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|d7edb09f460887a5dd899cde5c9da9171f9db603a4ff57c6d3e9ddf2973ffb00",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 23,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|85677c449a050040c5b65b1099e4c9204f28ce95a2912885a82aaa956e7657a1",
+      "field_subtype": "single_mode",
+      "generation_order": 87,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|170e582166b6bb3d79feeac0401bdd43b6bdb070836af18b65a5c5552aa95967",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 24,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|cbed4358f17d41feb1bad8e60142ab2d377e7c9b6d8c4d778086a9debd05b89f",
+      "field_subtype": "single_mode",
+      "generation_order": 88,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.2,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|d77bd8b47c86f3aa05066342811d20dc131cdde5ebb8755b31218fa4766e1e55",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 25,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|91290474094edc8874a0a2dce4bf98d15c5e234f0b5438849c8a0a68a17427be",
+      "field_subtype": "single_mode",
+      "generation_order": 89,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|41ccf15c405b03fc07a348b89aa1e2578e612e5e219cf21434c211300d2f99ba",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 26,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d0fb142191b10c9dee99847b4cb0eb7564b47b0ca551e466695f835f05f07f13",
+      "field_subtype": "single_mode",
+      "generation_order": 90,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|8b1ac0bad0dbbfbe87f54b1e3298b9e4d3a06536853af5c5acfa81f7d20a28fc",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 27,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|57136e5c44d083248d7f1a1028369355e8f9e4e38fed12ea76d80ac252401839",
+      "field_subtype": "single_mode",
+      "generation_order": 91,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|e234e49cb71eed607307a55d7ffd0480fa56888458ee18aa437f8cdb4a1ddbcb",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 28,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|78e79de414b69086270cda1c91dc116a750292ec7abd91b971d65bc5f550b0be",
+      "field_subtype": "single_mode",
+      "generation_order": 92,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.02,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|15e90d46235e7829a6cc55f4fba4101002766f34ff1a18b6d3a79ac919a5bba9",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 29,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|9ee828216b120e27b8b7eedd471d2662a7d0817c1e5752cce6cce2be620d997c",
+      "field_subtype": "single_mode",
+      "generation_order": 93,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.125,
+      "support_over_dx": 3.0
+    },
+    {
+      "active_amplitude": 0.01,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|9d8321a0a8017d20216b803427151828f4cc371d8d5a4b95921555fc48b4d14b",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 30,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|d0fb142191b10c9dee99847b4cb0eb7564b47b0ca551e466695f835f05f07f13",
+      "field_subtype": "single_mode",
+      "generation_order": 94,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F3|d99a12d46275fabbb51542edb01030e7eb4e7eb7fea241ce6332f97bb9c4b52a",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "family_generation_order": 31,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|2c4bc5ef7d44dee05e737c7db40e5925e97ab35fda821bed967bad9332a3aadf",
+      "field_subtype": "single_mode",
+      "generation_order": 95,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F3",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|b0c10f7b696722b5d683068c4605470573ec37fb94aba0a067af60455225d365",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 8,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|1c01550a13f8a2fa4279f9ecd59c205f6a4d00c037e4c09f29314ded936bbf61",
+      "family_generation_order": 0,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 96,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|91a7eb8681c48642a99288644097f010379148a5097a79be9e0523425bc447b4",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 8,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|1c01550a13f8a2fa4279f9ecd59c205f6a4d00c037e4c09f29314ded936bbf61",
+      "family_generation_order": 1,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 97,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|04c39bde8479ce07eb3eeb6f547e448b90f135e353df4a3d09f3dcd6d5d12a8f",
+      "disorder_state_id": "MSO02A|DISORDER|89b5f972400dc0cff9ef881442d3f25ea89bddedb26a46e719e416925b14d762",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 9,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|76552c5cf97af12fcf7fd0fc2cf08305f6a387119f80b54b372882172e550c07",
+      "family_generation_order": 2,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 98,
+      "jitter_fraction": 0.1,
+      "jitter_seed": 2040496423,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.10",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|d2d5a280e2bf5c599d0df238e14d0c7442a50512e05646f41a7b99962a01429a",
+      "disorder_state_id": "MSO02A|DISORDER|c579de0d9d053678c2e228f5e9be4b43aef298ed2e83a2bdbfa5f328689bc7f1",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 10,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|ceb3788efec6a8f0f610510e1fb0ab988b7d8a8bd37284bbd53444f384eaf3fc",
+      "family_generation_order": 3,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 99,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1570581988,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|5b7359993dad461b5f3aa51152bd136f12ffd87dddcd465da1e83138fefba64b",
+      "disorder_state_id": "MSO02A|DISORDER|7c0b21c15c8c8c9e69cbd2f823999957ef560d76d54e02d1abed116e134c3fa8",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 8,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|1c01550a13f8a2fa4279f9ecd59c205f6a4d00c037e4c09f29314ded936bbf61",
+      "family_generation_order": 4,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 100,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1382590812,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|e62b47d543f6c44f53ab3d4cb50980c0587472b930e2dd82fda564798c938d37",
+      "disorder_state_id": "MSO02A|DISORDER|7c0b21c15c8c8c9e69cbd2f823999957ef560d76d54e02d1abed116e134c3fa8",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 9,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|76552c5cf97af12fcf7fd0fc2cf08305f6a387119f80b54b372882172e550c07",
+      "family_generation_order": 5,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 101,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1382590812,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|2971911f9999c8e411874a25f84ace24de42bfd8425e2c3cbffede7b14683d6b",
+      "disorder_state_id": "MSO02A|DISORDER|c579de0d9d053678c2e228f5e9be4b43aef298ed2e83a2bdbfa5f328689bc7f1",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 8,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|1c01550a13f8a2fa4279f9ecd59c205f6a4d00c037e4c09f29314ded936bbf61",
+      "family_generation_order": 6,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 102,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1570581988,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|41a81fe355a01631443003c0ff686d8efec16d719262cc07584b79902e0ca141",
+      "disorder_state_id": "MSO02A|DISORDER|c579de0d9d053678c2e228f5e9be4b43aef298ed2e83a2bdbfa5f328689bc7f1",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 9,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|76552c5cf97af12fcf7fd0fc2cf08305f6a387119f80b54b372882172e550c07",
+      "family_generation_order": 7,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 103,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1570581988,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|a5cd317c6de93defe82b74764fcfeef432c68591425ff8b74291a15c264fcc43",
+      "disorder_state_id": "MSO02A|DISORDER|7c0b21c15c8c8c9e69cbd2f823999957ef560d76d54e02d1abed116e134c3fa8",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 9,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|76552c5cf97af12fcf7fd0fc2cf08305f6a387119f80b54b372882172e550c07",
+      "family_generation_order": 8,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 104,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1382590812,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|a94c0bcda7898332a45497ca55bc1f70e987be67728d4f2045b56e55c2ba44b3",
+      "disorder_state_id": "MSO02A|DISORDER|89b5f972400dc0cff9ef881442d3f25ea89bddedb26a46e719e416925b14d762",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 10,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|ceb3788efec6a8f0f610510e1fb0ab988b7d8a8bd37284bbd53444f384eaf3fc",
+      "family_generation_order": 9,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 105,
+      "jitter_fraction": 0.1,
+      "jitter_seed": 2040496423,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.10",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|194a2340ad656ffea268a1f8624cda21a7cbba30b2abb063697e8476db1d113e",
+      "disorder_state_id": "MSO02A|DISORDER|7c0b21c15c8c8c9e69cbd2f823999957ef560d76d54e02d1abed116e134c3fa8",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 8,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|1c01550a13f8a2fa4279f9ecd59c205f6a4d00c037e4c09f29314ded936bbf61",
+      "family_generation_order": 10,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 106,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1382590812,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|d4d3a89c11055c5da826df7f75f7aa619cff04e1a977a44db87658f641d606f4",
+      "disorder_state_id": "MSO02A|DISORDER|c579de0d9d053678c2e228f5e9be4b43aef298ed2e83a2bdbfa5f328689bc7f1",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 11,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|cffc575fe3a58e4d74dc3a6b57609d9c95a583facd717deac7f463324d9a4616",
+      "family_generation_order": 11,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 107,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1570581988,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|b2aa70ca27cf9bdcb232157e62b106643c8a68f9add6f54074801f3f060284e6",
+      "disorder_state_id": "MSO02A|DISORDER|7c0b21c15c8c8c9e69cbd2f823999957ef560d76d54e02d1abed116e134c3fa8",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 10,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|ceb3788efec6a8f0f610510e1fb0ab988b7d8a8bd37284bbd53444f384eaf3fc",
+      "family_generation_order": 12,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 108,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1382590812,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|89986ab31b1c1ea0627970cda100de92596bce26cccbfbc6a30a7e2ad6067092",
+      "disorder_state_id": "MSO02A|DISORDER|7c0b21c15c8c8c9e69cbd2f823999957ef560d76d54e02d1abed116e134c3fa8",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 10,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|ceb3788efec6a8f0f610510e1fb0ab988b7d8a8bd37284bbd53444f384eaf3fc",
+      "family_generation_order": 13,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 109,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1382590812,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|209bf86ae17d4d768e2829204fe91649b5c2996f1ab4384bb6dd22b99af07a45",
+      "disorder_state_id": "MSO02A|DISORDER|c579de0d9d053678c2e228f5e9be4b43aef298ed2e83a2bdbfa5f328689bc7f1",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 11,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|cffc575fe3a58e4d74dc3a6b57609d9c95a583facd717deac7f463324d9a4616",
+      "family_generation_order": 14,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 110,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1570581988,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|1123ef03da1aca4d021c19448c0cfa49d566bc1434373185506519c43fce5a33",
+      "disorder_state_id": "MSO02A|DISORDER|7c0b21c15c8c8c9e69cbd2f823999957ef560d76d54e02d1abed116e134c3fa8",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 11,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|cffc575fe3a58e4d74dc3a6b57609d9c95a583facd717deac7f463324d9a4616",
+      "family_generation_order": 15,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 111,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1382590812,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|f6ccdc4a7aa098902d14d83da7588cba31646471f2d0c6d7485c2dac9fb0acae",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 9,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|76552c5cf97af12fcf7fd0fc2cf08305f6a387119f80b54b372882172e550c07",
+      "family_generation_order": 16,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 112,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|c09f4090d82319f8140e113004341a69b18a881945c759f8ad3cb994b4119912",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 11,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|cffc575fe3a58e4d74dc3a6b57609d9c95a583facd717deac7f463324d9a4616",
+      "family_generation_order": 17,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 113,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|7d2bb02b3194f1ed9db711135b2ebdb3cafc516a1c2d1784f77e4fad18eeea4a",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 9,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|76552c5cf97af12fcf7fd0fc2cf08305f6a387119f80b54b372882172e550c07",
+      "family_generation_order": 18,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 114,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|2e0ee78c9ea4e790fd1242b531382372b155144bd802e809361d2b53de1c16df",
+      "disorder_state_id": "MSO02A|DISORDER|c579de0d9d053678c2e228f5e9be4b43aef298ed2e83a2bdbfa5f328689bc7f1",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 10,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|ceb3788efec6a8f0f610510e1fb0ab988b7d8a8bd37284bbd53444f384eaf3fc",
+      "family_generation_order": 19,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 115,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1570581988,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|f897fac486b4ee394c24c5b81e616e31de71db0f56299305e7a1ac1b3eee9a9f",
+      "disorder_state_id": "MSO02A|DISORDER|89b5f972400dc0cff9ef881442d3f25ea89bddedb26a46e719e416925b14d762",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 8,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|1c01550a13f8a2fa4279f9ecd59c205f6a4d00c037e4c09f29314ded936bbf61",
+      "family_generation_order": 20,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 116,
+      "jitter_fraction": 0.1,
+      "jitter_seed": 2040496423,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.10",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|5d88e7a69777e5ffef634563f98a1e8baada4b6b1150b367512803df6c434168",
+      "disorder_state_id": "MSO02A|DISORDER|89b5f972400dc0cff9ef881442d3f25ea89bddedb26a46e719e416925b14d762",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 10,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|ceb3788efec6a8f0f610510e1fb0ab988b7d8a8bd37284bbd53444f384eaf3fc",
+      "family_generation_order": 21,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 117,
+      "jitter_fraction": 0.1,
+      "jitter_seed": 2040496423,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.10",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|e56773f0a125e1640c81090e850ca2f818aa2dc571fb57a864dba4419b9b82d8",
+      "disorder_state_id": "MSO02A|DISORDER|89b5f972400dc0cff9ef881442d3f25ea89bddedb26a46e719e416925b14d762",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 11,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|cffc575fe3a58e4d74dc3a6b57609d9c95a583facd717deac7f463324d9a4616",
+      "family_generation_order": 22,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 118,
+      "jitter_fraction": 0.1,
+      "jitter_seed": 2040496423,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.10",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|99cd1b8352d8e8c764e2d7bc21ff6df757f86548eb8c16f10832587b8f0b6236",
+      "disorder_state_id": "MSO02A|DISORDER|c579de0d9d053678c2e228f5e9be4b43aef298ed2e83a2bdbfa5f328689bc7f1",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 9,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|76552c5cf97af12fcf7fd0fc2cf08305f6a387119f80b54b372882172e550c07",
+      "family_generation_order": 23,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 119,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1570581988,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|f4bfd4321e04eda663daaf02ff4491046572176a1ff910cac17a6560dc3c0664",
+      "disorder_state_id": "MSO02A|DISORDER|89b5f972400dc0cff9ef881442d3f25ea89bddedb26a46e719e416925b14d762",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 9,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|76552c5cf97af12fcf7fd0fc2cf08305f6a387119f80b54b372882172e550c07",
+      "family_generation_order": 24,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|1ed6e904490394bce174c396ce5a61254c3b36ff2d3c5d76bbd9021d58b7be23",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 120,
+      "jitter_fraction": 0.1,
+      "jitter_seed": 2040496423,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.10",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          3,
+          0
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 8.0,
+      "polarization": "longitudinal",
+      "probe": "longitudinal",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|4454e47ad3520ec8d35876c60b83719c61d1bd9320ba6e9d6f98926b29a573d7",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 10,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|ceb3788efec6a8f0f610510e1fb0ab988b7d8a8bd37284bbd53444f384eaf3fc",
+      "family_generation_order": 25,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 121,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|8da002cea16b04dcd26cec73a00a1f4064c158d327703985a6df33c3e4e21114",
+      "disorder_state_id": "MSO02A|DISORDER|89b5f972400dc0cff9ef881442d3f25ea89bddedb26a46e719e416925b14d762",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 11,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|cffc575fe3a58e4d74dc3a6b57609d9c95a583facd717deac7f463324d9a4616",
+      "family_generation_order": 26,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 122,
+      "jitter_fraction": 0.1,
+      "jitter_seed": 2040496423,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.10",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.1,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|b8c18b1ded7de22ad035a95dd0c9a05ec1ebc5ef213b200b6ece65574dc4c9e2",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 10,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|ceb3788efec6a8f0f610510e1fb0ab988b7d8a8bd37284bbd53444f384eaf3fc",
+      "family_generation_order": 27,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|a37892a7819c5cbd763936abf6ebaa07ba52bcc7ca9d1736218f1fe628727a00",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 123,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          2,
+          1
+        ]
+      ],
+      "phases_radians": [
+        0.9463914611559624
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|36069c27497b50f9fae81195fca1e4e0fc30e9f75150c9abd9c38b6b837dc534",
+      "disorder_state_id": "MSO02A|DISORDER|7c0b21c15c8c8c9e69cbd2f823999957ef560d76d54e02d1abed116e134c3fa8",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 11,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|cffc575fe3a58e4d74dc3a6b57609d9c95a583facd717deac7f463324d9a4616",
+      "family_generation_order": 28,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 124,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1382590812,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.20833333333333334,
+      "support_over_dx": 5.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|c6eb8dad9c3098849a2e1eef58a33d7e9ae6a3aa350c6ed8fef2d09bade39a5a",
+      "disorder_state_id": "MSO02A|DISORDER|89b5f972400dc0cff9ef881442d3f25ea89bddedb26a46e719e416925b14d762",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 8,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|1c01550a13f8a2fa4279f9ecd59c205f6a4d00c037e4c09f29314ded936bbf61",
+      "family_generation_order": 29,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 125,
+      "jitter_fraction": 0.1,
+      "jitter_seed": 2040496423,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.10",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.05,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|7f64bf16c3e9272aead6ecf405286c8c35e8fd962358d6c3aa6b36b18ee7f036",
+      "disorder_state_id": "MSO02A|DISORDER|c579de0d9d053678c2e228f5e9be4b43aef298ed2e83a2bdbfa5f328689bc7f1",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 8,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|1c01550a13f8a2fa4279f9ecd59c205f6a4d00c037e4c09f29314ded936bbf61",
+      "family_generation_order": 30,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|adcd174356375805b655ee518dbbd61163be6bc6f739a853f504b62a2f4fe1b1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 126,
+      "jitter_fraction": 0.05,
+      "jitter_seed": 1570581988,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "jitter_0.05",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          2
+        ]
+      ],
+      "phases_radians": [
+        4.924655014811734
+      ],
+      "points_per_wavelength_min": 10.73312629199899,
+      "polarization": "transverse",
+      "probe": "transverse",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    },
+    {
+      "active_amplitude": 0.0025,
+      "c0": 10.0,
+      "candidate_role": "RESERVE",
+      "case_id": "MSO02A|RESERVE|F4|442ae58bb617f5524e08cfd9ea90c6481a9750ec57fd624fc61f8b2d60a4fd5f",
+      "disorder_state_id": "MSO02A|DISORDER|00b79c3efbfca81dc3835b28aa39999301e321b7def8bb1dfc899a9776afba19",
+      "domain_maximum": [
+        1.0,
+        1.0
+      ],
+      "domain_minimum": [
+        0.0,
+        0.0
+      ],
+      "dtype": "float64",
+      "dx": 0.041666666666666664,
+      "f4_block_index": 11,
+      "f4_matched_block_id": "MSO02A|F4_BLOCK|cffc575fe3a58e4d74dc3a6b57609d9c95a583facd717deac7f463324d9a4616",
+      "family_generation_order": 31,
+      "field_lineage_id": "MSO02A|FIELD_LINEAGE|0022e1b708612ee28ff0a7fa3291044cebf042d891a981f891b2c7c1a72c79a1",
+      "field_subtype": "controlled_disorder_single_mode",
+      "generation_order": 127,
+      "jitter_fraction": 0.0,
+      "jitter_seed": 0,
+      "kinematic_viscosity": 0.01,
+      "layout_class": "regular",
+      "macro_family": "F4",
+      "mode_indices": [
+        [
+          1,
+          1
+        ]
+      ],
+      "phases_radians": [
+        4.794883234544771
+      ],
+      "points_per_wavelength_min": 16.97056274847714,
+      "polarization": "none",
+      "probe": "density",
+      "resolution_per_axis": 24,
+      "rho0": 1.0,
+      "support_h": 0.16666666666666666,
+      "support_over_dx": 4.0
+    }
+  ],
+  "ddo01d_ddo02b_lineage_overlap_count": 0,
+  "derived_jitter_seeds": [
+    1382590812,
+    2040496423,
+    1570581988
+  ],
+  "derived_phase_set_radians": [
+    0.9463914611559624,
+    4.794883234544771,
+    4.924655014811734
+  ],
+  "family_counts": {
+    "F1": 32,
+    "F2": 32,
+    "F3": 32,
+    "F4": 32
+  },
+  "family_quota": 32,
+  "mso01_fixture_case_id_overlap_count": 0,
+  "pio_overlap_basis": "disjoint MSO02A identity namespace and no PIO F1-F4 analytical-field lineage registry imported",
+  "pio_registered_identity_overlap_count": 0,
+  "project": "SPH-MSO",
+  "registry_role": "RESERVE_REGISTRY",
+  "schema_version": "1.0.0",
+  "seed_derivation": {
+    "concatenated_seed_material": "c00261aac588f8b1f34e0a606259512ea8d45cf3e9cb0a10f40ab0970a2f7d95bf2fad0dfaf03db02d21db30c4f35a145187df557dcd60b26a4e0ee7f5348306MSO02A_FRESH_ATLAS",
+    "literal_domain": "MSO02A_FRESH_ATLAS",
+    "mso00_manifest_file_sha256": "c00261aac588f8b1f34e0a606259512ea8d45cf3e9cb0a10f40ab0970a2f7d95",
+    "mso01_manifest_file_sha256": "bf2fad0dfaf03db02d21db30c4f35a145187df557dcd60b26a4e0ee7f5348306",
+    "seed_digest_sha256": "bc3c60662af1c4f4f1134d4ab7893000fec0ac34bea9154bbfa103349cf53913"
+  },
+  "selection_is_target_blind": true,
+  "stage": "MSO-02A",
+  "status": "FROZEN_BEFORE_FRESH_CASE_OPERATOR_EVALUATION"
+}

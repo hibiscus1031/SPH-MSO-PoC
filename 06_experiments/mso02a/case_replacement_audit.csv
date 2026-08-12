@@ -1,0 +1,2 @@
+family,reserve_case_id,reserve_order,reserve_preflight_passed,selection_rule,failed_primary_count
+ALL,,,,NO_RESERVE_REQUIRED,0
