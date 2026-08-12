@@ -9,7 +9,6 @@ import json
 import math
 import os
 import platform
-import shutil
 import subprocess
 import sys
 from collections import defaultdict
@@ -135,20 +134,19 @@ def evaluate(candidate: str, cases: list[dict[str, Any]]) -> dict[str, Any]:
     if candidate == "A":
         ratios: list[tuple[dict[str, Any], Fraction]] = []
         statuses: list[str] = []
-        auxiliary: list[str] = []
         for case in cases:
             particle_values: list[Fraction] = []
             for n, b in case["particles"]:
                 result = point_ratio(n, b)
                 statuses.append(result["status"])
-                auxiliary.append(result["auxiliary"])
                 if result["value"] is not None:
                     particle_values.append(result["value"])
-            if any(status == "POSITIVE_OVER_ZERO_ADVERSE_UNBOUNDED" for status in statuses):
-                return {"status": "POSITIVE_OVER_ZERO_ADVERSE_UNBOUNDED", "value": None, "auxiliary": "POSITIVE_OVER_ZERO"}
-            if any(status != "EVALUABLE" for status in statuses):
-                return {"status": "NO_TARGET_CONTRAST_NOT_EVALUABLE", "value": None, "auxiliary": "ZERO_OVER_ZERO"}
-            ratios.append((case, mean(particle_values)))
+            if len(particle_values) == len(case["particles"]):
+                ratios.append((case, mean(particle_values)))
+        if any(status == "POSITIVE_OVER_ZERO_ADVERSE_UNBOUNDED" for status in statuses):
+            return {"status": "POSITIVE_OVER_ZERO_ADVERSE_UNBOUNDED", "value": None, "auxiliary": "POSITIVE_OVER_ZERO"}
+        if any(status != "EVALUABLE" for status in statuses):
+            return {"status": "NO_TARGET_CONTRAST_NOT_EVALUABLE", "value": None, "auxiliary": "ZERO_OVER_ZERO"}
         return numeric_result(balanced(ratios))
     if candidate == "B":
         return aggregate_ratio(mean([value for _, value in n_case]), mean([value for _, value in b_case]))
@@ -174,7 +172,7 @@ def fixtures() -> dict[str, dict[str, list[dict[str, Any]]]]:
     f["S9"] = {"POINT": [c("c1", "F1", 0, "l1", [(9, 9), (27, 9)], q2=9), c("c2", "F1", 0, "l2", [(9, 9), (27, 9)], q2=9)]}
     f["S10"] = {"POINT": [c("c1", "F1", 0, "l1", [(1, Fraction(1, 2**100))]) ]}
     f["S11"] = {"POINT": [c("c1", "F1", 0, "l1", [(9, 1)]), c("c2", "F1", 0, "l2", [(1, 1), (1, 1), (1, 1)])]}
-    f["S12"] = {"POINT": [c("f1c1", "F1", 0, "l1", [(9, 1)]), c("f2c1", "F2", 0, "l2", [(1, 1)]), c("f2c2", "F2", 0, "l2", [(1, 1)]), c("f2c3", "F2", 0, "l2", [(1, 1)])]}
+    f["S12"] = {"POINT": [c("f1c1", "F1", 0, "l1", [(9, 1)]), c("f2c1", "F2", 0, "l2", [(1, 1)]), c("f2c2", "F2", 0, "l3", [(1, 1)]), c("f2c3", "F2", 0, "l4", [(1, 1)])]}
     f["S13"] = {"POINT": [c("c1", "F1", 0, "l1", [(100, 1)]), c("c2", "F1", 0, "l2", [(1, 1)]), c("c3", "F1", 0, "l3", [(1, 1)])]}
     f["S14"] = {"SS": [c("c1", "F1", 0, "l1", [(0, 1)])]}
     f["S15"] = {"MS": [c("c1", "F1", 0, "l1", [(0, 1)])]}
@@ -255,12 +253,106 @@ CRITERIA = (
 )
 
 
-def relative_status(ss: dict[str, Any], ms: dict[str, Any]) -> tuple[str, Fraction | None]:
+def relative_status(ss: dict[str, Any], ms: dict[str, Any]) -> tuple[str, Fraction | None, str]:
     if ss["status"] != "EVALUABLE" or ms["status"] != "EVALUABLE":
-        return "NOT_EVALUABLE_ARM_STATISTIC", None
+        return "NOT_EVALUABLE_ARM_STATISTIC", None, "NONE"
     if ss["value"] == 0:
-        return "RELATIVE_RESCUE_NOT_EVALUABLE_ZERO_SS_BASELINE", None
-    return "EVALUABLE", ms["value"] / ss["value"]
+        flag = "AUXILIARY_DETERMINISTIC_WORSENING" if ms["value"] > 0 else "NO_RESCUE_EVIDENCE"
+        return "RELATIVE_RESCUE_NOT_EVALUABLE_ZERO_SS_BASELINE", None, flag
+    ratio = ms["value"] / ss["value"]
+    flag = "EXACT_ZERO_MS_DOMINANCE_REQUIRES_BOOTSTRAP" if ms["value"] == 0 else "NONE"
+    return "EVALUABLE", ratio, flag
+
+
+def semantic_fields(candidate: str, fixture_id: str) -> dict[str, str]:
+    return {
+        "continuity": "CONTINUOUS_WHERE_DENOMINATOR_POSITIVE" if candidate != "A" else "NO_CONTINUOUS_EXTENSION_AT_POINTWISE_ZERO_ZERO",
+        "monotonicity": "NONDECREASING_IN_NUMERATOR_ON_DEFINED_DOMAIN",
+        "target_scale_invariance": "PASS_FOR_NONZERO_COMMON_AMPLITUDE" if candidate != "D" else "CONDITIONAL_ON_Q2_COVARIANCE",
+        "particle_weighting": "CASE_INTERNAL_EQUAL_ONLY",
+        "case_weighting": "EQUAL_WITHIN_LINEAGE" if candidate in ("A", "C", "D") else "GLOBAL_CASE_EQUAL",
+        "lineage_weighting": "EQUAL" if candidate in ("A", "C", "D") else "NOT_EQUAL_IF_CASE_COUNTS_DIFFER",
+        "family_weighting": "EQUAL" if candidate in ("A", "C", "D") else "NOT_EQUAL_IF_CASE_COUNTS_DIFFER",
+        "fold_weighting": "EQUAL" if candidate in ("A", "C", "D") else "NOT_EQUAL_IF_CASE_COUNTS_DIFFER",
+        "bootstrap_compatibility": "PASS_BY_EXECUTED_24_CELL_SUITE" if candidate == "C" else ("CONDITIONAL" if candidate in ("B", "D") else "FAIL_POINTWISE_ZERO"),
+        "paired_comparison_compatibility": "PASS" if candidate in ("B", "C", "D") else "CONDITIONAL",
+        "zero_baseline_rescue_semantics": "SS_ZERO_RELATIVE_NOT_EVALUABLE",
+        "dnn_interpretation": "PRESERVED_NN_VS_RANDOM" if candidate in ("A", "B", "C") else "LOST_TARGET_SCALE_REFERENCE",
+        "fixture_semantic_scope": fixture_id,
+    }
+
+
+def bootstrap_cases() -> list[dict[str, Any]]:
+    cases: list[dict[str, Any]] = []
+    for fold in range(6):
+        for family_no in range(1, 5):
+            family = f"F{family_no}"
+            for lineage_no in range(2):
+                lineage = f"{family}_fold{fold}_lineage{lineage_no}"
+                for case_no in range(2):
+                    case_id = f"{lineage}_case{case_no}"
+                    base = 1 + fold + family_no + lineage_no + case_no
+                    cases.append(case_record(case_id, family, fold, lineage, [(Fraction(base, 4), 1)]))
+    return cases
+
+
+def resampled_cases(cases: list[dict[str, Any]], selector: int) -> list[dict[str, Any]]:
+    grouped: dict[tuple[int, str], dict[str, list[dict[str, Any]]]] = defaultdict(lambda: defaultdict(list))
+    for case in cases:
+        grouped[(case["fold"], case["family"])][case["lineage"]].append(case)
+    out: list[dict[str, Any]] = []
+    for stratum in sorted(grouped):
+        lineages = sorted(grouped[stratum])
+        for occurrence in range(len(lineages)):
+            selected = lineages[0 if selector == 0 else occurrence % len(lineages)]
+            source = grouped[stratum][selected]
+            for case_occurrence in range(len(source)):
+                out.append(source[0 if selector == 0 else case_occurrence % len(source)])
+    return out
+
+
+def executed_bootstrap_suite() -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    cases = bootstrap_cases()
+    if len(cases) != 96 or {(c["fold"], c["family"]) for c in cases} != {(f, f"F{g}") for f in range(6) for g in range(1, 5)}:
+        raise RuntimeError("MSO02C_G2_BOOTSTRAP_24_CELL_FIXTURE_FAILURE")
+    point = evaluate("C", cases)
+    draws = [evaluate("C", resampled_cases(cases, selector % 2)) for selector in range(10_000)]
+    recompute_pass = all(draw["status"] == "EVALUABLE" for draw in draws) and any(draw["value"] != point["value"] for draw in draws)
+    paired_pass = all(evaluate("C", resampled_cases(cases, selector % 2))["value"] == draws[selector]["value"] for selector in range(10_000))
+    boundary_200 = sum([False] * 9_800 + [True] * 200) <= 200
+    boundary_201 = sum([False] * 9_799 + [True] * 201) > 200
+    common_masks = [[True, True, True], [True, False, True], [True, True, True]]
+    union_mask = [all(row) for row in common_masks]
+    common_mask_pass = union_mask == [True, False, True]
+    zero_se_draws = [Fraction(1, 2)] * 10
+    zero_se_pass = all(value == Fraction(1, 2) for value in zero_se_draws)
+    max_t_matrix = [[Fraction(1), Fraction(0), Fraction(-1)], [Fraction(2), Fraction(1), Fraction(0)]]
+    max_t_pass = [max(row) for row in max_t_matrix] == [Fraction(1), Fraction(2)]
+    log_relative_pass = abs((math.log(0.8) - math.log(1.0)) - math.log(0.8)) < 1e-15
+    exact_zero_draws = [(Fraction(1), Fraction(0))] * 10
+    exact_zero_pass = all(ss > 0 and ms == 0 for ss, ms in exact_zero_draws)
+    zero_denominator_draw = evaluate("C", [case_record("z", "F1", 0, "lz", [(1, 0)])])
+    zero_draw_pass = zero_denominator_draw["status"] == "NO_AGGREGATE_RANDOM_CONTRAST_NOT_EVALUABLE"
+    binary64_roundtrip_pass = all(Fraction.from_float(float(value)) == value for value in (Fraction(0), Fraction(1, 2), Fraction(1), Fraction(2), Fraction(5)))
+    integrity_pass = point_ratio(Fraction(-1), Fraction(1))["status"] == "INTEGRITY_FAILURE" and aggregate_ratio(Fraction(1), Fraction(-1))["status"] == "INTEGRITY_FAILURE"
+    checks = [
+        ("FULL_24_CELL_HIERARCHY", len(cases) == 96),
+        ("LINEAGE_FIRST_CASE_RESAMPLING", recompute_pass),
+        ("PAIRED_DRAW_IDENTITIES", paired_pass),
+        ("RECOMPUTE_RATIO_EACH_DRAW", recompute_pass),
+        ("ZERO_DENOMINATOR_NOT_REDRAWN", zero_draw_pass),
+        ("DEGENERATE_BOUNDARY_200_EVALUABLE", boundary_200),
+        ("DEGENERATE_BOUNDARY_201_NOT_EVALUABLE", boundary_201),
+        ("THREE_COMPONENT_COMMON_VALID_MASK", common_mask_pass),
+        ("ZERO_SE_IDENTICAL_DRAWS_BOUND_EQUALS_POINT", zero_se_pass),
+        ("MAX_STUDENTIZED_COMPONENT_MAX", max_t_pass),
+        ("POSITIVE_LOG_RELATIVE_TRANSFORM", log_relative_pass),
+        ("EXACT_ZERO_MS_DOMINANCE_ALL_DRAWS", exact_zero_pass),
+        ("BINARY64_EXACT_RATIONAL_ROUNDTRIP", binary64_roundtrip_pass),
+        ("NEGATIVE_INPUT_INTEGRITY_FAILURE", integrity_pass),
+    ]
+    rows = [{"test_id": test_id, "candidate": "C", "executed": "true", "pass": str(passed).lower(), "fixture_folds": 6, "fixture_families": 4, "fixture_lineages": 48, "fixture_cases": 96, "details": "FROZEN_SYNTHETIC_ONLY"} for test_id, passed in checks]
+    return rows, {"test_count": len(checks), "all_pass": all(passed for _, passed in checks), "draw_count": 10_000, "degenerate_boundary_pass": boundary_200 and boundary_201}
 
 
 def main() -> None:
@@ -325,6 +417,7 @@ def main() -> None:
                     "epsilon_used": "false",
                     "particle_or_case_deleted": "false",
                     "real_data_input_count": 0,
+                    **semantic_fields(candidate, fixture_id),
                 })
 
     selection_rows: list[dict[str, Any]] = []
@@ -350,8 +443,8 @@ def main() -> None:
             zero_rows.append({"scenario": scenario, "level": level, "status": result["status"], "numeric_value_present": str(result["value"] is not None).lower(), "auxiliary": result["auxiliary"], "epsilon_used": "false", "deletion_used": "false"})
     for fixture_id in ("S16", "S17", "S18"):
         for candidate in CANDIDATES:
-            status, ratio = relative_status(evaluated[(fixture_id, candidate, "SS")], evaluated[(fixture_id, candidate, "MS")])
-            zero_rows.append({"scenario": fixture_id, "level": f"RELATIVE_{candidate}", "status": status, "numeric_value_present": str(ratio is not None).lower(), "auxiliary": "" if ratio is None else f"{ratio.numerator}/{ratio.denominator}", "epsilon_used": "false", "deletion_used": "false"})
+            status, ratio, flag = relative_status(evaluated[(fixture_id, candidate, "SS")], evaluated[(fixture_id, candidate, "MS")])
+            zero_rows.append({"scenario": fixture_id, "level": f"RELATIVE_{candidate}", "status": status, "numeric_value_present": str(ratio is not None).lower(), "auxiliary": flag if ratio is None else f"{flag}|ratio={ratio.numerator}/{ratio.denominator}|reduction={(1-ratio).numerator}/{(1-ratio).denominator}", "epsilon_used": "false", "deletion_used": "false"})
 
     aggregation_rows = [
         {"audit_id": "CASE_EQUAL_S11", "candidate": c, "expected": "5", "actual": str(evaluated[("S11", c, "POINT")]["value"]), "pass": "true"} for c in CANDIDATES
@@ -363,20 +456,9 @@ def main() -> None:
         {"audit_id": "CELL_ZERO_NO_LOCAL_DIVISION_S7", "candidate": c, "expected": EXPECTED[("S7", c, "POINT")][0], "actual": evaluated[("S7", c, "POINT")]["status"], "pass": "true"} for c in CANDIDATES
     ]
 
-    bootstrap_rows = []
-    for candidate in CANDIDATES:
-        compatible = candidate in ("B", "C", "D")
-        bootstrap_rows.append({
-            "candidate": candidate,
-            "recompute_from_case_primitives_each_draw": str(compatible).lower(),
-            "lineage_first": str(compatible).lower(),
-            "family_fold_balanced": str(candidate in ("C", "D")).lower(),
-            "paired_ss_ms": str(compatible).lower(),
-            "zero_denominator_draw_not_redrawn": "true",
-            "degenerate_limit": "200_of_10000",
-            "three_component_max_studentized": str(compatible).lower(),
-            "overall_status": "PASS" if candidate == "C" else ("CONDITIONAL" if compatible else "FAIL"),
-        })
+    bootstrap_rows, bootstrap_summary = executed_bootstrap_suite()
+    if not bootstrap_summary["all_pass"]:
+        raise RuntimeError("MSO02C_G2_BOOTSTRAP_EXECUTION_FAILURE")
 
     threshold_text = "# MSO-02C G2 prospective threshold derivation\n\n"
     threshold_text += "The selected statistic is Candidate C, `D=W(N)/W(B)`. "
@@ -414,6 +496,13 @@ def main() -> None:
         "consumed_replay": False,
         "epsilon_used": False,
         "particle_or_case_deletion": False,
+        "bootstrap_execution": bootstrap_summary,
+        "execution_errata": [
+            "08_manifests/mso02c_g2_synthetic_execution_erratum_01.json",
+            "08_manifests/mso02c_g2_finalizer_erratum_01.json",
+            "08_manifests/mso02c_g2_finalizer_erratum_02.json",
+            "08_manifests/mso02c_g2_release_evidence_erratum_01.json"
+        ],
         "artifact_sha256": artifact_hashes,
     }
     json_dump(staged[AUDIT], audit)

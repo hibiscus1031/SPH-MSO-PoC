@@ -8,8 +8,12 @@
   "artifact_sha256": {
     "00_project_contract/mso02c_g2_zero_safe_metric_selection_contract.md": "c89ff65187389bbd5d5b27b0122f3384f6ffdbbe2e1cd41e80e0db2b2e29b80b",
     "00_project_contract/mso02c_g2_zero_safe_metric_selection_protocol_erratum.md": "2d88b5bc92c833127b0c922710f40a895899e0f062eda692db2c264403b7b14c",
-    "06_experiments/mso02c/g2/run_g2_synthetic_metric_selection.py": "ded299279f06c3399026c3303355d099006f79d0166150aee5a46f5fea5061aa",
-    "06_experiments/mso02c/g2/finalize_g2_zero_safe_metric_selection.py": "67201514b29dc866c69dc2b028afc7091e513f2b3edc92d3ce1c6c922bfe20c2"
+    "06_experiments/mso02c/g2/run_g2_synthetic_metric_selection.py": "f63aadd5e77b5fccf200255b8dba9c235dcbb148fcf6c167b27fed2483187d5f",
+    "06_experiments/mso02c/g2/finalize_g2_zero_safe_metric_selection.py": "36c756e805c4dfbe5f6e078bd3ff4d3dd4a63a18517a22ca94032f1c0de8067e",
+    "08_manifests/mso02c_g2_synthetic_execution_erratum_01.json": "6b7c7f2c704ac574e8854a45dd4e3fb454920119f2080633389607043aabd23c",
+    "08_manifests/mso02c_g2_finalizer_erratum_01.json": "e7f16e11ab146200e194b703d3e10407ca43fa3dc8f241805f05ec55accb1232",
+    "08_manifests/mso02c_g2_finalizer_erratum_02.json": "ab387c0e21eb6726db78f57be8674a57cd415c51e596f835d1a5f247883df165",
+    "08_manifests/mso02c_g2_release_evidence_erratum_01.json": "475976cb2af194c3751f8ac246ddc95e8c8812231c0d57244b48f9c638c6a9a6"
   },
   "input_allowlist": [
     "00_project_contract/mso02c_g2_zero_safe_metric_selection_contract.md",
