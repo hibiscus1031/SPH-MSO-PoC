@@ -1,0 +1,21 @@
+{
+  "schema_version": "MSO02C_G2_FINALIZER_ERRATUM_V1",
+  "status": "FROZEN_BEFORE_SECOND_CORRECTIVE_FINALIZATION",
+  "failed_finalizer_commit": "f3d266601bbfcb33e6e36abb8caccbf57cd321c3",
+  "failure_class": "KeyError",
+  "failure_message": "execution_commit",
+  "failure_location": "status-ledger assembly after amendment and report publication, before status or manifest publication",
+  "cause": "A second reference to the renamed freeze metadata key remained in the finalizer.",
+  "scientific_formula_change_count": 0,
+  "synthetic_result_change_count": 0,
+  "real_target_or_observable_payload_read_count": 0,
+  "old_metric_or_checkpoint_payload_read_count": 0,
+  "consumed_replay_count": 0,
+  "partial_outputs": {
+    "00_project_contract/amendments/ca_mso01_zero_safe_dnn_semantics.md": "fec81d9dceeb4edc93b19adf0eb063e564effda81f700ea69174963b75454650",
+    "07_reports/mso02c_g2_zero_safe_metric_selection_report.md": "a0583f288cc44844f8c23d3d813ccef86a6f91ea08b3e7deb84aa4be62d8648a"
+  },
+  "manifest_published": false,
+  "status_published": false,
+  "recovery": "Remove only the two hash-recorded partial G2 release outputs, freeze the metadata-key correction, rerun the same preflight, and publish the complete release."
+}

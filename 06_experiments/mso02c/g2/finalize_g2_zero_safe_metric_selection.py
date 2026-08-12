@@ -140,7 +140,7 @@ def main() -> None:
         "terminal_status": TERMINAL,
         "g1_final_commit": "b6dac26624b9b45912a79e6cddec1c0caa509adf",
         "g2_pre_synthetic_commit": freeze["protocol_commit"],
-        "g2_execution_commit": freeze["execution_commit"],
+        "g2_execution_commit": head,
         "g2_final_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_HANDOFF",
         "selected_primary": "C",
         "h_mso01r_fresh_requalification_eligible": True,
