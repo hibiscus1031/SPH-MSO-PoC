@@ -1,0 +1,131 @@
+{
+  "ATTENTION_AUTHORIZED": false,
+  "H_MSO01R_FRESH_REQUALIFICATION_AUTHORIZED": false,
+  "LEARNED_OPERATOR_AUTHORIZED": false,
+  "METRIC_AMENDMENT_AUTHORIZED": false,
+  "METRIC_SELECTION_AUTHORIZED": false,
+  "MSO03_ELIGIBLE": false,
+  "NEURAL_TRAINING_AUTHORIZED": false,
+  "attention_authorized": false,
+  "component_counts": {
+    "MS": {
+      "density_rate": {
+        "A_count": 2,
+        "B_count": 0,
+        "affected_case_count": 2,
+        "query_count": 2,
+        "query_target_exact_zero_count": 2
+      },
+      "pressure_gradient_acceleration": {
+        "A_count": 119,
+        "B_count": 0,
+        "affected_case_count": 87,
+        "query_count": 119,
+        "query_target_exact_zero_count": 119
+      },
+      "viscosity_laplacian_acceleration": {
+        "A_count": 2,
+        "B_count": 0,
+        "affected_case_count": 2,
+        "query_count": 2,
+        "query_target_exact_zero_count": 2
+      }
+    },
+    "SS": {
+      "density_rate": {
+        "A_count": 2,
+        "B_count": 0,
+        "affected_case_count": 2,
+        "query_count": 2,
+        "query_target_exact_zero_count": 2
+      },
+      "pressure_gradient_acceleration": {
+        "A_count": 117,
+        "B_count": 2,
+        "affected_case_count": 87,
+        "query_count": 119,
+        "query_target_exact_zero_count": 119
+      },
+      "viscosity_laplacian_acceleration": {
+        "A_count": 2,
+        "B_count": 0,
+        "affected_case_count": 2,
+        "query_count": 2,
+        "query_target_exact_zero_count": 2
+      }
+    }
+  },
+  "consumed_replay": false,
+  "descriptor_reconstruction_access_audit_sha256": "fbbe3e71e99684e6e487d184e70cbe5ee481a9a11f8ef7ad13ddc480b734e92d",
+  "descriptor_reconstruction_access_counts": {
+    "bootstrap_payload_reads": 0,
+    "checkpoint_opaque_hash_reads": 0,
+    "checkpoint_payload_reads": 0,
+    "descriptor_nn_numerator_attempts": 246,
+    "descriptor_nn_numerator_completed": 246,
+    "descriptor_nn_required_k20_repeat_attempts": 12,
+    "descriptor_nn_required_k20_repeats_completed": 12,
+    "descriptor_nn_required_k20_search_attempts": 12,
+    "descriptor_nn_required_k20_searches_completed": 12,
+    "metric_payload_reads": 0,
+    "ms_features_reads": 1,
+    "observable_archive_metadata_reads": 1,
+    "observable_archive_metadata_reads_completed": 1,
+    "observable_payload_array_reads": 2,
+    "observable_payload_store_open_sessions": 1,
+    "observable_store_hash_reads": 2,
+    "observable_store_hash_reads_completed": 2,
+    "observable_store_opaque_hash_reads": 2,
+    "observable_store_payload_reads": 2,
+    "other_observable_payload_key_reads": 0,
+    "other_target_payload_key_reads": 0,
+    "query_target_row_consumptions": 246,
+    "selected_k10_neighbour_target_row_consumptions": 2460,
+    "ss_features_reads": 1,
+    "target_archive_metadata_reads": 1,
+    "target_archive_metadata_reads_completed": 1,
+    "target_density_rate_reads": 1,
+    "target_payload_array_reads": 3,
+    "target_payload_store_open_sessions": 1,
+    "target_pressure_gradient_acceleration_reads": 1,
+    "target_store_hash_reads": 2,
+    "target_store_hash_reads_completed": 2,
+    "target_store_opaque_hash_reads": 2,
+    "target_store_payload_reads": 3,
+    "target_viscosity_laplacian_acceleration_reads": 1
+  },
+  "descriptor_reconstruction_execution_freeze_commit": "4260abd1a5080c8756e7e0b9b38d4956f973b10f",
+  "finalizer_access_counts": {
+    "bootstrap_payload_reads": 0,
+    "checkpoint_payload_reads": 0,
+    "metric_payload_reads": 0,
+    "observable_store_hash_reads": 0,
+    "observable_store_payload_reads": 0,
+    "target_store_hash_reads": 0,
+    "target_store_payload_reads": 0
+  },
+  "h_mso01r_contract_frozen": false,
+  "h_mso01r_fresh_requalification_authorized": false,
+  "h_mso01r_fresh_requalification_eligible": false,
+  "learned_operator_authorized": false,
+  "metric_amendment_authorized": false,
+  "metric_amendment_created": false,
+  "metric_selection_authorized": false,
+  "mso02c_g1_ab_attribution_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_HANDOFF",
+  "mso03_eligible": false,
+  "neural_training_authorized": false,
+  "observable_access_authorization_commit": "c76026f5aac782718f83fc4369811eaeeec194a9",
+  "old_verdict_modified": false,
+  "preserved_h_mso01_status": "H_MSO01_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_EVALUABLE",
+  "preserved_mso02b_status": "MSO02B_PAIRED_PRELEARNING_IDENTIFIABILITY_REQUALIFICATION_NOT_EVALUABLE",
+  "report_path": "07_reports/mso02c_g1_ab_attribution_report.md",
+  "report_sha256": "8aca5a277c700fb528a3fe5fa5d07019b3683385d95a62b8ea3c10472a07376d",
+  "representation_dependent_neighbour_difference_count": 117,
+  "schema_version": "1.0.0",
+  "ss_ms_query_key_sets_colocated": true,
+  "stage": "MSO-02C_G1_DESCRIPTOR_NEIGHBOUR_AB_ATTRIBUTION",
+  "starting_parent_head": "8943de6b2b82dc25e850cab18eebe40c2939319d",
+  "stop_after_ab_attribution": true,
+  "terminal_status": "MSO02C_G1_ZERO_DENOMINATOR_AB_ATTRIBUTION_COMPLETE",
+  "zero_safe_metric_selected": false
+}

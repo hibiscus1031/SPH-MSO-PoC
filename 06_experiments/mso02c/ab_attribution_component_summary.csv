@@ -1,0 +1,7 @@
+arm,component,zero_denominator_query_count,A_count,B_count,A_fraction,B_fraction,affected_case_count,affected_family_count,affected_fold_count,affected_lineage_count,numerator_min_positive,all_denominators_exact_zero,A_XOR_B_all_rows
+SS,density_rate,2,2,0,1.0,0.0,2,2,2,2,,True,True
+SS,pressure_gradient_acceleration,119,117,2,0.9831932773109243,0.01680672268907563,87,4,6,71,0.8652438802763495,True,True
+SS,viscosity_laplacian_acceleration,2,2,0,1.0,0.0,2,2,2,2,,True,True
+MS,density_rate,2,2,0,1.0,0.0,2,2,2,2,,True,True
+MS,pressure_gradient_acceleration,119,119,0,1.0,0.0,87,4,6,71,,True,True
+MS,viscosity_laplacian_acceleration,2,2,0,1.0,0.0,2,2,2,2,,True,True
