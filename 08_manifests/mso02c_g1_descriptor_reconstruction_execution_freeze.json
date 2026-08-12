@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-02C_G1_DESCRIPTOR_NEIGHBOUR_RECONSTRUCTION",
+  "status": "FROZEN_BEFORE_FIRST_OBSERVABLE_PAYLOAD_ACCESS",
+  "starting_parent_head": "8943de6b2b82dc25e850cab18eebe40c2939319d",
+  "observable_access_authorization_commit": "c76026f5aac782718f83fc4369811eaeeec194a9",
+  "execution_freeze_commit": "RECORDED_AT_RUNTIME_AND_IN_G1_RELEASE_MANIFEST",
+  "branch": "main",
+  "remote": null,
+  "working_tree_must_be_clean_at_execution": true,
+  "first_observable_payload_access_started": false,
+  "authorization_path": "00_project_contract/mso02c_g1_descriptor_neighbour_reconstruction_authorization.md",
+  "authorization_sha256": "4da29a3d73b675ef2be98d1195aea0566d8b5cc86b3d1b6d1b945ccb85c8c3a1",
+  "executable_path": "06_experiments/mso02c/run_descriptor_neighbour_ab_attribution.py",
+  "executable_sha256": "dbd1944deedeaebad9075d4035cbd5eef137bd185d77c0a2ae33dcba08c975e3",
+  "finalizer_path": "06_experiments/mso02c/finalize_mso02c_g1_ab_attribution.py",
+  "finalizer_sha256": "72beed5d9e533a663c035cd86d5d897e02fcceb79bd5255e507c634f904b98af",
+  "runner_success_status": "MSO02C_G1_AB_ATTRIBUTION_EXECUTION_COMPLETE_AWAITING_FINALIZATION",
+  "finalizer_terminal_status": "MSO02C_G1_ZERO_DENOMINATOR_AB_ATTRIBUTION_COMPLETE",
+  "frozen_input_sha256": {
+    "00_project_contract/mso02c_dnn_degeneracy_diagnostic_contract.md": "781618a8cf52f05bded1b3af99b897815df78c1eefcde3c70d32ae60ac92753f",
+    "00_project_contract/mso02c_g1_descriptor_neighbour_reconstruction_authorization.md": "4da29a3d73b675ef2be98d1195aea0566d8b5cc86b3d1b6d1b945ccb85c8c3a1",
+    "05_registries/mso02a_formal_fresh_atlas_registry.json": "9893cf48d73be3316a66bb7b9c7f71db8c122247ce56b67d1b0f685605b761c6",
+    "05_registries/mso02a_lineage_fold_registry.json": "b163a6b3e70cde47e033d204d74b997fd218596885a4b96287dc160a948c42ff",
+    "05_registries/mso02b_analysis_semantics_registry.json": "b271864a62800ea502d1f21621b3d937088f6809c0d31301e6effac96d203ce5",
+    "05_registries/mso02b_formal_particle_sample_registry.json": "98ff5716e3adbbaac4cac4899e76eb4d61d4e194396fe4e37041a94abe0ca229",
+    "06_experiments/mso02a/fold_normalization_registry.json": "f8fb9ccde826ece14690ab255955ecb7b922bc5cd27ddb9b0544b9fd9c9bd634",
+    "06_experiments/mso02a/ms_observable_schema.json": "51ff5e04dde4b862f3cab19c80e2aea93c151006fe7b3f497001e43475ec18cb",
+    "06_experiments/mso02a/ss_observable_schema.json": "b2237506cac4bbc67dfda981f15daea47c32535259d394b962263a82190e2ec4",
+    "06_experiments/mso02b/run_mso02b_formal.py": "55b0b63eb2c99364c8a2e96c75191a50707e93357f7039bd9edfdcb7c7c831b7",
+    "06_experiments/mso02c/attribution_execution_audit.json": "40d69d0653be28083ce19fd3da2c50c83415b9e5ded0cb8235dfd0e6c09ae274",
+    "06_experiments/mso02c/degeneracy_mechanism_audit.csv": "52a81467c9df26993a00a8b6d70fd4c6339d85735bb14854ce8f13c62e77abb4",
+    "06_experiments/mso02c/run_zero_denominator_attribution.py": "ae839d31826d33914d79c9f4504d103810653047fae7df2ca1b35ce741f29811",
+    "06_experiments/mso02c/zero_denominator_case_map.csv": "e8aa8855e91132809cbc7515d952c0295ad2cb1076b8a8dfa42eb1bcfad27aef",
+    "06_experiments/mso02c/zero_denominator_family_fold_summary.csv": "72a0f04caf740c1f8a089e7e955c8b35c0d433db62480b77aa5e9b76a5a36ba1",
+    "06_experiments/mso02c/zero_denominator_particle_map.csv": "803e5234f113373aa134c97b809cfeb807dad6bbe6c4c2346bfc393a1c46d893",
+    "08_manifests/mso02b_manifest.json": "94ce69002d714acff2176fc71910e18766f873ed26be7437763eb34762e68fe6",
+    "08_manifests/mso02b_status_ledger.json": "cb9864b34c94f4ae022745fa9b6040bd2baaf6bdae7156a3905b22584a268815",
+    "08_manifests/mso02c_g1_attribution_execution_freeze.json": "7813a4ab60b6e7f01108c4ff36159984a638e8e7b0b9d1e58645b453425fd756"
+  },
+  "observable_store": {
+    "path": "06_experiments/mso02a/observable/mso02a_observable_store.npz",
+    "recorded_sha256": "3dfedfa666c32e4e578f1821f441370da288fd636fc977d2fb15bf470654102e",
+    "authorized_payload_keys": [
+      "ss_features",
+      "ms_features"
+    ],
+    "other_payload_key_reads_authorized": false,
+    "full_matrix_read_authorized": true,
+    "write_authorized": false
+  },
+  "target_store": {
+    "path": "06_experiments/mso02b/target_ref/mso02b_target_store.npz",
+    "recorded_sha256": "16f1ebd26d0d1aa74dd0892dfe2feb0967024f9219dd8c102c8faafc934f81e2",
+    "authorized_payload_keys": [
+      "target_density_rate",
+      "target_pressure_gradient_acceleration",
+      "target_viscosity_laplacian_acceleration"
+    ],
+    "other_payload_key_reads_authorized": false,
+    "write_authorized": false
+  },
+  "query_population": {
+    "source": "06_experiments/mso02c/zero_denominator_particle_map.csv",
+    "source_sha256": "803e5234f113373aa134c97b809cfeb807dad6bbe6c4c2346bfc393a1c46d893",
+    "per_arm_component_counts": {
+      "density_rate": 2,
+      "pressure_gradient_acceleration": 119,
+      "viscosity_laplacian_acceleration": 2
+    },
+    "component_query_keys_per_arm": 123,
+    "arm_component_query_classifications": 246,
+    "selected_k10_neighbour_target_lookups": 2460
+  },
+  "authoritative_algorithm": {
+    "source_path": "06_experiments/mso02b/run_mso02b_formal.py",
+    "source_sha256": "55b0b63eb2c99364c8a2e96c75191a50707e93357f7039bd9edfdcb7c7c831b7",
+    "imported_symbols": [
+      "ordered_training_indices",
+      "subset_meta",
+      "exact_permitted_neighbors"
+    ],
+    "internal_required_k": 20,
+    "consumed_primary_ranks": 10,
+    "k20_metric_or_sensitivity_evaluation": false,
+    "k5_metric_or_sensitivity_evaluation": false,
+    "distance": "EUCLIDEAN",
+    "normalization": "FROZEN_OUTER_TRAIN_MEDIAN_DIVISOR",
+    "features_retained": "ALL_39_SS_AND_ALL_110_MS_IN_FROZEN_ORDER",
+    "exclusions": "SAME_CASE_SAME_LINEAGE_AND_EQUAL_NONZERO_SAME_SEED",
+    "tie_handling": "FROZEN_COMPLETE_TIE_EXPANSION_THEN_DISTANCE_CASE_ID_PARTICLE_ID"
+  },
+  "runtime_freeze": {
+    "python_implementation": "CPython",
+    "python": "3.13.9",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "machine": "arm64",
+    "byteorder": "little",
+    "float64_itemsize": 8,
+    "float64_ieee_binary64": true,
+    "ckdtree_parameters": "compact_nodes=True,balanced_tree=True,eps=0,p=2,workers=1",
+    "ckdtree_schedule": [
+      64,
+      256,
+      1024,
+      4096,
+      "TRAIN_N"
+    ]
+  },
+  "output_allowlist": [
+    "06_experiments/mso02c/descriptor_neighbour_identity_reconstruction.csv",
+    "06_experiments/mso02c/zero_denominator_ab_attribution.csv",
+    "06_experiments/mso02c/ab_attribution_component_summary.csv",
+    "06_experiments/mso02c/ab_attribution_family_fold_summary.csv",
+    "06_experiments/mso02c/degeneracy_mechanism_audit_after_ab.csv",
+    "06_experiments/mso02c/descriptor_reconstruction_access_audit.json",
+    "06_experiments/mso02c/descriptor_reconstruction_execution_events.jsonl",
+    "06_experiments/mso02c/descriptor_reconstruction_failure_access_audit.json",
+    "07_reports/mso02c_g1_ab_attribution_report.md",
+    "08_manifests/mso02c_g1_ab_attribution_manifest.json",
+    "08_manifests/mso02c_g1_ab_attribution_status_ledger.json"
+  ],
+  "execution_staging_path_pattern": "06_experiments/mso02c/.descriptor_reconstruction_staging/<execution_freeze_sha256>/",
+  "release_staging_path_pattern": "06_experiments/mso02c/.g1_release_staging/<execution_freeze_sha256>/",
+  "execution_failure_temporary_write_allowlist": [
+    "06_experiments/mso02c/descriptor_reconstruction_failure_access_audit.json.tmp"
+  ],
+  "finalizer_store_hash_reads_authorized": false,
+  "finalizer_store_payload_reads_authorized": false,
+  "old_artifact_overwrite_authorized": false,
+  "full_dnn_metric_recompute_authorized": false,
+  "candidate_metric_performance_authorized": false,
+  "metric_selection_authorized": false,
+  "metric_amendment_authorized": false,
+  "consumed_replay_authorized": false,
+  "new_confirmatory_h3_verdict_authorized": false,
+  "h_mso01r_authorized": false,
+  "mso03_authorized": false,
+  "learning_authorized": false,
+  "stop_after_ab_attribution": true
+}
