@@ -1,0 +1,430 @@
+{
+  "bootstrap_replicate_count": 10000,
+  "coverage_can_substitute_for_identifiability": false,
+  "failed_attempt_oracle_bundle_fit_attempts": 12,
+  "failed_attempt_oracle_bundle_fit_outcome_unrecorded": 12,
+  "failed_pre_metric_execution_attempt_count": 1,
+  "firewall_audit_sha256": "3b92876a2ffd7f278700c42ad1bff10d81d9aa92fad0c42e708a59f029311445",
+  "formal_evaluator_sha256": "55b0b63eb2c99364c8a2e96c75191a50707e93357f7039bd9edfdcb7c7c831b7",
+  "formal_execution_erratum_sha256": "b046991e08e81bc8ef2be87f203b9ceda5672bdbd1d5c3d217ab0dd8428efb9b",
+  "formal_particle_count_per_case": 128,
+  "formal_sample_row_count": 49152,
+  "metrics": {
+    "MS": {
+      "density_rate": {
+        "baseline_nrmse": 0.7856491730132876,
+        "conditional_variance": 0.012669872746366212,
+        "conditional_variance_simultaneous_ucb": 0.016546841950119226,
+        "coverage": 0.9374045777165033,
+        "coverage_family": {
+          "F1": 0.9498800040849673,
+          "F2": 0.954953022875817,
+          "F3": 0.9729319852941175,
+          "F4": 0.8718532986111112
+        },
+        "dnn_median": null,
+        "dnn_median_simultaneous_ucb": null,
+        "dnn_p90": null,
+        "dnn_p90_simultaneous_ucb": null,
+        "family_nrmse": {
+          "F1": 0.5248864798086122,
+          "F2": 0.2998389172054629,
+          "F3": 0.3302094578159365,
+          "F4": 2.1843215676872654
+        },
+        "improvement": -0.06257873654657331,
+        "improvement_simultaneous_lcb": -0.4304812714921617,
+        "oracle_nrmse": 0.8348141056293193,
+        "oracle_nrmse_simultaneous_ucb": 1.0730567429271054,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "knn5",
+          "2": "ridge",
+          "3": "knn5",
+          "4": "knn5",
+          "5": "ridge"
+        }
+      },
+      "pressure_gradient_acceleration": {
+        "baseline_nrmse": 0.7802654041592602,
+        "conditional_variance": 0.2548361052339341,
+        "conditional_variance_simultaneous_ucb": 0.30072053287519696,
+        "coverage": 0.9374045777165033,
+        "coverage_family": {
+          "F1": 0.9498800040849673,
+          "F2": 0.954953022875817,
+          "F3": 0.9729319852941175,
+          "F4": 0.8718532986111112
+        },
+        "dnn_median": null,
+        "dnn_median_simultaneous_ucb": null,
+        "dnn_p90": null,
+        "dnn_p90_simultaneous_ucb": null,
+        "family_nrmse": {
+          "F1": 0.27471976889692656,
+          "F2": 0.17334538907641295,
+          "F3": 0.13836629064784112,
+          "F4": 0.4008420862773405
+        },
+        "improvement": 0.6836738084132048,
+        "improvement_simultaneous_lcb": 0.6135253270697801,
+        "oracle_nrmse": 0.2468183837246303,
+        "oracle_nrmse_simultaneous_ucb": 0.3423604221738492,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      },
+      "viscosity_laplacian_acceleration": {
+        "baseline_nrmse": 0.821308281537744,
+        "conditional_variance": 0.4063581988642743,
+        "conditional_variance_simultaneous_ucb": 0.4766337404947136,
+        "coverage": 0.9374045777165033,
+        "coverage_family": {
+          "F1": 0.9498800040849673,
+          "F2": 0.954953022875817,
+          "F3": 0.9729319852941175,
+          "F4": 0.8718532986111112
+        },
+        "dnn_median": null,
+        "dnn_median_simultaneous_ucb": null,
+        "dnn_p90": null,
+        "dnn_p90_simultaneous_ucb": null,
+        "family_nrmse": {
+          "F1": 0.19073495938969862,
+          "F2": 0.06651075404065908,
+          "F3": 0.06129813502993442,
+          "F4": 0.3568837781460998
+        },
+        "improvement": 0.794404962853357,
+        "improvement_simultaneous_lcb": 0.7528805085376601,
+        "oracle_nrmse": 0.168856906651598,
+        "oracle_nrmse_simultaneous_ucb": 0.223048396879243,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      }
+    },
+    "SS": {
+      "density_rate": {
+        "baseline_nrmse": 0.7856491730132876,
+        "conditional_variance": 0.1335533470297959,
+        "conditional_variance_simultaneous_ucb": 0.16804152953617446,
+        "coverage": 0.9359440423304738,
+        "coverage_family": {
+          "F1": 0.9556238511029411,
+          "F2": 0.9746323529411764,
+          "F3": 0.9698784722222222,
+          "F4": 0.8436414930555557
+        },
+        "dnn_median": null,
+        "dnn_median_simultaneous_ucb": null,
+        "dnn_p90": null,
+        "dnn_p90_simultaneous_ucb": null,
+        "family_nrmse": {
+          "F1": 0.8296178708957029,
+          "F2": 0.3962928235890811,
+          "F3": 0.602623724884059,
+          "F4": 0.34889751893192233
+        },
+        "improvement": 0.3071233277222776,
+        "improvement_simultaneous_lcb": 0.1947109735345346,
+        "oracle_nrmse": 0.5443579845751914,
+        "oracle_nrmse_simultaneous_ucb": 0.7775390788431951,
+        "selected_oracles_by_fold": {
+          "0": "knn10",
+          "1": "ridge",
+          "2": "knn20",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      },
+      "pressure_gradient_acceleration": {
+        "baseline_nrmse": 0.7802654041592602,
+        "conditional_variance": 0.25958415712076527,
+        "conditional_variance_simultaneous_ucb": 0.30439362596115016,
+        "coverage": 0.9359440423304738,
+        "coverage_family": {
+          "F1": 0.9556238511029411,
+          "F2": 0.9746323529411764,
+          "F3": 0.9698784722222222,
+          "F4": 0.8436414930555557
+        },
+        "dnn_median": null,
+        "dnn_median_simultaneous_ucb": null,
+        "dnn_p90": null,
+        "dnn_p90_simultaneous_ucb": null,
+        "family_nrmse": {
+          "F1": 0.6655572142045432,
+          "F2": 0.3680562596189825,
+          "F3": 0.4236119564963287,
+          "F4": 0.600709458113659
+        },
+        "improvement": 0.3406298429151333,
+        "improvement_simultaneous_lcb": 0.2604274885614071,
+        "oracle_nrmse": 0.5144837221083783,
+        "oracle_nrmse_simultaneous_ucb": 0.6741292999369911,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      },
+      "viscosity_laplacian_acceleration": {
+        "baseline_nrmse": 0.821308281537744,
+        "conditional_variance": 0.43972436603630055,
+        "conditional_variance_simultaneous_ucb": 0.5145469325041744,
+        "coverage": 0.9359440423304738,
+        "coverage_family": {
+          "F1": 0.9556238511029411,
+          "F2": 0.9746323529411764,
+          "F3": 0.9698784722222222,
+          "F4": 0.8436414930555557
+        },
+        "dnn_median": null,
+        "dnn_median_simultaneous_ucb": null,
+        "dnn_p90": null,
+        "dnn_p90_simultaneous_ucb": null,
+        "family_nrmse": {
+          "F1": 0.6039345687607245,
+          "F2": 0.2976480474437118,
+          "F3": 0.29292118814297824,
+          "F4": 0.4049288563695912
+        },
+        "improvement": 0.5131448517350966,
+        "improvement_simultaneous_lcb": 0.44021383891753285,
+        "oracle_nrmse": 0.3998581651792514,
+        "oracle_nrmse_simultaneous_ucb": 0.5218576544672837,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      }
+    },
+    "paired_ratios": {
+      "density_rate": {
+        "conditional_variance": {
+          "ratio": 0.0948675044702515,
+          "reduction": 0.9051324955297485,
+          "simultaneous_ucb": 0.12322942322265598,
+          "status": "EVALUABLE"
+        },
+        "dnn_p90": {
+          "ratio": null,
+          "reduction": null,
+          "simultaneous_ucb": null,
+          "status": "NOT_EVALUABLE_UNSTABLE_RATIO_NO_FROZEN_ABSOLUTE_DIFFERENCE_MARGIN"
+        },
+        "oracle_nrmse": {
+          "ratio": 1.5335755684392056,
+          "reduction": -0.5335755684392056,
+          "simultaneous_ucb": 2.2494791908374703,
+          "status": "EVALUABLE"
+        }
+      },
+      "pressure_gradient_acceleration": {
+        "conditional_variance": {
+          "ratio": 0.9817090074390701,
+          "reduction": 0.01829099256092992,
+          "simultaneous_ucb": 1.0262298174308377,
+          "status": "EVALUABLE"
+        },
+        "dnn_p90": {
+          "ratio": null,
+          "reduction": null,
+          "simultaneous_ucb": null,
+          "status": "NOT_EVALUABLE_UNSTABLE_RATIO_NO_FROZEN_ABSOLUTE_DIFFERENCE_MARGIN"
+        },
+        "oracle_nrmse": {
+          "ratio": 0.47973992785069475,
+          "reduction": 0.5202600721493053,
+          "simultaneous_ucb": 0.5670560482614131,
+          "status": "EVALUABLE"
+        }
+      },
+      "viscosity_laplacian_acceleration": {
+        "conditional_variance": {
+          "ratio": 0.9241202677195474,
+          "reduction": 0.07587973228045264,
+          "simultaneous_ucb": 1.075827333245831,
+          "status": "EVALUABLE"
+        },
+        "dnn_p90": {
+          "ratio": null,
+          "reduction": null,
+          "simultaneous_ucb": null,
+          "status": "NOT_EVALUABLE_UNSTABLE_RATIO_NO_FROZEN_ABSOLUTE_DIFFERENCE_MARGIN"
+        },
+        "oracle_nrmse": {
+          "ratio": 0.42229200590639826,
+          "reduction": 0.5777079940936017,
+          "simultaneous_ucb": 0.491608004145733,
+          "status": "EVALUABLE"
+        }
+      }
+    }
+  },
+  "ms_feature_dimension": 110,
+  "mso03_executed": false,
+  "neural_model_count": 0,
+  "observable_store_unchanged": true,
+  "optimizer_count": 0,
+  "post_target_modification_counts": {
+    "feature": 0,
+    "fold": 0,
+    "gate": 0,
+    "normalization": 0,
+    "scale": 0
+  },
+  "schema_version": "1.0.0",
+  "ss_feature_dimension": 39,
+  "stage": "MSO-02B",
+  "target_definition": "CONTINUUM_ANALYTICAL_REFERENCE_MINUS_LAMBDA_1_FROZEN_BASE_SPH",
+  "target_precompute_freeze_sha256": "9dcf39f43e46323433f2e29c73ac3b09743d4a1070af032c0f44c7bd49783962",
+  "target_reference_failed_case_count": 0,
+  "target_reference_qualified_case_count": 384,
+  "terminal_status": "MSO02B_PAIRED_PRELEARNING_IDENTIFIABILITY_REQUALIFICATION_NOT_EVALUABLE",
+  "training_count": 0,
+  "verdict": {
+    "attention_authorized": false,
+    "components": {
+      "density_rate": {
+        "absolute_checks": {
+          "all_six_folds_valid": false,
+          "conditional_variance_point": true,
+          "conditional_variance_ucb": true,
+          "coverage_every_family": true,
+          "coverage_overall": true,
+          "dnn_median_point": false,
+          "dnn_median_ucb": false,
+          "dnn_p90_point": false,
+          "dnn_p90_ucb": false,
+          "every_family_nrmse_point": false,
+          "every_family_nrmse_ucb": false,
+          "improvement_lcb": false,
+          "improvement_point": false,
+          "oracle_nrmse_point": false,
+          "oracle_nrmse_ucb": false
+        },
+        "absolute_evaluable": false,
+        "absolute_pass": false,
+        "component_evaluable": false,
+        "component_pass": false,
+        "relative_checks": {
+          "conditional_variance_point": true,
+          "conditional_variance_simultaneous_ucb": true,
+          "coverage_guard": true,
+          "dnn_median_nonworsening": false,
+          "dnn_p90_point": false,
+          "dnn_p90_simultaneous_ucb": false,
+          "no_fold_three_effect_reversal": false,
+          "oracle_nrmse_point": false,
+          "oracle_nrmse_simultaneous_ucb": false,
+          "worst_family_guard": false
+        },
+        "relative_rescue_evaluable": false,
+        "relative_rescue_pass": false,
+        "status": "H_MSO01_COMPONENT_NOT_EVALUABLE"
+      },
+      "pressure_gradient_acceleration": {
+        "absolute_checks": {
+          "all_six_folds_valid": false,
+          "conditional_variance_point": false,
+          "conditional_variance_ucb": true,
+          "coverage_every_family": true,
+          "coverage_overall": true,
+          "dnn_median_point": false,
+          "dnn_median_ucb": false,
+          "dnn_p90_point": false,
+          "dnn_p90_ucb": false,
+          "every_family_nrmse_point": true,
+          "every_family_nrmse_ucb": true,
+          "improvement_lcb": true,
+          "improvement_point": true,
+          "oracle_nrmse_point": true,
+          "oracle_nrmse_ucb": true
+        },
+        "absolute_evaluable": false,
+        "absolute_pass": false,
+        "component_evaluable": false,
+        "component_pass": false,
+        "relative_checks": {
+          "conditional_variance_point": false,
+          "conditional_variance_simultaneous_ucb": false,
+          "coverage_guard": true,
+          "dnn_median_nonworsening": false,
+          "dnn_p90_point": false,
+          "dnn_p90_simultaneous_ucb": false,
+          "no_fold_three_effect_reversal": false,
+          "oracle_nrmse_point": true,
+          "oracle_nrmse_simultaneous_ucb": true,
+          "worst_family_guard": true
+        },
+        "relative_rescue_evaluable": false,
+        "relative_rescue_pass": false,
+        "status": "H_MSO01_COMPONENT_NOT_EVALUABLE"
+      },
+      "viscosity_laplacian_acceleration": {
+        "absolute_checks": {
+          "all_six_folds_valid": false,
+          "conditional_variance_point": false,
+          "conditional_variance_ucb": false,
+          "coverage_every_family": true,
+          "coverage_overall": true,
+          "dnn_median_point": false,
+          "dnn_median_ucb": false,
+          "dnn_p90_point": false,
+          "dnn_p90_ucb": false,
+          "every_family_nrmse_point": true,
+          "every_family_nrmse_ucb": true,
+          "improvement_lcb": true,
+          "improvement_point": true,
+          "oracle_nrmse_point": true,
+          "oracle_nrmse_ucb": true
+        },
+        "absolute_evaluable": false,
+        "absolute_pass": false,
+        "component_evaluable": false,
+        "component_pass": false,
+        "relative_checks": {
+          "conditional_variance_point": false,
+          "conditional_variance_simultaneous_ucb": false,
+          "coverage_guard": true,
+          "dnn_median_nonworsening": false,
+          "dnn_p90_point": false,
+          "dnn_p90_simultaneous_ucb": false,
+          "no_fold_three_effect_reversal": false,
+          "oracle_nrmse_point": true,
+          "oracle_nrmse_simultaneous_ucb": true,
+          "worst_family_guard": true
+        },
+        "relative_rescue_evaluable": false,
+        "relative_rescue_pass": false,
+        "status": "H_MSO01_COMPONENT_NOT_EVALUABLE"
+      }
+    },
+    "global_evaluable": false,
+    "global_pass": false,
+    "global_status": "H_MSO01_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_EVALUABLE",
+    "learned_operator_authorized": false,
+    "mso03_deterministic_closure_baseline_eligible": false,
+    "neural_training_authorized": false
+  }
+}

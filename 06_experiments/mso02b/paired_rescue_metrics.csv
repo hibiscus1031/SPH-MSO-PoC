@@ -1,0 +1,22 @@
+component,requirement,ss_point,ms_point,point_ratio_or_difference,simultaneous_bound,point_threshold,confidence_threshold,point_pass,confidence_pass,requirement_pass,status
+density_rate,dnn_p90,nan,nan,nan,nan,0.8,0.9,False,False,False,NOT_EVALUABLE_UNSTABLE_RATIO_NO_FROZEN_ABSOLUTE_DIFFERENCE_MARGIN
+density_rate,conditional_variance,0.1335533470297959,0.012669872746366212,0.0948675044702515,0.12322942322265598,0.8,0.9,True,True,True,EVALUABLE
+density_rate,oracle_nrmse,0.5443579845751914,0.8348141056293193,1.5335755684392056,2.2494791908374703,0.85,0.95,False,False,False,EVALUABLE
+density_rate,dnn_median_nonworsening,nan,nan,nan,,difference<=0.02 AND stable_ratio<=1.05,POINT_ONLY,False,True,False,RATIO_UNSTABLE_ABSOLUTE_GUARD_ONLY
+density_rate,worst_family_nrmse_guard,0.8296178708957029,2.1843215676872654,1.3547036967915624,2.8375499028361686,0.05,MS_EACH_FAMILY_UCB<=1.00,False,False,False,EVALUABLE
+density_rate,coverage_guard_component_independent,0.9359440423304738,0.9374045777165033,0.0014605353860295267,NOT_APPLICABLE,"MS>=0.90,each_family>=0.80,drop<=0.05",POINT_ONLY,True,True,True,EVALUABLE
+density_rate,no_fold_three_effect_reversal,FOLDWISE,FOLDWISE,,NOT_APPLICABLE,ZERO_REVERSAL_FOLDS,POINT_ONLY,False,True,False,NOT_EVALUABLE
+pressure_gradient_acceleration,dnn_p90,nan,nan,nan,nan,0.8,0.9,False,False,False,NOT_EVALUABLE_UNSTABLE_RATIO_NO_FROZEN_ABSOLUTE_DIFFERENCE_MARGIN
+pressure_gradient_acceleration,conditional_variance,0.25958415712076527,0.2548361052339341,0.9817090074390701,1.0262298174308377,0.8,0.9,False,False,False,EVALUABLE
+pressure_gradient_acceleration,oracle_nrmse,0.5144837221083783,0.2468183837246303,0.47973992785069475,0.5670560482614131,0.85,0.95,True,True,True,EVALUABLE
+pressure_gradient_acceleration,dnn_median_nonworsening,nan,nan,nan,,difference<=0.02 AND stable_ratio<=1.05,POINT_ONLY,False,True,False,RATIO_UNSTABLE_ABSOLUTE_GUARD_ONLY
+pressure_gradient_acceleration,worst_family_nrmse_guard,0.6655572142045432,0.4008420862773405,-0.26471512792720264,0.6224448569438572,0.05,MS_EACH_FAMILY_UCB<=1.00,True,True,True,EVALUABLE
+pressure_gradient_acceleration,coverage_guard_component_independent,0.9359440423304738,0.9374045777165033,0.0014605353860295267,NOT_APPLICABLE,"MS>=0.90,each_family>=0.80,drop<=0.05",POINT_ONLY,True,True,True,EVALUABLE
+pressure_gradient_acceleration,no_fold_three_effect_reversal,FOLDWISE,FOLDWISE,,NOT_APPLICABLE,ZERO_REVERSAL_FOLDS,POINT_ONLY,False,True,False,NOT_EVALUABLE
+viscosity_laplacian_acceleration,dnn_p90,nan,nan,nan,nan,0.8,0.9,False,False,False,NOT_EVALUABLE_UNSTABLE_RATIO_NO_FROZEN_ABSOLUTE_DIFFERENCE_MARGIN
+viscosity_laplacian_acceleration,conditional_variance,0.43972436603630055,0.4063581988642743,0.9241202677195474,1.075827333245831,0.8,0.9,False,False,False,EVALUABLE
+viscosity_laplacian_acceleration,oracle_nrmse,0.3998581651792514,0.168856906651598,0.42229200590639826,0.491608004145733,0.85,0.95,True,True,True,EVALUABLE
+viscosity_laplacian_acceleration,dnn_median_nonworsening,nan,nan,nan,,difference<=0.02 AND stable_ratio<=1.05,POINT_ONLY,False,True,False,RATIO_UNSTABLE_ABSOLUTE_GUARD_ONLY
+viscosity_laplacian_acceleration,worst_family_nrmse_guard,0.6039345687607245,0.3568837781460998,-0.2470507906146247,0.4460828495087437,0.05,MS_EACH_FAMILY_UCB<=1.00,True,True,True,EVALUABLE
+viscosity_laplacian_acceleration,coverage_guard_component_independent,0.9359440423304738,0.9374045777165033,0.0014605353860295267,NOT_APPLICABLE,"MS>=0.90,each_family>=0.80,drop<=0.05",POINT_ONLY,True,True,True,EVALUABLE
+viscosity_laplacian_acceleration,no_fold_three_effect_reversal,FOLDWISE,FOLDWISE,,NOT_APPLICABLE,ZERO_REVERSAL_FOLDS,POINT_ONLY,False,True,False,NOT_EVALUABLE
