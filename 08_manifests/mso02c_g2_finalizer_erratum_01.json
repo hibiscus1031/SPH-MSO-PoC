@@ -1,0 +1,19 @@
+{
+  "schema_version": "MSO02C_G2_FINALIZER_ERRATUM_V1",
+  "status": "FROZEN_BEFORE_CORRECTIVE_FINALIZATION",
+  "failed_finalizer_commit": "8697293cfe7dd9cd9450ab018c8ad7082e72013f",
+  "failure_class": "FileNotFoundError",
+  "failure_target": "00_project_contract/amendments/ca_mso01_zero_safe_dnn_semantics.md.tmp",
+  "cause": "The finalizer did not create the new amendments directory before its first atomic write.",
+  "preflight_completed": true,
+  "amendment_published": false,
+  "report_published": false,
+  "manifest_published": false,
+  "status_published": false,
+  "real_target_or_observable_payload_read_count": 0,
+  "old_metric_or_checkpoint_payload_read_count": 0,
+  "consumed_replay_count": 0,
+  "scientific_formula_change_count": 0,
+  "synthetic_result_change_count": 0,
+  "correction": "Create each authorized parent directory before the atomic temporary-file write."
+}
