@@ -1,0 +1,118 @@
+{
+  "artifact_registry": [
+    {
+      "path": "00_project_contract/mso02c_g2_zero_safe_metric_selection_contract.md",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "c89ff65187389bbd5d5b27b0122f3384f6ffdbbe2e1cd41e80e0db2b2e29b80b"
+    },
+    {
+      "path": "00_project_contract/mso02c_g2_zero_safe_metric_selection_protocol_erratum.md",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "2d88b5bc92c833127b0c922710f40a895899e0f062eda692db2c264403b7b14c"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_synthetic_execution_freeze.json",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "0bc59ac92f04f178e9ddc93e35436d50b9974692fd1e8a849decee837af6212d"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_synthetic_execution_erratum_01.json",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "6b7c7f2c704ac574e8854a45dd4e3fb454920119f2080633389607043aabd23c"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_finalizer_erratum_01.json",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "e7f16e11ab146200e194b703d3e10407ca43fa3dc8f241805f05ec55accb1232"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_finalizer_erratum_02.json",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "ab387c0e21eb6726db78f57be8674a57cd415c51e596f835d1a5f247883df165"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_release_evidence_erratum_01.json",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "475976cb2af194c3751f8ac246ddc95e8c8812231c0d57244b48f9c638c6a9a6"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_release_evidence_erratum_02.json",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "966abd029d75285362583cf606905c6a7ee935b12e6478875af9128b4f42a661"
+    },
+    {
+      "path": "06_experiments/mso02c/g2/synthetic_metric_stress_tests.csv",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "b16afb51fab21356d36f1e76f44f8950b22a01dc4b71b9a48cb18526afaa69cc"
+    },
+    {
+      "path": "06_experiments/mso02c/g2/candidate_metric_selection_matrix.csv",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "78fa72bd3ceaa525a2cdc7d3fff800f4bf28c20e5c3c45a1b63d331d712b5884"
+    },
+    {
+      "path": "06_experiments/mso02c/g2/zero_semantics_audit.csv",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "6c9885a8735fa975108267517d3e2e88fb4f221a9918c40cc19f8e2f9b11db52"
+    },
+    {
+      "path": "06_experiments/mso02c/g2/aggregation_semantics_audit.csv",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "bce378f653e00d197146ce9e5149ab5fe4a62f65d3d4e248a7278dbe88cfbedf"
+    },
+    {
+      "path": "06_experiments/mso02c/g2/bootstrap_compatibility_audit.csv",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "eb4c1c1adc43f17893007ea8d407db92b4ece8b959f15ce5cef28748d63fd7ac"
+    },
+    {
+      "path": "06_experiments/mso02c/g2/threshold_derivation_report.md",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "3236e547094b40a3301b678fbca8946f2bb7ed34a68e4d304d470e552b3f03ab"
+    },
+    {
+      "path": "06_experiments/mso02c/g2/synthetic_execution_audit.json",
+      "role": "G2_FROZEN_OR_DERIVED_ARTIFACT",
+      "sha256": "da892b577ef6abe671488ddcc5469c75af11def2c53b8f1ef0fc6c880ffe1a2f"
+    },
+    {
+      "path": "00_project_contract/amendments/ca_mso01_zero_safe_dnn_semantics.md",
+      "role": "G2_FROZEN_AMENDMENT",
+      "sha256": "fec81d9dceeb4edc93b19adf0eb063e564effda81f700ea69174963b75454650"
+    },
+    {
+      "path": "07_reports/mso02c_g2_zero_safe_metric_selection_report.md",
+      "role": "G2_FINAL_REPORT",
+      "sha256": "a0583f288cc44844f8c23d3d813ccef86a6f91ea08b3e7deb84aa4be62d8648a"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_status_ledger.json",
+      "role": "G2_TERMINAL_STATUS",
+      "sha256": "9d677839d3035ca4a16eb414bf13b958b3fcce9af24caa7416043f3b7b251b1d"
+    }
+  ],
+  "firewall": {
+    "attention_authorized": false,
+    "consumed_replay": false,
+    "g1_derived_outcome_payload_reads_for_selection": 0,
+    "h_mso01r_executed": false,
+    "learned_operator_authorized": false,
+    "mso03_eligible": false,
+    "neural_training_authorized": false,
+    "new_h3_verdict": false,
+    "old_metric_accidental_search_events": 1,
+    "old_metric_matched_file_count": "NOT_RECORDED",
+    "old_metric_numeric_values_used_for_selection": 0,
+    "real_candidate_performance_comparison": false,
+    "real_target_or_observable_payload_reads": 0
+  },
+  "h_mso01r_fresh_requalification_eligible": true,
+  "manifest_self_binding": {
+    "binding": "FINAL_GIT_BLOB_AT_G2_FINAL_COMMIT",
+    "path": "08_manifests/mso02c_g2_manifest.json",
+    "whole_file_sha256": "REPORTED_BY_FINAL_GIT_HANDOFF"
+  },
+  "schema_version": "MSO02C_G2_MANIFEST_V1",
+  "selected_primary": "C",
+  "terminal_status": "MSO02C_DNN_DEGENERACY_ATTRIBUTED_AND_ZERO_SAFE_REQUALIFICATION_CONTRACT_FROZEN"
+}

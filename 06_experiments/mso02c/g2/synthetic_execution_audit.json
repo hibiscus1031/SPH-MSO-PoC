@@ -1,0 +1,61 @@
+{
+  "absolute_boundary": {
+    "operator": "STRICTLY_LESS_THAN",
+    "point_required": true,
+    "simultaneous_ucb_required": true,
+    "value": 1
+  },
+  "all_fixture_expectations_pass": true,
+  "artifact_sha256": {
+    "06_experiments/mso02c/g2/aggregation_semantics_audit.csv": "bce378f653e00d197146ce9e5149ab5fe4a62f65d3d4e248a7278dbe88cfbedf",
+    "06_experiments/mso02c/g2/bootstrap_compatibility_audit.csv": "eb4c1c1adc43f17893007ea8d407db92b4ece8b959f15ce5cef28748d63fd7ac",
+    "06_experiments/mso02c/g2/candidate_metric_selection_matrix.csv": "78fa72bd3ceaa525a2cdc7d3fff800f4bf28c20e5c3c45a1b63d331d712b5884",
+    "06_experiments/mso02c/g2/synthetic_metric_stress_tests.csv": "b16afb51fab21356d36f1e76f44f8950b22a01dc4b71b9a48cb18526afaa69cc",
+    "06_experiments/mso02c/g2/threshold_derivation_report.md": "3236e547094b40a3301b678fbca8946f2bb7ed34a68e4d304d470e552b3f03ab",
+    "06_experiments/mso02c/g2/zero_semantics_audit.csv": "6c9885a8735fa975108267517d3e2e88fb4f221a9918c40cc19f8e2f9b11db52"
+  },
+  "bootstrap_execution": {
+    "all_pass": true,
+    "degenerate_boundary_pass": true,
+    "draw_count": 10000,
+    "max_t_critical": 1.6365555813512855,
+    "max_t_index": 9499,
+    "test_count": 14,
+    "unique_draw_identity_count": 10000
+  },
+  "candidate_count": 4,
+  "consumed_replay": false,
+  "epsilon_used": false,
+  "execution_commit": "72a74f7814cdd4c0398b320ec9e0a23f84fae551",
+  "execution_errata": [
+    "08_manifests/mso02c_g2_synthetic_execution_erratum_01.json",
+    "08_manifests/mso02c_g2_finalizer_erratum_01.json",
+    "08_manifests/mso02c_g2_finalizer_erratum_02.json",
+    "08_manifests/mso02c_g2_release_evidence_erratum_01.json"
+  ],
+  "fixture_count": 18,
+  "g1_derived_outcome_payload_reads_for_selection": 0,
+  "g2_pre_synthetic_commit": "22879748a2a813108ff7ce667f9b4c2366aca006",
+  "g2_protocol_erratum_commit": "37cf5fb7d6413eef7e7a934115904e36965ac6f3",
+  "old_metric_accidental_search_events_disclosed": 1,
+  "old_metric_numeric_values_used_for_selection": 0,
+  "particle_or_case_deletion": false,
+  "qualified_candidates": [
+    "C"
+  ],
+  "real_target_or_observable_payload_reads": 0,
+  "relative_gate": {
+    "point_ratio_max": 0.8,
+    "simultaneous_ucb_max": 0.9
+  },
+  "runtime": {
+    "byteorder": "little",
+    "machine": "arm64",
+    "python_implementation": "CPython",
+    "python_version": "3.13.9"
+  },
+  "schema_version": "MSO02C_G2_SYNTHETIC_AUDIT_V1",
+  "selected_primary": "C",
+  "status": "MSO02C_G2_SYNTHETIC_QUALIFICATION_COMPLETE_AWAITING_FINALIZATION",
+  "stress_row_count": 84
+}
