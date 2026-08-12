@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-02A_GIT_HANDOFF_TO_MSO-02B",
+  "mso02a_manifest_commit_field": "RECORDED_BY_FINAL_GIT_COMMIT_AND_HANDOFF",
+  "resolved_mso02a_commit": "48fc1b15298948bad9084f4e9b8758965ad84bd2",
+  "branch": "main",
+  "working_tree_clean_before_handoff": true,
+  "remote": null,
+  "mso02a_manifest_sha256": "c8e8770cda1779041b5b380b7ccec387446c9aa0f82c2b50f4a38655ad968e81",
+  "observable_store_sha256": "3dfedfa666c32e4e578f1821f441370da288fd636fc977d2fb15bf470654102e",
+  "handoff_is_additive": true,
+  "mso02a_manifest_modified": false
+}
+
