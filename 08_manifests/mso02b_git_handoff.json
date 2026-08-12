@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-02B_GIT_HANDOFF_TO_MSO-02C",
+  "mso02b_manifest_commit_field": "RECORDED_BY_FINAL_GIT_COMMIT_AND_USER_HANDOFF",
+  "pre_target_commit": "887d4cdab3dbd9e856e552ff47e50a3cf481d72f",
+  "target_analysis_execution_freeze_commit": "65aaedc86c97b876a0ce84745d7eee50dfeba660",
+  "formal_execution_erratum_commit": "9322658dae0bc97062bd88faae1df0588c514d66",
+  "resolved_mso02b_final_commit": "79e6e86a983e56fb889ab39349da0fc53ddbe880",
+  "branch": "main",
+  "working_tree_clean_before_handoff": true,
+  "remote": null,
+  "push_performed": false,
+  "mso02b_manifest_sha256": "94ce69002d714acff2176fc71910e18766f873ed26be7437763eb34762e68fe6",
+  "mso02b_status_ledger_sha256": "cb9864b34c94f4ae022745fa9b6040bd2baaf6bdae7156a3905b22584a268815",
+  "mso02b_report_sha256": "b883523e0d9d8d0db3ea73aad6a567db5f83a6292f7b155243abbd0afad1ba8d",
+  "mso02b_terminal_status": "MSO02B_PAIRED_PRELEARNING_IDENTIFIABILITY_REQUALIFICATION_NOT_EVALUABLE",
+  "h_mso01_terminal_status": "H_MSO01_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_EVALUABLE",
+  "handoff_is_additive": true,
+  "old_manifest_placeholder_modified": false,
+  "mso02b_artifacts_modified": false
+}
