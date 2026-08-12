@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "MSO-02B",
+  "status": "FROZEN_BEFORE_FORMAL_TARGET_GENERATION",
+  "freeze_timing": {
+    "original_contract_commit": "887d4cdab3dbd9e856e552ff47e50a3cf481d72f",
+    "source_import_qa_reference_evaluation_count_before_this_registry": 384,
+    "formal_defect_generation_count_before_this_registry": 0,
+    "formal_target_store_write_count_before_this_registry": 0,
+    "target_or_h3_outcome_used_to_define_semantics": false
+  },
+  "semantic_gap_count": 0,
+  "formal_sample": {
+    "particles_per_case": 128,
+    "particle_weight": "1/128_WITHIN_EACH_COMPLETE_CASE",
+    "selection": "FIRST_128_BY_ASCENDING_FULL_SHA256_THEN_PARTICLE_ID",
+    "hash_domain": "MSO02B|PARTICLE|<case_id>|<particle_id>",
+    "source_semantics": {
+      "ddo_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "path": "08_scripts/h3_identifiability_semantics.py",
+      "symbol": "selected_particle_ids",
+      "sha256": "857f30efce8559ddf3d562051209d0069ba73c24f06183a685b7304155001234"
+    },
+    "mso_domain_separation_is_target_free": true,
+    "mso02a_16_particle_geometry_sample_is_formal_h3_sample": false
+  },
+  "target_and_vector_semantics": {
+    "primary_components": [
+      "density_rate",
+      "pressure_gradient_acceleration",
+      "viscosity_laplacian_acceleration"
+    ],
+    "component_dimensions": [1, 2, 2],
+    "squared_norm": "SCALAR_SQUARE_OR_VECTOR_EUCLIDEAN_SQUARED_NORM_NO_DIMENSION_DIVISOR",
+    "component_scales": {
+      "density_rate": 0.1,
+      "pressure_gradient_acceleration": 0.01,
+      "viscosity_laplacian_acceleration": 0.01
+    },
+    "angle_magnitude_floor": "max(10*case_U_num,1e-6*component_scale)",
+    "angle_floor_source": {
+      "ddo_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "path": "08_scripts/ddo01e_non_neural_analysis.py",
+      "lines": "243-244",
+      "sha256": "88bec6c76c6cf700842bab455cd1f164d4f9dd08123f42b9d81f8afb928ae39e"
+    }
+  },
+  "observable_geometry": {
+    "arms": ["SS", "MS"],
+    "feature_dimensions": {"SS": 39, "MS": 110},
+    "normalization": "EXACT_FROZEN_OUTER_TRAIN_FOLD_MEDIAN_IQR_WITH_UNIT_FALLBACK_RETAIN_ALL_COLUMNS",
+    "distance": "PLAIN_EUCLIDEAN_ON_ALL_FROZEN_NORMALIZED_COLUMNS",
+    "neighbor_search": {
+      "algorithm": "scipy.spatial.cKDTree",
+      "p": 2,
+      "eps": 0,
+      "workers": 1,
+      "training_order": "ASCENDING_SHA256(sample_key),THEN_sample_key",
+      "tie_order": "distance,case_id,particle_id",
+      "primary_k": 10,
+      "sensitivity_k": [5, 20]
+    },
+    "exclusions": {
+      "same_case": true,
+      "same_field_lineage": true,
+      "same_disorder_seed": "EXCLUDE_ONLY_WHEN_BOTH_SEEDS_ARE_EQUAL_AND_NONZERO",
+      "reason_for_seed_zero_rule": "zero denotes the regular deterministic layout, not a shared stochastic disorder realization"
+    },
+    "coverage": {
+      "radius_source": "05_registries/mso02b_formal_coverage_radius_registry.json",
+      "calibration_sample": "SAME_FROZEN_128_PARTICLES_PER_CASE_AS_FORMAL_H3",
+      "calibration_exclusions": "same complete case, same field lineage, and same equal nonzero disorder seed",
+      "radius": "ARM_AND_OUTER_FOLD_SPECIFIC_INVERTED_CDF_P95_OF_TENTH_PERMITTED_DEVELOPMENT_NEIGHBOUR_DISTANCE",
+      "heldout_criterion": "tenth_permitted_development_neighbor_distance<=frozen_target_blind_formal_sample_K10_radius",
+      "aggregation": "particle_fraction_to_case_then_case_family_fold_equal",
+      "component_independent": true,
+      "mso02a_16_particle_geometry_radius_used": false
+    }
+  },
+  "descriptor_nearest_neighbour": {
+    "meaning": "Descriptor Nearest-Neighbour; never deep neural network",
+    "matched_random_baseline": {
+      "source": {
+        "ddo_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+        "path": "08_scripts/ddo01e_non_neural_analysis.py",
+        "lines": "421-424,458-470",
+        "sha256": "88bec6c76c6cf700842bab455cd1f164d4f9dd08123f42b9d81f8afb928ae39e"
+      },
+      "rng": "numpy.Generator(PCG64(full_SHA256_integer))",
+      "hash_domain": "MSO02B|BASELINE|<case_id>|<particle_id>",
+      "sample_size": 10,
+      "k5_sensitivity": "first five identities of the authoritative size-10 draw",
+      "k20_sensitivity_extension": {
+        "hash_domain": "MSO02B|BASELINE_K20_EXTENSION|<case_id>|<particle_id>",
+        "sample_size": 10,
+        "candidate_pool": "remaining permitted pool after removing the authoritative primary ten",
+        "primary_k10_identity_modified": false
+      },
+      "replacement": false,
+      "candidate_pool": "same permitted outer-development pool; identical random identities for SS and MS",
+      "particle_statistic": "mean_k(||target_neighbor-target_query||^2)/mean_k(||target_random-target_query||^2)",
+      "zero_over_zero": "DEGENERATE",
+      "positive_over_zero": "DEGENERATE"
+    },
+    "case_summaries": {
+      "median": "numpy.quantile(method=inverted_cdf,q=0.5)",
+      "p90": "numpy.quantile(method=inverted_cdf,q=0.9)"
+    },
+    "formal_aggregation": "PARTICLE_QUANTILE_TO_CASE_SUMMARY_THEN_EQUAL_CASE_MEAN_WITHIN_FAMILY_FOLD_THEN_EQUAL_MEAN_OVER_4_FAMILIES_AND_6_FOLDS"
+  },
+  "conditional_variance": {
+    "source": {
+      "ddo_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "path": "08_scripts/h3_identifiability_semantics.py",
+      "symbols": ["target_trace_variance", "conditional_variance_ratios"],
+      "sha256": "857f30efce8559ddf3d562051209d0069ba73c24f06183a685b7304155001234"
+    },
+    "local_estimator": "unweighted trace sum of squared deviations from K-neighbor target mean divided by K-1",
+    "bias_correction": "BESSEL_K_MINUS_1",
+    "development_total_variance": "case-equal mean target second norm minus squared case-equal mean target vector",
+    "ratio": "local_unbiased_trace/development_case_equal_total_trace",
+    "case_summary": "mean over formal particles",
+    "primary_k": 10,
+    "sensitivity_k": [5, 20]
+  },
+  "oracle": {
+    "candidates_in_tie_order": ["knn5", "knn10", "knn20", "ridge", "polynomial_ridge"],
+    "source": {
+      "ddo_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "path": "08_scripts/ddo01e_non_neural_analysis.py",
+      "symbols": ["ORACLES", "ridge_predict", "fold_case_nrmse"],
+      "sha256": "88bec6c76c6cf700842bab455cd1f164d4f9dd08123f42b9d81f8afb928ae39e"
+    },
+    "knn": {"k": [5, 10, 20], "weighting": "uniform", "distance_and_exclusions": "same as descriptor NN"},
+    "ridge": {
+      "alpha_grid": [1.0],
+      "intercept": true,
+      "intercept_penalized": false,
+      "centering": "training_column_means_for_X_and_Y",
+      "solver": "numpy.linalg.solve((Xc.T@Xc)+alpha*I,Xc.T@Yc)",
+      "dtype": "float64",
+      "multioutput": "one shared design and alpha"
+    },
+    "polynomial_ridge": {
+      "degree": 2,
+      "include_bias": false,
+      "alpha_grid": [1.0],
+      "expansion": "sklearn.preprocessing.PolynomialFeatures",
+      "frozen_ss_subset": [
+        "obs__base_neighbor_count_over_nominal",
+        "obs__base_cov_eig_ratio",
+        "obs__base_kernel_s0_minus_1",
+        "obs__base_first_moment_error_fro",
+        "obs__base_grad_constant_norm_times_h",
+        "obs__rho",
+        "obs__local_dv_rms"
+      ],
+      "frozen_ms_subset": [
+        "obs__base_neighbor_count_over_nominal",
+        "obs__base_cov_eig_ratio",
+        "obs__base_kernel_s0_minus_1",
+        "obs__base_first_moment_error_fro",
+        "obs__base_grad_constant_norm_times_h",
+        "obs__rho",
+        "obs__local_dv_rms"
+      ],
+      "ddo_invariant_sources": [
+        "obs__neighbor_count_normalized",
+        "obs__anisotropy",
+        "obs__zeroth_moment_error",
+        "obs__first_moment_error_frobenius",
+        "obs__gradient_constant_times_h_norm",
+        "obs__delta_rho_over_rho0",
+        "obs__sph_divergence_normalized",
+        "obs__kh_rms"
+      ],
+      "mso_mapping_note": "Only deployment-available pre-frozen columns are used; eig_ratio, rho, and local_dv_rms are the registered MSO invariant equivalents. kh is absent and is not added. Both arms use the identical seven-column subset. The target-blind numerical preflight rejected lambda-one density-rate because its frozen IQR creates a degree-two normal-equation condition loss; local_dv_rms is the prospectively frozen velocity-gradient-scale equivalent."
+    },
+    "nested_selection": {
+      "unit": "arm,outer_fold,component",
+      "inner_validation_folds": "each of the five existing development outer-fold IDs once",
+      "inner_training_folds": "the other four development outer-fold IDs",
+      "lineage_held_out": true,
+      "loss": "equal mean over five inner folds of equal mean over four family NRMSE values",
+      "inner_target_rms": "uncentered RMS from the corresponding four inner-training folds, case-equal and family-equal",
+      "tie_break": "first candidate in candidates_in_tie_order",
+      "failure": "candidate invalid if any inner fold/family is nonfinite; all invalid makes oracle NOT_EVALUABLE",
+      "outer_refit": "winner fit once on all five development folds; no heldout target selects winner"
+    },
+    "outer_metrics": {
+      "case_sufficient_statistics": ["target_mean_square", "error_mean_square", "mean_absolute_error", "bias", "angle_error"],
+      "fold_family_rmse": "sqrt(equal_case_mean(error_mean_square))",
+      "outer_target_rms": "sqrt(equal_family_equal_case_mean development target_mean_square)",
+      "fold_family_nrmse": "fold_family_rmse/outer_target_rms",
+      "formal_nrmse": "equal mean over 6 folds and 4 families",
+      "family_nrmse": "equal mean over 6 folds",
+      "mean_target_predictor": "outer-development case-equal family-equal target mean",
+      "improvement": "1-formal_selected_oracle_NRMSE/formal_mean_predictor_NRMSE"
+    }
+  },
+  "aggregation": {
+    "formal_order": "particle_to_complete_case; equal cases within family/fold; equal four families; equal six folds",
+    "particle_rows_are_independent_replicates": false,
+    "relative_ratio": "ratio of arm formal aggregates; never mean of case/fold ratios",
+    "worst_family": "maximum across the four family NRMSE formal aggregates"
+  },
+  "bootstrap": {
+    "draw_source": "06_experiments/mso02a/bootstrap_draws.npz",
+    "replicates": 10000,
+    "decode": "replicate_offsets slice is a duplicated formal_case_index multiset; preserve multiplicities and never unique",
+    "paired_arms": true,
+    "refit_oracle": false,
+    "reselect_oracle": false,
+    "recompute": "only aggregate already cross-fitted complete-case sufficient statistics",
+    "empty_family_fold_is_degenerate": true,
+    "nonfinite_or_nonpositive_required_denominator_is_degenerate": true,
+    "maximum_degenerate_fraction": 0.02,
+    "insufficient_lineage_rule": "point population requires >=6 lineages per family and every fold represented",
+    "studentization": {
+      "standard_error": "sample standard deviation of valid bootstrap estimates with ddof=1",
+      "quantile": "nearest-rank ceil(0.95*B_valid)-1 on sorted values; clamp critical value at >=0",
+      "upper_statistic": "max_component((point-bootstrap)/SE)",
+      "lower_statistic": "max_component((bootstrap-point)/SE)",
+      "upper_bound": "point+q_upper*SE",
+      "lower_bound": "point-q_lower*SE",
+      "zero_se": "if every draw equals point, contribution=0 and bound=point; otherwise NOT_EVALUABLE",
+      "scope": "three primary components within each metric family",
+      "mixed_ratio_stability": "unstable components are NOT_EVALUABLE; maximum studentization jointly spans all and only stable components, never separate pointwise bounds",
+      "ratios": "studentize log(MS/SS), exponentiate bound",
+      "worst_family": "separate three-component max-studentized family per F1-F4; four-family intersection"
+    }
+  },
+  "numerical_ratio_and_auxiliary_gates": {
+    "dimensionless_floor": 2.842170943040401e-14,
+    "floor_definition": "128*np.finfo(float64).eps",
+    "floor_provenance": {
+      "status": "PROSPECTIVE_TARGET_BLIND_MSO02B_EXECUTION_AMENDMENT",
+      "source_contract": "00_project_contract/mso02b_paired_prelearning_identifiability_execution_contract.md",
+      "ca01_coefficient_source": "01_provenance/vendor/ddo_analytical_reference/mso02b_target_reference.py:C_FP,EPS64",
+      "scientific_gate_value_modified": false
+    },
+    "stable_ratio": "SS_point>100*dimensionless_floor",
+    "unstable_ratio_action": "RELATIVE_GATE_NOT_EVALUABLE because no frozen absolute-difference noninferiority margin exists",
+    "dnn_median_guard": "MS-SS<=0.02 AND (ratio_unstable OR MS/SS<=1.05)",
+    "worst_family_guard": "max_family_MS-max_family_SS<=0.05 and all MS family absolute gates pass",
+    "coverage_guard": "MS overall and every family pass absolute gates and each is no more than 0.05 below corresponding SS",
+    "fold_reversal": "fail component if any valid fold has MS>SS+dimensionless_floor simultaneously for DNN p90, conditional variance, and selected-oracle NRMSE",
+    "non_evaluable_fold": "invalidates six-fold gate"
+  },
+  "not_evaluable_propagation": {
+    "required_metric_or_bound": "component NOT_EVALUABLE and cannot pass",
+    "required_fold": "component NOT_EVALUABLE and six-fold gate invalid",
+    "oracle_candidate_failure": "candidate invalid only; no post-selection fallback",
+    "oracle_all_candidates_or_selected_outer_failure": "oracle arm/fold/component NOT_EVALUABLE",
+    "global": "any required component NOT_EVALUABLE makes global H-MSO-01 NOT_EVALUABLE and all downstream eligibility false"
+  },
+  "post_target_modification_counts": {
+    "feature": 0,
+    "scale": 0,
+    "fold": 0,
+    "normalization": 0,
+    "gate": 0,
+    "oracle_family": 0,
+    "bootstrap": 0
+  }
+}

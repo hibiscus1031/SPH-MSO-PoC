@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "stage": "MSO-02B",
+  "status": "FROZEN_BEFORE_FORMAL_TARGET_GENERATION",
+  "target_definition": "R_h L(q*) - L_h(R_h q*)",
+  "sign": "CONTINUUM_ANALYTICAL_REFERENCE_MINUS_LAMBDA_1_FROZEN_BASE_SPH",
+  "roles": [
+    {
+      "name": "density_rate",
+      "store_field": "target_density_rate",
+      "dimension": 1,
+      "role": "FORMAL_PRIMARY_H_MSO01_TARGET"
+    },
+    {
+      "name": "pressure_gradient_acceleration",
+      "store_field": "target_pressure_gradient_acceleration",
+      "dimension": 2,
+      "role": "FORMAL_PRIMARY_H_MSO01_TARGET"
+    },
+    {
+      "name": "viscosity_laplacian_acceleration",
+      "store_field": "target_viscosity_laplacian_acceleration",
+      "dimension": 2,
+      "role": "FORMAL_PRIMARY_H_MSO01_TARGET"
+    },
+    {
+      "name": "total_acceleration",
+      "store_field": "target_total_acceleration_derived",
+      "dimension": 2,
+      "role": "DERIVED_DIAGNOSTIC_ONLY",
+      "construction": "continuum_total_acceleration-lambda1_total_acceleration; numerically closure-qualified against pressure_gradient_acceleration+viscosity_laplacian_acceleration"
+    },
+    {
+      "name": "interpolation_density",
+      "store_field": null,
+      "role": "DIAGNOSTIC_ONLY_NOT_GENERATED_AS_FORMAL_TARGET"
+    }
+  ],
+  "forbidden_formal_targets": ["d_0.75h*", "d_1.25h*", "d_1.50h*"],
+  "high_resolution_sph_is_truth": false,
+  "target_store_directory": "06_experiments/mso02b/target_ref",
+  "observable_store_directory": "06_experiments/mso02a/observable",
+  "target_columns_enter_observable_matrices": false,
+  "global_verdict_components": [
+    "density_rate",
+    "pressure_gradient_acceleration",
+    "viscosity_laplacian_acceleration"
+  ]
+}

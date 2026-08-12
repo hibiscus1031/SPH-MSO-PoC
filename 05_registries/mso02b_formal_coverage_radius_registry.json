@@ -1,0 +1,148 @@
+{
+  "arms": {
+    "MS": {
+      "feature_dimension": 110,
+      "folds": [
+        {
+          "development_sample_row_count": 39936,
+          "finite": true,
+          "held_out_fold": "FOLD_0",
+          "k10_radius_max": 343112276354417.7,
+          "k10_radius_min": 0.3444643095046458,
+          "k10_radius_p95": 9367431329560.807,
+          "unique_development_case_count": 312
+        },
+        {
+          "development_sample_row_count": 39552,
+          "finite": true,
+          "held_out_fold": "FOLD_1",
+          "k10_radius_max": 7.1251401407520184e+16,
+          "k10_radius_min": 0.1868897082367944,
+          "k10_radius_p95": 7685251251173006.0,
+          "unique_development_case_count": 309
+        },
+        {
+          "development_sample_row_count": 41728,
+          "finite": true,
+          "held_out_fold": "FOLD_2",
+          "k10_radius_max": 319958679898893.7,
+          "k10_radius_min": 0.2507504829988803,
+          "k10_radius_p95": 9559889631763.992,
+          "unique_development_case_count": 326
+        },
+        {
+          "development_sample_row_count": 41216,
+          "finite": true,
+          "held_out_fold": "FOLD_3",
+          "k10_radius_max": 2286463290607539.0,
+          "k10_radius_min": 0.7518982355518038,
+          "k10_radius_p95": 128468002138512.2,
+          "unique_development_case_count": 322
+        },
+        {
+          "development_sample_row_count": 41600,
+          "finite": true,
+          "held_out_fold": "FOLD_4",
+          "k10_radius_max": 2.4455476559204176e+16,
+          "k10_radius_min": 0.1882549920509381,
+          "k10_radius_p95": 1267344421992855.5,
+          "unique_development_case_count": 325
+        },
+        {
+          "development_sample_row_count": 41728,
+          "finite": true,
+          "held_out_fold": "FOLD_5",
+          "k10_radius_max": 9034160099889138.0,
+          "k10_radius_min": 0.19480763032509796,
+          "k10_radius_p95": 462266852002056.75,
+          "unique_development_case_count": 326
+        }
+      ]
+    },
+    "SS": {
+      "feature_dimension": 39,
+      "folds": [
+        {
+          "development_sample_row_count": 39936,
+          "finite": true,
+          "held_out_fold": "FOLD_0",
+          "k10_radius_max": 343112276354417.7,
+          "k10_radius_min": 0.22503013687524595,
+          "k10_radius_p95": 9367431329560.807,
+          "unique_development_case_count": 312
+        },
+        {
+          "development_sample_row_count": 39552,
+          "finite": true,
+          "held_out_fold": "FOLD_1",
+          "k10_radius_max": 8032016215239840.0,
+          "k10_radius_min": 0.10758745332259109,
+          "k10_radius_p95": 413786647021432.0,
+          "unique_development_case_count": 309
+        },
+        {
+          "development_sample_row_count": 41728,
+          "finite": true,
+          "held_out_fold": "FOLD_2",
+          "k10_radius_max": 319958679898838.56,
+          "k10_radius_min": 0.2093909968175847,
+          "k10_radius_p95": 9559889631763.992,
+          "unique_development_case_count": 326
+        },
+        {
+          "development_sample_row_count": 41216,
+          "finite": true,
+          "held_out_fold": "FOLD_3",
+          "k10_radius_max": 1001953948027730.5,
+          "k10_radius_min": 0.37432718075164145,
+          "k10_radius_p95": 26087550976729.0,
+          "unique_development_case_count": 322
+        },
+        {
+          "development_sample_row_count": 41600,
+          "finite": true,
+          "held_out_fold": "FOLD_4",
+          "k10_radius_max": 1.0234368263119276e+16,
+          "k10_radius_min": 0.1882549920509381,
+          "k10_radius_p95": 78199866374672.0,
+          "unique_development_case_count": 325
+        },
+        {
+          "development_sample_row_count": 41728,
+          "finite": true,
+          "held_out_fold": "FOLD_5",
+          "k10_radius_max": 3631069574945150.0,
+          "k10_radius_min": 0.10077919061283935,
+          "k10_radius_p95": 48107912603816.0,
+          "unique_development_case_count": 326
+        }
+      ]
+    }
+  },
+  "calibration": "DEVELOPMENT_SAMPLE_LEAVE_ONE_COMPLETE_CASE_LINEAGE_AND_NONZERO_SEED_OUT",
+  "calibration_statistic": "TENTH_PERMITTED_DEVELOPMENT_NEIGHBOUR_DISTANCE",
+  "distance": "PLAIN_EUCLIDEAN_AFTER_EXACT_FROZEN_ARM_OUTER_FOLD_NORMALIZATION",
+  "exclusions": {
+    "same_case": true,
+    "same_field_lineage": true,
+    "same_nonzero_disorder_seed": true,
+    "zero_seed_is_shared_stochastic_exclusion": false
+  },
+  "formal_sample_particles_per_case": 128,
+  "formal_sample_row_count": 49152,
+  "heldout_criterion": "TENTH_PERMITTED_DEVELOPMENT_NEIGHBOUR_DISTANCE_LE_RADIUS",
+  "mso02a_16_particle_geometry_radius_used": false,
+  "observable_matrix_read_count": 1,
+  "primary_k": 10,
+  "quantile": "NUMPY_INVERTED_CDF_P95",
+  "schema_version": "1.0.0",
+  "source_sha256": {
+    "05_registries/mso02a_formal_fresh_atlas_registry.json": "9893cf48d73be3316a66bb7b9c7f71db8c122247ce56b67d1b0f685605b761c6",
+    "05_registries/mso02b_formal_particle_sample_registry.json": "98ff5716e3adbbaac4cac4899e76eb4d61d4e194396fe4e37041a94abe0ca229",
+    "06_experiments/mso02a/fold_normalization_registry.json": "f8fb9ccde826ece14690ab255955ecb7b922bc5cd27ddb9b0544b9fd9c9bd634",
+    "06_experiments/mso02a/observable/mso02a_observable_store.npz": "3dfedfa666c32e4e578f1821f441370da288fd636fc977d2fb15bf470654102e"
+  },
+  "stage": "MSO-02B",
+  "status": "FROZEN_TARGET_BLIND_BEFORE_FIRST_FORMAL_DEFECT_OR_TARGET",
+  "target_or_reference_read_count": 0
+}

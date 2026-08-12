@@ -1,6 +1,17 @@
 # MSO-02B paired prelearning identifiability execution contract
 
-Status: `FROZEN_BEFORE_FIRST_TARGET_OR_REFERENCE_ACCESS`.
+Status: `TARGET_BLIND_AMENDED_AFTER_SOURCE_IMPORT_QA_AND_BEFORE_FIRST_FORMAL_DEFECT_OR_TARGET`.
+
+The original complete contract was frozen at commit
+`887d4cdab3dbd9e856e552ff47e50a3cf481d72f` with SHA-256
+`44c6588db89568b7990e8804e8017dbd2fc2572c023390e253ad75b2e53bf3b4`
+before first reference-source access. Subsequent source-import QA evaluated the
+analytical A/B reference paths for 384 frozen states in memory, generated no
+formal defect, wrote no target, and inspected no scientific outcome. The
+implementation amendments below close target-blind numerical ambiguities after
+that QA and before the first formal defect/target generation; they do not use a
+target value or H3 outcome. At this amendment, formal defect generations and
+formal target-store writes both remain zero.
 
 ## Authorization and terminal boundary
 
@@ -77,8 +88,9 @@ historical target archives, H3 ledgers, metrics, and outcomes are not inputs.
 The target builder may read the formal registry and analytical parameters,
 physical constants, lambda-one operator, and qualified continuum formulas. It
 may not read the MS feature matrix, SS/MS H3 geometry/result artifacts, oracle
-outcomes, or any target-derived selection information. Target artifacts live
-only under `06_experiments/mso02b/target_ref/`; the MSO-02A observable store is
+outcomes, or any target-derived selection information. Target arrays live only
+under `06_experiments/mso02b/target_ref/`; the required qualification table and
+access ledger live at `06_experiments/mso02b/`. The MSO-02A observable store is
 read-only and its hash is checked immediately before and after target work.
 
 Every case must pass analytical formula/derivative consistency, finite values,
@@ -132,6 +144,14 @@ median and p90, reciprocal-neighbor consistency, sign disagreement, family
 composition, and coverage. Formal aggregation is case-equal, family-equal, and
 fold-equal.
 
+The authoritative K=10 matched-random identity is an exact size-10
+`numpy.Generator(PCG64(full_SHA256_integer))` draw without replacement. The K=5
+sensitivity uses its first five identities. The K=20 sensitivity appends ten
+additional identities drawn without replacement from the remaining permitted
+pool using the independent domain
+`MSO02B|BASELINE_K20_EXTENSION|<case_id>|<particle_id>`; this extension cannot
+change any primary K=10 identity or metric.
+
 ### Conditional target variance
 
 Use exactly the same target-blind primary K=10 neighborhoods. Compute the
@@ -163,10 +183,16 @@ must not be used to fill the gap.
 
 ### Coverage
 
-Use the frozen arm-specific 95th-percentile leave-one-lineage-out development
-K=10 radius in Euclidean normalized observable space. Report overall,
-familywise, and foldwise coverage. Coverage is component-independent and may
-never substitute for an identifiability metric.
+Freeze a target-blind arm/outer-fold radius on exactly the prospective formal
+128-particle-per-case sample, not the earlier 16-particle geometry diagnostic.
+Within each outer development partition, apply the exact formal normalization
+and the same complete-case, complete-lineage, and equal-nonzero-seed exclusions
+used for held-out neighbours. For every development row, take its tenth
+permitted development-neighbour distance; the arm/fold radius is the p95 using
+NumPy `method="inverted_cdf"`. A held-out particle is covered only when its
+tenth permitted development-neighbour distance is no larger than that radius.
+Report overall, familywise, and foldwise coverage. Coverage is
+component-independent and may never substitute for an identifiability metric.
 
 ## Frozen gates and verdict logic
 
@@ -200,18 +226,53 @@ primary components within each metric family. More than 2% degenerate resamples
 or insufficient effective lineages makes the inferential gate `NOT_EVALUABLE`.
 Pointwise confidence intervals cannot replace simultaneous bounds.
 
+### Target-blind numerical-floor execution amendment
+
+This prospective implementation amendment is frozen before any formal defect
+generation. The upstream DDO H3 implementation did not serialize the
+dimensionless ratio-stability floor delegated by the preceding paragraph.
+MSO-02B therefore fixes it transparently as the same CA-01 floating-point
+coefficient used by the qualified reference path:
+
+`f_ratio = C_fp * eps64 = 128 * np.finfo(float64).eps`.
+
+A relative ratio is numerically stable only when the formal SS point estimate
+is greater than `100*f_ratio`. This branch is chosen once from the point
+estimate and never per bootstrap draw; no epsilon is added. Because no frozen
+absolute-difference noninferiority margin exists, an unstable ratio is
+`NOT_EVALUABLE` and cannot pass. This amendment supplies only a target-blind
+machine-resolution rule; it does not alter a scientific threshold, metric,
+feature, fold, normalization, oracle, bootstrap identity, or gate value.
+
+Ratio stability is assessed separately for each component. If a metric family
+contains both stable and unstable components, the unstable component is
+`NOT_EVALUABLE`; the maximum-studentized statistic is computed jointly across
+all and only the stable primary components so multiplicity is retained for
+every evaluable contrast. It is never reduced to separate pointwise bounds.
+
+Any non-evaluable required metric, oracle, inferential bound, fold, or component
+propagates explicitly to component/global `NOT_EVALUABLE`; it is not relabeled
+as a scientific failure and cannot authorize MSO-03. Candidate-level numerical
+failures invalidate only that frozen candidate. If all candidates are invalid
+for an arm/fold/component, or the selected candidate cannot produce its frozen
+outer prediction, that oracle component is `NOT_EVALUABLE` with no fallback to
+a different post-selection candidate.
+
 For each component:
 
 `COMPONENT_H_MSO01_PASS = ABSOLUTE_IDENTIFIABILITY_PASS AND RELATIVE_MULTISCALE_RESCUE_PASS`.
 
 Use explicit mixed verdicts when only one side passes. Global
 `H_MSO01_MULTISCALE_IDENTIFIABILITY_RESCUE_QUALIFIED` requires all three
-component passes; otherwise it is
-`H_MSO01_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_QUALIFIED`.
+component passes. If every required component is evaluable but any fails, the
+global result is `H_MSO01_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_QUALIFIED`. If
+any required component is non-evaluable, the global result is
+`H_MSO01_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_EVALUABLE`.
 
 If global PASS, only `MSO03_DETERMINISTIC_CLOSURE_BASELINE_ELIGIBLE=true` is
-granted. If global FAIL, that eligibility and every neural/attention/learned
-operator authorization remain false. Neither outcome executes MSO-03.
+granted. If global FAIL or `NOT_EVALUABLE`, that eligibility and every neural/
+attention/learned-operator authorization remain false. No outcome executes
+MSO-03.
 
 ## No second chance and firewall
 
