@@ -1,0 +1,4 @@
+component,draw_count,unique_draw_count,ss_point,ss_ucb,ms_point,ms_ucb,ss_critical,ms_critical,degenerate_draw_count,recomputed_WN_each_draw,recomputed_WB_each_draw,division_count_per_draw,pointwise_ratio,epsilon,zero_row_deletion,passed
+density_rate,10000,10000,0.5763202600590374,0.579032725791452,0.3667562116457018,0.3684823674506964,1.4044290524983167,1.404362538517261,0,True,True,1,False,False,False,True
+pressure_gradient_acceleration,10000,10000,0.5762355374636425,0.5789231860706087,0.3666987282771642,0.36840901972086737,1.4044290524983167,1.404362538517261,0,True,True,1,False,False,False,True
+viscosity_laplacian_acceleration,10000,10000,0.5765640275415711,0.5793835243002415,0.36689969180461035,0.36869377889679966,1.4044290524983167,1.404362538517261,0,True,True,1,False,False,False,True

@@ -1,0 +1,306 @@
+{
+  "artifact_registry": [
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "00_project_contract/hmso01r_a_fresh_requalification_atlas_freeze_contract.md",
+      "role": "PROSPECTIVE_PROTOCOL",
+      "sha256": "e2aa0c65089121c22af8c408923bdeed1c7eab3bf88c560db8405ccec46607a3",
+      "source": "user authorization and CA-MSO-01",
+      "stage": "H-MSO-01R-A_PRE_CASE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_primary_candidate_registry.json",
+      "role": "FRESH_PRIMARY_CANDIDATES",
+      "sha256": "89071e086f7057116d83696599dc3f262f7ada86d5d38c185b328fe6c98cf44a",
+      "source": "single deterministic target-blind seed",
+      "stage": "H-MSO-01R-A_PRECOMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_reserve_candidate_registry.json",
+      "role": "FRESH_RESERVE_CANDIDATES",
+      "sha256": "36c3830cc4f045b3e4c4d3af2fccbdeb69c582d75e1b3924ab36313e447e79ff",
+      "source": "single deterministic target-blind seed",
+      "stage": "H-MSO-01R-A_PRECOMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_candidate_lineage_fold_registry.json",
+      "role": "CANDIDATE_FOLD_FREEZE",
+      "sha256": "b52a31bdd7caaed1c160d0f3047133c8f9078330534777ef7eea120f2024c2a6",
+      "source": "fresh lineage identities",
+      "stage": "H-MSO-01R-A_PRECOMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_formal_fresh_atlas_registry.json",
+      "role": "FORMAL_FRESH_ATLAS",
+      "sha256": "7fd7aa6c8415051ad83f0028b75b4684121886cb3645060e4e5c3ac54ebc268a",
+      "source": "four-scale target-blind admission",
+      "stage": "H-MSO-01R-A_COMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_formal_particle_sample_registry.json",
+      "role": "FORMAL_PARTICLE_SAMPLE",
+      "sha256": "a4b7da1a9f6e4efab7ccbc9ec3bb5e4235a82aef30ce64017895df05ab1c2b01",
+      "source": "deterministic case-particle hash order",
+      "stage": "H-MSO-01R-A_COMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_lineage_fold_registry.json",
+      "role": "FORMAL_FOLDS",
+      "sha256": "941edc1827e55ca2ffec1125734e0791786e2d157c3aa873ae0a24f520f8815b",
+      "source": "candidate fold freeze",
+      "stage": "H-MSO-01R-A_COMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_paired_ss_ms_registry.json",
+      "role": "PAIRED_CAUSAL_IDENTITY",
+      "sha256": "2a7debb68218d1b1e488f64f2bd831031d7e16aa4f0f125d77c7676b8dc95e4a",
+      "source": "identical case-particle states",
+      "stage": "H-MSO-01R-A_COMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_random_baseline_identity_registry.json",
+      "role": "MATCHED_RANDOM_IDENTITIES",
+      "sha256": "cc6fa10eb77fbbd7a9b8db00d9214ff971a351fbbefdfee38b0c7db898bace99",
+      "source": "target-blind PCG64 SHA identity",
+      "stage": "H-MSO-01R-A_ANALYSIS_FREEZE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "05_registries/hmso01r_a_bootstrap_registry.json",
+      "role": "PAIRED_BOOTSTRAP_IDENTITIES",
+      "sha256": "7e1f2686b468cd47eb18ade38e9eb74c389e72e600fc5a89831035925cc278da",
+      "source": "fresh lineage-first paired bootstrap",
+      "stage": "H-MSO-01R-A_ANALYSIS_FREEZE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/case_level_four_scale_preflight.csv",
+      "role": "NUMERICAL_ADMISSIBILITY",
+      "sha256": "5052cd7821afb1cbaea72b4500e5951dcc657067eae054a4249ab5d0405a4ea3",
+      "source": "frozen static operators",
+      "stage": "H-MSO-01R-A_COMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/case_replacement_audit.csv",
+      "role": "RESERVE_AUDIT",
+      "sha256": "a696526716a2cd30cd35ef02c773193f0c3ad29f3d05d21114f2cba7f0da8017",
+      "source": "frozen same-family reserve order",
+      "stage": "H-MSO-01R-A_COMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/ss_observable_schema_identity.json",
+      "role": "SS_SCHEMA",
+      "sha256": "2bfe3b7f0b1869cade1e9e8d7554eff589c3b017512470b9e8eabf8b18130e70",
+      "source": "frozen MSO-02A 39-column semantics",
+      "stage": "H-MSO-01R-A_PRECOMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/ms_observable_schema_identity.json",
+      "role": "MS_SCHEMA",
+      "sha256": "13a6e83f03576619afa335e69df737547947501c63dd691066119fd9d2823fb3",
+      "source": "frozen MSO-02A 110-column semantics",
+      "stage": "H-MSO-01R-A_PRECOMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/representation_dimensionality_audit.csv",
+      "role": "REPRESENTATION_AUDIT",
+      "sha256": "a9c761f26797b595f0c2504cf5e7653a76b5e5e856655995b556317b3fe23199",
+      "source": "fresh observable matrices",
+      "stage": "H-MSO-01R-A_COMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/fold_normalization_registry.json",
+      "role": "NORMALIZATION_FREEZE",
+      "sha256": "d9842a2ba2b347d0aeb1e950118bf62d3c89d0f80639a5f475cd9c5acb683018",
+      "source": "training-fold observables only",
+      "stage": "H-MSO-01R-A_ANALYSIS_FREEZE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/descriptor_geometry_freeze.json",
+      "role": "DESCRIPTOR_GEOMETRY",
+      "sha256": "1641f0a68bf59a9f3f949e8ee058971db154d0f68eccf6e23efe6122f4067768",
+      "source": "normalized target-blind features",
+      "stage": "H-MSO-01R-A_ANALYSIS_FREEZE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/descriptor_neighbor_identities.npz",
+      "role": "DESCRIPTOR_NEIGHBOR_IDENTITIES",
+      "sha256": "1d98e7c2038c9d6b7391b1ab953084dfafb47ef3ade7c62815c9f676694408b4",
+      "source": "deterministic legal KNN",
+      "stage": "H-MSO-01R-A_ANALYSIS_FREEZE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/coverage_geometry_freeze.json",
+      "role": "COVERAGE_GEOMETRY",
+      "sha256": "a51fd951bcad7f32a228229176055161b8117e9a266cdd4a99975bea7be447e4",
+      "source": "observable geometry only",
+      "stage": "H-MSO-01R-A_ANALYSIS_FREEZE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/random_baseline_identities.npz",
+      "role": "MATCHED_RANDOM_IDENTITY_PAYLOAD",
+      "sha256": "74268059f33c5fc9ec885ccb1ef7f61b22120f4eac7e9862bab6fddc844d8b07",
+      "source": "representation-independent matched random identities",
+      "stage": "H-MSO-01R-A_ANALYSIS_FREEZE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/candidate_c_synthetic_preflight.csv",
+      "role": "CANDIDATE_C_SYNTHETIC_PREFLIGHT",
+      "sha256": "4a2499d6799b0d35879e249e0c1cef13a8e6eaca32c44639635dd2fce36b5d08",
+      "source": "synthetic arrays only",
+      "stage": "H-MSO-01R-A_PREFLIGHT"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/candidate_c_bootstrap_preflight.csv",
+      "role": "CANDIDATE_C_BOOTSTRAP_PREFLIGHT",
+      "sha256": "59ccee599224dd790c7e71734e97b40101c83b0fb04f7eca7417c00cabb66fb1",
+      "source": "10,000 fresh draws and synthetic arrays",
+      "stage": "H-MSO-01R-A_PREFLIGHT"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/oracle_numerical_preflight.json",
+      "role": "ORACLE_NUMERICAL_PREFLIGHT",
+      "sha256": "ca3408e2183c33cd80c8fb8bc3a337a9a5779386ab9db4dfed5743cc9b7cef33",
+      "source": "synthetic targets only",
+      "stage": "H-MSO-01R-A_PREFLIGHT"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/firewall_audit.json",
+      "role": "INFORMATION_FIREWALL",
+      "sha256": "056d8d24d1bf912f64850428e910e27ae552c8794f57fb70d4ec95a4caaf1791",
+      "source": "pre/post execution counters",
+      "stage": "H-MSO-01R-A_RELEASE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/observable/hmso01r_a_observable_store.npz",
+      "role": "OBSERVABLE_STORE",
+      "sha256": "65ca1a7fea58248207fc5a22e14855b4a84c392c7ef17cefdf2d396687cc38cd",
+      "source": "deployment-compatible static quantities",
+      "stage": "H-MSO-01R-A_COMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/bootstrap_draws.npz",
+      "role": "BOOTSTRAP_DRAW_PAYLOAD",
+      "sha256": "3a5853ce6b353c8c2584b0f95651904fb1506a0a3e3af6985981374789d4667e",
+      "source": "fresh paired deterministic draws",
+      "stage": "H-MSO-01R-A_ANALYSIS_FREEZE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "06_experiments/hmso01r_a/run_hmso01r_a_freeze.py",
+      "role": "FROZEN_EXECUTABLE",
+      "sha256": "aae1d5ef58630e77d0f83e6fabedebde4ccf0408269d8bdebe94de6bc19972e5",
+      "source": "prospective contract implementation",
+      "stage": "H-MSO-01R-A_PRECOMPUTE"
+    },
+    {
+      "consumption_status": "UNCONSUMED_R_B_ELIGIBILITY_INPUT",
+      "path": "08_manifests/hmso01r_a_precompute_freeze.json",
+      "role": "PRECOMPUTE_FREEZE",
+      "sha256": "1806d4831cf720d504bf9e0bd9bb52b5c3cdfdad5448bdc33e7b1b06a191ee28",
+      "source": "hash-bound candidate protocol",
+      "stage": "H-MSO-01R-A_PRECOMPUTE"
+    },
+    {
+      "consumption_status": "FINAL_RELEASE_OUTPUT",
+      "path": "07_reports/hmso01r_a_fresh_requalification_atlas_report.md",
+      "role": "FINAL_REPORT",
+      "sha256": "13ca8bb5c51960ee2a7b32bb2cf15fb18b96365068bb8f63f216e8e44fb9e5d0",
+      "source": "validated hash-bound R-A artifacts",
+      "stage": "H-MSO-01R-A_RELEASE"
+    },
+    {
+      "consumption_status": "FINAL_RELEASE_OUTPUT",
+      "path": "08_manifests/hmso01r_a_status_ledger.json",
+      "role": "TERMINAL_STATUS_LEDGER",
+      "sha256": "d59aaa656da136c9291c8be58b4ae10b9017a9731daebcef96cae06542548bf3",
+      "source": "prospective PASS checklist",
+      "stage": "H-MSO-01R-A_RELEASE"
+    }
+  ],
+  "branch": "main",
+  "firewall": {
+    "all_prohibited_counts_zero": true,
+    "observable_store_only": true,
+    "post_stage": {
+      "arc_access_count": 0,
+      "attention_count": 0,
+      "conditional_variance_count": 0,
+      "continuum_operator_read_count": 0,
+      "defect_generation_count": 0,
+      "dnn_target_disagreement_count": 0,
+      "h3_verdict_count": 0,
+      "integration_count": 0,
+      "neural_model_count": 0,
+      "optimizer_count": 0,
+      "oracle_fit_count": 0,
+      "reference_archive_read_count": 0,
+      "rollout_count": 0,
+      "sealed_test_count": 0,
+      "solver_in_loop_count": 0,
+      "target_file_open_count": 0,
+      "target_payload_read_count": 0,
+      "training_count": 0
+    },
+    "pre_stage": {
+      "arc_access_count": 0,
+      "attention_count": 0,
+      "conditional_variance_count": 0,
+      "continuum_operator_read_count": 0,
+      "defect_generation_count": 0,
+      "dnn_target_disagreement_count": 0,
+      "h3_verdict_count": 0,
+      "integration_count": 0,
+      "neural_model_count": 0,
+      "optimizer_count": 0,
+      "oracle_fit_count": 0,
+      "reference_archive_read_count": 0,
+      "rollout_count": 0,
+      "sealed_test_count": 0,
+      "solver_in_loop_count": 0,
+      "target_file_open_count": 0,
+      "target_payload_read_count": 0,
+      "training_count": 0
+    },
+    "schema_version": "1.0.0",
+    "stage": "H-MSO-01R-A",
+    "status": "PASS"
+  },
+  "g2_final_commit": "f620baed60a78846459b80fe90c5239ba6788f6e",
+  "h_mso01r_b_executed": false,
+  "h_mso01r_b_fresh_confirmatory_target_requalification_eligible": true,
+  "hmso01r_a_final_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_HANDOFF",
+  "hmso01r_a_pre_case_commit": "f4fa9c309744cf66a38ca38b84cd47602815b15e",
+  "manifest_self_binding": "FINAL_GIT_BLOB_AT_HMSO01R_A_FINAL_COMMIT",
+  "mso03_executed": false,
+  "neural_attention_training_executed": false,
+  "project": "SPH-MSO-PoC",
+  "push": false,
+  "remote": null,
+  "schema_version": "1.0.0",
+  "stage": "H-MSO-01R-A",
+  "terminal_status": "HMSO01R_A_FRESH_CONFIRMATORY_ATLAS_AND_ZERO_SAFE_ANALYSIS_FROZEN"
+}

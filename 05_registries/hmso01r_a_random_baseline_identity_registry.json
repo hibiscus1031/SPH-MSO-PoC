@@ -1,0 +1,59 @@
+{
+  "comparator_identity_count": 491520,
+  "domain": "HMSO01R_A|BASELINE_K10|<case_id>|<particle_id>",
+  "exclusions": {
+    "same_case": true,
+    "same_field_lineage": true,
+    "same_nonzero_disorder_seed": true
+  },
+  "fold_pools": [
+    {
+      "all_queries_k10_unique": true,
+      "held_out_fold": "FOLD_0",
+      "query_count": 9472,
+      "training_pool_count": 39680
+    },
+    {
+      "all_queries_k10_unique": true,
+      "held_out_fold": "FOLD_1",
+      "query_count": 8960,
+      "training_pool_count": 40192
+    },
+    {
+      "all_queries_k10_unique": true,
+      "held_out_fold": "FOLD_2",
+      "query_count": 7936,
+      "training_pool_count": 41216
+    },
+    {
+      "all_queries_k10_unique": true,
+      "held_out_fold": "FOLD_3",
+      "query_count": 7552,
+      "training_pool_count": 41600
+    },
+    {
+      "all_queries_k10_unique": true,
+      "held_out_fold": "FOLD_4",
+      "query_count": 7552,
+      "training_pool_count": 41600
+    },
+    {
+      "all_queries_k10_unique": true,
+      "held_out_fold": "FOLD_5",
+      "query_count": 7680,
+      "training_pool_count": 41472
+    }
+  ],
+  "generator": "numpy.Generator(PCG64(full_SHA256_integer))",
+  "identity_file": "06_experiments/hmso01r_a/random_baseline_identities.npz",
+  "identity_file_sha256": "74268059f33c5fc9ec885ccb1ef7f61b22120f4eac7e9862bab6fddc844d8b07",
+  "primary_k": 10,
+  "query_count": 49152,
+  "replace": false,
+  "representation_dependent": false,
+  "schema_version": "1.0.0",
+  "ss_ms_same_identities": true,
+  "stage": "H-MSO-01R-A",
+  "status": "FROZEN_BEFORE_TARGET_ACCESS",
+  "target_dependence": false
+}

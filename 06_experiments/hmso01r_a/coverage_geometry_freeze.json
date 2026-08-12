@@ -1,0 +1,132 @@
+{
+  "arms": {
+    "MS": {
+      "feature_dimension": 110,
+      "folds": [
+        {
+          "development_sample_row_count": 39680,
+          "finite": true,
+          "held_out_fold": "FOLD_0",
+          "k10_radius_max": 2689730816414756.0,
+          "k10_radius_min": 0.6461959956435648,
+          "k10_radius_p95": 202783850819224.5,
+          "unique_development_case_count": 310
+        },
+        {
+          "development_sample_row_count": 40192,
+          "finite": true,
+          "held_out_fold": "FOLD_1",
+          "k10_radius_max": 315698007432578.5,
+          "k10_radius_min": 0.35451882632710546,
+          "k10_radius_p95": 6064003088825.499,
+          "unique_development_case_count": 314
+        },
+        {
+          "development_sample_row_count": 41216,
+          "finite": true,
+          "held_out_fold": "FOLD_2",
+          "k10_radius_max": 8387541205924599.0,
+          "k10_radius_min": 0.06895917926257371,
+          "k10_radius_p95": 590095412329140.1,
+          "unique_development_case_count": 322
+        },
+        {
+          "development_sample_row_count": 41600,
+          "finite": true,
+          "held_out_fold": "FOLD_3",
+          "k10_radius_max": 1.0094346294684376e+16,
+          "k10_radius_min": 0.3292054711276861,
+          "k10_radius_p95": 1569992618685918.2,
+          "unique_development_case_count": 325
+        },
+        {
+          "development_sample_row_count": 41600,
+          "finite": true,
+          "held_out_fold": "FOLD_4",
+          "k10_radius_max": 5514155978612813.0,
+          "k10_radius_min": 0.3684255748821691,
+          "k10_radius_p95": 302203902063286.25,
+          "unique_development_case_count": 325
+        },
+        {
+          "development_sample_row_count": 41472,
+          "finite": true,
+          "held_out_fold": "FOLD_5",
+          "k10_radius_max": 1104835233816464.6,
+          "k10_radius_min": 0.3387301604946942,
+          "k10_radius_p95": 67274789923733.13,
+          "unique_development_case_count": 324
+        }
+      ]
+    },
+    "SS": {
+      "feature_dimension": 39,
+      "folds": [
+        {
+          "development_sample_row_count": 39680,
+          "finite": true,
+          "held_out_fold": "FOLD_0",
+          "k10_radius_max": 572631662634546.0,
+          "k10_radius_min": 0.4418632527297153,
+          "k10_radius_p95": 30262942624697.117,
+          "unique_development_case_count": 310
+        },
+        {
+          "development_sample_row_count": 40192,
+          "finite": true,
+          "held_out_fold": "FOLD_1",
+          "k10_radius_max": 315698007432577.6,
+          "k10_radius_min": 0.2469699034678834,
+          "k10_radius_p95": 6064003088825.494,
+          "unique_development_case_count": 314
+        },
+        {
+          "development_sample_row_count": 41216,
+          "finite": true,
+          "held_out_fold": "FOLD_2",
+          "k10_radius_max": 515323414921499.44,
+          "k10_radius_min": 0.05550744233386377,
+          "k10_radius_p95": 54903352326409.0,
+          "unique_development_case_count": 322
+        },
+        {
+          "development_sample_row_count": 41600,
+          "finite": true,
+          "held_out_fold": "FOLD_3",
+          "k10_radius_max": 1495522951066756.0,
+          "k10_radius_min": 0.3292054711276861,
+          "k10_radius_p95": 79410357074472.61,
+          "unique_development_case_count": 325
+        },
+        {
+          "development_sample_row_count": 41600,
+          "finite": true,
+          "held_out_fold": "FOLD_4",
+          "k10_radius_max": 446782465860982.56,
+          "k10_radius_min": 0.3684255748821691,
+          "k10_radius_p95": 28303111261764.484,
+          "unique_development_case_count": 325
+        },
+        {
+          "development_sample_row_count": 41472,
+          "finite": true,
+          "held_out_fold": "FOLD_5",
+          "k10_radius_max": 298736909992065.3,
+          "k10_radius_min": 0.3387301604946942,
+          "k10_radius_p95": 6004893398088.256,
+          "unique_development_case_count": 324
+        }
+      ]
+    }
+  },
+  "calibration": "DEVELOPMENT_LEAVE_COMPLETE_CASE_LINEAGE_AND_NONZERO_SEED_OUT",
+  "formal_sample_particles_per_case": 128,
+  "formal_sample_row_count": 49152,
+  "primary_k": 10,
+  "quantile": "NUMPY_INVERTED_CDF_P95",
+  "schema_version": "1.0.0",
+  "scientific_coverage_verdict_computed": false,
+  "stage": "H-MSO-01R-A",
+  "status": "FROZEN_BEFORE_TARGET_ACCESS",
+  "target_or_reference_read_count": 0
+}

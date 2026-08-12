@@ -1,0 +1,15 @@
+test,passed,division_after_full_aggregation,row_deleted,group_deleted,status
+scalar_target,True,1,,,
+vector_target,True,1,,,
+isolated_0_over_0_retained,True,,False,,
+isolated_positive_over_0_retained,True,,False,,
+zero_case_denominator_retained,True,,,False,
+zero_lineage_denominator_retained,True,,,False,
+zero_family_fold_denominator_retained,True,,,False,
+positive_total_WB,True,,,,EVALUABLE
+zero_total_WB,True,,,,DNN_NOT_EVALUABLE_ZERO_AGGREGATE_RANDOM_BASELINE
+ss_zero_baseline,True,,,,RELATIVE_RESCUE_NOT_EVALUABLE_ZERO_SS_BASELINE
+ms_exact_zero,True,,,,EXACT_ZERO_DOMINANCE_BRANCH
+no_pointwise_ratio,True,,,,
+no_epsilon,True,,,,
+no_zero_row_deletion,True,,,,
