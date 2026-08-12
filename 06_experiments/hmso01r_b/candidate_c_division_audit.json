@@ -1,0 +1,120 @@
+{
+  "arm_component_divisions": [
+    {
+      "arm": "SS",
+      "bootstrap_candidate_c_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "density_rate",
+      "degenerate_aggregate_denominator_replicate_count": 0,
+      "evaluable_replicate_count": 10000,
+      "fold_candidate_c_division_count": 6,
+      "point_aggregate_denominator_positive": true,
+      "point_candidate_c_division_count": 1,
+      "status": "EVALUABLE"
+    },
+    {
+      "arm": "SS",
+      "bootstrap_candidate_c_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "pressure_gradient_acceleration",
+      "degenerate_aggregate_denominator_replicate_count": 0,
+      "evaluable_replicate_count": 10000,
+      "fold_candidate_c_division_count": 6,
+      "point_aggregate_denominator_positive": true,
+      "point_candidate_c_division_count": 1,
+      "status": "EVALUABLE"
+    },
+    {
+      "arm": "SS",
+      "bootstrap_candidate_c_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "viscosity_laplacian_acceleration",
+      "degenerate_aggregate_denominator_replicate_count": 0,
+      "evaluable_replicate_count": 10000,
+      "fold_candidate_c_division_count": 6,
+      "point_aggregate_denominator_positive": true,
+      "point_candidate_c_division_count": 1,
+      "status": "EVALUABLE"
+    },
+    {
+      "arm": "MS",
+      "bootstrap_candidate_c_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "density_rate",
+      "degenerate_aggregate_denominator_replicate_count": 0,
+      "evaluable_replicate_count": 10000,
+      "fold_candidate_c_division_count": 6,
+      "point_aggregate_denominator_positive": true,
+      "point_candidate_c_division_count": 1,
+      "status": "EVALUABLE"
+    },
+    {
+      "arm": "MS",
+      "bootstrap_candidate_c_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "pressure_gradient_acceleration",
+      "degenerate_aggregate_denominator_replicate_count": 0,
+      "evaluable_replicate_count": 10000,
+      "fold_candidate_c_division_count": 6,
+      "point_aggregate_denominator_positive": true,
+      "point_candidate_c_division_count": 1,
+      "status": "EVALUABLE"
+    },
+    {
+      "arm": "MS",
+      "bootstrap_candidate_c_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "viscosity_laplacian_acceleration",
+      "degenerate_aggregate_denominator_replicate_count": 0,
+      "evaluable_replicate_count": 10000,
+      "fold_candidate_c_division_count": 6,
+      "point_aggregate_denominator_positive": true,
+      "point_candidate_c_division_count": 1,
+      "status": "EVALUABLE"
+    }
+  ],
+  "bootstrap_draws_consumed": 10000,
+  "bootstrap_draws_sha256": "3a5853ce6b353c8c2584b0f95651904fb1506a0a3e3af6985981374789d4667e",
+  "bootstrap_unique_draw_count": 10000,
+  "clipping_count": 0,
+  "epsilon_count": 0,
+  "expected_final_candidate_c_division_count": 90045,
+  "final_candidate_c_division_count": 90045,
+  "paired_ratio_divisions": [
+    {
+      "bootstrap_ratio_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "density_rate",
+      "evaluable_replicate_count": 10000,
+      "point_ratio_division_count": 1,
+      "point_ratio_evaluable": true,
+      "status": "EVALUABLE"
+    },
+    {
+      "bootstrap_ratio_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "pressure_gradient_acceleration",
+      "evaluable_replicate_count": 10000,
+      "point_ratio_division_count": 1,
+      "point_ratio_evaluable": true,
+      "status": "EVALUABLE"
+    },
+    {
+      "bootstrap_ratio_division_count": 10000,
+      "candidate_c_evaluable": true,
+      "component": "viscosity_laplacian_acceleration",
+      "evaluable_replicate_count": 10000,
+      "point_ratio_division_count": 1,
+      "point_ratio_evaluable": true,
+      "status": "EVALUABLE"
+    }
+  ],
+  "paired_ss_ms_identity": true,
+  "pointwise_division_count": 0,
+  "recomputed_WB_each_draw": true,
+  "recomputed_WN_each_draw": true,
+  "schema_version": "1.0.0",
+  "stage": "H-MSO-01R-B",
+  "zero_group_deletion_count": 0,
+  "zero_row_deletion_count": 0
+}

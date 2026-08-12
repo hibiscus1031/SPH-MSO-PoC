@@ -1,0 +1,107 @@
+{
+  "attention_authorized": false,
+  "bootstrap_draws_consumed": 10000,
+  "branch": "main",
+  "component_absolute_verdict": {
+    "density_rate": "PASS",
+    "pressure_gradient_acceleration": "FAIL",
+    "viscosity_laplacian_acceleration": "FAIL"
+  },
+  "component_evaluability": {
+    "density_rate": {
+      "absolute_evaluable": true,
+      "component_evaluable": true,
+      "not_evaluable_mechanisms": {
+        "absolute": [],
+        "relative": []
+      },
+      "relative_rescue_evaluable": true
+    },
+    "pressure_gradient_acceleration": {
+      "absolute_evaluable": true,
+      "component_evaluable": true,
+      "not_evaluable_mechanisms": {
+        "absolute": [],
+        "relative": []
+      },
+      "relative_rescue_evaluable": true
+    },
+    "viscosity_laplacian_acceleration": {
+      "absolute_evaluable": true,
+      "component_evaluable": true,
+      "not_evaluable_mechanisms": {
+        "absolute": [],
+        "relative": []
+      },
+      "relative_rescue_evaluable": true
+    }
+  },
+  "component_relative_rescue_verdict": {
+    "density_rate": "PASS",
+    "pressure_gradient_acceleration": "FAIL",
+    "viscosity_laplacian_acceleration": "FAIL"
+  },
+  "component_status": {
+    "density_rate": "H_MSO01R_COMPONENT_QUALIFIED",
+    "pressure_gradient_acceleration": "H_MSO01R_COMPONENT_NOT_QUALIFIED",
+    "viscosity_laplacian_acceleration": "H_MSO01R_COMPONENT_NOT_QUALIFIED"
+  },
+  "date": "2026-08-13",
+  "h_mso01r_global_status": "H_MSO01R_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_QUALIFIED",
+  "hmso01r_a_final_commit": "9048eff137001e5f644575bd02c3856b4f4ac532",
+  "hmso01r_b_final_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_USER_HANDOFF",
+  "hmso01r_b_pre_target_commit": "1c99103edaf76aa05915458fd498e07b1241e272",
+  "learned_operator_authorized": false,
+  "ms_feature_dimension": 110,
+  "mso03_deterministic_closure_baseline_eligible": false,
+  "mso03_executed": false,
+  "neural_training_authorized": false,
+  "observable_store_unchanged": true,
+  "old_h_mso01_permanently_not_evaluable": true,
+  "old_mso02b_permanently_not_evaluable": true,
+  "post_target_modification_counts": {
+    "case_replacement_after_target_access": 0,
+    "target_derived_feature_modification_count": 0,
+    "target_derived_fold_modification_count": 0,
+    "target_derived_gate_modification_count": 0,
+    "target_derived_metric_modification_count": 0,
+    "target_derived_normalization_modification_count": 0,
+    "target_derived_oracle_modification_count": 0,
+    "target_derived_scale_modification_count": 0
+  },
+  "pre_target_freeze_sha256": "f7c2bcfa1d6d263f7e281291b3affb087887bfded825f7ae69fe807f0eef0470",
+  "prohibited_activity_counts": {
+    "arc_access_count": 0,
+    "attention_count": 0,
+    "case_replacement_after_target_access": 0,
+    "learned_operator_count": 0,
+    "neural_model_count": 0,
+    "optimizer_count": 0,
+    "rollout_count": 0,
+    "sealed_test_count": 0,
+    "solver_in_loop_count": 0,
+    "target_derived_feature_modification_count": 0,
+    "target_derived_fold_modification_count": 0,
+    "target_derived_gate_modification_count": 0,
+    "target_derived_metric_modification_count": 0,
+    "target_derived_normalization_modification_count": 0,
+    "target_derived_oracle_modification_count": 0,
+    "target_derived_scale_modification_count": 0,
+    "time_integration_count": 0,
+    "training_count": 0,
+    "transformer_count": 0
+  },
+  "project": "SPH-MSO-PoC",
+  "push_performed": false,
+  "remote": null,
+  "report_sha256": "c3dbfdb01b6f05c8f41418b23228adfcc5a93dadafda80edc863472e12c117f4",
+  "schema_version": "1.0.0",
+  "ss_feature_dimension": 39,
+  "stage": "H-MSO-01R-B",
+  "stop_after_hmso01r_b": true,
+  "target_reference_failed_case_count": 0,
+  "target_reference_qualified_case_count": 384,
+  "target_store_sha256": "99d39c1fe2cce486cdaa9538e782bc713699656dc633b6b39d19cf5ef771a849",
+  "terminal_status": "HMSO01R_B_FRESH_CONFIRMATORY_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_QUALIFIED",
+  "timezone": "Asia/Shanghai"
+}

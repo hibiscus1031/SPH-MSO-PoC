@@ -1,0 +1,4 @@
+arm,component,scope,scope_id,candidate_c_d,candidate_c_wn,candidate_c_wb,candidate_c_status,candidate_c_evaluable,candidate_c_source_alias,candidate_c_simultaneous_ucb,candidate_c_bound_status,candidate_c_absolute_gate_pass
+SS,density_rate,OVERALL,ALL,0.35538256273660795,0.006291549076702527,0.017703595326272418,EVALUABLE,True,,0.4654482357165773,EVALUABLE,True
+SS,pressure_gradient_acceleration,OVERALL,ALL,0.4755998398834187,0.9457716995418465,1.9885870856762242,EVALUABLE,True,,0.5823250875763644,EVALUABLE,True
+SS,viscosity_laplacian_acceleration,OVERALL,ALL,0.7505561826142402,0.0001680399478344533,0.00022388723419632396,EVALUABLE,True,,0.8727489990192477,EVALUABLE,True

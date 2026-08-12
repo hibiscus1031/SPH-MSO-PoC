@@ -1,0 +1,4 @@
+component,candidate_c_ratio,candidate_c_status,candidate_c_evaluable,candidate_c_exact_zero_ms_dominance,candidate_c_ratio_simultaneous_ucb,candidate_c_relative_gate_pass
+density_rate,0.20158780532235085,EVALUABLE,True,False,0.5310622134968933,True
+pressure_gradient_acceleration,0.9911415168322897,EVALUABLE,True,False,1.1190984485031945,False
+viscosity_laplacian_acceleration,0.9787180093032074,EVALUABLE,True,False,1.109759535937187,False

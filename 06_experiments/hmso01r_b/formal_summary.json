@@ -1,0 +1,2463 @@
+{
+  "bootstrap_decode_audit": {
+    "case_emission_count": 3839566,
+    "decoded_lineage_occurrence_count": 2380000,
+    "draw_count": 10000,
+    "draws_with_family_lineage_kish_ess_below_2": 0,
+    "family_unique_lineage_counts": {
+      "F1": 90,
+      "F2": 68,
+      "F3": 72,
+      "F4": 8
+    },
+    "point_effective_lineages_sufficient": true,
+    "populated_family_fold_cell_count": 24,
+    "unique_draw_count": 10000
+  },
+  "bootstrap_draws_consumed": 10000,
+  "bootstrap_replicate_count": 10000,
+  "bootstrap_unique_draw_count": 10000,
+  "candidate_c_division_audit_sha256": "015be8ea533c5215622c409a044f9d1e61be344a2e41115876c2c404f18aca03",
+  "candidate_c_implementation_preflight_sha256": "0ec915b67a1f97dfbcf4f4ffbf83e34bbd1e678aa2ac8076f906b4dddacc076d",
+  "candidate_c_zero_status_authority": {
+    "canonical_status": "NO_AGGREGATE_RANDOM_CONTRAST_NOT_EVALUABLE",
+    "source_alias": "DNN_NOT_EVALUABLE_ZERO_AGGREGATE_RANDOM_BASELINE"
+  },
+  "firewall_audit_sha256": "f1d7509f59eed3b9a3abfcf7d1bd8f1feed45d97cf7551538bbf71dff4bc4e15",
+  "formal_evaluator_sha256": "9135d94de4990d079c955ab655b093887bd5cacec98770f6342f1b628487794d",
+  "formal_output_sha256": {
+    "06_experiments/hmso01r_b/bootstrap_simultaneous_bounds.csv": "96f7c068ab87ad6c8c87409073072eb7c634bb623dd96328be25c0276841f38a",
+    "06_experiments/hmso01r_b/candidate_c_bootstrap_bounds.csv": "0c7d099ed9aa37f19b1290790433d61aa8d07fd78d6510c0ac1f08c868e55f30",
+    "06_experiments/hmso01r_b/candidate_c_division_audit.json": "015be8ea533c5215622c409a044f9d1e61be344a2e41115876c2c404f18aca03",
+    "06_experiments/hmso01r_b/candidate_c_paired_rescue_metrics.csv": "246c1d4906f01a1829d7eff9643c0ee73c2acdf4dddca1635b54b2a892440f0a",
+    "06_experiments/hmso01r_b/component_verdicts.csv": "d539fc41a33e528ce3ba8a7517b3abcbf6188e23b4e3982984e8fc0cb1cbb8a6",
+    "06_experiments/hmso01r_b/coverage_metrics.csv": "0a7a7f4810ee556e0e30176dc6664c45faaba97bcbdcc0a552695e0002c7c1db",
+    "06_experiments/hmso01r_b/firewall_audit.json": "f1d7509f59eed3b9a3abfcf7d1bd8f1feed45d97cf7551538bbf71dff4bc4e15",
+    "06_experiments/hmso01r_b/ms_candidate_c_dnn_metrics.csv": "19b7e8ee30846c572888966fe77997caca889d035d3483ff9aa709ba6197bfe1",
+    "06_experiments/hmso01r_b/ms_conditional_variance_metrics.csv": "97ffdbf299252189e1f69bd4493c4217dc7348109c84f66c09533aeab8048200",
+    "06_experiments/hmso01r_b/ms_oracle_metrics.csv": "bdef9ce1b365e099820bcfefaac43f3c303685673cd8b56be0896590e38811ee",
+    "06_experiments/hmso01r_b/paired_non_dnn_rescue_metrics.csv": "afc784ea5015f88073d9652748292fc8fce673452c964c130c8f3b664af69a3f",
+    "06_experiments/hmso01r_b/ss_candidate_c_dnn_metrics.csv": "dcece3968415564dd11d366e5d5dba5dccb23e3f53ecbb46719683b8185d8a6f",
+    "06_experiments/hmso01r_b/ss_conditional_variance_metrics.csv": "11b1036b8c26641a3fdb31329e1afb4f11615c10786983c0409a0a0ea6c530a1",
+    "06_experiments/hmso01r_b/ss_oracle_metrics.csv": "4c83013f3459899f6d185374851f283808aa02299612bcc2d29ecbd1dad58cf3",
+    "06_experiments/hmso01r_b/target_observable_join_audit.csv": "763c4fa05f685689e32dab8792b007db38eac202ba3452939a58f8cc85172c79"
+  },
+  "formal_sample_row_count": 49152,
+  "hmso01r_b_pre_target_commit": "1c99103edaf76aa05915458fd498e07b1241e272",
+  "metrics": {
+    "MS": {
+      "density_rate": {
+        "baseline_nrmse": 0.8498346514952893,
+        "candidate_c_absolute_gate_pass": true,
+        "candidate_c_bound_status": "EVALUABLE",
+        "candidate_c_d": 0.07164079087190546,
+        "candidate_c_evaluable": true,
+        "candidate_c_point_fold": [
+          0.008176727350215225,
+          0.11012931133312422,
+          0.022064620710147868,
+          0.1393459654860467,
+          0.025024650185616865,
+          0.0006024345981687441
+        ],
+        "candidate_c_simultaneous_ucb": 0.1369457535656679,
+        "candidate_c_source_alias": null,
+        "candidate_c_status": "EVALUABLE",
+        "candidate_c_wb": 0.017703595326272418,
+        "candidate_c_wn": 0.0012682995704503253,
+        "conditional_variance": 0.03056365431814069,
+        "conditional_variance_simultaneous_ucb": 0.03654788278458852,
+        "coverage": 0.9417280893477183,
+        "coverage_family": {
+          "F1": 0.9601303998161764,
+          "F2": 0.969842364028945,
+          "F3": 0.987438725490196,
+          "F4": 0.8495008680555557
+        },
+        "coverage_fold": {
+          "FOLD_0": 0.9638959099264706,
+          "FOLD_1": 0.9462890625,
+          "FOLD_2": 0.9603324142156863,
+          "FOLD_3": 0.9463263332676821,
+          "FOLD_4": 0.8359662224264706,
+          "FOLD_5": 0.99755859375
+        },
+        "family_nrmse": {
+          "F1": 0.3539858469394079,
+          "F2": 0.05798322485114177,
+          "F3": 0.04090640049065799,
+          "F4": 0.1975049701287331
+        },
+        "family_nrmse_simultaneous_ucb": {
+          "F1": 0.74237028570199,
+          "F2": 0.07863494350735448,
+          "F3": 0.06033311227730595,
+          "F4": 0.24845422458575617
+        },
+        "improvement": 0.8086744164686647,
+        "improvement_simultaneous_lcb": 0.7174822427196266,
+        "non_dnn_status": {
+          "conditional_variance": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "coverage": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "improvement": {
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "mean_baseline_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "oracle_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "family_simultaneous_bound": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          }
+        },
+        "oracle_nrmse": 0.1625951106024852,
+        "oracle_nrmse_simultaneous_ucb": 0.28337058566577844,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "knn5",
+          "4": "ridge",
+          "5": "knn5"
+        }
+      },
+      "pressure_gradient_acceleration": {
+        "baseline_nrmse": 0.8077751670606422,
+        "candidate_c_absolute_gate_pass": true,
+        "candidate_c_bound_status": "EVALUABLE",
+        "candidate_c_d": 0.47138674670724573,
+        "candidate_c_evaluable": true,
+        "candidate_c_point_fold": [
+          0.5326438144800307,
+          0.6830401528646386,
+          0.3256316148229395,
+          0.1601530507726814,
+          0.1746914896500995,
+          0.6523558741772766
+        ],
+        "candidate_c_simultaneous_ucb": 0.588724043571105,
+        "candidate_c_source_alias": null,
+        "candidate_c_status": "EVALUABLE",
+        "candidate_c_wb": 1.9885870856762242,
+        "candidate_c_wn": 0.9373935968609582,
+        "conditional_variance": 0.34510363491800494,
+        "conditional_variance_simultaneous_ucb": 0.44396072157388167,
+        "coverage": 0.9417280893477183,
+        "coverage_family": {
+          "F1": 0.9601303998161764,
+          "F2": 0.969842364028945,
+          "F3": 0.987438725490196,
+          "F4": 0.8495008680555557
+        },
+        "coverage_fold": {
+          "FOLD_0": 0.9638959099264706,
+          "FOLD_1": 0.9462890625,
+          "FOLD_2": 0.9603324142156863,
+          "FOLD_3": 0.9463263332676821,
+          "FOLD_4": 0.8359662224264706,
+          "FOLD_5": 0.99755859375
+        },
+        "family_nrmse": {
+          "F1": 0.2837930430135897,
+          "F2": 0.16406151242305866,
+          "F3": 0.16568481090710688,
+          "F4": 0.3959001894302489
+        },
+        "family_nrmse_simultaneous_ucb": {
+          "F1": 0.4637485978405132,
+          "F2": 0.2452581563903949,
+          "F3": 0.24646806427109863,
+          "F4": 0.6558664870373809
+        },
+        "improvement": 0.6875864730259087,
+        "improvement_simultaneous_lcb": 0.6390413207854084,
+        "non_dnn_status": {
+          "conditional_variance": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "coverage": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "improvement": {
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "mean_baseline_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "oracle_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "family_simultaneous_bound": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          }
+        },
+        "oracle_nrmse": 0.25235988894350103,
+        "oracle_nrmse_simultaneous_ucb": 0.35010265757771475,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      },
+      "viscosity_laplacian_acceleration": {
+        "baseline_nrmse": 0.8897573782136127,
+        "candidate_c_absolute_gate_pass": true,
+        "candidate_c_bound_status": "EVALUABLE",
+        "candidate_c_d": 0.7345828529184237,
+        "candidate_c_evaluable": true,
+        "candidate_c_point_fold": [
+          0.4778696297111943,
+          0.4747971069801705,
+          0.8415531675700939,
+          1.2556675279869873,
+          0.438480838819269,
+          0.36089558472283645
+        ],
+        "candidate_c_simultaneous_ucb": 0.8730318164618002,
+        "candidate_c_source_alias": null,
+        "candidate_c_status": "EVALUABLE",
+        "candidate_c_wb": 0.00022388723419632396,
+        "candidate_c_wn": 0.00016446372322795094,
+        "conditional_variance": 0.4727550234388798,
+        "conditional_variance_simultaneous_ucb": 0.5740453298885967,
+        "coverage": 0.9417280893477183,
+        "coverage_family": {
+          "F1": 0.9601303998161764,
+          "F2": 0.969842364028945,
+          "F3": 0.987438725490196,
+          "F4": 0.8495008680555557
+        },
+        "coverage_fold": {
+          "FOLD_0": 0.9638959099264706,
+          "FOLD_1": 0.9462890625,
+          "FOLD_2": 0.9603324142156863,
+          "FOLD_3": 0.9463263332676821,
+          "FOLD_4": 0.8359662224264706,
+          "FOLD_5": 0.99755859375
+        },
+        "family_nrmse": {
+          "F1": 0.18190523014348867,
+          "F2": 0.08211403609817523,
+          "F3": 0.06250192480081848,
+          "F4": 0.4236580324007863
+        },
+        "family_nrmse_simultaneous_ucb": {
+          "F1": 0.2830541972038827,
+          "F2": 0.10848817085183793,
+          "F3": 0.07991654859255118,
+          "F4": 0.5703074086723156
+        },
+        "improvement": 0.7892180380258769,
+        "improvement_simultaneous_lcb": 0.7540863795063093,
+        "non_dnn_status": {
+          "conditional_variance": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "coverage": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "improvement": {
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "mean_baseline_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "oracle_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "family_simultaneous_bound": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          }
+        },
+        "oracle_nrmse": 0.18754480586081715,
+        "oracle_nrmse_simultaneous_ucb": 0.24039957821860322,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      }
+    },
+    "SS": {
+      "density_rate": {
+        "baseline_nrmse": 0.8498346514952893,
+        "candidate_c_absolute_gate_pass": true,
+        "candidate_c_bound_status": "EVALUABLE",
+        "candidate_c_d": 0.35538256273660795,
+        "candidate_c_evaluable": true,
+        "candidate_c_point_fold": [
+          0.1682587705469243,
+          0.2525028018960649,
+          0.3135929269033205,
+          0.44703290922108146,
+          0.5406134555487684,
+          0.29352650816062625
+        ],
+        "candidate_c_simultaneous_ucb": 0.4654482357165773,
+        "candidate_c_source_alias": null,
+        "candidate_c_status": "EVALUABLE",
+        "candidate_c_wb": 0.017703595326272418,
+        "candidate_c_wn": 0.006291549076702527,
+        "conditional_variance": 0.1979805059681546,
+        "conditional_variance_simultaneous_ucb": 0.23936375911212243,
+        "coverage": 0.9321428723399081,
+        "coverage_family": {
+          "F1": 0.976098473243464,
+          "F2": 0.9918393355606131,
+          "F3": 0.9921875,
+          "F4": 0.7684461805555555
+        },
+        "coverage_fold": {
+          "FOLD_0": 0.9791044347426471,
+          "FOLD_1": 0.9462890625,
+          "FOLD_2": 0.9742787479575163,
+          "FOLD_3": 0.9123849735206582,
+          "FOLD_4": 0.8283260569852942,
+          "FOLD_5": 0.9524739583333334
+        },
+        "family_nrmse": {
+          "F1": 0.8305947483097608,
+          "F2": 0.354211384472167,
+          "F3": 0.40025942431722017,
+          "F4": 0.5764504092133088
+        },
+        "family_nrmse_simultaneous_ucb": {
+          "F1": 1.3671485681736613,
+          "F2": 0.48949810041473607,
+          "F3": 0.6203637403438792,
+          "F4": 0.6721669902309994
+        },
+        "improvement": 0.3641363168384414,
+        "improvement_simultaneous_lcb": 0.2974941078859538,
+        "non_dnn_status": {
+          "conditional_variance": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "coverage": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "improvement": {
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "mean_baseline_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "oracle_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "family_simultaneous_bound": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          }
+        },
+        "oracle_nrmse": 0.5403789915781142,
+        "oracle_nrmse_simultaneous_ucb": 0.7155831780813601,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      },
+      "pressure_gradient_acceleration": {
+        "baseline_nrmse": 0.8077751670606422,
+        "candidate_c_absolute_gate_pass": true,
+        "candidate_c_bound_status": "EVALUABLE",
+        "candidate_c_d": 0.4755998398834187,
+        "candidate_c_evaluable": true,
+        "candidate_c_point_fold": [
+          0.6302572175870979,
+          0.6829147975871366,
+          0.4979038692062063,
+          0.16031613922624655,
+          0.17970709417567757,
+          0.46327198354045385
+        ],
+        "candidate_c_simultaneous_ucb": 0.5823250875763644,
+        "candidate_c_source_alias": null,
+        "candidate_c_status": "EVALUABLE",
+        "candidate_c_wb": 1.9885870856762242,
+        "candidate_c_wn": 0.9457716995418465,
+        "conditional_variance": 0.33004874531366607,
+        "conditional_variance_simultaneous_ucb": 0.39737990956680674,
+        "coverage": 0.9321428723399081,
+        "coverage_family": {
+          "F1": 0.976098473243464,
+          "F2": 0.9918393355606131,
+          "F3": 0.9921875,
+          "F4": 0.7684461805555555
+        },
+        "coverage_fold": {
+          "FOLD_0": 0.9791044347426471,
+          "FOLD_1": 0.9462890625,
+          "FOLD_2": 0.9742787479575163,
+          "FOLD_3": 0.9123849735206582,
+          "FOLD_4": 0.8283260569852942,
+          "FOLD_5": 0.9524739583333334
+        },
+        "family_nrmse": {
+          "F1": 0.7718723809576661,
+          "F2": 0.3138795870160704,
+          "F3": 0.3620269192457965,
+          "F4": 0.5837581124607617
+        },
+        "family_nrmse_simultaneous_ucb": {
+          "F1": 1.2848335717818073,
+          "F2": 0.45251615756972297,
+          "F3": 0.512866499961929,
+          "F4": 0.9641130565056573
+        },
+        "improvement": 0.3712554301858785,
+        "improvement_simultaneous_lcb": 0.29429535020043196,
+        "non_dnn_status": {
+          "conditional_variance": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "coverage": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "improvement": {
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "mean_baseline_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "oracle_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "family_simultaneous_bound": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          }
+        },
+        "oracle_nrmse": 0.5078842499200736,
+        "oracle_nrmse_simultaneous_ucb": 0.70240614280446,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      },
+      "viscosity_laplacian_acceleration": {
+        "baseline_nrmse": 0.8897573782136127,
+        "candidate_c_absolute_gate_pass": true,
+        "candidate_c_bound_status": "EVALUABLE",
+        "candidate_c_d": 0.7505561826142402,
+        "candidate_c_evaluable": true,
+        "candidate_c_point_fold": [
+          0.6153191179321267,
+          0.6148011738590373,
+          0.8544680928625064,
+          0.9777349382792947,
+          0.7277387869812554,
+          0.4181689865607921
+        ],
+        "candidate_c_simultaneous_ucb": 0.8727489990192477,
+        "candidate_c_source_alias": null,
+        "candidate_c_status": "EVALUABLE",
+        "candidate_c_wb": 0.00022388723419632396,
+        "candidate_c_wn": 0.0001680399478344533,
+        "conditional_variance": 0.4603784149469809,
+        "conditional_variance_simultaneous_ucb": 0.540010524965616,
+        "coverage": 0.9321428723399081,
+        "coverage_family": {
+          "F1": 0.976098473243464,
+          "F2": 0.9918393355606131,
+          "F3": 0.9921875,
+          "F4": 0.7684461805555555
+        },
+        "coverage_fold": {
+          "FOLD_0": 0.9791044347426471,
+          "FOLD_1": 0.9462890625,
+          "FOLD_2": 0.9742787479575163,
+          "FOLD_3": 0.9123849735206582,
+          "FOLD_4": 0.8283260569852942,
+          "FOLD_5": 0.9524739583333334
+        },
+        "family_nrmse": {
+          "F1": 0.6933343029739295,
+          "F2": 0.31000130028518585,
+          "F3": 0.256017096836535,
+          "F4": 0.6092067120770079
+        },
+        "family_nrmse_simultaneous_ucb": {
+          "F1": 1.0527440971881847,
+          "F2": 0.4056206536840116,
+          "F3": 0.35387849420487016,
+          "F4": 0.7719353173825312
+        },
+        "improvement": 0.4749806357537012,
+        "improvement_simultaneous_lcb": 0.4202070269013968,
+        "non_dnn_status": {
+          "conditional_variance": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "coverage": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "improvement": {
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "mean_baseline_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          },
+          "oracle_nrmse": {
+            "family": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "family_simultaneous_bound": {
+              "F1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "F4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "fold": {
+              "FOLD_0": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_1": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_2": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_3": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_4": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              },
+              "FOLD_5": {
+                "evaluable": true,
+                "not_evaluable_mechanism": "",
+                "status": "EVALUABLE"
+              }
+            },
+            "overall": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            },
+            "simultaneous_bound": {
+              "evaluable": true,
+              "not_evaluable_mechanism": "",
+              "status": "EVALUABLE"
+            }
+          }
+        },
+        "oracle_nrmse": 0.4671398530431645,
+        "oracle_nrmse_simultaneous_ucb": 0.5876643357784541,
+        "selected_oracles_by_fold": {
+          "0": "ridge",
+          "1": "ridge",
+          "2": "ridge",
+          "3": "ridge",
+          "4": "ridge",
+          "5": "ridge"
+        }
+      }
+    },
+    "paired": {
+      "density_rate": {
+        "candidate_c_evaluable": true,
+        "candidate_c_exact_zero_ms_dominance": false,
+        "candidate_c_ratio": 0.20158780532235085,
+        "candidate_c_ratio_simultaneous_ucb": 0.5310622134968933,
+        "candidate_c_relative_gate_pass": true,
+        "candidate_c_status": "EVALUABLE",
+        "conditional_variance_ratio": 0.1543770896466791,
+        "conditional_variance_ratio_simultaneous_ucb": 0.20488620437692728,
+        "conditional_variance_ratio_status": "EVALUABLE",
+        "oracle_nrmse_ratio": 0.30089088054227464,
+        "oracle_nrmse_ratio_simultaneous_ucb": 0.5317060236346075,
+        "oracle_nrmse_ratio_status": "EVALUABLE"
+      },
+      "pressure_gradient_acceleration": {
+        "candidate_c_evaluable": true,
+        "candidate_c_exact_zero_ms_dominance": false,
+        "candidate_c_ratio": 0.9911415168322897,
+        "candidate_c_ratio_simultaneous_ucb": 1.1190984485031945,
+        "candidate_c_relative_gate_pass": false,
+        "candidate_c_status": "EVALUABLE",
+        "conditional_variance_ratio": 1.0456141397842045,
+        "conditional_variance_ratio_simultaneous_ucb": 1.2073200250182583,
+        "conditional_variance_ratio_status": "EVALUABLE",
+        "oracle_nrmse_ratio": 0.49688465232622436,
+        "oracle_nrmse_ratio_simultaneous_ucb": 0.5694842680151591,
+        "oracle_nrmse_ratio_status": "EVALUABLE"
+      },
+      "viscosity_laplacian_acceleration": {
+        "candidate_c_evaluable": true,
+        "candidate_c_exact_zero_ms_dominance": false,
+        "candidate_c_ratio": 0.9787180093032074,
+        "candidate_c_ratio_simultaneous_ucb": 1.109759535937187,
+        "candidate_c_relative_gate_pass": false,
+        "candidate_c_status": "EVALUABLE",
+        "conditional_variance_ratio": 1.0268835551148163,
+        "conditional_variance_ratio_simultaneous_ucb": 1.2001770478073195,
+        "conditional_variance_ratio_status": "EVALUABLE",
+        "oracle_nrmse_ratio": 0.40147464327666277,
+        "oracle_nrmse_ratio_simultaneous_ucb": 0.4737730548745305,
+        "oracle_nrmse_ratio_status": "EVALUABLE"
+      }
+    }
+  },
+  "ms_feature_dimension": 110,
+  "observable_store_sha256_after": "65ca1a7fea58248207fc5a22e14855b4a84c392c7ef17cefdf2d396687cc38cd",
+  "observable_store_sha256_before": "65ca1a7fea58248207fc5a22e14855b4a84c392c7ef17cefdf2d396687cc38cd",
+  "observable_store_unchanged": true,
+  "pointwise_division_count": 0,
+  "post_target_modification_counts": {
+    "case_replacement_after_target_access": 0,
+    "target_derived_feature_modification_count": 0,
+    "target_derived_fold_modification_count": 0,
+    "target_derived_gate_modification_count": 0,
+    "target_derived_metric_modification_count": 0,
+    "target_derived_normalization_modification_count": 0,
+    "target_derived_oracle_modification_count": 0,
+    "target_derived_scale_modification_count": 0
+  },
+  "pre_target_commit": "1c99103edaf76aa05915458fd498e07b1241e272",
+  "pre_target_freeze_sha256": "f7c2bcfa1d6d263f7e281291b3affb087887bfded825f7ae69fe807f0eef0470",
+  "schema_version": "1.0.0",
+  "simultaneous_inference": {
+    "all_required_bound_procedures_executed": true,
+    "all_required_bounds_computed": true,
+    "all_required_bounds_evaluable": true,
+    "confidence_level": 0.95,
+    "method": "MAXIMUM_STUDENTIZED",
+    "multiplicity_scope": "THREE_PRIMARY_COMPONENTS_WITHIN_EACH_METRIC_FAMILY",
+    "required_bound_row_count": 57
+  },
+  "ss_feature_dimension": 39,
+  "stage": "H-MSO-01R-B",
+  "target_access_ledger_sha256": "431350e138e49009aea25b605172ebcec244d2597992833b7fafe4f208a132a6",
+  "target_definition": "CONTINUUM_ANALYTICAL_REFERENCE_MINUS_LAMBDA_1_FROZEN_BASE_SPH",
+  "target_reference_failed_case_count": 0,
+  "target_reference_qualified_case_count": 384,
+  "target_store_sha256": "99d39c1fe2cce486cdaa9538e782bc713699656dc633b6b39d19cf5ef771a849",
+  "terminal_status": "HMSO01R_B_FRESH_CONFIRMATORY_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_QUALIFIED",
+  "verdict": {
+    "attention_authorized": false,
+    "components": {
+      "density_rate": {
+        "absolute_checks": {
+          "all_six_folds_valid": true,
+          "candidate_c_point": true,
+          "candidate_c_simultaneous_ucb": true,
+          "conditional_variance_point": true,
+          "conditional_variance_simultaneous_ucb": true,
+          "coverage_every_family": true,
+          "coverage_overall": true,
+          "every_family_nrmse_point": true,
+          "every_family_nrmse_simultaneous_ucb": true,
+          "improvement_point": true,
+          "improvement_simultaneous_lcb": true,
+          "oracle_nrmse_point": true,
+          "oracle_nrmse_simultaneous_ucb": true
+        },
+        "absolute_evaluable": true,
+        "absolute_pass": true,
+        "all_required_folds_valid": true,
+        "component": "density_rate",
+        "component_evaluable": true,
+        "component_pass": true,
+        "conditional_variance_ratio": 0.1543770896466791,
+        "conditional_variance_ratio_simultaneous_ucb": 0.20488620437692728,
+        "coverage_evaluable": true,
+        "coverage_family_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "cvar_evaluable": true,
+        "dnn_evaluable": true,
+        "family_point_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "family_simultaneous_ucb_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "not_evaluable_mechanisms": {
+          "absolute": [],
+          "relative": []
+        },
+        "oracle_evaluable": true,
+        "oracle_nrmse_ratio": 0.30089088054227464,
+        "oracle_nrmse_ratio_simultaneous_ucb": 0.5317060236346075,
+        "relative_checks": {
+          "candidate_c_nonworsening": true,
+          "candidate_c_point_ratio": true,
+          "candidate_c_simultaneous_ratio_ucb": true,
+          "conditional_variance_point_ratio": true,
+          "conditional_variance_simultaneous_ratio_ucb": true,
+          "coverage_guard": true,
+          "no_fold_three_effect_reversal": true,
+          "oracle_nrmse_point_ratio": true,
+          "oracle_nrmse_simultaneous_ratio_ucb": true,
+          "worst_family_guard": true
+        },
+        "relative_rescue_evaluable": true,
+        "relative_rescue_pass": true,
+        "reversal_folds": [],
+        "status": "H_MSO01R_COMPONENT_QUALIFIED",
+        "worst_family_ms": 0.3539858469394079,
+        "worst_family_ss": 0.8305947483097608
+      },
+      "pressure_gradient_acceleration": {
+        "absolute_checks": {
+          "all_six_folds_valid": true,
+          "candidate_c_point": true,
+          "candidate_c_simultaneous_ucb": true,
+          "conditional_variance_point": false,
+          "conditional_variance_simultaneous_ucb": false,
+          "coverage_every_family": true,
+          "coverage_overall": true,
+          "every_family_nrmse_point": true,
+          "every_family_nrmse_simultaneous_ucb": true,
+          "improvement_point": true,
+          "improvement_simultaneous_lcb": true,
+          "oracle_nrmse_point": true,
+          "oracle_nrmse_simultaneous_ucb": true
+        },
+        "absolute_evaluable": true,
+        "absolute_pass": false,
+        "all_required_folds_valid": true,
+        "component": "pressure_gradient_acceleration",
+        "component_evaluable": true,
+        "component_pass": false,
+        "conditional_variance_ratio": 1.0456141397842045,
+        "conditional_variance_ratio_simultaneous_ucb": 1.2073200250182583,
+        "coverage_evaluable": true,
+        "coverage_family_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "cvar_evaluable": true,
+        "dnn_evaluable": true,
+        "family_point_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "family_simultaneous_ucb_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "not_evaluable_mechanisms": {
+          "absolute": [],
+          "relative": []
+        },
+        "oracle_evaluable": true,
+        "oracle_nrmse_ratio": 0.49688465232622436,
+        "oracle_nrmse_ratio_simultaneous_ucb": 0.5694842680151591,
+        "relative_checks": {
+          "candidate_c_nonworsening": true,
+          "candidate_c_point_ratio": false,
+          "candidate_c_simultaneous_ratio_ucb": false,
+          "conditional_variance_point_ratio": false,
+          "conditional_variance_simultaneous_ratio_ucb": false,
+          "coverage_guard": true,
+          "no_fold_three_effect_reversal": true,
+          "oracle_nrmse_point_ratio": true,
+          "oracle_nrmse_simultaneous_ratio_ucb": true,
+          "worst_family_guard": true
+        },
+        "relative_rescue_evaluable": true,
+        "relative_rescue_pass": false,
+        "reversal_folds": [],
+        "status": "H_MSO01R_COMPONENT_NOT_QUALIFIED",
+        "worst_family_ms": 0.3959001894302489,
+        "worst_family_ss": 0.7718723809576661
+      },
+      "viscosity_laplacian_acceleration": {
+        "absolute_checks": {
+          "all_six_folds_valid": true,
+          "candidate_c_point": true,
+          "candidate_c_simultaneous_ucb": true,
+          "conditional_variance_point": false,
+          "conditional_variance_simultaneous_ucb": false,
+          "coverage_every_family": true,
+          "coverage_overall": true,
+          "every_family_nrmse_point": true,
+          "every_family_nrmse_simultaneous_ucb": true,
+          "improvement_point": true,
+          "improvement_simultaneous_lcb": true,
+          "oracle_nrmse_point": true,
+          "oracle_nrmse_simultaneous_ucb": true
+        },
+        "absolute_evaluable": true,
+        "absolute_pass": false,
+        "all_required_folds_valid": true,
+        "component": "viscosity_laplacian_acceleration",
+        "component_evaluable": true,
+        "component_pass": false,
+        "conditional_variance_ratio": 1.0268835551148163,
+        "conditional_variance_ratio_simultaneous_ucb": 1.2001770478073195,
+        "coverage_evaluable": true,
+        "coverage_family_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "cvar_evaluable": true,
+        "dnn_evaluable": true,
+        "family_point_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "family_simultaneous_ucb_checks": {
+          "F1": true,
+          "F2": true,
+          "F3": true,
+          "F4": true
+        },
+        "not_evaluable_mechanisms": {
+          "absolute": [],
+          "relative": []
+        },
+        "oracle_evaluable": true,
+        "oracle_nrmse_ratio": 0.40147464327666277,
+        "oracle_nrmse_ratio_simultaneous_ucb": 0.4737730548745305,
+        "relative_checks": {
+          "candidate_c_nonworsening": true,
+          "candidate_c_point_ratio": false,
+          "candidate_c_simultaneous_ratio_ucb": false,
+          "conditional_variance_point_ratio": false,
+          "conditional_variance_simultaneous_ratio_ucb": false,
+          "coverage_guard": true,
+          "no_fold_three_effect_reversal": true,
+          "oracle_nrmse_point_ratio": true,
+          "oracle_nrmse_simultaneous_ratio_ucb": true,
+          "worst_family_guard": true
+        },
+        "relative_rescue_evaluable": true,
+        "relative_rescue_pass": false,
+        "reversal_folds": [],
+        "status": "H_MSO01R_COMPONENT_NOT_QUALIFIED",
+        "worst_family_ms": 0.4236580324007863,
+        "worst_family_ss": 0.6933343029739295
+      }
+    },
+    "global_evaluable": true,
+    "global_pass": false,
+    "global_status": "H_MSO01R_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_QUALIFIED",
+    "learned_operator_authorized": false,
+    "mso03_deterministic_closure_baseline_eligible": false,
+    "mso03_executed": false,
+    "neural_training_authorized": false
+  }
+}
