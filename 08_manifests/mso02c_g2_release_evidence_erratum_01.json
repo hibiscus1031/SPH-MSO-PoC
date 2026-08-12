@@ -1,0 +1,26 @@
+{
+  "schema_version": "MSO02C_G2_RELEASE_EVIDENCE_ERRATUM_V1",
+  "status": "FROZEN_BEFORE_BOOTSTRAP_EVIDENCE_COMPLETION",
+  "affected_uncommitted_release": {
+    "amendment_sha256": "fec81d9dceeb4edc93b19adf0eb063e564effda81f700ea69174963b75454650",
+    "report_sha256": "a0583f288cc44844f8c23d3d813ccef86a6f91ea08b3e7deb84aa4be62d8648a",
+    "manifest_sha256": "a12d0198e6bc6d57295b11bab63de64fd4581fbcee6aa6aeda58085abef4e19a",
+    "status_sha256": "13a4ab021b45a1aee1fbddd847260b8cacfdf6fa1aecbc36640b0d3aa0300e0e",
+    "git_commit": null
+  },
+  "independent_audit_finding": "Point, zero, and aggregation fixtures passed, but the bootstrap compatibility CSV was declarative rather than generated from the promised 6-fold x 4-family lineage-first synthetic draws and boundary tests.",
+  "release_terminal_valid": false,
+  "candidate_formula_change_authorized": false,
+  "candidate_rating_change_authorized_without_new_test_failure": false,
+  "threshold_change_authorized": false,
+  "required_correction": [
+    "Add a deterministic 24-cell lineage-first paired synthetic bootstrap fixture.",
+    "Execute replicate aggregate recomputation, common component valid mask, 200/201 degeneracy boundary, zero-SE/max-t, positive log-ratio, and exact-zero-MS branch tests.",
+    "Add every protocol-required semantic audit field to the stress output.",
+    "Strengthen finalizer keyspace/content checks and provenance bindings before any terminal release."
+  ],
+  "real_target_or_observable_payload_read_count": 0,
+  "consumed_replay_count": 0,
+  "old_metric_numeric_values_used_for_correction": 0,
+  "recovery": "Remove only the four hash-recorded uncommitted release files; replace the seven uncommitted synthetic outputs only after the corrected executable is committed and reruns S1-S18 plus the new bootstrap fixtures from scratch."
+}
