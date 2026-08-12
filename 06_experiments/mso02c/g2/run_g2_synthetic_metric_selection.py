@@ -397,7 +397,7 @@ def main() -> None:
         "status": TERMINAL_INTERMEDIATE,
         "g2_pre_synthetic_commit": freeze["protocol_commit"],
         "g2_protocol_erratum_commit": freeze["execution_parent_commit"],
-        "execution_commit": freeze["execution_commit"],
+        "execution_commit": head,
         "runtime": actual_runtime,
         "fixture_count": 18,
         "candidate_count": 4,

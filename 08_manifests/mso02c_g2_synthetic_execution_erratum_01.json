@@ -1,0 +1,26 @@
+{
+  "schema_version": "MSO02C_G2_SYNTHETIC_EXECUTION_ERRATUM_V1",
+  "status": "FROZEN_BEFORE_CORRECTIVE_SYNTHETIC_EXECUTION",
+  "failed_execution_commit": "5ab957aaa72aaba500f8a99ac37f04d9db5db405",
+  "failure_class": "KeyError",
+  "failure_message": "execution_commit",
+  "failure_location": "synthetic execution audit assembly before any formal output publication",
+  "cause": "The runner referenced a renamed freeze metadata key after completing in-memory and staged synthetic calculations.",
+  "scientific_formula_change_count": 0,
+  "fixture_change_count": 0,
+  "candidate_rating_change_count": 0,
+  "threshold_change_count": 0,
+  "real_target_or_observable_payload_read_count": 0,
+  "consumed_replay_count": 0,
+  "formal_output_published_count": 0,
+  "staged_partial_file_count": 6,
+  "staged_partial_sha256": {
+    "aggregation_semantics_audit.csv": "bce378f653e00d197146ce9e5149ab5fe4a62f65d3d4e248a7278dbe88cfbedf",
+    "bootstrap_compatibility_audit.csv": "e7160a7aecf7bbd4a4411878eda88a501f84f4a6c5c8a41233cf81f7ba93eedf",
+    "candidate_metric_selection_matrix.csv": "78fa72bd3ceaa525a2cdc7d3fff800f4bf28c20e5c3c45a1b63d331d712b5884",
+    "synthetic_metric_stress_tests.csv": "32586ad84293e95f2c049d310f13654545c0f98c8d8b4298cbf2dfda571cb6c3",
+    "threshold_derivation_report.md": "3236e547094b40a3301b678fbca8946f2bb7ed34a68e4d304d470e552b3f03ab",
+    "zero_semantics_audit.csv": "3743d9c2e056131b9aff86b3b361cb01501afd63833bdd7ee4870d580000f9e1"
+  },
+  "recovery": "Delete only the recorded synthetic staging directory, freeze the one-line metadata-key correction, and rerun all S1-S18 calculations from scratch."
+}
