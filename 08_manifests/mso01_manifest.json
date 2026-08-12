@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-01",
+  "date": "2026-08-12",
+  "timezone": "Asia/Shanghai",
+  "terminal_status": "MSO01_TARGET_BLIND_MULTISCALE_NUMERICAL_LADDER_QUALIFIED",
+  "ladder_status": "FULL",
+  "qualified_subset": [0.75, 1.0, 1.25, 1.5],
+  "source_request": {
+    "path": "/Users/xiejinbo/.codex/attachments/a774b6f1-1d0d-408f-871d-47cd2ebc5c40/pasted-text.txt",
+    "sha256": "bf36fa49c756a1abdf787f4d4785fe348ec121f03cb1032ff318bd362e79a31f"
+  },
+  "parent_repositories": [
+    {
+      "project": "SPH-DDO-PoC",
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC",
+      "head_before_and_after": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "access": "READ_ONLY_FROZEN_SCIENTIFIC_PARENT",
+      "modified": false
+    },
+    {
+      "project": "SPH-PIO-PoC",
+      "path": "/Users/xiejinbo/Documents/SPH-PIO-PoC",
+      "head_before_and_after": "a0556093070f7f069ca6bea64b5f83d37bea9c76",
+      "access": "READ_ONLY_STATIC_CODE_PROVENANCE",
+      "modified": false
+    }
+  ],
+  "environment": {
+    "device": "CPU",
+    "dtype": "float64",
+    "python": "system_python3",
+    "torch": "2.10.0",
+    "numpy": "1.26.4",
+    "torch_threads_during_formal_run": 1,
+    "pythonhashseed": 0,
+    "evaluation_mode": "SEQUENTIAL_PER_CASE_PER_SCALE"
+  },
+  "activity_flags": {
+    "NEW_TARGET_BLIND_NUMERICAL_COMPUTE": true,
+    "NEW_SCIENTIFIC_TARGET_EVALUATION": false,
+    "TARGET_FILE_OPEN_COUNT": 0,
+    "REFERENCE_ARCHIVE_READ_COUNT": 0,
+    "DEFECT_GENERATION_COUNT": 0,
+    "H3_METRIC_COUNT": 0,
+    "ORACLE_FIT_COUNT": 0,
+    "NEURAL_MODEL_COUNT": 0,
+    "OPTIMIZER_COUNT": 0,
+    "TIME_INTEGRATION_COUNT": 0,
+    "SOLVER_IN_LOOP_COUNT": 0,
+    "ROLLOUT_COUNT": 0,
+    "SEALED_TEST_COUNT": 0,
+    "ARC_ACCESS_COUNT": 0,
+    "PARENT_REPOSITORY_WRITE": false,
+    "POST_OUTCOME_GATE_OR_SCALE_MODIFICATION": false,
+    "SCALE_RANKING_PERFORMED": false,
+    "REPLACEMENT_SCALE_GENERATED": false,
+    "MSO02_EXECUTED": false
+  },
+  "decision_summary": {
+    "base_operator_identity_bitwise": true,
+    "identity_rows_passed": 51,
+    "identity_rows_total": 51,
+    "invariance_rows_passed": 360,
+    "invariance_rows_total": 360,
+    "nesting_violation_count": 0,
+    "zero_neighbor_count": 0,
+    "rank_deficient_environment_count": 0,
+    "minimum_nonself_neighbor_count_p01": 24.0,
+    "minimum_scale_response_to_uncertainty_ratio": 32157950312.230736,
+    "scale_response_ratio_gate": 100.0,
+    "mso02_prelearning_identifiability_experiment_eligible": true,
+    "mso02_authorized_or_executed": false
+  },
+  "git": {
+    "repository_present": false,
+    "pre_mso01_head": null,
+    "post_mso01_head": null,
+    "branch": null,
+    "commit_created": false,
+    "remote_created": false
+  },
+  "artifact_registry": [
+    {
+      "path": "00_project_contract/mso01_target_blind_numerical_qualification_contract.md",
+      "sha256": "a5c124b3b2c14d43d6853dc7110025174310012b1a925e2a5ab7fe81bc7b9677",
+      "source_provenance": "MSO-00 frozen contract plus MSO-01 user authorization",
+      "creation_stage": "MSO-01_PRECOMPUTE",
+      "role": "PROSPECTIVE_NUMERICAL_CONTRACT",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "01_provenance/mso01_static_operator_import_manifest.csv",
+      "sha256": "6f8131d78c2325fe4ae8f0bb92dcd34a20237ba40c708f9e79478c5355e28244",
+      "source_provenance": "MSO-00 import candidate registry and verified PIO HEAD",
+      "creation_stage": "MSO-01_PRECOMPUTE",
+      "role": "STATIC_OPERATOR_PROVENANCE",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/__init__.py",
+      "sha256": "18afa8e375e06bd03ce68f17528c7a27722e1dbdab17536d1b060994446ad93a",
+      "source_provenance": "SPH-PIO-PoC@a055609:01_solver/structure_preserving/__init__.py",
+      "creation_stage": "MSO-01_IMPORT",
+      "role": "IMMUTABLE_VENDOR_STATIC_CODE",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/neighborhood.py",
+      "sha256": "44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8",
+      "source_provenance": "SPH-PIO-PoC@a055609:01_solver/structure_preserving/neighborhood.py",
+      "creation_stage": "MSO-01_IMPORT",
+      "role": "IMMUTABLE_VENDOR_STATIC_CODE",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/kernels.py",
+      "sha256": "bad08e0f49b308c568cd438c9981abd2c906e16c6570ebc0ca7d19d9847b333b",
+      "source_provenance": "SPH-PIO-PoC@a055609:01_solver/structure_preserving/kernels.py",
+      "creation_stage": "MSO-01_IMPORT",
+      "role": "IMMUTABLE_VENDOR_STATIC_CODE",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/conservative_pressure.py",
+      "sha256": "b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064",
+      "source_provenance": "SPH-PIO-PoC@a055609:01_solver/structure_preserving/conservative_pressure.py",
+      "creation_stage": "MSO-01_IMPORT",
+      "role": "IMMUTABLE_VENDOR_STATIC_CODE",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/conservative_viscosity.py",
+      "sha256": "bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852",
+      "source_provenance": "SPH-PIO-PoC@a055609:01_solver/structure_preserving/conservative_viscosity.py",
+      "creation_stage": "MSO-01_IMPORT",
+      "role": "IMMUTABLE_VENDOR_STATIC_CODE",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "03_multiscale_definitions/mso01_scale_semantics.md",
+      "sha256": "9fcababb0c68569171ac6d19b7e60ce7857932f33b9939c0393424ac06b9f68d",
+      "source_provenance": "MSO-00 frozen scale schema",
+      "creation_stage": "MSO-01_PRECOMPUTE",
+      "role": "SCALE_SEMANTICS",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "03_multiscale_definitions/qualified_scale_registry.json",
+      "sha256": "43f55d1e58880486dd99d7970369c50144210e1eec2384e24ec9d91057751d87",
+      "source_provenance": "MSO-01 formal audit tables",
+      "creation_stage": "MSO-01_POSTCOMPUTE",
+      "role": "FORMAL_SCALE_DECISION",
+      "consumed_status": "UNCONSUMED_FUTURE_STAGE_ELIGIBILITY_INPUT"
+    },
+    {
+      "path": "05_registries/mso01_target_blind_case_registry.json",
+      "sha256": "9648018d588e58aa02795ab0c12dab94323fa043c6593c02bdc6fbd6beff957a",
+      "source_provenance": "MSO-01 user authorization and MSO-00 target-blind fixture boundary",
+      "creation_stage": "MSO-01_PRECOMPUTE",
+      "role": "TARGET_BLIND_CASE_REGISTRY",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "06_experiments/mso01/run_mso01_qualification.py",
+      "sha256": "81a6a41039c0e97e0a7d95a86c8a599ed3f50ce370e636387b2447c4fbec40f1",
+      "source_provenance": "MSO-01 prospective numerical contract",
+      "creation_stage": "MSO-01_PRECOMPUTE",
+      "role": "FROZEN_EXECUTABLE_PROTOCOL",
+      "consumed_status": "CONSUMED_BY_MSO01_QUALIFICATION"
+    },
+    {
+      "path": "06_experiments/mso01/topology_audit.csv",
+      "sha256": "6ba966c398edd7ae6ae15459d78b2852e3380d1569aa372c481dd963d181a96e",
+      "source_provenance": "Frozen MSO-01 executable and target-blind fixtures",
+      "creation_stage": "MSO-01_COMPUTE",
+      "role": "TARGET_BLIND_TOPOLOGY_EVIDENCE",
+      "consumed_status": "CONSUMED_BY_MSO01_DECISION"
+    },
+    {
+      "path": "06_experiments/mso01/operator_identity_audit.csv",
+      "sha256": "f762a1d1a22c7777f170e656f69296a344e537c8fb464d6400c2d4cced7fec87",
+      "source_provenance": "Direct PIO parent path versus immutable MSO vendor path",
+      "creation_stage": "MSO-01_COMPUTE",
+      "role": "BASE_OPERATOR_IDENTITY_EVIDENCE",
+      "consumed_status": "CONSUMED_BY_MSO01_DECISION"
+    },
+    {
+      "path": "06_experiments/mso01/invariance_audit.csv",
+      "sha256": "3c8b4616b22691ab777dfd7fbaeba0611a1a8dabbd1d4c58007263963c6d3d54",
+      "source_provenance": "Frozen MSO-01 executable and target-blind fixtures",
+      "creation_stage": "MSO-01_COMPUTE",
+      "role": "STRUCTURAL_INVARIANCE_EVIDENCE",
+      "consumed_status": "CONSUMED_BY_MSO01_DECISION"
+    },
+    {
+      "path": "06_experiments/mso01/scale_response_uncertainty.csv",
+      "sha256": "ee39411b8a9334032dec43d7bf3469a3c4fc5c79a1aa15ccd5128406252fa3f7",
+      "source_provenance": "Frozen prospective U and R aggregation on target-blind operator outputs",
+      "creation_stage": "MSO-01_COMPUTE",
+      "role": "NUMERICAL_RESOLVABILITY_EVIDENCE",
+      "consumed_status": "CONSUMED_BY_MSO01_DECISION"
+    },
+    {
+      "path": "06_experiments/mso01/resource_audit.csv",
+      "sha256": "cd9fca00d69c6e0310016b48a40a9c2385448fa1d3065673c79708331382426c",
+      "source_provenance": "Sequential MSO-01 execution telemetry",
+      "creation_stage": "MSO-01_COMPUTE",
+      "role": "RESOURCE_DIAGNOSTIC",
+      "consumed_status": "CONSUMED_DIAGNOSTIC_ONLY"
+    },
+    {
+      "path": "06_experiments/mso01/firewall_audit.csv",
+      "sha256": "89eda505c4fdc0cdcc2f86a2566a097e0cb3c486304d7b2dd67dc3b98874212d",
+      "source_provenance": "MSO-01 controlled pre/post application access registry",
+      "creation_stage": "MSO-01_COMPUTE",
+      "role": "INFORMATION_FIREWALL_EVIDENCE",
+      "consumed_status": "CONSUMED_BY_MSO01_VALIDITY_DECISION"
+    },
+    {
+      "path": "07_reports/mso01_numerical_qualification_report.md",
+      "sha256": "5409db77f4c7d1fb051c39590cde89d612269f418fc7a8233712ac42122adc00",
+      "source_provenance": "Hash-bound MSO-01 audit artifacts",
+      "creation_stage": "MSO-01_POSTCOMPUTE",
+      "role": "FINAL_STAGE_REPORT",
+      "consumed_status": "UNCONSUMED_HANDOFF_RECORD"
+    },
+    {
+      "path": "08_manifests/mso01_precompute_freeze.json",
+      "sha256": "5ea17192017e89e416d06a56a32a11bcab2fbe5b76bbe20d8fda88ee4b6dec11",
+      "source_provenance": "Prospective contract and executable hashes before formal run",
+      "creation_stage": "MSO-01_PRECOMPUTE",
+      "role": "PROSPECTIVE_FREEZE_MANIFEST",
+      "consumed_status": "CONSUMED_BY_MSO01_VALIDITY_DECISION"
+    },
+    {
+      "path": "08_manifests/mso01_status_ledger.json",
+      "sha256": "425ad0dd0cf4ba62bd802024d7a3b44243f15ad0cc93f122ed1983cf4eb448ef",
+      "source_provenance": "Frozen MSO-01 decision logic",
+      "creation_stage": "MSO-01_POSTCOMPUTE",
+      "role": "TERMINAL_STATUS_LEDGER",
+      "consumed_status": "UNCONSUMED_HANDOFF_RECORD"
+    }
+  ],
+  "validation": {
+    "required_artifacts_present": true,
+    "json_parse_validation": true,
+    "csv_parse_validation": true,
+    "precompute_hashes_unchanged_after_run": true,
+    "artifact_hashes_verified": true,
+    "all_identity_rows_passed": true,
+    "all_invariance_rows_passed": true,
+    "all_scale_decisions_emitted": true,
+    "parent_heads_unchanged": true,
+    "parent_worktrees_clean_after_run": true
+  },
+  "authorization": {
+    "mso02_prelearning_identifiability_experiment_eligible": true,
+    "mso02_execution_authorized_by_this_stage": false,
+    "mso02_executed": false,
+    "stop_after_mso01": true
+  }
+}

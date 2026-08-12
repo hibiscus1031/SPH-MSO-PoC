@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-00",
+  "roles": [
+    {
+      "role": "CONTRACT_PROPOSAL",
+      "may_support": ["prospective definitions", "future decision rules"],
+      "may_not_support": ["scientific pass", "performance claim"],
+      "consumed_in_mso00": true
+    },
+    {
+      "role": "LITERATURE_BOUNDARY",
+      "may_support": ["claim boundary", "novelty risk registration"],
+      "may_not_support": ["H-MSO-01 result", "numerical qualification"],
+      "consumed_in_mso00": true
+    },
+    {
+      "role": "HISTORICAL_CONTEXT_DDO",
+      "may_support": ["target definition inheritance", "design rationale", "historical scale context"],
+      "may_not_support": ["SS control result", "MSO pass", "fresh evidence"],
+      "consumed_in_mso00": true
+    },
+    {
+      "role": "HISTORICAL_CONTEXT_PIO",
+      "may_support": ["static code provenance", "bounded interface claims", "governance philosophy"],
+      "may_not_support": ["MSO predictive result", "MSO training evidence", "MSO full-solver qualification"],
+      "consumed_in_mso00": true
+    },
+    {
+      "role": "ARC_EXCLUDED",
+      "may_support": [],
+      "may_not_support": ["all scientific, numerical, provenance, parameter, qualification, training, and conclusion claims"],
+      "consumed_in_mso00": false,
+      "required_import_count": 0
+    },
+    {
+      "role": "TARGET_BLIND_NUMERICAL_QUALIFICATION",
+      "stage": "MSO-01",
+      "may_support": ["candidate ladder numerical admissibility", "static interface qualification"],
+      "may_not_support": ["defect identifiability", "H-MSO-01", "target-dependent scale selection", "neural learning"],
+      "currently_available": false
+    },
+    {
+      "role": "CONSUMED_DESIGN",
+      "may_support": ["exploratory redesign with explicit amendment"],
+      "may_not_support": ["formal fresh confirmation", "sealed test claim"],
+      "currently_available": false
+    },
+    {
+      "role": "FRESH_IDENTIFIABILITY_QUALIFICATION",
+      "may_support": ["future formal paired SS/MS H-MSO-01 decision"],
+      "requirements": ["zero DDO/PIO/ARC case reuse", "ladder qualified", "pretarget registry", "lineage-held-out", "paired arms", "firewall pass"],
+      "currently_available": false,
+      "authorized_by_mso00": false
+    },
+    {
+      "role": "TRAIN",
+      "may_support": ["future parameter fitting only after separate authorization"],
+      "may_not_support": ["fresh validation", "sealed test"],
+      "currently_available": false,
+      "authorized_by_mso00": false
+    },
+    {
+      "role": "FRESH_VALIDATION",
+      "may_support": ["future model/representation confirmation under separate contract"],
+      "requirements": ["zero consumed lineage overlap", "unchanged frozen analysis"],
+      "currently_available": false,
+      "authorized_by_mso00": false
+    },
+    {
+      "role": "SEALED_TEST",
+      "may_support": ["only a future explicitly authorized terminal evaluation"],
+      "currently_available": false,
+      "authorized_by_mso00": false,
+      "accessed_in_mso00": false
+    }
+  ],
+  "role_transition_rules": [
+    "Viewing any target outcome makes that case consumed for design.",
+    "A consumed case or lineage can never be relabeled fresh.",
+    "Target-blind qualification cannot be promoted to identifiability evidence.",
+    "Historical DDO metrics cannot be relabeled SS.",
+    "PIO training or validation cannot be relabeled MSO evidence.",
+    "ARC remains excluded; any detected ARC-derived candidate is quarantined."
+  ]
+}

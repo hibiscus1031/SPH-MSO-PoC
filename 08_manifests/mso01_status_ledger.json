@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-01",
+  "terminal_status": "MSO01_TARGET_BLIND_MULTISCALE_NUMERICAL_LADDER_QUALIFIED",
+  "ladder_status": "FULL",
+  "qualified_subset": [
+    0.75,
+    1.0,
+    1.25,
+    1.5
+  ],
+  "provenance_conflict": false,
+  "base_operator_identity_passed": true,
+  "firewall_breach": false,
+  "target_file_open_count": 0,
+  "reference_archive_read_count": 0,
+  "defect_generation_count": 0,
+  "h3_metric_count": 0,
+  "oracle_fit_count": 0,
+  "neural_model_count": 0,
+  "optimizer_count": 0,
+  "time_integration_count": 0,
+  "rollout_count": 0,
+  "sealed_test_count": 0,
+  "post_outcome_gate_or_scale_modification": false,
+  "mso02_prelearning_identifiability_experiment_eligible": true,
+  "mso02_executed": false,
+  "git": {
+    "repository_present": false,
+    "pre_mso01_head": null,
+    "post_mso01_head": null,
+    "branch": null,
+    "commit_created": false
+  }
+}

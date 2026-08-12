@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage_frozen": "MSO-00",
+  "status": "CANDIDATE_PENDING_MSO01_TARGET_BLIND_QUALIFICATION",
+  "support_semantics": "h is compact-support radius as in the frozen DDO definition; lambda multiplies every particle support without changing particle state or resolution",
+  "kernel_family": "FROZEN_SAME_AS_QUALIFIED_BASE_OPERATOR",
+  "candidate_multipliers": [0.75, 1.0, 1.25, 1.5],
+  "baseline_multiplier": 1.0,
+  "formal_first_slope_pair": [0.75, 1.25],
+  "secondary_slope_pair": [1.0, 1.5],
+  "formal_curvature_triples": [
+    [0.75, 1.0, 1.25],
+    [1.0, 1.25, 1.5]
+  ],
+  "invariants_across_scales": [
+    "particle_ids",
+    "positions",
+    "masses",
+    "density",
+    "velocity",
+    "particle_resolution",
+    "physical_model",
+    "EOS",
+    "viscosity",
+    "kernel_formula_family",
+    "dtype",
+    "domain_and_boundary_convention",
+    "self_edge_policy",
+    "accumulation_policy"
+  ],
+  "qualification_gates": {
+    "target_access": false,
+    "support_positive": true,
+    "support_below_half_periodic_extent": true,
+    "graph_deterministic": true,
+    "directed_graph_reciprocal_and_deduplicated": true,
+    "increasing_scalar_support_edge_sets_nested": true,
+    "minimum_nonself_neighbor_count_p01": 8,
+    "all_operator_and_response_values_finite": true,
+    "lambda_one_bitwise_baseline_identity": true,
+    "pair_and_global_force_tolerance_eps_multiplier": 256,
+    "scale_response_to_repeat_noise_min_ratio": 100,
+    "nondegeneracy_required_on_target_blind_fixtures": 2
+  },
+  "change_control": "No multiplier may be replaced after any fresh target or identifiability outcome is seen. A failed ladder requires a new pre-target contract version.",
+  "scientific_target_evaluation_authorized": false
+}

@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-00",
+  "reference_in_formal_input": false,
+  "high_resolution_sph_is_truth": false,
+  "target": {
+    "symbol": "d_h*",
+    "definition": "R_h L(q*) - L_h(R_h q*)",
+    "sign": "add_to_low_cost_semidiscrete_rhs",
+    "time_semantics": "fixed_time_spatial_only",
+    "primary_components": [
+      "density_rate",
+      "pressure_gradient_acceleration",
+      "viscosity_laplacian_acceleration"
+    ],
+    "diagnostic_only": ["interpolation_density"],
+    "derived_diagnostic_only": ["total_acceleration"]
+  },
+  "storage_partitions": {
+    "observable": {
+      "path_pattern": "06_experiments/<stage>/observable/",
+      "required_prefix": "obs__",
+      "may_enter_formal_input": true
+    },
+    "reference_target": {
+      "path_pattern": "06_experiments/<stage>/reference_target/",
+      "required_prefixes": ["target_ref__", "target__"],
+      "may_enter_formal_input": false
+    },
+    "design_governance": {
+      "path_pattern": "06_experiments/<stage>/design_governance/",
+      "required_prefix": "design__",
+      "may_enter_formal_input": false
+    }
+  },
+  "quantities": [
+    {
+      "name": "obs__particle_id",
+      "role": "JOIN_KEY_ONLY",
+      "deployment_available": true,
+      "formal_input": false,
+      "notes": "stable join key; no learned embedding"
+    },
+    {
+      "name": "obs__position",
+      "role": "OBSERVABLE_GEOMETRY_SOURCE",
+      "deployment_available": true,
+      "formal_input": "RELATIVE_MINIMUM_IMAGE_ONLY",
+      "notes": "absolute global coordinates prohibited by default"
+    },
+    {
+      "name": "obs__mass",
+      "role": "OBSERVABLE_STATE",
+      "deployment_available": true,
+      "formal_input": true
+    },
+    {
+      "name": "obs__rho",
+      "role": "OBSERVABLE_STATE",
+      "deployment_available": true,
+      "formal_input": true
+    },
+    {
+      "name": "obs__velocity",
+      "role": "OBSERVABLE_STATE_SOURCE",
+      "deployment_available": true,
+      "formal_input": "PAIR_DIFFERENCE_OR_LOCAL_CENTERED_FORM_ONLY",
+      "notes": "raw absolute velocity not exposed where Galilean-invariant construction is available"
+    },
+    {
+      "name": "obs__support_h",
+      "role": "OBSERVABLE_NUMERICAL_PARAMETER",
+      "deployment_available": true,
+      "formal_input": true
+    },
+    {
+      "name": "obs__dx",
+      "role": "OBSERVABLE_NUMERICAL_PARAMETER",
+      "deployment_available": true,
+      "formal_input": true
+    },
+    {
+      "name": "obs__eos_rho0_c0",
+      "role": "OBSERVABLE_PHYSICAL_PARAMETER",
+      "deployment_available": true,
+      "formal_input": true
+    },
+    {
+      "name": "obs__kinematic_viscosity",
+      "role": "OBSERVABLE_PHYSICAL_PARAMETER",
+      "deployment_available": true,
+      "formal_input": true
+    },
+    {
+      "name": "obs__relative_geometry_and_base_moments",
+      "role": "COMMON_SS_MS_BASE_REPRESENTATION",
+      "deployment_available": true,
+      "formal_input": true
+    },
+    {
+      "name": "obs__L_lambda__<component>",
+      "role": "SCALE_OPERATOR_OBSERVABLE",
+      "deployment_available": true,
+      "formal_input": "SS_LAMBDA_1_ONLY_MS_QUALIFIED_LADDER",
+      "notes": "same q_h and operator formula at support lambda*h"
+    },
+    {
+      "name": "obs__delta_L__<component>",
+      "role": "MULTISCALE_RESPONSE_ONLY",
+      "deployment_available": true,
+      "formal_input": "MS_ONLY"
+    },
+    {
+      "name": "obs__log_scale_slope_or_curvature__<component>",
+      "role": "MULTISCALE_RESPONSE_ONLY",
+      "deployment_available": true,
+      "formal_input": "MS_ONLY"
+    },
+    {
+      "name": "obs__scale_topology_summary",
+      "role": "MULTISCALE_NUMERICAL_RESPONSE_ONLY",
+      "deployment_available": true,
+      "formal_input": "MS_ONLY"
+    },
+    {
+      "name": "target_ref__continuum_L__<component>",
+      "role": "REFERENCE_ONLY",
+      "deployment_available": false,
+      "formal_input": false
+    },
+    {
+      "name": "target_ref__reference_method_and_uncertainty",
+      "role": "REFERENCE_AUDIT_ONLY",
+      "deployment_available": false,
+      "formal_input": false
+    },
+    {
+      "name": "target__d_h_star__<component>",
+      "role": "TARGET_ONLY",
+      "deployment_available": false,
+      "formal_input": false
+    },
+    {
+      "name": "design__field_family_and_lineage",
+      "role": "SPLIT_AND_STRATIFICATION_ONLY",
+      "deployment_available": false,
+      "formal_input": false
+    }
+  ],
+  "prohibited_formal_inputs": [
+    "q_ref",
+    "rho_ref",
+    "v_ref",
+    "a_ref",
+    "d_h_star",
+    "target_ref__*",
+    "target__*",
+    "reference_minus_low_cost_proxy",
+    "manufactured_field_identity",
+    "hidden_lineage_label",
+    "DESIGN_ONLY_field_information",
+    "target_derived_scale_selection",
+    "target_derived_feature_selection",
+    "target_derived_normalization",
+    "target_derived_neighborhood_or_coverage_radius",
+    "absolute_global_coordinates_by_default",
+    "high_resolution_SPH_as_truth"
+  ],
+  "firewall_checks": [
+    "physical storage separation",
+    "prefix allowlist audit before matrix construction",
+    "normalization provenance audit",
+    "split and join-key leakage audit",
+    "feature-name and serialized-metadata audit",
+    "SS nonbaseline-scale masking audit"
+  ]
+}

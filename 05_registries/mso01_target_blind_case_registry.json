@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-01",
+  "status": "FROZEN_BEFORE_NUMERICAL_RESPONSE_EVALUATION",
+  "dtype": "float64",
+  "device": "cpu",
+  "domain_minimum": [-1.0, -1.0],
+  "domain_maximum": [1.0, 1.0],
+  "resolution": 24,
+  "particle_count_per_case": 576,
+  "base_support_ratio_h0_over_dx": 4.0,
+  "candidate_multipliers": [0.75, 1.0, 1.25, 1.5],
+  "physical_parameters": {
+    "rho0": 1.0,
+    "c0": 1.0,
+    "kinematic_viscosity": 0.02,
+    "mass_per_particle": "dx^2"
+  },
+  "excitation_state": {
+    "density": "1 + 0.05*sin(2*pi*x)*cos(2*pi*y) + 0.02*cos(4*pi*y)",
+    "velocity_x": "0.2 + 0.07*sin(2*pi*x)*cos(2*pi*y)",
+    "velocity_y": "-0.1 + 0.05*cos(2*pi*x)*sin(2*pi*y)",
+    "pressure": "c0^2*(density-rho0)",
+    "role": "TARGET_BLIND_STATIC_OPERATOR_EXCITATION"
+  },
+  "identity_state": {
+    "uniform_velocity": [0.125, -0.375],
+    "density_and_pressure": "same as excitation state",
+    "role": "TARGET_BLIND_STRUCTURAL_IDENTITY"
+  },
+  "cases": [
+    {"case_id": "TBQ_REGULAR_S20260812", "jitter_fraction": 0.0, "seed": 20260812},
+    {"case_id": "TBQ_JITTER05_S20260829", "jitter_fraction": 0.05, "seed": 20260829},
+    {"case_id": "TBQ_JITTER10_S20260847", "jitter_fraction": 0.10, "seed": 20260847}
+  ],
+  "invariance_parameters": {
+    "edge_permutation_seed": 20260901,
+    "particle_permutation_seed": 20260917,
+    "periodic_translation": [0.5, -0.25],
+    "galilean_velocity_offset": [0.375, -0.625]
+  },
+  "information_firewall": {
+    "target_generated": false,
+    "target_read": false,
+    "reference_operator_read": false,
+    "h3_read_or_evaluated": false,
+    "oracle_fit": false,
+    "neural_model": false,
+    "optimizer": false,
+    "time_integration": false,
+    "rollout": false,
+    "sealed_test": false
+  }
+}

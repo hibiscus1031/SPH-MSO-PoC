@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-01",
+  "freeze_date": "2026-08-12",
+  "timezone": "Asia/Shanghai",
+  "status": "FROZEN_BEFORE_NUMERICAL_RESPONSE_EVALUATION",
+  "candidate_multipliers": [0.75, 1.0, 1.25, 1.5],
+  "gates_changed_after_freeze": false,
+  "artifact_sha256": {
+    "00_project_contract/mso01_target_blind_numerical_qualification_contract.md": "a5c124b3b2c14d43d6853dc7110025174310012b1a925e2a5ab7fe81bc7b9677",
+    "01_provenance/mso01_static_operator_import_manifest.csv": "6f8131d78c2325fe4ae8f0bb92dcd34a20237ba40c708f9e79478c5355e28244",
+    "03_multiscale_definitions/mso01_scale_semantics.md": "9fcababb0c68569171ac6d19b7e60ce7857932f33b9939c0393424ac06b9f68d",
+    "05_registries/mso01_target_blind_case_registry.json": "9648018d588e58aa02795ab0c12dab94323fa043c6593c02bdc6fbd6beff957a",
+    "06_experiments/mso01/run_mso01_qualification.py": "81a6a41039c0e97e0a7d95a86c8a599ed3f50ce370e636387b2447c4fbec40f1",
+    "01_provenance/vendor/pio_stage01c_static/structure_preserving/__init__.py": "18afa8e375e06bd03ce68f17528c7a27722e1dbdab17536d1b060994446ad93a",
+    "01_provenance/vendor/pio_stage01c_static/structure_preserving/neighborhood.py": "44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8",
+    "01_provenance/vendor/pio_stage01c_static/structure_preserving/kernels.py": "bad08e0f49b308c568cd438c9981abd2c906e16c6570ebc0ca7d19d9847b333b",
+    "01_provenance/vendor/pio_stage01c_static/structure_preserving/conservative_pressure.py": "b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064",
+    "01_provenance/vendor/pio_stage01c_static/structure_preserving/conservative_viscosity.py": "bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852"
+  },
+  "forbidden_activity_counts_at_freeze": {
+    "target_file_open_count": 0,
+    "reference_archive_read_count": 0,
+    "defect_generation_count": 0,
+    "h3_metric_count": 0,
+    "oracle_fit_count": 0,
+    "neural_model_count": 0,
+    "optimizer_count": 0,
+    "time_integration_count": 0,
+    "rollout_count": 0,
+    "sealed_test_count": 0,
+    "arc_access_count": 0
+  }
+}

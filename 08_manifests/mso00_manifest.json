@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO",
+  "stage": "MSO-00",
+  "freeze_date": "2026-08-12",
+  "timezone": "Asia/Shanghai",
+  "terminal_status": "MSO_PROJECT_AND_PRELEARNING_MULTISCALE_IDENTIFIABILITY_CONTRACT_FROZEN",
+  "source_request": {
+    "path": "/Users/xiejinbo/.codex/attachments/fc227ad7-0ddb-4278-ad8d-a183a640f89e/pasted-text.txt",
+    "sha256": "1468e032b00e6c5d4b3a935795b89db4cc8f88830ba63f7e8e6adf39da453cc8"
+  },
+  "parent_repositories": [
+    {
+      "project": "SPH-DDO-PoC",
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC",
+      "head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "branch": "main",
+      "worktree_clean_at_audit": true,
+      "access": "READ_ONLY_HISTORICAL_CONTEXT"
+    },
+    {
+      "project": "SPH-PIO-PoC",
+      "path": "/Users/xiejinbo/Documents/SPH-PIO-PoC",
+      "head": "a0556093070f7f069ca6bea64b5f83d37bea9c76",
+      "branch": "main",
+      "worktree_clean_at_audit": true,
+      "access": "READ_ONLY_CODE_PROVENANCE_AND_HISTORICAL_CONTEXT"
+    }
+  ],
+  "arc_boundary": {
+    "arc_accessed": false,
+    "arc_scientific_evidence_import_count": 0,
+    "arc_code_import_count": 0,
+    "explicit_candidate_conflict_detected": false,
+    "future_conflict_action": "QUARANTINE_AND_REPORT_PROVENANCE_CONFLICT"
+  },
+  "mso00_activity_flags": {
+    "NEW_SCIENTIFIC_TARGET_EVALUATION": false,
+    "NEURAL_MODEL_INSTANTIATION": false,
+    "NEURAL_TRAINING": false,
+    "OPTIMIZER_EXECUTION": false,
+    "TIME_INTEGRATION_EXPERIMENT": false,
+    "SOLVER_IN_LOOP": false,
+    "ROLLOUT": false,
+    "SEALED_TEST_ACCESS": false,
+    "PARENT_REPOSITORY_WRITE": false,
+    "PARENT_CODE_IMPORTED": false,
+    "LITERATURE_METADATA_VERIFICATION": true,
+    "READ_ONLY_REPOSITORY_AUDIT": true,
+    "CONTRACT_DRAFTING": true
+  },
+  "frozen_scientific_object": {
+    "target": "d_h* = R_h L(q*) - L_h(R_h q*)",
+    "fixed_time": true,
+    "high_resolution_sph_is_truth": false,
+    "primary_components": [
+      "density_rate",
+      "pressure_gradient_acceleration",
+      "viscosity_laplacian_acceleration"
+    ],
+    "diagnostic_only": ["interpolation_density"],
+    "derived_diagnostic_only": ["total_acceleration"]
+  },
+  "causal_contrast": {
+    "control": "SS_SINGLE_SCALE_CONTROL",
+    "treatment": "MS_MULTISCALE_RESPONSE",
+    "only_formal_change": "representation",
+    "historical_ddo_as_ss": false
+  },
+  "candidate_scale_ladder": {
+    "multipliers": [0.75, 1.0, 1.25, 1.5],
+    "status": "PROSPECTIVE_CANDIDATE_PENDING_MSO01_TARGET_BLIND_QUALIFICATION",
+    "target_derived_selection": false,
+    "particle_resolution_changed": false,
+    "kernel_learned": false
+  },
+  "prospective_relative_rescue": {
+    "dnn_p90_point_reduction_minimum": 0.20,
+    "dnn_p90_simultaneous_reduction_minimum": 0.10,
+    "conditional_variance_point_reduction_minimum": 0.20,
+    "conditional_variance_simultaneous_reduction_minimum": 0.10,
+    "oracle_nrmse_point_reduction_minimum": 0.15,
+    "oracle_nrmse_simultaneous_reduction_minimum": 0.05,
+    "multiplicity": "paired maximum-studentized one-sided 95% bounds across three primary components per metric family"
+  },
+  "authorization": {
+    "mso01_contractually_authorized_scope": "TARGET_BLIND_NUMERICAL_QUALIFICATION_ONLY",
+    "mso01_execution_started": false,
+    "fresh_scientific_target_evaluation_authorized": false,
+    "neural_training_authorized": false,
+    "optimizer_authorized": false,
+    "time_integration_authorized": false,
+    "solver_in_loop_authorized": false,
+    "rollout_authorized": false,
+    "sealed_test_authorized": false
+  },
+  "artifact_sha256": {
+    "00_project_contract/mso_project_charter.md": "3437fc03474bc7855b7ea4f58159ce2f1a0c5f6f8d439962e3debf55e59c4f94",
+    "00_project_contract/mso_scope_and_claim_boundary.md": "1a785d074d2a5fac336ce4339f4cfe3d748af1989d62880ec110f07988757fa4",
+    "01_provenance/import_candidate_registry.csv": "d484fb1f50470372f084dd16961dba6638737cd3aa774f4e39d9ce3f3be0471b",
+    "01_provenance/parent_project_provenance_audit.md": "6005426f2a9ebd3dfe80d06f3bca902400137162ba49cf7d8cd10b111ff8906c",
+    "02_literature_boundary/literature_boundary_report.md": "89362ab2c4f0c5310be3b43b3d66c516cd3d6b2d6f6d606bd5338db8ec941e76",
+    "02_literature_boundary/literature_gap_matrix.csv": "74887d8aa72ae4ca6df522e105da1deae43e0f6ce76cea4c7cb6206d7a4b1bde",
+    "03_multiscale_definitions/candidate_scale_registry.json": "296b2acf253a5d87f11f42fe90b5e90ed3fa073a4e8dc1a8874d6469aedea306",
+    "03_multiscale_definitions/multiscale_response_definition.md": "9ad1200e4fb91dcd533362331752533d9d6dbb944d943980a1dda7ef35132e90",
+    "04_identifiability_contract/h_mso01_contract.md": "5dcfe3b60f1bea0f402b02286c2627881e12ee57f973e5fbfe15a23a047792e3",
+    "04_identifiability_contract/prospective_gate_proposal.md": "faac8228263b92b9a89dc016d27c5067253c1aeefc72ce0148d9b63939070efb",
+    "04_identifiability_contract/ss_vs_ms_ablation_contract.md": "c40bae3ea1895582ac48a7fa1a8f0b5f18fafa9f171c8134a9bca4660d71bcdf",
+    "05_registries/evidence_role_registry.json": "bed7211cdf9d4948a8f7a0677ec386d4b4606dbd3c3ecca74a5b5cfb07f545cb",
+    "05_registries/formal_quantity_registry.json": "2a07c5b82ebe7046c1a017b1e6970b4bdca5f52e188acdf2fb6a70022e96790b",
+    "06_experiments/README.md": "f0539aa844c618f199d45a0bdf4a47e0d8349a8dcf27d6e1bf7c160b4ed62969",
+    "07_reports/mso00_final_report.md": "e02458a5243d0721f5eabd41b19c80b013fb06c617c19b92474c076ae79e9b7d",
+    "publication/README.md": "fcd1049eb7bbfeeae0ab6bc253a3a9faf47e12e8cc9603a91a7583eae136b2e7"
+  },
+  "validation": {
+    "required_artifacts_present": true,
+    "json_parse_validation": true,
+    "csv_parse_validation": true,
+    "artifact_hashes_verified": true
+  }
+}
