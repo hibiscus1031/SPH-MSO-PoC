@@ -1,0 +1,118 @@
+{
+  "case_replacement_authorized_after_first_target_access": false,
+  "formal_case_count": 384,
+  "formal_family_counts": {
+    "F1": 96,
+    "F2": 96,
+    "F3": 96,
+    "F4": 96
+  },
+  "formal_sample_join_semantics": "TARGET_BUILDER_WRITES_ALL_FULL_CASE_PARTICLES; FORMAL_ANALYSIS_MUST INNER-JOIN THE FROZEN H-MSO-01R-A PARTICLE SAMPLE WITHOUT RESAMPLING",
+  "global_verdict_components": [
+    "density_rate",
+    "pressure_gradient_acceleration",
+    "viscosity_laplacian_acceleration"
+  ],
+  "high_resolution_sph_is_truth": false,
+  "interpolation_density_role": "DIAGNOSTIC_ONLY_NOT_STORED_AS_A_TARGET",
+  "lambda_semantics": {
+    "formal_operator_lambda": 1.0,
+    "representation_only_support_scales": [
+      0.75,
+      1.25,
+      1.5
+    ],
+    "representation_scale_defects_are_formal_targets": false
+  },
+  "numerical_reference_metadata": {
+    "case_level_fields_per_component": [
+      "scale",
+      "U_round",
+      "Delta_ref",
+      "Delta_repeat",
+      "Delta_permutation",
+      "Delta_compensated",
+      "Delta_accumulation",
+      "Delta_geometry",
+      "Delta_identity",
+      "U_num",
+      "sign_residual",
+      "sign_gate_passed",
+      "target_rms"
+    ],
+    "components": [
+      "density_rate",
+      "pressure_gradient_acceleration",
+      "viscosity_laplacian_acceleration",
+      "total_acceleration_derived"
+    ],
+    "storage": "CASE_TABLES_IN_TARGET_STORE_AND_FULL_ROWS_IN_TARGET_REFERENCE_QUALIFICATION"
+  },
+  "observable_store_access_by_target_builder": "OPAQUE_SHA256_ONLY_BEFORE_AND_AFTER; NPZ_PAYLOAD_MUST_NEVER_BE_LOADED",
+  "roles": [
+    {
+      "dimension": 1,
+      "name": "density_rate",
+      "role": "FORMAL_PRIMARY_H_MSO01R_TARGET",
+      "store_field": "target_density_rate"
+    },
+    {
+      "dimension": 2,
+      "name": "pressure_gradient_acceleration",
+      "role": "FORMAL_PRIMARY_H_MSO01R_TARGET",
+      "store_field": "target_pressure_gradient_acceleration"
+    },
+    {
+      "dimension": 2,
+      "name": "viscosity_laplacian_acceleration",
+      "role": "FORMAL_PRIMARY_H_MSO01R_TARGET",
+      "store_field": "target_viscosity_laplacian_acceleration"
+    },
+    {
+      "construction": "continuum_total_acceleration - lambda_1_base_total_acceleration; closure-qualified against the pressure and viscosity target sum",
+      "dimension": 2,
+      "name": "total_acceleration",
+      "role": "DERIVED_DIAGNOSTIC_ONLY",
+      "store_field": "target_total_acceleration_derived"
+    },
+    {
+      "name": "interpolation_density",
+      "role": "DIAGNOSTIC_ONLY_NOT_GENERATED_AS_FORMAL_TARGET",
+      "store_field": null
+    }
+  ],
+  "schema_version": "1.0.0",
+  "stage": "H-MSO-01R-B",
+  "status": "FROZEN_BEFORE_FIRST_FRESH_TARGET_REFERENCE_ACCESS",
+  "target_definition": "R_h L(q*) - L_h(R_h q*)",
+  "target_failure_terminal_status": {
+    "h_mso01r_status": "NOT_EVALUATED_DUE_TO_TARGET_QUALIFICATION_FAILURE",
+    "stage_status": "HMSO01R_B_TARGET_REFERENCE_QUALIFICATION_NOT_COMPLETE"
+  },
+  "target_reference_qualification_requirements": [
+    "analytical_derivative_reference_consistency",
+    "finite_values",
+    "target_sign_convention",
+    "lambda_1_base_operator_hash_identity",
+    "graph_and_operator_repeatability",
+    "target_component_identity",
+    "pressure_viscosity_component_closure",
+    "numerical_reference_uncertainty",
+    "target_particle_state_join_identity",
+    "primary_and_independent_topology_validity"
+  ],
+  "target_sign": "CONTINUUM_ANALYTICAL_REFERENCE_MINUS_LAMBDA_1_FROZEN_BASE_SPH",
+  "target_store_directory": "06_experiments/hmso01r_b/target_ref",
+  "target_store_row_identity": [
+    "formal_case_index",
+    "case_id",
+    "particle_id",
+    "particle_state_hash",
+    "field_lineage_id",
+    "family",
+    "fold"
+  ],
+  "target_store_scope": "ALL_PARTICLES_OF_ALL_384_FROZEN_FORMAL_CASES",
+  "target_store_written_only_if_all_cases_qualified": true,
+  "target_values_enter_observable_matrices": false
+}

@@ -1,0 +1,710 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO-PoC",
+  "stage": "H-MSO-01R-B",
+  "artifact_kind": "PRE_TARGET_FROZEN_EVIDENCE_AND_EXECUTABLE_IDENTITY_REGISTRY",
+  "status": "FROZEN_BEFORE_FIRST_FRESH_TARGET_REFERENCE_ACCESS",
+  "created_date": "2026-08-13",
+  "timezone": "Asia/Shanghai",
+  "git_binding": {
+    "binding_mode": "DISCOVER_PRE_TARGET_COMMIT_AT_FIRST_TARGET_ACCESS_FROM_CLEAN_HEAD",
+    "pre_target_commit": "DISCOVERED_AT_FIRST_TARGET_ACCESS_FROM_CLEAN_HEAD",
+    "parent_head_at_file_creation": "9048eff137001e5f644575bd02c3856b4f4ac532",
+    "required_pre_target_commit_subject": "H-MSO-01R-B: freeze fresh confirmatory execution",
+    "branch": "main",
+    "remote": null,
+    "working_tree_clean_required": true,
+    "push_performed": false,
+    "prior_commit_amendment_authorized": false
+  },
+  "scientific_freeze": {
+    "fresh_hypothesis": "H-MSO-01R",
+    "formal_stage": "H-MSO-01R-B",
+    "historical_verdict_repair_or_reinterpretation_authorized": false,
+    "formal_case_count": 384,
+    "family_case_counts": {
+      "F1": 96,
+      "F2": 96,
+      "F3": 96,
+      "F4": 96
+    },
+    "particles_per_case": 128,
+    "primary_components": [
+      "density_rate",
+      "pressure_gradient_acceleration",
+      "viscosity_laplacian_acceleration"
+    ],
+    "formal_target_formula": "d_h*=R_h L(q*)-L_h(R_h q*)",
+    "formal_target_lambda": 1.0,
+    "non_target_representation_lambdas": [
+      0.75,
+      1.25,
+      1.5
+    ],
+    "non_target_defect_generation_authorized": false,
+    "high_resolution_sph_is_truth": false,
+    "ss_feature_dimension": 39,
+    "ms_feature_dimension": 110,
+    "bootstrap_draw_count": 10000,
+    "bootstrap_draws_sha256": "3a5853ce6b353c8c2584b0f95651904fb1506a0a3e3af6985981374789d4667e",
+    "candidate_c": {
+      "only_formal_dnn_statistic": true,
+      "dnn_expansion": "Descriptor Nearest-Neighbour",
+      "canonical_zero_status": "NO_AGGREGATE_RANDOM_CONTRAST_NOT_EVALUABLE",
+      "current_instruction_zero_status_alias": "DNN_NOT_EVALUABLE_ZERO_AGGREGATE_RANDOM_BASELINE",
+      "relative_zero_ss_status": "RELATIVE_RESCUE_NOT_EVALUABLE_ZERO_SS_BASELINE",
+      "pointwise_division_authorized": false,
+      "epsilon_clipping_floor_or_zero_deletion_authorized": false,
+      "maximum_degenerate_draw_count": 200,
+      "minimum_valid_draw_count": 2,
+      "prospective_composite_mapping": "REPLACES_OLD_DNN_INPUT_IN_ABSOLUTE_NONWORSENING_AND_THREE_EFFECT_FOLD_REVERSAL_ONLY_WITH_ALL_OTHER_LEGS_AND_MARGINS_UNCHANGED"
+    },
+    "component_sides": {
+      "absolute_evaluability_independent": true,
+      "relative_rescue_evaluability_independent": true,
+      "component_evaluable_is_both_sides": true,
+      "global_not_evaluable_priority": true
+    },
+    "simultaneous_inference": {
+      "method": "MAXIMUM_STUDENTIZED_ONE_SIDED",
+      "confidence_level": 0.95,
+      "multiplicity_scope": "THREE_PRIMARY_COMPONENTS_WITHIN_EACH_METRIC_FAMILY",
+      "required_bound_row_count": 57,
+      "procedure_completeness_distinct_from_numeric_evaluability": true
+    }
+  },
+  "pre_target_operator_identity_audit": {
+    "target_blind": true,
+    "count": 384,
+    "matched": 384,
+    "ordered_digest": "4cf2df0d4b4bcf25ee497e89a12f6edb07bdeae7b195f5ca100bedef79467e40",
+    "formal_case_count": 384,
+    "matching_case_count": 384,
+    "ordered_matrix_hash_digest": "4cf2df0d4b4bcf25ee497e89a12f6edb07bdeae7b195f5ca100bedef79467e40",
+    "classification": "TARGET_BLIND_BASE_OPERATOR_IDENTITY_AUDIT_NOT_FIRST_TARGET_ACCESS",
+    "analytical_continuum_reference_evaluation_count": 0,
+    "defect_generation_count": 0,
+    "target_read_count": 0,
+    "target_write_count": 0,
+    "historical_outcome_read_count": 0
+  },
+  "pre_target_synthetic_preflight": {
+    "path": "06_experiments/hmso01r_b/candidate_c_implementation_preflight.json",
+    "status": "PASS",
+    "passed": true,
+    "sha256": "0ec915b67a1f97dfbcf4f4ffbf83e34bbd1e678aa2ac8076f906b4dddacc076d",
+    "formal_evaluator_sha256": "9135d94de4990d079c955ab655b093887bd5cacec98770f6342f1b628487794d",
+    "formal_evaluator_git_blob_oid": "97a4459641b8db9adf1c53293edab5fc4d38f2d1",
+    "bootstrap_draw_count": 10000,
+    "bootstrap_unique_draw_count": 10000,
+    "pointwise_division_count": 0,
+    "final_candidate_c_division_count": 90012,
+    "expected_final_candidate_c_division_count": 90012,
+    "more_than_200_degenerate_draws_scenario_passed": true,
+    "fewer_than_2_valid_draws_scenario_passed": true,
+    "target_payload_read_count": 0,
+    "observable_payload_read_count": 0,
+    "analytical_reference_evaluation_count": 0,
+    "defect_generation_count": 0,
+    "first_fresh_target_reference_access_performed": false
+  },
+  "activity_authorization": {
+    "authorized": [
+      "NEW_SCIENTIFIC_TARGET_EVALUATION",
+      "TARGET_GENERATION",
+      "TARGET_READ",
+      "REFERENCE_OPERATOR_READ",
+      "DNN_CANDIDATE_C_EVALUATION",
+      "CONDITIONAL_VARIANCE_EVALUATION",
+      "ORACLE_FIT",
+      "COVERAGE_EVALUATION",
+      "PAIRED_RESCUE_EVALUATION",
+      "BOOTSTRAP_INFERENCE",
+      "H_MSO01R_VERDICT"
+    ],
+    "forbidden": [
+      "OLD_POINTWISE_DNN_FORMAL_EVALUATION",
+      "NEURAL_MODEL",
+      "ATTENTION_MODEL",
+      "TRANSFORMER_MODEL",
+      "LEARNED_OPERATOR",
+      "OPTIMIZER",
+      "TRAINING",
+      "TIME_INTEGRATION",
+      "SOLVER_IN_LOOP",
+      "ROLLOUT",
+      "SEALED_TEST_ACCESS",
+      "ARC_ACCESS",
+      "MSO03_EXECUTION"
+    ],
+    "case_replacement_after_target_access_authorized": false,
+    "scientific_redesign_after_target_access_authorized": false
+  },
+  "absolute_stop_boundary": {
+    "stop_after_h_mso01r_b_release": true,
+    "mso03_auto_execution": false,
+    "neural_attention_training_execution": false
+  },
+  "source_provenance": {
+    "ddo_source_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+    "external_source_count": 8,
+    "historical_target_result_report_checkpoint_or_h3_payload_imported": false
+  },
+  "external_sources": [
+    {
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC/01_imported_baseline/structure_preserving/__init__.py",
+      "sha256": "18afa8e375e06bd03ce68f17528c7a27722e1dbdab17536d1b060994446ad93a",
+      "git_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "git_blob_oid": "9407e671f9842355382e0844019851ae1f85f5a7",
+      "git_blob_sha256": "18afa8e375e06bd03ce68f17528c7a27722e1dbdab17536d1b060994446ad93a"
+    },
+    {
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC/01_imported_baseline/structure_preserving/conservative_pressure.py",
+      "sha256": "b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064",
+      "git_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "git_blob_oid": "e9d5870b6afba74ae1da596878c2996afb997614",
+      "git_blob_sha256": "b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064"
+    },
+    {
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC/01_imported_baseline/structure_preserving/conservative_viscosity.py",
+      "sha256": "bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852",
+      "git_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "git_blob_oid": "8bb557da3c8cd9503ea98fd65255098021800d38",
+      "git_blob_sha256": "bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852"
+    },
+    {
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC/01_imported_baseline/structure_preserving/kernels.py",
+      "sha256": "bad08e0f49b308c568cd438c9981abd2c906e16c6570ebc0ca7d19d9847b333b",
+      "git_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "git_blob_oid": "82e3d33b8e7a1a7be3cb6aff2e7e1b847257f6f1",
+      "git_blob_sha256": "bad08e0f49b308c568cd438c9981abd2c906e16c6570ebc0ca7d19d9847b333b"
+    },
+    {
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC/01_imported_baseline/structure_preserving/neighborhood.py",
+      "sha256": "44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8",
+      "git_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "git_blob_oid": "cd847ef5bc18fd43993367c52421b37288a48851",
+      "git_blob_sha256": "44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8"
+    },
+    {
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC/08_scripts/ddo01a_preflight.py",
+      "sha256": "8ea2720fae9277ac6356d166d0443b6f666c6e23534aed37267d06273da7a3c2",
+      "git_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "git_blob_oid": "63ae38cfc684fa57b1c9f09ffa621e7bbbcf6797",
+      "git_blob_sha256": "8ea2720fae9277ac6356d166d0443b6f666c6e23534aed37267d06273da7a3c2"
+    },
+    {
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC/08_scripts/ddo01ar_requalification.py",
+      "sha256": "b4191e69b63e7118a305af888e107ed78a29501596f0659d4ba18e3f304c01cb",
+      "git_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "git_blob_oid": "f7ac0b9fd5afa787e0ca7daf16c3aa57f412f163",
+      "git_blob_sha256": "b4191e69b63e7118a305af888e107ed78a29501596f0659d4ba18e3f304c01cb"
+    },
+    {
+      "path": "/Users/xiejinbo/Documents/SPH-DDO-PoC/08_scripts/ddo01d_atlas_builder.py",
+      "sha256": "ce523095e21cca07f247ef91efde878c05ea7745a1899c04a6d73fd0e2ffc44a",
+      "git_head": "d76d29ae51e8104641b710371f0fcb248d5ea268",
+      "git_blob_oid": "afe509552b512c495b2fed131cc201547fb95cf9",
+      "git_blob_sha256": "ce523095e21cca07f247ef91efde878c05ea7745a1899c04a6d73fd0e2ffc44a"
+    }
+  ],
+  "frozen_inputs": [
+    {
+      "path": "00_project_contract/amendments/ca_mso01_zero_safe_dnn_semantics.md",
+      "sha256": "fec81d9dceeb4edc93b19adf0eb063e564effda81f700ea69174963b75454650",
+      "size_bytes": 2710,
+      "git_blob_oid": "439ef705ca3cac9dab878be54c97c9ddaf4d267d",
+      "git_blob_sha256": "fec81d9dceeb4edc93b19adf0eb063e564effda81f700ea69174963b75454650",
+      "role": "AUTHORITATIVE_ZERO_SAFE_CANDIDATE_C_AMENDMENT",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "00_project_contract/hmso01r_a_fresh_requalification_atlas_freeze_contract.md",
+      "sha256": "e2aa0c65089121c22af8c408923bdeed1c7eab3bf88c560db8405ccec46607a3",
+      "size_bytes": 10216,
+      "git_blob_oid": "ad30105228a38023cb4b184a8b18d08965bcbfb3",
+      "git_blob_sha256": "e2aa0c65089121c22af8c408923bdeed1c7eab3bf88c560db8405ccec46607a3",
+      "role": "R_A_AUTHORITATIVE_FROZEN_SCIENTIFIC_CONTRACT",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "00_project_contract/hmso01r_b_fresh_confirmatory_execution_contract.md",
+      "sha256": "f65bfa98b3a10469b7583650296618fe8467a92dc65c79cc74bda08b3a4a71c6",
+      "size_bytes": 32752,
+      "git_blob_oid": "3d28758a347d7fd19c886c7ea386efc468d24789",
+      "git_blob_sha256": "f65bfa98b3a10469b7583650296618fe8467a92dc65c79cc74bda08b3a4a71c6",
+      "role": "B_AUTHORITATIVE_PROSPECTIVE_EXECUTION_CONTRACT",
+      "stage": "H-MSO-01R-B",
+      "source": "H_MSO01R_B_PROSPECTIVE_STAGE_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/ddo_analytical_reference/mso02b_target_reference.py",
+      "sha256": "cd0d8794efa1900f307710e27438939bbff282aa0aa617629eab1f64427bc017",
+      "size_bytes": 24812,
+      "git_blob_oid": "918253073b765da6f3c9fa6f075c5080cbeca3f4",
+      "git_blob_sha256": "cd0d8794efa1900f307710e27438939bbff282aa0aa617629eab1f64427bc017",
+      "role": "HASH_BOUND_ANALYTICAL_REFERENCE_SOURCE",
+      "stage": "H-MSO-01R-B",
+      "source": "PREEXISTING_HASH_BOUND_VENDOR_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/__init__.py",
+      "sha256": "18afa8e375e06bd03ce68f17528c7a27722e1dbdab17536d1b060994446ad93a",
+      "size_bytes": 70,
+      "git_blob_oid": "9407e671f9842355382e0844019851ae1f85f5a7",
+      "git_blob_sha256": "18afa8e375e06bd03ce68f17528c7a27722e1dbdab17536d1b060994446ad93a",
+      "role": "HASH_BOUND_LAMBDA_ONE_BASE_OPERATOR_SOURCE",
+      "stage": "H-MSO-01R-B",
+      "source": "PREEXISTING_HASH_BOUND_VENDOR_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/conservative_pressure.py",
+      "sha256": "b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064",
+      "size_bytes": 6583,
+      "git_blob_oid": "e9d5870b6afba74ae1da596878c2996afb997614",
+      "git_blob_sha256": "b6366666ba89cc1f367a95390a411905eee8b7f55fba28a024f5732860004064",
+      "role": "HASH_BOUND_LAMBDA_ONE_BASE_OPERATOR_SOURCE",
+      "stage": "H-MSO-01R-B",
+      "source": "PREEXISTING_HASH_BOUND_VENDOR_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/conservative_viscosity.py",
+      "sha256": "bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852",
+      "size_bytes": 10205,
+      "git_blob_oid": "8bb557da3c8cd9503ea98fd65255098021800d38",
+      "git_blob_sha256": "bdfbcb457f6973130f0131ec3c0a3fecc7197dd117c8256163cf3a1445307852",
+      "role": "HASH_BOUND_LAMBDA_ONE_BASE_OPERATOR_SOURCE",
+      "stage": "H-MSO-01R-B",
+      "source": "PREEXISTING_HASH_BOUND_VENDOR_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/kernels.py",
+      "sha256": "bad08e0f49b308c568cd438c9981abd2c906e16c6570ebc0ca7d19d9847b333b",
+      "size_bytes": 13005,
+      "git_blob_oid": "82e3d33b8e7a1a7be3cb6aff2e7e1b847257f6f1",
+      "git_blob_sha256": "bad08e0f49b308c568cd438c9981abd2c906e16c6570ebc0ca7d19d9847b333b",
+      "role": "HASH_BOUND_LAMBDA_ONE_BASE_OPERATOR_SOURCE",
+      "stage": "H-MSO-01R-B",
+      "source": "PREEXISTING_HASH_BOUND_VENDOR_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "01_provenance/vendor/pio_stage01c_static/structure_preserving/neighborhood.py",
+      "sha256": "44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8",
+      "size_bytes": 13959,
+      "git_blob_oid": "cd847ef5bc18fd43993367c52421b37288a48851",
+      "git_blob_sha256": "44d61e0abbc9901472dae90f83127f5231fc3f6e8ac92a971228dfdcb230aaa8",
+      "role": "HASH_BOUND_LAMBDA_ONE_BASE_OPERATOR_SOURCE",
+      "stage": "H-MSO-01R-B",
+      "source": "PREEXISTING_HASH_BOUND_VENDOR_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "05_registries/hmso01r_a_bootstrap_registry.json",
+      "sha256": "7e1f2686b468cd47eb18ade38e9eb74c389e72e600fc5a89831035925cc278da",
+      "size_bytes": 47697,
+      "git_blob_oid": "97a43017acaccda75244c10799de27a6a65cbb08",
+      "git_blob_sha256": "7e1f2686b468cd47eb18ade38e9eb74c389e72e600fc5a89831035925cc278da",
+      "role": "FROZEN_BOOTSTRAP_DRAW_REGISTRY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "05_registries/hmso01r_a_formal_fresh_atlas_registry.json",
+      "sha256": "7fd7aa6c8415051ad83f0028b75b4684121886cb3645060e4e5c3ac54ebc268a",
+      "size_bytes": 764661,
+      "git_blob_oid": "b0ede8779e480ede2e7ad6e508c8e75cacd5b829",
+      "git_blob_sha256": "7fd7aa6c8415051ad83f0028b75b4684121886cb3645060e4e5c3ac54ebc268a",
+      "role": "FROZEN_384_CASE_FORMAL_ATLAS",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "05_registries/hmso01r_a_formal_particle_sample_registry.json",
+      "sha256": "a4b7da1a9f6e4efab7ccbc9ec3bb5e4235a82aef30ce64017895df05ab1c2b01",
+      "size_bytes": 856948,
+      "git_blob_oid": "c83ed51f2362acc1ecb6ecae08649ff189734041",
+      "git_blob_sha256": "a4b7da1a9f6e4efab7ccbc9ec3bb5e4235a82aef30ce64017895df05ab1c2b01",
+      "role": "FROZEN_384_BY_128_PARTICLE_SAMPLE",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "05_registries/hmso01r_a_lineage_fold_registry.json",
+      "sha256": "941edc1827e55ca2ffec1125734e0791786e2d157c3aa873ae0a24f520f8815b",
+      "size_bytes": 134168,
+      "git_blob_oid": "0fdc939c9dd7ddb6b0d988a0424bbce1a40bcca9",
+      "git_blob_sha256": "941edc1827e55ca2ffec1125734e0791786e2d157c3aa873ae0a24f520f8815b",
+      "role": "FROZEN_SIX_LINEAGE_FOLDS",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "05_registries/hmso01r_a_random_baseline_identity_registry.json",
+      "sha256": "cc6fa10eb77fbbd7a9b8db00d9214ff971a351fbbefdfee38b0c7db898bace99",
+      "size_bytes": 1614,
+      "git_blob_oid": "b406442d87060270ea8ebdf6323f1841aa9c6375",
+      "git_blob_sha256": "cc6fa10eb77fbbd7a9b8db00d9214ff971a351fbbefdfee38b0c7db898bace99",
+      "role": "FROZEN_MATCHED_RANDOM_IDENTITY_REGISTRY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/bootstrap_draws.npz",
+      "sha256": "3a5853ce6b353c8c2584b0f95651904fb1506a0a3e3af6985981374789d4667e",
+      "size_bytes": 7931492,
+      "git_blob_oid": "f23f6ffb45f1e5c312472a3b4dcdbcb3bd86ad23",
+      "git_blob_sha256": "3a5853ce6b353c8c2584b0f95651904fb1506a0a3e3af6985981374789d4667e",
+      "role": "FROZEN_10000_UNIQUE_PAIRED_BOOTSTRAP_DRAWS",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/coverage_geometry_freeze.json",
+      "sha256": "a51fd951bcad7f32a228229176055161b8117e9a266cdd4a99975bea7be447e4",
+      "size_bytes": 4455,
+      "git_blob_oid": "e2d57fe2e4420269b80ce7fa449871f349e1d1f4",
+      "git_blob_sha256": "a51fd951bcad7f32a228229176055161b8117e9a266cdd4a99975bea7be447e4",
+      "role": "FROZEN_OBSERVABLE_SPACE_COVERAGE_GEOMETRY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/descriptor_geometry_freeze.json",
+      "sha256": "1641f0a68bf59a9f3f949e8ee058971db154d0f68eccf6e23efe6122f4067768",
+      "size_bytes": 3004,
+      "git_blob_oid": "14322facae778a514f06e23b1cb89b30f6a9c9d8",
+      "git_blob_sha256": "1641f0a68bf59a9f3f949e8ee058971db154d0f68eccf6e23efe6122f4067768",
+      "role": "FROZEN_DESCRIPTOR_GEOMETRY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/descriptor_neighbor_identities.npz",
+      "sha256": "1d98e7c2038c9d6b7391b1ab953084dfafb47ef3ade7c62815c9f676694408b4",
+      "size_bytes": 6577085,
+      "git_blob_oid": "ed967b61b3f770e42cb6028037ab4697721aba88",
+      "git_blob_sha256": "1d98e7c2038c9d6b7391b1ab953084dfafb47ef3ade7c62815c9f676694408b4",
+      "role": "FROZEN_DESCRIPTOR_NEIGHBOUR_IDENTITIES",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/fold_normalization_registry.json",
+      "sha256": "d9842a2ba2b347d0aeb1e950118bf62d3c89d0f80639a5f475cd9c5acb683018",
+      "size_bytes": 139754,
+      "git_blob_oid": "620b632a31325f9506d8e4686ffcf92fc5232565",
+      "git_blob_sha256": "d9842a2ba2b347d0aeb1e950118bf62d3c89d0f80639a5f475cd9c5acb683018",
+      "role": "FROZEN_TRAIN_FOLD_NORMALIZATION",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/ms_observable_schema_identity.json",
+      "sha256": "13a6e83f03576619afa335e69df737547947501c63dd691066119fd9d2823fb3",
+      "size_bytes": 19740,
+      "git_blob_oid": "63238450360db10400f23dc2b6b5064cac5f879c",
+      "git_blob_sha256": "13a6e83f03576619afa335e69df737547947501c63dd691066119fd9d2823fb3",
+      "role": "FROZEN_MS_110_DIMENSION_SCHEMA",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/observable/hmso01r_a_observable_store.npz",
+      "sha256": "65ca1a7fea58248207fc5a22e14855b4a84c392c7ef17cefdf2d396687cc38cd",
+      "size_bytes": 18776547,
+      "git_blob_oid": "a76e59ff65c51bb1bf2721f19c636fe17fcfab6d",
+      "git_blob_sha256": "65ca1a7fea58248207fc5a22e14855b4a84c392c7ef17cefdf2d396687cc38cd",
+      "role": "READ_ONLY_FRESH_OBSERVABLE_STORE",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "READ_ONLY_AFTER_TARGET_QUALIFICATION_WITH_PRE_POST_HASH_PROOF"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/random_baseline_identities.npz",
+      "sha256": "74268059f33c5fc9ec885ccb1ef7f61b22120f4eac7e9862bab6fddc844d8b07",
+      "size_bytes": 1365479,
+      "git_blob_oid": "bda52baf8ae7318fb19c203f055cc5495040924f",
+      "git_blob_sha256": "74268059f33c5fc9ec885ccb1ef7f61b22120f4eac7e9862bab6fddc844d8b07",
+      "role": "FROZEN_MATCHED_RANDOM_COMPARATOR_IDENTITIES",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/hmso01r_a/ss_observable_schema_identity.json",
+      "sha256": "2bfe3b7f0b1869cade1e9e8d7554eff589c3b017512470b9e8eabf8b18130e70",
+      "size_bytes": 7356,
+      "git_blob_oid": "58ae59756714026cdc617bb1aa0f0256b73facd2",
+      "git_blob_sha256": "2bfe3b7f0b1869cade1e9e8d7554eff589c3b017512470b9e8eabf8b18130e70",
+      "role": "FROZEN_SS_39_DIMENSION_SCHEMA",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "FROZEN_SCIENTIFIC_OR_GOVERNANCE_INPUT_NO_MODIFICATION"
+    },
+    {
+      "path": "06_experiments/mso02b/build_mso02b_targets.py",
+      "sha256": "940a671927b20f219a4d2553ab61f36bc568e1c8e29bd9f043edd44103f1a08f",
+      "size_bytes": 30065,
+      "git_blob_oid": "c71aadc95c7fc6b3ccef0bd149ebc171cc4dedb9",
+      "git_blob_sha256": "940a671927b20f219a4d2553ab61f36bc568e1c8e29bd9f043edd44103f1a08f",
+      "role": "HASH_BOUND_OLD_TARGET_BUILDER_SOURCE_HELPER",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_SOURCE_ONLY_HELPER_BYTES",
+      "consumption_status": "HASH_BOUND_SOURCE_ONLY_HELPER_NO_OLD_MAIN_OR_OUTCOME_ACCESS"
+    },
+    {
+      "path": "06_experiments/mso02b/run_mso02b_formal.py",
+      "sha256": "55b0b63eb2c99364c8a2e96c75191a50707e93357f7039bd9edfdcb7c7c831b7",
+      "size_bytes": 113941,
+      "git_blob_oid": "a3d0609febf420131de48f958ef592b269784c7c",
+      "git_blob_sha256": "55b0b63eb2c99364c8a2e96c75191a50707e93357f7039bd9edfdcb7c7c831b7",
+      "role": "HASH_BOUND_PURE_NON_DNN_SOURCE_HELPER",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_SOURCE_ONLY_HELPER_BYTES",
+      "consumption_status": "HASH_BOUND_SOURCE_ONLY_HELPER_NO_OLD_MAIN_OR_OUTCOME_ACCESS"
+    },
+    {
+      "path": "08_manifests/hmso01r_a_manifest.json",
+      "sha256": "3b182be2bd8a6a2622548ab51f91b363ef9b38b9f3142314f7166516d43776a1",
+      "size_bytes": 13044,
+      "git_blob_oid": "98b743e605276948ad67afec1c07241984c78aa0",
+      "git_blob_sha256": "3b182be2bd8a6a2622548ab51f91b363ef9b38b9f3142314f7166516d43776a1",
+      "role": "R_A_OPAQUE_FROZEN_MANIFEST_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/hmso01r_a_status_ledger.json",
+      "sha256": "d59aaa656da136c9291c8be58b4ae10b9017a9731daebcef96cae06542548bf3",
+      "size_bytes": 2131,
+      "git_blob_oid": "dc2d8e9fbbc7025402fc5ad81aa821695531a016",
+      "git_blob_sha256": "d59aaa656da136c9291c8be58b4ae10b9017a9731daebcef96cae06542548bf3",
+      "role": "R_A_OPAQUE_FROZEN_STATUS_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso00_manifest.json",
+      "sha256": "c00261aac588f8b1f34e0a606259512ea8d45cf3e9cb0a10f40ab0970a2f7d95",
+      "size_bytes": 5698,
+      "git_blob_oid": "1c99291df2e360a40230e59430cd0b742cdd9f9e",
+      "git_blob_sha256": "c00261aac588f8b1f34e0a606259512ea8d45cf3e9cb0a10f40ab0970a2f7d95",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso01_manifest.json",
+      "sha256": "bf2fad0dfaf03db02d21db30c4f35a145187df557dcd60b26a4e0ee7f5348306",
+      "size_bytes": 11377,
+      "git_blob_oid": "c915aaa47256e4d0cbb77b3c8192f3563ef12d5f",
+      "git_blob_sha256": "bf2fad0dfaf03db02d21db30c4f35a145187df557dcd60b26a4e0ee7f5348306",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso01_status_ledger.json",
+      "sha256": "425ad0dd0cf4ba62bd802024d7a3b44243f15ad0cc93f122ed1983cf4eb448ef",
+      "size_bytes": 929,
+      "git_blob_oid": "8547d227070b449f1d11a80eb439133be798789d",
+      "git_blob_sha256": "425ad0dd0cf4ba62bd802024d7a3b44243f15ad0cc93f122ed1983cf4eb448ef",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso02a_manifest.json",
+      "sha256": "c8e8770cda1779041b5b380b7ccec387446c9aa0f82c2b50f4a38655ad968e81",
+      "size_bytes": 5744,
+      "git_blob_oid": "e5d23c8f867d26176fd40a2b60365c38d3963b3b",
+      "git_blob_sha256": "c8e8770cda1779041b5b380b7ccec387446c9aa0f82c2b50f4a38655ad968e81",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso02a_status_ledger.json",
+      "sha256": "f59196a1de2adffbc6ba1eda2c737c628ae63a3caeb88e969b98e3fc36cb7212",
+      "size_bytes": 1227,
+      "git_blob_oid": "1049e1742884221dbeb246e18babb50da6dcd7cb",
+      "git_blob_sha256": "f59196a1de2adffbc6ba1eda2c737c628ae63a3caeb88e969b98e3fc36cb7212",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso02b_manifest.json",
+      "sha256": "94ce69002d714acff2176fc71910e18766f873ed26be7437763eb34762e68fe6",
+      "size_bytes": 27859,
+      "git_blob_oid": "d3874d53c2cb4bebd6f73236adb59d820ab0fd46",
+      "git_blob_sha256": "94ce69002d714acff2176fc71910e18766f873ed26be7437763eb34762e68fe6",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso02b_status_ledger.json",
+      "sha256": "cb9864b34c94f4ae022745fa9b6040bd2baaf6bdae7156a3905b22584a268815",
+      "size_bytes": 5964,
+      "git_blob_oid": "94cbf58572de93555728f009bbab4ab3638a2738",
+      "git_blob_sha256": "cb9864b34c94f4ae022745fa9b6040bd2baaf6bdae7156a3905b22584a268815",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso02c_g1_ab_attribution_manifest.json",
+      "sha256": "e7652d1e706bd4b4e552973d90dfc4fe1b0fb634fd58328a9fc5331e3ae70dac",
+      "size_bytes": 6676,
+      "git_blob_oid": "3c94c52a2a2cef897b065da2631cd1abad902868",
+      "git_blob_sha256": "e7652d1e706bd4b4e552973d90dfc4fe1b0fb634fd58328a9fc5331e3ae70dac",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso02c_g1_ab_attribution_status_ledger.json",
+      "sha256": "d076ef93d145a00bddcf278bd593e9d5971d5b3596f7cea3ac018ebe82375fb1",
+      "size_bytes": 4982,
+      "git_blob_oid": "ac2f7038a7f75bc334ef754f134d777765372c41",
+      "git_blob_sha256": "d076ef93d145a00bddcf278bd593e9d5971d5b3596f7cea3ac018ebe82375fb1",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_manifest.json",
+      "sha256": "e7d001f714cdaa0bf1a2d45e5148677fed50ee8628eff6bb2caa22eafaba8c95",
+      "size_bytes": 4906,
+      "git_blob_oid": "7ccb0d88a26f1435f1205dbf3aab14e69e2c74a2",
+      "git_blob_sha256": "e7d001f714cdaa0bf1a2d45e5148677fed50ee8628eff6bb2caa22eafaba8c95",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    },
+    {
+      "path": "08_manifests/mso02c_g2_status_ledger.json",
+      "sha256": "9d677839d3035ca4a16eb414bf13b958b3fcce9af24caa7416043f3b7b251b1d",
+      "size_bytes": 1407,
+      "git_blob_oid": "5cc5a3c0226542f6fd2b0db998c7c57c80e1e982",
+      "git_blob_sha256": "9d677839d3035ca4a16eb414bf13b958b3fcce9af24caa7416043f3b7b251b1d",
+      "role": "OPAQUE_HISTORICAL_MANIFEST_OR_LEDGER_IDENTITY",
+      "stage": "H-MSO-01R-B",
+      "source": "R_A_PARENT_COMMIT_FROZEN_AUTHORITY_BYTES",
+      "consumption_status": "OPAQUE_HASH_AND_GIT_BLOB_VERIFICATION_ONLY_NO_PAYLOAD_PARSE"
+    }
+  ],
+  "execution_artifacts": [
+    {
+      "path": "01_provenance/hmso01r_b_target_reference_import_manifest.csv",
+      "sha256": "02e69e23c1d411bf015ce08f64ed5ad2fe0a7ec1343425e489fb2d91be9388aa",
+      "size_bytes": 6728,
+      "git_blob_oid": "08c05ace42faadca1aa52cddaa9dabce0e5455fa",
+      "git_blob_sha256": "02e69e23c1d411bf015ce08f64ed5ad2fe0a7ec1343425e489fb2d91be9388aa",
+      "role": "TARGET_REFERENCE_AND_SOURCE_IMPORT_PROVENANCE",
+      "stage": "H-MSO-01R-B",
+      "source": "H_MSO01R_B_PROSPECTIVE_STAGE_BYTES",
+      "consumption_status": "EXECUTABLE_OR_GOVERNANCE_IDENTITY_REQUIRED_BEFORE_FIRST_ACCESS"
+    },
+    {
+      "path": "05_registries/hmso01r_b_target_role_registry.json",
+      "sha256": "8f52b8bd2ab311a4a1381707972d5c8cf2689796204e60721e7ff93ba4600409",
+      "size_bytes": 3919,
+      "git_blob_oid": "943d4969c4766a05e34072f13b3368f0b6888e99",
+      "git_blob_sha256": "8f52b8bd2ab311a4a1381707972d5c8cf2689796204e60721e7ff93ba4600409",
+      "role": "B_FORMAL_TARGET_ROLE_REGISTRY",
+      "stage": "H-MSO-01R-B",
+      "source": "H_MSO01R_B_PROSPECTIVE_STAGE_BYTES",
+      "consumption_status": "EXECUTABLE_OR_GOVERNANCE_IDENTITY_REQUIRED_BEFORE_FIRST_ACCESS"
+    },
+    {
+      "path": "06_experiments/hmso01r_b/build_hmso01r_b_targets.py",
+      "sha256": "d94e098bab64b90bbd463fae77b985f1e09e14c43fabc7952cfb95b2086df76c",
+      "size_bytes": 53786,
+      "git_blob_oid": "99f9776078c09d92e01bf5a69cf8aaa46fc6ab81",
+      "git_blob_sha256": "d94e098bab64b90bbd463fae77b985f1e09e14c43fabc7952cfb95b2086df76c",
+      "role": "PHYSICALLY_SEPARATED_TARGET_REFERENCE_BUILDER",
+      "stage": "H-MSO-01R-B",
+      "source": "H_MSO01R_B_PROSPECTIVE_STAGE_BYTES",
+      "consumption_status": "EXECUTABLE_OR_GOVERNANCE_IDENTITY_REQUIRED_BEFORE_FIRST_ACCESS"
+    },
+    {
+      "path": "06_experiments/hmso01r_b/candidate_c_implementation_preflight.json",
+      "sha256": "0ec915b67a1f97dfbcf4f4ffbf83e34bbd1e678aa2ac8076f906b4dddacc076d",
+      "size_bytes": 13427,
+      "git_blob_oid": "b646f29d0c842316523e36508c0bca28bf8d62dd",
+      "git_blob_sha256": "0ec915b67a1f97dfbcf4f4ffbf83e34bbd1e678aa2ac8076f906b4dddacc076d",
+      "role": "EXECUTABLE_BOUND_TARGET_BLIND_SYNTHETIC_PREFLIGHT",
+      "stage": "H-MSO-01R-B",
+      "source": "H_MSO01R_B_PROSPECTIVE_STAGE_BYTES",
+      "consumption_status": "EXECUTABLE_OR_GOVERNANCE_IDENTITY_REQUIRED_BEFORE_FIRST_ACCESS"
+    },
+    {
+      "path": "06_experiments/hmso01r_b/finalize_hmso01r_b_release.py",
+      "sha256": "f0ac039f121a1ae8f32ff5dd785519a1eae5ac48373516a72816232a44845504",
+      "size_bytes": 207162,
+      "git_blob_oid": "140f476cd441c13325060b418f3eac8a08964042",
+      "git_blob_sha256": "f0ac039f121a1ae8f32ff5dd785519a1eae5ac48373516a72816232a44845504",
+      "role": "REFUSAL_FIRST_RELEASE_FINALIZER",
+      "stage": "H-MSO-01R-B",
+      "source": "H_MSO01R_B_PROSPECTIVE_STAGE_BYTES",
+      "consumption_status": "EXECUTABLE_OR_GOVERNANCE_IDENTITY_REQUIRED_BEFORE_FIRST_ACCESS"
+    },
+    {
+      "path": "06_experiments/hmso01r_b/run_hmso01r_b_formal.py",
+      "sha256": "9135d94de4990d079c955ab655b093887bd5cacec98770f6342f1b628487794d",
+      "size_bytes": 166926,
+      "git_blob_oid": "97a4459641b8db9adf1c53293edab5fc4d38f2d1",
+      "git_blob_sha256": "9135d94de4990d079c955ab655b093887bd5cacec98770f6342f1b628487794d",
+      "role": "FORMAL_CONFIRMATORY_EVALUATOR",
+      "stage": "H-MSO-01R-B",
+      "source": "H_MSO01R_B_PROSPECTIVE_STAGE_BYTES",
+      "consumption_status": "EXECUTABLE_OR_GOVERNANCE_IDENTITY_REQUIRED_BEFORE_FIRST_ACCESS"
+    },
+    {
+      "path": "08_manifests/hmso01r_a_git_handoff.json",
+      "sha256": "06aa82d39185c843ed91959fab41f4f3f8e4738d393d1728f92c61560eafd20b",
+      "size_bytes": 1202,
+      "git_blob_oid": "2c76e25245871ebb864dc33ba0ef384fd2d84c2a",
+      "git_blob_sha256": "06aa82d39185c843ed91959fab41f4f3f8e4738d393d1728f92c61560eafd20b",
+      "role": "R_A_FINAL_GIT_PLACEHOLDER_HANDOFF",
+      "stage": "H-MSO-01R-B",
+      "source": "H_MSO01R_B_PROSPECTIVE_STAGE_BYTES",
+      "consumption_status": "EXECUTABLE_OR_GOVERNANCE_IDENTITY_REQUIRED_BEFORE_FIRST_ACCESS"
+    }
+  ]
+}
