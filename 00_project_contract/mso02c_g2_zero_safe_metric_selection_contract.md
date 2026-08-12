@@ -107,9 +107,10 @@ levels. This prevents a lineage with more registered cases from dominating the
 point estimand. The lineage-first bootstrap preserves that hierarchy; no
 outcome-dependent lineage or case weight is permitted.
 
-## 3. Exact zero branch used wherever a ratio is defined
+## 3. Exact zero branches
 
-For finite non-negative binary64 `U,V`, define `RATIO_BRANCH(U,V)`:
+For finite non-negative binary64 particle primitives `U,V`, define
+`POINTWISE_RATIO_BRANCH(U,V)`:
 
 1. `V > 0`: return the finite numeric value `U/V` (including `U=0 -> 0`);
 2. `V == 0 and U == 0`: numeric value is null and status is
@@ -121,11 +122,23 @@ For finite non-negative binary64 `U,V`, define `RATIO_BRANCH(U,V)`:
 There is no epsilon, tolerance, clipping, deletion, or outcome-dependent
 branch. JSON uses null, never NaN or infinity.
 
+For Candidates B, C, and D, division occurs only after aggregation. Their
+`AGGREGATE_RATIO_BRANCH(U,V)` is:
+
+1. `V > 0`: return the finite numeric value `U/V`;
+2. `V == 0`: numeric value is null and status is
+   `NO_AGGREGATE_RANDOM_CONTRAST_NOT_EVALUABLE`, while an auxiliary flag
+   distinguishes `U==0` from `U>0`;
+3. negative or non-finite input: `INTEGRITY_FAILURE`.
+
+This aggregate rule implements the user-mandated rule that a zero aggregate
+random-disagreement denominator is NOT_EVALUABLE and must never auto-PASS.
+
 ## 4. Frozen candidate set
 
 ### Candidate A — pointwise ratio with explicit zero branches
 
-Apply `RATIO_BRANCH(n[a,q,c,i], b[q,c,i])` particlewise, then take the
+Apply `POINTWISE_RATIO_BRANCH(n[a,q,c,i], b[q,c,i])` particlewise, then take the
 arithmetic mean within case and `W` across the frozen hierarchy. A required 0/0 row
 propagates NOT_EVALUABLE; a required positive/0 row propagates the adverse
 unbounded status. No particle may be dropped. Candidate A preserves the most
@@ -137,7 +150,7 @@ literal pointwise interpretation but has no unique continuous extension at
 ```text
 U_B = arithmetic mean over every formal case c of N[a,q,c]
 V_B = arithmetic mean over every formal case c of B[q,c]
-D_B = RATIO_BRANCH(U_B,V_B)
+D_B = AGGREGATE_RATIO_BRANCH(U_B,V_B)
 ```
 
 Candidate B retains every particle and case and is invariant to an isolated
@@ -150,7 +163,7 @@ family/fold dominance.
 ```text
 U_C = W(N[a,q,.])
 V_C = W(B[q,.])
-D_C = RATIO_BRANCH(U_C,V_C)
+D_C = AGGREGATE_RATIO_BRANCH(U_C,V_C)
 ```
 
 The ratio is taken once, after separately applying the identical linear
@@ -167,7 +180,7 @@ scale `Q2[q,c]`, define
 ```text
 U_D = W(N[a,q,.])
 V_D = W(Q2[q,.])
-D_D = RATIO_BRANCH(U_D,V_D)
+D_D = AGGREGATE_RATIO_BRANCH(U_D,V_D)
 ```
 
 Candidate D is eligible only if `Q2` is available before any target access,
