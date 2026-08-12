@@ -13,6 +13,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import subprocess
 import sys
 from typing import Any, Callable
 
@@ -28,6 +29,7 @@ FORMAL = ROOT / "05_registries/mso02a_formal_fresh_atlas_registry.json"
 SAMPLE_REGISTRY = ROOT / "05_registries/mso02b_formal_particle_sample_registry.json"
 SEMANTICS = ROOT / "05_registries/mso02b_analysis_semantics_registry.json"
 PRECOMPUTE = ROOT / "08_manifests/mso02b_target_precompute_freeze.json"
+EXECUTION_ERRATUM = ROOT / "08_manifests/mso02b_formal_execution_erratum_01.json"
 OBSERVABLE = ROOT / "06_experiments/mso02a/observable/mso02a_observable_store.npz"
 TARGET = OUT / "target_ref/mso02b_target_store.npz"
 NORMALIZATION = ROOT / "06_experiments/mso02a/fold_normalization_registry.json"
@@ -172,12 +174,52 @@ def publish_staged_outputs() -> None:
 
 def verify_frozen_inputs() -> dict[str, Any]:
     freeze = json.loads(PRECOMPUTE.read_text(encoding="utf-8"))
+    if not EXECUTION_ERRATUM.exists():
+        raise RuntimeError("MSO02B_FORMAL_EXECUTION_ERRATUM_MISSING")
+    erratum = json.loads(EXECUTION_ERRATUM.read_text(encoding="utf-8"))
+    target_store_sha256 = sha256(TARGET)
+    corrected_keys = {
+        "06_experiments/mso02b/run_mso02b_formal.py",
+        "06_experiments/mso02b/finalize_mso02b_release.py",
+    }
+    if (
+        erratum.get("status")
+        != "FROZEN_POST_TARGET_NONSCIENTIFIC_EXECUTION_ERRATUM_BEFORE_FIRST_HELDOUT_METRIC_OUTPUT"
+        or erratum.get("original_target_precompute_freeze_sha256") != sha256(PRECOMPUTE)
+        or erratum.get("target_store_sha256") != target_store_sha256
+        or erratum.get("observable_store_sha256")
+        != freeze["frozen_input_sha256"][
+            "06_experiments/mso02a/observable/mso02a_observable_store.npz"
+        ]
+        or erratum.get("execution_freeze_commit")
+        != "65aaedc86c97b876a0ce84745d7eee50dfeba660"
+        or set(erratum.get("original_execution_artifact_sha256", {})) != corrected_keys
+        or set(erratum.get("corrected_execution_artifact_sha256", {})) != corrected_keys
+        or erratum.get("scientific_definition_modification_counts")
+        != {
+            "feature": 0,
+            "scale": 0,
+            "gate": 0,
+            "fold": 0,
+            "normalization": 0,
+            "bootstrap": 0,
+            "oracle_family": 0,
+            "case_replacement": 0,
+        }
+    ):
+        raise RuntimeError("MSO02B_FORMAL_EXECUTION_ERRATUM_IDENTITY_FAILURE")
     errors = []
+    frozen_actual: dict[str, str] = {}
     for group in ("frozen_input_sha256", "execution_artifact_sha256"):
         for relative, expected in freeze[group].items():
             actual = sha256(ROOT / relative)
+            if group == "frozen_input_sha256":
+                frozen_actual[relative] = actual
             if actual != expected:
-                errors.append(f"{relative}:{actual}!={expected}")
+                correction = erratum.get("corrected_execution_artifact_sha256", {}).get(relative)
+                original = erratum.get("original_execution_artifact_sha256", {}).get(relative)
+                if group != "execution_artifact_sha256" or original != expected or correction != actual:
+                    errors.append(f"{relative}:{actual}!={expected}")
     for source in freeze.get("external_source_sha256", []):
         path = Path(source["path"])
         actual = sha256(path)
@@ -187,6 +229,30 @@ def verify_frozen_inputs() -> dict[str, Any]:
         raise RuntimeError("MSO02B_FROZEN_EVIDENCE_IDENTITY_FAILURE:" + ";".join(errors))
     if freeze["formal_target_generation_started"]:
         raise RuntimeError("precompute freeze falsely records prior formal target generation")
+    branch = subprocess.run(
+        ["git", "branch", "--show-current"], cwd=ROOT, check=True,
+        capture_output=True, text=True,
+    ).stdout.strip()
+    remotes = subprocess.run(
+        ["git", "remote"], cwd=ROOT, check=True, capture_output=True, text=True
+    ).stdout.split()
+    if branch != "main" or remotes:
+        raise RuntimeError("MSO02B_FORMAL_ERRATUM_COMMIT_GIT_BOUNDARY_FAILURE")
+    committed_paths = corrected_keys | {
+        "08_manifests/mso02b_formal_execution_erratum_01.json"
+    }
+    for relative in committed_paths:
+        committed = subprocess.run(
+            ["git", "show", f"HEAD:{relative}"], cwd=ROOT, check=True,
+            capture_output=True,
+        ).stdout
+        if hashlib.sha256(committed).hexdigest() != sha256(ROOT / relative):
+            raise RuntimeError(
+                f"MSO02B_FORMAL_ERRATUM_COMMIT_IDENTITY_FAILURE:{relative}"
+            )
+    freeze["formal_execution_erratum"] = erratum
+    freeze["verified_target_store_sha256"] = target_store_sha256
+    freeze["verified_frozen_input_sha256"] = frozen_actual
     return freeze
 
 
@@ -735,8 +801,12 @@ def component_case_rows(
     else:
         neighbor_difference = neighbor_target - query_target[:, None, :]
         random_difference = random_target - query_target[:, None, :]
-    numerator = np.mean(norm_sq(neighbor_difference[:, :PRIMARY_K]), axis=1)
-    denominator = np.mean(norm_sq(random_difference[:, :PRIMARY_K]), axis=1)
+    if query_target.ndim == 1:
+        numerator = np.mean(neighbor_difference[:, :PRIMARY_K] ** 2, axis=1)
+        denominator = np.mean(random_difference[:, :PRIMARY_K] ** 2, axis=1)
+    else:
+        numerator = np.mean(norm_sq(neighbor_difference[:, :PRIMARY_K]), axis=1)
+        denominator = np.mean(norm_sq(random_difference[:, :PRIMARY_K]), axis=1)
     dnn = np.divide(
         numerator,
         denominator,
@@ -745,8 +815,12 @@ def component_case_rows(
     )
     dnn_sensitivity: dict[int, np.ndarray] = {}
     for k in SENSITIVITY_K:
-        sensitivity_numerator = np.mean(norm_sq(neighbor_difference[:, :k]), axis=1)
-        sensitivity_denominator = np.mean(norm_sq(random_difference[:, :k]), axis=1)
+        if query_target.ndim == 1:
+            sensitivity_numerator = np.mean(neighbor_difference[:, :k] ** 2, axis=1)
+            sensitivity_denominator = np.mean(random_difference[:, :k] ** 2, axis=1)
+        else:
+            sensitivity_numerator = np.mean(norm_sq(neighbor_difference[:, :k]), axis=1)
+            sensitivity_denominator = np.mean(norm_sq(random_difference[:, :k]), axis=1)
         dnn_sensitivity[k] = np.divide(
             sensitivity_numerator,
             sensitivity_denominator,
@@ -863,14 +937,22 @@ def run_outer_fold(
     normalization: dict[str, Any],
     coverage_geometry: dict[str, Any],
     freeze_sha: str,
+    execution_erratum_sha: str,
+    evaluator_sha: str,
+    target_store_sha: str,
 ) -> dict[str, Any]:
     checkpoint = CHECKPOINTS / f"{arm.lower()}_fold{outer}.json"
     if checkpoint.exists():
         payload = json.loads(checkpoint.read_text(encoding="utf-8"))
         if payload["target_precompute_freeze_sha256"] != freeze_sha:
             raise RuntimeError(f"stale checkpoint {checkpoint}")
-        if payload.get("target_store_sha256") != sha256(TARGET):
+        if payload.get("target_store_sha256") != target_store_sha:
             raise RuntimeError(f"checkpoint target identity mismatch {checkpoint}")
+        if (
+            payload.get("formal_execution_erratum_sha256") != execution_erratum_sha
+            or payload.get("formal_evaluator_sha256") != evaluator_sha
+        ):
+            raise RuntimeError(f"checkpoint erratum/evaluator identity mismatch {checkpoint}")
         if payload.get("arm") != arm or int(payload.get("outer_fold", -1)) != outer:
             raise RuntimeError(f"checkpoint arm/fold identity mismatch {checkpoint}")
         expected_cases = {
@@ -995,7 +1077,9 @@ def run_outer_fold(
         "arm": arm,
         "outer_fold": outer,
         "target_precompute_freeze_sha256": freeze_sha,
-        "target_store_sha256": sha256(TARGET),
+        "formal_execution_erratum_sha256": execution_erratum_sha,
+        "formal_evaluator_sha256": evaluator_sha,
+        "target_store_sha256": target_store_sha,
         "training_sample_count": int(train_global.size),
         "query_sample_count": int(query_global.size),
         "feature_dimension": int(features.shape[1]),
@@ -1023,6 +1107,9 @@ def run_arm(
     normalization: dict[str, Any],
     coverage_geometry: dict[str, Any],
     freeze_sha: str,
+    execution_erratum_sha: str,
+    evaluator_sha: str,
+    target_store_sha: str,
 ) -> dict[str, Any]:
     folds = [
         run_outer_fold(
@@ -1034,6 +1121,9 @@ def run_arm(
             normalization,
             coverage_geometry,
             freeze_sha,
+            execution_erratum_sha,
+            evaluator_sha,
+            target_store_sha,
         )
         for outer in FOLDS
     ]
@@ -2151,8 +2241,25 @@ def main() -> None:
     )
     freeze = verify_frozen_inputs()
     freeze_sha = sha256(PRECOMPUTE)
+    execution_erratum = freeze["formal_execution_erratum"]
+    execution_erratum_sha = sha256(EXECUTION_ERRATUM)
+    evaluator_sha = sha256(Path(__file__).resolve())
+    target_store_sha = freeze["verified_target_store_sha256"]
+    failed_attempt_counts = execution_erratum["failed_attempt_authorized_access_counts"]
+    governance_audit_counts = execution_erratum[
+        "post_failure_governance_audit_access_counts_before_corrective_resume"
+    ]
     FORMAL_STAGING = OUT / ".formal_staging" / freeze_sha
     if (FORMAL_STAGING / SUMMARY.name).exists():
+        staged_summary = json.loads(
+            (FORMAL_STAGING / SUMMARY.name).read_text(encoding="utf-8")
+        )
+        if (
+            staged_summary.get("formal_execution_erratum_sha256")
+            != execution_erratum_sha
+            or staged_summary.get("formal_evaluator_sha256") != evaluator_sha
+        ):
+            raise RuntimeError("complete formal staging has stale erratum/evaluator identity")
         publish_staged_outputs()
         completed = json.loads(SUMMARY.read_text(encoding="utf-8"))
         print(
@@ -2178,14 +2285,11 @@ def main() -> None:
         target_ledger["qualified_case_count"] != 384
         or target_ledger["failed_case_count"] != 0
         or target_ledger["status"] != "MSO02B_TARGET_REFERENCE_QUALIFIED"
-        or target_ledger["target_store_sha256"] != sha256(TARGET)
+        or target_ledger["target_store_sha256"] != target_store_sha
     ):
         raise RuntimeError("MSO02B_TARGET_REFERENCE_QUALIFICATION_NOT_COMPLETE")
 
-    frozen_before = {
-        relative: sha256(ROOT / relative)
-        for relative in freeze["frozen_input_sha256"]
-    }
+    frozen_before = dict(freeze["verified_frozen_input_sha256"])
     formal_data, cases = load_formal_data()
     normalization = json.loads(NORMALIZATION.read_text(encoding="utf-8"))
     coverage_geometry = json.loads(COVERAGE_GEOMETRY.read_text(encoding="utf-8"))
@@ -2201,6 +2305,9 @@ def main() -> None:
         normalization,
         coverage_geometry,
         freeze_sha,
+        execution_erratum_sha,
+        evaluator_sha,
+        target_store_sha,
     )
     after_ss = {
         relative: sha256(ROOT / relative)
@@ -2216,6 +2323,9 @@ def main() -> None:
         normalization,
         coverage_geometry,
         freeze_sha,
+        execution_erratum_sha,
+        evaluator_sha,
+        target_store_sha,
     )
     after_ms = {
         relative: sha256(ROOT / relative)
@@ -2262,6 +2372,38 @@ def main() -> None:
                     )
     numerical_fit_attempts = 144
     numerical_fit_failure_count = len(numerical_fit_failures)
+    failed_attempt_fit_attempts = int(
+        failed_attempt_counts["oracle_ridge_or_polynomial_bundle_fit_attempts"]
+    )
+    failed_attempt_fit_outcome_unrecorded = int(
+        failed_attempt_counts[
+            "oracle_ridge_or_polynomial_bundle_fit_outcome_unrecorded"
+        ]
+    )
+    if failed_attempt_fit_attempts != failed_attempt_fit_outcome_unrecorded:
+        raise RuntimeError("failed-attempt oracle fit accounting is not closed")
+    total_numerical_fit_attempts = (
+        numerical_fit_attempts + failed_attempt_fit_attempts
+    )
+    current_numerical_fit_succeeded = numerical_fit_attempts - numerical_fit_failure_count
+    formal_target_payload_reads = 1 + int(
+        failed_attempt_counts["formal_target_store_payload_reads"]
+    )
+    formal_observable_matrix_reads = 1 + int(
+        failed_attempt_counts["formal_observable_store_matrix_reads"]
+    )
+    formal_target_opaque_hash_reads = 1 + int(
+        failed_attempt_counts["formal_target_store_opaque_hash_reads"]
+    )
+    formal_observable_opaque_hash_reads = 3 + int(
+        failed_attempt_counts["formal_observable_store_opaque_hash_reads"]
+    )
+    governance_target_opaque_hash_reads = int(
+        governance_audit_counts["target_store_opaque_hash_reads"]
+    )
+    governance_observable_opaque_hash_reads = int(
+        governance_audit_counts["observable_store_opaque_hash_reads"]
+    )
 
     firewall = {
         "schema_version": "1.0.0",
@@ -2270,17 +2412,22 @@ def main() -> None:
         "authorized_target_access_counts": {
             **target_ledger["authorized_target_access_counts"],
             "source_import_qa_reference_evaluations": 384,
-            "formal_target_store_reads": 1,
-            "formal_observable_store_matrix_reads": 1,
+            "formal_execution_attempts": 2,
+            "failed_pre_metric_execution_attempts": 1,
+            "formal_target_store_payload_reads": formal_target_payload_reads,
+            "formal_observable_store_matrix_reads": formal_observable_matrix_reads,
+            "formal_target_store_opaque_hash_reads": formal_target_opaque_hash_reads,
+            "formal_observable_store_opaque_hash_reads": formal_observable_opaque_hash_reads,
+            "post_failure_governance_target_store_opaque_hash_reads": governance_target_opaque_hash_reads,
+            "post_failure_governance_observable_store_opaque_hash_reads": governance_observable_opaque_hash_reads,
             "formal_ss_arm_evaluations": 3,
             "formal_ms_arm_evaluations": 3,
             "paired_rescue_component_evaluations": 3,
             "conditional_variance_component_arm_evaluations": 6,
-            "oracle_ridge_or_polynomial_bundle_fit_attempts": numerical_fit_attempts,
-            "oracle_ridge_or_polynomial_bundle_fit_succeeded": (
-                numerical_fit_attempts - numerical_fit_failure_count
-            ),
-            "oracle_ridge_or_polynomial_bundle_fit_failed": numerical_fit_failure_count,
+            "oracle_ridge_or_polynomial_bundle_fit_attempts": total_numerical_fit_attempts,
+            "oracle_ridge_or_polynomial_bundle_fit_succeeded_recorded": current_numerical_fit_succeeded,
+            "oracle_ridge_or_polynomial_bundle_fit_failed_recorded": numerical_fit_failure_count,
+            "oracle_ridge_or_polynomial_bundle_fit_outcome_unrecorded": failed_attempt_fit_outcome_unrecorded,
             "bootstrap_replicates_consumed": 10000,
         },
         "prohibited_activity_counts": {
@@ -2306,6 +2453,16 @@ def main() -> None:
             "historical_h3_payload_file_opened": 0,
             "description": "A source-audit rg result included one pre-existing provenance-summary line. It was not used for code, thresholds, metrics, tuning, or verdicts.",
             "formal_executable_historical_h3_read_count": 0,
+            "formal_execution_erratum": {
+                "path": str(EXECUTION_ERRATUM.relative_to(ROOT)),
+                "sha256": sha256(EXECUTION_ERRATUM),
+                "failed_attempt_exception": execution_erratum["failed_attempt"]["exception"],
+                "heldout_metric_rows_written": execution_erratum["failed_attempt"][
+                    "heldout_metric_rows_written"
+                ],
+                "scientific_result_or_verdict_written": False,
+                "correction_used_target_values_or_outcomes": False,
+            },
         },
         "ss_then_ms_no_adaptive_modification": True,
         "matched_random_identity_equal_between_arms": True,
@@ -2320,22 +2477,59 @@ def main() -> None:
     }
     write_json(FIREWALL, firewall)
 
-    target_ledger["authorized_target_access_counts"]["target_store_reads"] = 1
-    target_ledger["authorized_target_access_counts"]["observable_matrix_reads_by_formal_evaluator"] = 1
-    target_ledger["authorized_target_access_counts"]["h3_component_arm_evaluations"] = 6
-    target_ledger["authorized_target_access_counts"]["oracle_bundle_fit_attempts"] = numerical_fit_attempts
-    target_ledger["authorized_target_access_counts"]["oracle_bundle_fit_succeeded"] = (
-        numerical_fit_attempts - numerical_fit_failure_count
+    target_ledger["authorized_target_access_counts"]["formal_execution_attempts"] = 2
+    target_ledger["authorized_target_access_counts"]["failed_pre_metric_execution_attempts"] = 1
+    access_counts = target_ledger["authorized_target_access_counts"]
+    access_counts["target_store_payload_reads_by_target_builder"] = access_counts.pop(
+        "target_store_payload_reads"
     )
-    target_ledger["authorized_target_access_counts"]["oracle_bundle_fit_failed"] = (
+    access_counts["target_store_opaque_hash_reads_by_target_builder"] = access_counts.pop(
+        "target_store_opaque_hash_reads"
+    )
+    access_counts.pop("target_store_reads", None)
+    access_counts["observable_store_opaque_hash_reads_by_target_builder"] = access_counts.pop(
+        "observable_store_opaque_hash_reads"
+    )
+    access_counts["formal_evaluator_target_store_payload_reads"] = formal_target_payload_reads
+    access_counts["formal_evaluator_observable_store_matrix_reads"] = formal_observable_matrix_reads
+    access_counts["formal_evaluator_target_store_opaque_hash_reads"] = formal_target_opaque_hash_reads
+    access_counts["formal_evaluator_observable_store_opaque_hash_reads"] = formal_observable_opaque_hash_reads
+    access_counts["post_failure_governance_target_store_opaque_hash_reads"] = governance_target_opaque_hash_reads
+    access_counts["post_failure_governance_observable_store_opaque_hash_reads"] = governance_observable_opaque_hash_reads
+    access_counts["target_store_payload_reads_total_through_formal_evaluator"] = (
+        access_counts["target_store_payload_reads_by_target_builder"]
+        + formal_target_payload_reads
+    )
+    access_counts["target_store_opaque_hash_reads_total_through_formal_evaluator"] = (
+        access_counts["target_store_opaque_hash_reads_by_target_builder"]
+        + formal_target_opaque_hash_reads
+        + governance_target_opaque_hash_reads
+    )
+    access_counts["observable_store_opaque_hash_reads_total_through_formal_evaluator"] = (
+        access_counts["observable_store_opaque_hash_reads_by_target_builder"]
+        + formal_observable_opaque_hash_reads
+        + governance_observable_opaque_hash_reads
+    )
+    target_ledger["authorized_target_access_counts"]["h3_component_arm_evaluations"] = 6
+    target_ledger["authorized_target_access_counts"]["oracle_bundle_fit_attempts"] = total_numerical_fit_attempts
+    target_ledger["authorized_target_access_counts"]["oracle_bundle_fit_succeeded_recorded"] = (
+        current_numerical_fit_succeeded
+    )
+    target_ledger["authorized_target_access_counts"]["oracle_bundle_fit_failed_recorded"] = (
         numerical_fit_failure_count
+    )
+    target_ledger["authorized_target_access_counts"]["oracle_bundle_fit_outcome_unrecorded"] = (
+        failed_attempt_fit_outcome_unrecorded
     )
     target_ledger["authorized_target_access_counts"]["paired_bootstrap_replicates"] = 10000
     target_ledger["source_import_qa_reference_evaluation_count"] = 384
     target_ledger["historical_h3_accidental_text_match_read_count"] = 1
     target_ledger["historical_h3_result_used_count"] = 0
-    target_ledger["observable_store_sha256_after_formal_evaluation"] = sha256(OBSERVABLE)
+    target_ledger["observable_store_sha256_after_formal_evaluation"] = after_ms[
+        "06_experiments/mso02a/observable/mso02a_observable_store.npz"
+    ]
     target_ledger["formal_evaluation_status"] = verdict_summary["global_status"]
+    target_ledger["formal_execution_erratum_sha256"] = sha256(EXECUTION_ERRATUM)
     write_json(TARGET_LEDGER, target_ledger)
 
     metric_summary = serializable_metric_summary(metrics, bound_lookup)
@@ -2374,6 +2568,11 @@ def main() -> None:
         "training_count": 0,
         "mso03_executed": False,
         "target_precompute_freeze_sha256": freeze_sha,
+        "formal_execution_erratum_sha256": execution_erratum_sha,
+        "formal_evaluator_sha256": evaluator_sha,
+        "failed_pre_metric_execution_attempt_count": 1,
+        "failed_attempt_oracle_bundle_fit_attempts": failed_attempt_fit_attempts,
+        "failed_attempt_oracle_bundle_fit_outcome_unrecorded": failed_attempt_fit_outcome_unrecorded,
         "firewall_audit_sha256": sha256(output_destination(FIREWALL)),
     }
     write_json(SUMMARY, json_safe(summary))

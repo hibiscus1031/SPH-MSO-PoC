@@ -1,0 +1,108 @@
+{
+  "case_replacement_authorized": false,
+  "corrected_execution_artifact_sha256": {
+    "06_experiments/mso02b/finalize_mso02b_release.py": "dee7ca3be352f0bd2ebd03986e426ac2520e5d3d7a99b32b34f35559be0c883c",
+    "06_experiments/mso02b/run_mso02b_formal.py": "55b0b63eb2c99364c8a2e96c75191a50707e93357f7039bd9edfdcb7c7c831b7"
+  },
+  "correction": {
+    "after": "mean(scalar_difference[n,K]**2,axis=1)",
+    "before": "mean(norm_sq(scalar_difference[n,K]),axis=1) caused norm_sq to collapse K",
+    "metric_formula_changed": false,
+    "rerun_policy": "ONE_CORRECTIVE_RESUME_OF_THE_UNCHANGED_FROZEN_SCIENTIFIC_EXPERIMENT",
+    "scope": "SCALAR_DNN_SQUARED_DIFFERENCE_ARRAY_RANK_ONLY",
+    "vector_path_changed": false
+  },
+  "date": "2026-08-12",
+  "failed_attempt": {
+    "checkpoint_write_count": 0,
+    "command": "python3 06_experiments/mso02b/run_mso02b_formal.py",
+    "completed_inner_validation_fold_count": 5,
+    "confidence_bound_write_count": 0,
+    "exception": "numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1",
+    "failed_component": "density_rate",
+    "failed_stage": "SS_OUTER_FOLD_0_AFTER_NESTED_SELECTION_BEFORE_FIRST_CASE_SUMMARY",
+    "formal_metric_artifact_write_count": 0,
+    "heldout_metric_rows_written": 0,
+    "nested_candidate_component_loss_evaluations_in_memory": 75,
+    "numerical_oracle_bundle_fit_attempts_in_memory": 12,
+    "outer_candidate_bundle_fit_attempts_in_memory": 2,
+    "printed_target_or_metric_value_count": 0,
+    "staged_join_audit_path": "06_experiments/mso02b/.formal_staging/9dcf39f43e46323433f2e29c73ac3b09743d4a1070af032c0f44c7bd49783962/target_observable_join_audit.csv",
+    "staged_join_audit_sha256": "31ab931b3ce335a45701e221fbf4543ee08e8f9198b760ee1dcd1694feccd8f5",
+    "verdict_write_count": 0
+  },
+  "failed_attempt_authorized_access_counts": {
+    "bootstrap_replicates_consumed": 0,
+    "formal_observable_store_opaque_hash_reads": 2,
+    "formal_observable_store_matrix_reads": 1,
+    "formal_target_store_opaque_hash_reads": 1,
+    "formal_target_store_payload_reads": 1,
+    "nested_candidate_component_loss_evaluations_in_memory": 75,
+    "oracle_ridge_or_polynomial_bundle_fit_attempts": 12,
+    "oracle_ridge_or_polynomial_bundle_fit_failed": null,
+    "oracle_ridge_or_polynomial_bundle_fit_outcome_status": "NOT_RECORDED_PRECHECKPOINT",
+    "oracle_ridge_or_polynomial_bundle_fit_outcome_unrecorded": 12,
+    "oracle_ridge_or_polynomial_bundle_fit_succeeded": null
+  },
+  "post_failure_governance_audit_access_counts_before_corrective_resume": {
+    "breakdown": {
+      "audit_ddo_target_builder_agent": {
+        "observable_store_opaque_hash_reads": 4,
+        "target_store_opaque_hash_reads": 2
+      },
+      "audit_hmso_contract_agent": {
+        "observable_store_opaque_hash_reads": 0,
+        "target_store_opaque_hash_reads": 0
+      },
+      "design_formal_evaluator_agent": {
+        "observable_store_opaque_hash_reads": 0,
+        "target_store_opaque_hash_reads": 0
+      },
+      "primary_agent": {
+        "observable_store_opaque_hash_reads": 5,
+        "target_store_opaque_hash_reads": 5
+      }
+    },
+    "formal_observable_store_matrix_reads": 0,
+    "formal_target_store_payload_reads": 0,
+    "observable_store_opaque_hash_reads": 9,
+    "target_store_opaque_hash_reads": 7
+  },
+  "formal_execution_erratum_commit": "RECORDED_BY_NEXT_GIT_COMMIT_AND_FINAL_HANDOFF",
+  "mso03_executed": false,
+  "neural_model_count": 0,
+  "observable_store_modified": false,
+  "observable_store_sha256": "3dfedfa666c32e4e578f1821f441370da288fd636fc977d2fb15bf470654102e",
+  "optimizer_count": 0,
+  "original_execution_artifact_sha256": {
+    "06_experiments/mso02b/finalize_mso02b_release.py": "682460e02e2d3846911421e84b5171ae6b29608360e4bc8e36ed3c3faf298333",
+    "06_experiments/mso02b/run_mso02b_formal.py": "32c8c532c0e1adc2da68d394d5e0175f8bd9d48b677db33310dcf756511f4b0b"
+  },
+  "original_target_precompute_freeze_sha256": "9dcf39f43e46323433f2e29c73ac3b09743d4a1070af032c0f44c7bd49783962",
+  "project": "SPH-MSO",
+  "root_cause": {
+    "category": "IMPLEMENTATION_ARRAY_RANK_ERROR",
+    "description": "The frozen scalar statistic requires per-neighbour scalar squares followed by the K mean; the vector norm helper reduced the K axis before the mean.",
+    "detectable_without_target_values": true,
+    "scientific_outcome_used_for_correction": false
+  },
+  "schema_version": "1.0.0",
+  "scientific_definition_modification_counts": {
+    "bootstrap": 0,
+    "case_replacement": 0,
+    "feature": 0,
+    "fold": 0,
+    "gate": 0,
+    "normalization": 0,
+    "oracle_family": 0,
+    "scale": 0
+  },
+  "stage": "MSO-02B",
+  "status": "FROZEN_POST_TARGET_NONSCIENTIFIC_EXECUTION_ERRATUM_BEFORE_FIRST_HELDOUT_METRIC_OUTPUT",
+  "target_definition_modified": false,
+  "target_store_modified": false,
+  "target_store_sha256": "16f1ebd26d0d1aa74dd0892dfe2feb0967024f9219dd8c102c8faafc934f81e2",
+  "timezone": "Asia/Shanghai",
+  "training_count": 0,
+  "execution_freeze_commit": "65aaedc86c97b876a0ce84745d7eee50dfeba660"
+}

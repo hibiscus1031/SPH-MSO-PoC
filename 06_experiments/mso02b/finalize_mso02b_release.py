@@ -19,10 +19,12 @@ TARGET_LEDGER = OUT / "target_access_ledger.json"
 FIREWALL = OUT / "firewall_audit.json"
 TARGET = OUT / "target_ref/mso02b_target_store.npz"
 PRECOMPUTE = ROOT / "08_manifests/mso02b_target_precompute_freeze.json"
+EXECUTION_ERRATUM = ROOT / "08_manifests/mso02b_formal_execution_erratum_01.json"
 REPORT = ROOT / "07_reports/mso02b_identifiability_requalification_report.md"
 STATUS = ROOT / "08_manifests/mso02b_status_ledger.json"
 MANIFEST = ROOT / "08_manifests/mso02b_manifest.json"
 PRE_TARGET_COMMIT = "887d4cdab3dbd9e856e552ff47e50a3cf481d72f"
+EXECUTION_FREEZE_COMMIT = "65aaedc86c97b876a0ce84745d7eee50dfeba660"
 
 COMPONENTS = (
     "density_rate",
@@ -71,6 +73,8 @@ def bool_cell(value: str) -> bool:
 
 
 def role_for(relative: str) -> str:
+    if "formal_execution_erratum" in relative:
+        return "POST_TARGET_NONSCIENTIFIC_EXECUTION_ERRATUM"
     if relative.endswith("mso02b_target_store.npz"):
         return "PHYSICALLY_SEPARATED_FORMAL_TARGET_STORE"
     if "target_reference_qualification" in relative:
@@ -145,9 +149,92 @@ def consumption_for(relative: str) -> str:
     return "CONSUMED_BY_MSO02B_EXECUTION_OR_RELEASE_VALIDATION"
 
 
+def required_artifact_paths() -> list[str]:
+    paths = [
+        "00_project_contract/mso02b_paired_prelearning_identifiability_execution_contract.md",
+        "01_provenance/mso02b_target_reference_import_manifest.csv",
+        "01_provenance/vendor/ddo_analytical_reference/__init__.py",
+        "01_provenance/vendor/ddo_analytical_reference/mso02b_target_reference.py",
+        "05_registries/mso02b_analysis_semantics_registry.json",
+        "05_registries/mso02b_formal_particle_sample_registry.json",
+        "05_registries/mso02b_formal_coverage_radius_registry.json",
+        "05_registries/mso02b_oracle_numerical_preflight.json",
+        "05_registries/mso02b_target_role_registry.json",
+        "06_experiments/mso02b/build_mso02b_targets.py",
+        "06_experiments/mso02b/prepare_mso02b_target_freeze.py",
+        "06_experiments/mso02b/prepare_mso02b_formal_coverage_radius.py",
+        "06_experiments/mso02b/prepare_mso02b_oracle_numerical_preflight.py",
+        "06_experiments/mso02b/run_mso02b_formal.py",
+        "06_experiments/mso02b/finalize_mso02b_release.py",
+        "06_experiments/mso02b/target_reference_qualification.csv",
+        "06_experiments/mso02b/target_observable_join_audit.csv",
+        "06_experiments/mso02b/target_access_ledger.json",
+        "06_experiments/mso02b/ss_dnn_metrics.csv",
+        "06_experiments/mso02b/ms_dnn_metrics.csv",
+        "06_experiments/mso02b/ss_conditional_variance_metrics.csv",
+        "06_experiments/mso02b/ms_conditional_variance_metrics.csv",
+        "06_experiments/mso02b/ss_oracle_metrics.csv",
+        "06_experiments/mso02b/ms_oracle_metrics.csv",
+        "06_experiments/mso02b/coverage_metrics.csv",
+        "06_experiments/mso02b/paired_rescue_metrics.csv",
+        "06_experiments/mso02b/bootstrap_simultaneous_bounds.csv",
+        "06_experiments/mso02b/component_verdicts.csv",
+        "06_experiments/mso02b/firewall_audit.json",
+        "06_experiments/mso02b/mso02b_formal_summary.json",
+        "06_experiments/mso02b/target_ref/mso02b_target_store.npz",
+        "07_reports/mso02b_identifiability_requalification_report.md",
+        "08_manifests/mso02a_git_handoff.json",
+        "08_manifests/mso02b_pre_target_freeze.json",
+        "08_manifests/mso02b_target_precompute_freeze.json",
+        "08_manifests/mso02b_formal_execution_erratum_01.json",
+        "08_manifests/mso02b_status_ledger.json",
+    ]
+    checkpoint_paths = sorted((OUT / "checkpoints").glob("*.json"))
+    if len(checkpoint_paths) != 12:
+        raise RuntimeError(
+            f"expected 12 formal arm/fold checkpoints, found {len(checkpoint_paths)}"
+        )
+    paths.extend(str(path.relative_to(ROOT)) for path in checkpoint_paths)
+    return paths
+
+
+def committed_blob_sha256(relative: str) -> str:
+    blob = subprocess.run(
+        ["git", "show", f"HEAD:{relative}"], cwd=ROOT, check=True,
+        capture_output=True,
+    ).stdout
+    return hashlib.sha256(blob).hexdigest()
+
+
 def main() -> None:
-    if MANIFEST.exists() or REPORT.exists() or STATUS.exists():
-        raise RuntimeError("MSO-02B release outputs already exist; refusing replacement")
+    if MANIFEST.exists():
+        if not (REPORT.exists() and STATUS.exists()):
+            raise RuntimeError("partial MSO-02B release exists with terminal manifest")
+        completed = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        completed_registry = {
+            row["path"]: row["sha256"]
+            for row in completed.get("artifact_registry", [])
+        }
+        for path in (REPORT, STATUS):
+            relative = str(path.relative_to(ROOT))
+            if completed_registry.get(relative) != sha256(path):
+                raise RuntimeError(
+                    f"terminal MSO-02B release artifact identity mismatch: {relative}"
+                )
+        print(
+            json.dumps(
+                {
+                    "status": completed["terminal_status"],
+                    "manifest_sha256": sha256(MANIFEST),
+                    "report_sha256": sha256(REPORT),
+                    "status_ledger_sha256": sha256(STATUS),
+                    "release_publication_resumed": True,
+                },
+                sort_keys=True,
+            ),
+            flush=True,
+        )
+        return
     branch = subprocess.run(
         ["git", "branch", "--show-current"], cwd=ROOT, check=True, capture_output=True, text=True
     ).stdout.strip()
@@ -164,20 +251,122 @@ def main() -> None:
     target_ledger = json.loads(TARGET_LEDGER.read_text(encoding="utf-8"))
     firewall = json.loads(FIREWALL.read_text(encoding="utf-8"))
     freeze = json.loads(PRECOMPUTE.read_text(encoding="utf-8"))
+    erratum = json.loads(EXECUTION_ERRATUM.read_text(encoding="utf-8"))
+    erratum_sha = sha256(EXECUTION_ERRATUM)
+    target_sha = sha256(TARGET)
+    zero_modifications = {
+        "feature": 0,
+        "scale": 0,
+        "gate": 0,
+        "fold": 0,
+        "normalization": 0,
+        "bootstrap": 0,
+        "oracle_family": 0,
+        "case_replacement": 0,
+    }
+    corrected_keys = {
+        "06_experiments/mso02b/run_mso02b_formal.py",
+        "06_experiments/mso02b/finalize_mso02b_release.py",
+    }
+    if (
+        erratum.get("status")
+        != "FROZEN_POST_TARGET_NONSCIENTIFIC_EXECUTION_ERRATUM_BEFORE_FIRST_HELDOUT_METRIC_OUTPUT"
+        or
+        erratum["original_target_precompute_freeze_sha256"] != sha256(PRECOMPUTE)
+        or erratum["target_store_sha256"] != target_sha
+        or erratum.get("execution_freeze_commit") != EXECUTION_FREEZE_COMMIT
+        or erratum.get("scientific_definition_modification_counts") != zero_modifications
+        or set(erratum.get("original_execution_artifact_sha256", {})) != corrected_keys
+        or set(erratum.get("corrected_execution_artifact_sha256", {})) != corrected_keys
+    ):
+        raise RuntimeError("MSO02B_FORMAL_EXECUTION_ERRATUM_IDENTITY_FAILURE")
+    for relative in corrected_keys | {
+        "08_manifests/mso02b_formal_execution_erratum_01.json"
+    }:
+        if committed_blob_sha256(relative) != sha256(ROOT / relative):
+            raise RuntimeError(
+                f"MSO02B_FORMAL_ERRATUM_COMMIT_IDENTITY_FAILURE:{relative}"
+            )
+    if head != subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=ROOT, check=True,
+        capture_output=True, text=True,
+    ).stdout.strip():
+        raise RuntimeError("MSO02B_GIT_HEAD_CHANGED_DURING_RELEASE_PREFLIGHT")
     with QUALIFICATION.open(encoding="utf-8", newline="") as handle:
         qualification_rows = list(csv.DictReader(handle))
     qualified = sum(bool_cell(row["case_target_reference_qualified"]) for row in qualification_rows)
     if qualified != 384 or len(qualification_rows) != 384:
         raise RuntimeError("MSO02B_TARGET_REFERENCE_QUALIFICATION_NOT_COMPLETE")
-    if target_ledger["target_store_sha256"] != sha256(TARGET):
+    if target_ledger["target_store_sha256"] != target_sha:
         raise RuntimeError("target store ledger identity mismatch")
     for group in ("frozen_input_sha256", "execution_artifact_sha256"):
         for relative, expected in freeze[group].items():
-            if sha256(ROOT / relative) != expected:
-                raise RuntimeError(f"MSO02B_FROZEN_EVIDENCE_IDENTITY_FAILURE:{relative}")
+            actual = sha256(ROOT / relative)
+            if actual != expected:
+                correction = erratum.get("corrected_execution_artifact_sha256", {}).get(relative)
+                original = erratum.get("original_execution_artifact_sha256", {}).get(relative)
+                if group != "execution_artifact_sha256" or original != expected or correction != actual:
+                    raise RuntimeError(f"MSO02B_FROZEN_EVIDENCE_IDENTITY_FAILURE:{relative}")
+    for source in freeze.get("external_source_sha256", []):
+        path = Path(source["path"])
+        if sha256(path) != source["sha256"]:
+            raise RuntimeError(f"MSO02B_FROZEN_EXTERNAL_SOURCE_IDENTITY_FAILURE:{path}")
+
+    if (
+        summary.get("formal_execution_erratum_sha256") != erratum_sha
+        or summary.get("target_precompute_freeze_sha256") != sha256(PRECOMPUTE)
+        or target_ledger.get("formal_execution_erratum_sha256") != erratum_sha
+        or summary.get("firewall_audit_sha256") != sha256(FIREWALL)
+        or firewall.get("governance_disclosure", {})
+        .get("formal_execution_erratum", {})
+        .get("sha256") != erratum_sha
+        or summary.get("formal_evaluator_sha256")
+        != sha256(ROOT / "06_experiments/mso02b/run_mso02b_formal.py")
+        or firewall.get("observable_store_sha256_before")
+        != freeze["frozen_input_sha256"][
+            "06_experiments/mso02a/observable/mso02a_observable_store.npz"
+        ]
+        or firewall.get("observable_store_sha256_after")
+        != firewall.get("observable_store_sha256_before")
+        or target_ledger.get("observable_store_sha256_after_formal_evaluation")
+        != firewall.get("observable_store_sha256_after")
+    ):
+        raise RuntimeError("MSO02B_FORMAL_OUTPUT_ERRATUM_BINDING_FAILURE")
+
+    artifact_paths = required_artifact_paths()
+    artifact_paths.extend(freeze["execution_artifact_sha256"].keys())
+    unique_paths = list(dict.fromkeys(artifact_paths))
+    generated_release_paths = {
+        str(REPORT.relative_to(ROOT)),
+        str(STATUS.relative_to(ROOT)),
+    }
+    missing = [
+        relative for relative in unique_paths
+        if relative not in generated_release_paths and not (ROOT / relative).exists()
+    ]
+    if missing:
+        raise RuntimeError("missing required MSO02B artifacts:" + ",".join(missing))
+    for relative in unique_paths:
+        if relative in generated_release_paths:
+            continue
+        path = ROOT / relative
+        if path.suffix == ".json":
+            json.loads(path.read_text(encoding="utf-8"))
+        elif path.suffix == ".csv":
+            with path.open(encoding="utf-8", newline="") as handle:
+                list(csv.DictReader(handle))
 
     metrics = summary["metrics"]
     verdict = summary["verdict"]
+    release_staging = OUT / ".release_staging" / erratum_sha
+    release_staging.mkdir(parents=True, exist_ok=True)
+    staged_report = release_staging / REPORT.name
+    staged_status = release_staging / STATUS.name
+    staged_manifest = release_staging / MANIFEST.name
+    staged_by_relative = {
+        str(REPORT.relative_to(ROOT)): staged_report,
+        str(STATUS.relative_to(ROOT)): staged_status,
+    }
     report_lines = [
         "# MSO-02B paired prelearning identifiability requalification report",
         "",
@@ -188,9 +377,11 @@ def main() -> None:
         "## Frozen release identities",
         "",
         f"- Initial pre-target handoff commit: `{PRE_TARGET_COMMIT}`.",
-        f"- Target/analysis execution-freeze commit: `{head}`.",
+        f"- Target/analysis execution-freeze commit: `{EXECUTION_FREEZE_COMMIT}`.",
+        f"- Non-scientific formal-execution erratum commit: `{head}`.",
+        f"- Formal-execution erratum SHA-256: `{sha256(EXECUTION_ERRATUM)}`.",
         f"- Target precompute freeze SHA-256: `{sha256(PRECOMPUTE)}`.",
-        f"- Target store SHA-256: `{sha256(TARGET)}`.",
+        f"- Target store SHA-256: `{target_sha}`.",
         f"- Observable store SHA-256 before/after: `{firewall['observable_store_sha256_before']}` / `{firewall['observable_store_sha256_after']}`.",
         "- SS/MS dimensions remain 39/110. The representations retain five exact constants per arm, all 13/65 fold-IQR-degenerate involved columns, and all five registered exact MS duplicates; there was no feature deletion, PCA, whitening, or target-derived pruning.",
         "",
@@ -275,10 +466,12 @@ def main() -> None:
             "",
             "Source-import QA evaluated A/B reference consistency for 384 frozen states after the initial pre-target commit but before formal defect generation. One static source-audit text search accidentally surfaced a pre-existing historical H3 summary line; it was not used for code, thresholds, tuning, metrics, or verdicts, and no historical target/H3 payload was opened. Formal defect generation began only after the target-blind amendments, executable hashes, provenance, and clean execution-freeze commit were fixed.",
             "",
+            "The first formal-evaluator attempt stopped before any held-out metric row, checkpoint, confidence bound, or verdict was written because the scalar density-rate DNN array used a vector-oriented norm helper and raised `AxisError`. The frozen scalar statistic already required elementwise squared differences followed by the K mean. Erratum 01 implemented exactly that formula, recorded the discarded attempt's one target/observable payload read, opaque-hash reads, and twelve numerical oracle bundle fit attempts (whose individual success/failure outcomes were not persisted before the checkpoint), and changed no feature, scale, gate, fold, normalization, bootstrap, oracle family, case, or target. No printed or persisted scientific outcome informed the correction.",
+            "",
             "MSO-02B stops here. MSO-03, neural training, architecture search, attention, and learned operators remain unexecuted.",
         ]
     )
-    write_text(REPORT, "\n".join(report_lines))
+    write_text(staged_report, "\n".join(report_lines))
 
     status_payload = {
         "schema_version": "1.0.0",
@@ -298,69 +491,35 @@ def main() -> None:
         "attention_authorized": False,
         "learned_operator_authorized": False,
         "pre_target_mso02b_commit": PRE_TARGET_COMMIT,
-        "target_analysis_execution_freeze_commit": head,
+        "target_analysis_execution_freeze_commit": EXECUTION_FREEZE_COMMIT,
+        "formal_execution_erratum_commit": head,
+        "formal_execution_erratum_sha256": sha256(EXECUTION_ERRATUM),
         "mso02b_final_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_USER_HANDOFF",
         "branch": branch,
         "remote": None,
-        "report_sha256": sha256(REPORT),
-        "target_store_sha256": sha256(TARGET),
+        "report_sha256": sha256(staged_report),
+        "target_store_sha256": target_sha,
         "observable_store_unchanged": summary["observable_store_unchanged"],
         "post_target_modification_counts": summary["post_target_modification_counts"],
         "stop_after_mso02b": True,
     }
-    write_json(STATUS, status_payload)
+    write_json(staged_status, status_payload)
 
-    artifact_paths = [
-        "00_project_contract/mso02b_paired_prelearning_identifiability_execution_contract.md",
-        "01_provenance/mso02b_target_reference_import_manifest.csv",
-        "01_provenance/vendor/ddo_analytical_reference/__init__.py",
-        "01_provenance/vendor/ddo_analytical_reference/mso02b_target_reference.py",
-        "05_registries/mso02b_analysis_semantics_registry.json",
-        "05_registries/mso02b_formal_particle_sample_registry.json",
-        "05_registries/mso02b_formal_coverage_radius_registry.json",
-        "05_registries/mso02b_oracle_numerical_preflight.json",
-        "05_registries/mso02b_target_role_registry.json",
-        "06_experiments/mso02b/build_mso02b_targets.py",
-        "06_experiments/mso02b/prepare_mso02b_target_freeze.py",
-        "06_experiments/mso02b/prepare_mso02b_formal_coverage_radius.py",
-        "06_experiments/mso02b/prepare_mso02b_oracle_numerical_preflight.py",
-        "06_experiments/mso02b/run_mso02b_formal.py",
-        "06_experiments/mso02b/finalize_mso02b_release.py",
-        "06_experiments/mso02b/target_reference_qualification.csv",
-        "06_experiments/mso02b/target_observable_join_audit.csv",
-        "06_experiments/mso02b/target_access_ledger.json",
-        "06_experiments/mso02b/ss_dnn_metrics.csv",
-        "06_experiments/mso02b/ms_dnn_metrics.csv",
-        "06_experiments/mso02b/ss_conditional_variance_metrics.csv",
-        "06_experiments/mso02b/ms_conditional_variance_metrics.csv",
-        "06_experiments/mso02b/ss_oracle_metrics.csv",
-        "06_experiments/mso02b/ms_oracle_metrics.csv",
-        "06_experiments/mso02b/coverage_metrics.csv",
-        "06_experiments/mso02b/paired_rescue_metrics.csv",
-        "06_experiments/mso02b/bootstrap_simultaneous_bounds.csv",
-        "06_experiments/mso02b/component_verdicts.csv",
-        "06_experiments/mso02b/firewall_audit.json",
-        "06_experiments/mso02b/mso02b_formal_summary.json",
-        "06_experiments/mso02b/target_ref/mso02b_target_store.npz",
-        "07_reports/mso02b_identifiability_requalification_report.md",
-        "08_manifests/mso02a_git_handoff.json",
-        "08_manifests/mso02b_pre_target_freeze.json",
-        "08_manifests/mso02b_target_precompute_freeze.json",
-        "08_manifests/mso02b_status_ledger.json",
-    ]
-    checkpoint_paths = sorted((OUT / "checkpoints").glob("*.json"))
-    if len(checkpoint_paths) != 12:
-        raise RuntimeError(f"expected 12 formal arm/fold checkpoints, found {len(checkpoint_paths)}")
-    artifact_paths.extend(str(path.relative_to(ROOT)) for path in checkpoint_paths)
-    artifact_paths.extend(freeze["execution_artifact_sha256"].keys())
-    unique_paths = list(dict.fromkeys(artifact_paths))
-    missing = [relative for relative in unique_paths if not (ROOT / relative).exists()]
-    if missing:
-        raise RuntimeError("missing required MSO02B artifacts:" + ",".join(missing))
+    hash_cache: dict[str, str] = {
+        str(TARGET.relative_to(ROOT)): target_sha,
+        str(EXECUTION_ERRATUM.relative_to(ROOT)): erratum_sha,
+    }
+
+    def registered_sha256(relative: str) -> str:
+        if relative not in hash_cache:
+            path = staged_by_relative.get(relative, ROOT / relative)
+            hash_cache[relative] = sha256(path)
+        return hash_cache[relative]
+
     registry = [
         {
             "path": relative,
-            "sha256": sha256(ROOT / relative),
+            "sha256": registered_sha256(relative),
             "role": role_for(relative),
             "source": source_for(relative),
             "stage": "MSO-02B",
@@ -368,6 +527,29 @@ def main() -> None:
         }
         for relative in unique_paths
     ]
+    authorized_counts = dict(firewall["authorized_target_access_counts"])
+    authorized_counts["release_validation_target_store_opaque_hash_reads"] = 1
+    authorized_counts["release_validation_observable_store_opaque_hash_reads"] = 1
+    authorized_counts["target_store_payload_reads_total_completed_release"] = (
+        int(authorized_counts["target_store_payload_reads"])
+        + int(authorized_counts["formal_target_store_payload_reads"])
+    )
+    authorized_counts["observable_store_matrix_reads_total_completed_release"] = (
+        int(authorized_counts["observable_matrix_reads_by_target_builder"])
+        + int(authorized_counts["formal_observable_store_matrix_reads"])
+    )
+    authorized_counts["target_store_opaque_hash_reads_total_completed_release"] = (
+        int(authorized_counts["target_store_opaque_hash_reads"])
+        + int(authorized_counts["formal_target_store_opaque_hash_reads"])
+        + int(authorized_counts["post_failure_governance_target_store_opaque_hash_reads"])
+        + 1
+    )
+    authorized_counts["observable_store_opaque_hash_reads_total_completed_release"] = (
+        int(authorized_counts["observable_store_opaque_hash_reads"])
+        + int(authorized_counts["formal_observable_store_opaque_hash_reads"])
+        + int(authorized_counts["post_failure_governance_observable_store_opaque_hash_reads"])
+        + 1
+    )
 
     manifest = {
         "schema_version": "1.0.0",
@@ -383,7 +565,9 @@ def main() -> None:
         "git": {
             "branch": branch,
             "pre_target_mso02b_commit": PRE_TARGET_COMMIT,
-            "target_analysis_execution_freeze_commit": head,
+            "target_analysis_execution_freeze_commit": EXECUTION_FREEZE_COMMIT,
+            "formal_execution_erratum_commit": head,
+            "formal_execution_erratum_sha256": sha256(EXECUTION_ERRATUM),
             "mso02b_final_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_USER_HANDOFF",
             "remote": None,
             "push_performed": False,
@@ -424,17 +608,18 @@ def main() -> None:
                 "mso03_deterministic_closure_baseline_eligible"
             ],
         },
-        "authorized_target_access_counts": firewall["authorized_target_access_counts"],
+        "authorized_target_access_counts": authorized_counts,
         "prohibited_activity_counts": firewall["prohibited_activity_counts"],
         "governance_disclosure": firewall["governance_disclosure"],
         "artifact_registry": registry,
         "validation": {
             "required_artifacts_present": True,
             "artifact_hashes_verified": all(
-                sha256(ROOT / record["path"]) == record["sha256"] for record in registry
+                registered_sha256(record["path"]) == record["sha256"]
+                for record in registry
             ),
             "frozen_input_hashes_verified": True,
-            "execution_artifact_hashes_verified": True,
+            "execution_artifact_hashes_verified_under_original_freeze_or_erratum": True,
             "target_store_hash_matches_ledger": True,
             "observable_store_unchanged": summary["observable_store_unchanged"],
             "target_observable_join_passed": True,
@@ -458,7 +643,26 @@ def main() -> None:
             "stage_stopped_after_mso02b": True,
         },
     }
-    write_json(MANIFEST, manifest)
+    write_json(staged_manifest, manifest)
+    json.loads(staged_status.read_text(encoding="utf-8"))
+    json.loads(staged_manifest.read_text(encoding="utf-8"))
+    for staged, final in (
+        (staged_report, REPORT),
+        (staged_status, STATUS),
+        (staged_manifest, MANIFEST),
+    ):
+        if final.exists():
+            if sha256(final) != sha256(staged):
+                raise RuntimeError(f"conflicting partial MSO-02B release output: {final}")
+            continue
+        final.parent.mkdir(parents=True, exist_ok=True)
+        temporary = final.with_suffix(final.suffix + ".publish.tmp")
+        temporary.write_bytes(staged.read_bytes())
+        temporary.replace(final)
+    for staged in (staged_report, staged_status, staged_manifest):
+        if staged.exists():
+            staged.unlink()
+    release_staging.rmdir()
     print(
         json.dumps(
             {
