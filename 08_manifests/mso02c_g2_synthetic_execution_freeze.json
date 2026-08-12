@@ -1,0 +1,44 @@
+{
+  "schema_version": "MSO02C_G2_SYNTHETIC_EXECUTION_FREEZE_V1",
+  "status": "FROZEN_BEFORE_SYNTHETIC_EXECUTION",
+  "g1_final_commit": "b6dac26624b9b45912a79e6cddec1c0caa509adf",
+  "protocol_commit": "22879748a2a813108ff7ce667f9b4c2366aca006",
+  "execution_parent_commit": "37cf5fb7d6413eef7e7a934115904e36965ac6f3",
+  "execution_commit_recording": "CURRENT_HEAD_CONTAINING_EXACT_FROZEN_ARTIFACT_BLOBS",
+  "artifact_sha256": {
+    "00_project_contract/mso02c_g2_zero_safe_metric_selection_contract.md": "c89ff65187389bbd5d5b27b0122f3384f6ffdbbe2e1cd41e80e0db2b2e29b80b",
+    "00_project_contract/mso02c_g2_zero_safe_metric_selection_protocol_erratum.md": "2d88b5bc92c833127b0c922710f40a895899e0f062eda692db2c264403b7b14c",
+    "06_experiments/mso02c/g2/run_g2_synthetic_metric_selection.py": "4f16ed85b04370a33327303b548b2629b6517d46d44559c038bfde1eabb48ca8",
+    "06_experiments/mso02c/g2/finalize_g2_zero_safe_metric_selection.py": "de5d603fa62539d009d69538934b4059a182f341b4b84b6b32f162cd7d85fed5"
+  },
+  "input_allowlist": [
+    "00_project_contract/mso02c_g2_zero_safe_metric_selection_contract.md",
+    "00_project_contract/mso02c_g2_zero_safe_metric_selection_protocol_erratum.md",
+    "08_manifests/mso02c_g2_synthetic_execution_freeze.json"
+  ],
+  "real_store_paths_present_in_executable": false,
+  "checkpoint_or_old_metric_paths_present_in_executable": false,
+  "real_target_or_observable_payload_read_authorized": false,
+  "consumed_replay_authorized": false,
+  "synthetic_fixture_count": 18,
+  "candidate_count": 4,
+  "runtime_freeze": {
+    "python_implementation": "CPython",
+    "python_version": "3.13.9",
+    "machine": "arm64",
+    "byteorder": "little"
+  },
+  "output_allowlist": [
+    "06_experiments/mso02c/g2/synthetic_metric_stress_tests.csv",
+    "06_experiments/mso02c/g2/candidate_metric_selection_matrix.csv",
+    "06_experiments/mso02c/g2/zero_semantics_audit.csv",
+    "06_experiments/mso02c/g2/aggregation_semantics_audit.csv",
+    "06_experiments/mso02c/g2/bootstrap_compatibility_audit.csv",
+    "06_experiments/mso02c/g2/threshold_derivation_report.md",
+    "06_experiments/mso02c/g2/synthetic_execution_audit.json",
+    "00_project_contract/amendments/ca_mso01_zero_safe_dnn_semantics.md",
+    "07_reports/mso02c_g2_zero_safe_metric_selection_report.md",
+    "08_manifests/mso02c_g2_manifest.json",
+    "08_manifests/mso02c_g2_status_ledger.json"
+  ]
+}
