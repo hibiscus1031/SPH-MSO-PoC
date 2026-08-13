@@ -1,0 +1,22 @@
+{
+  "aggregation_equivalent": false,
+  "denominator_centering_equivalent": false,
+  "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+  "fold_family_weighting_equivalent": false,
+  "function_source_sha256": {
+    "aggregate_oracle": "234134c4410afa9900937a2642766ec5589fa829ec684e1ca27d2c408d4fe951",
+    "case_family_equal_vector": "336ddbd56a1d762e453f7f8340ba858ae8f6681812846f432506eaba8181f437",
+    "development_target_rms": "2adae8d52b14c0a27f3bf028e2d495205611064c84642eb00ac2752be4314b24"
+  },
+  "mean_baseline": "case/family-equal development mean prediction evaluated with the same about-zero target RMS",
+  "nrmse_denominator": "sqrt(case/family-equal E[||Y||^2]) over each outer-fold development population",
+  "one_minus_nrmse_squared_authorized": false,
+  "r2_like_quantity_admissible": false,
+  "reason": "Frozen target RMS is about zero and frozen NRMSE is a mean of fold-family cellwise roots; it is not the centered pooled variance decomposition denominator.",
+  "schema_version": "1.0.0",
+  "source": "06_experiments/mso02b/run_mso02b_formal.py",
+  "source_sha256": "55b0b63eb2c99364c8a2e96c75191a50707e93357f7039bd9edfdcb7c7c831b7",
+  "stage": "MSO-02D-D2-PRE-TARGET",
+  "standard_variance_denominator": "centered sum/mean of squared deviations from the applicable mean with matched weights",
+  "status": "NOT_EQUIVALENT"
+}

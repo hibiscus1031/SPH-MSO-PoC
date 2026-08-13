@@ -1,0 +1,121 @@
+{
+  "candidate_status_taxonomy": [
+    "SUPPORTED_FOR_PROSPECTIVE_CONTRACT_DESIGN",
+    "INCONCLUSIVE",
+    "NOT_SUPPORTED",
+    "OUTSIDE_PRELEARNING_SCOPE"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "H2-A",
+      "candidate_name": "TARGET_BLIND_ALIGNED_MULTISCALE_GEOMETRY",
+      "density_role": "PRIMARY_NONINFERIORITY_AND_REQUALIFICATION_GUARD_FOR_ANY_UNIVERSAL_TEST",
+      "deployment_availability": "DETERMINISTIC_FROM_EXISTING_110D_BUT_NO_TRANSFORM_SELECTED",
+      "evidence_strength": "NOT_SUPPORTED_BY_PREREGISTERED_D1_SELECTION",
+      "expected_deployment_cost": "NOT_APPLICABLE_WITHOUT_A_SELECTED_TRANSFORM",
+      "fresh_compute_authorized": false,
+      "fresh_falsifiable_test": "A_SEPARATE_PRETARGET_CONTRACT_COULD_FREEZE_ONE_TRANSFORM_VS_U0_ON_COMPLETELY_FRESH_LINEAGES",
+      "leakage_risk": "LOW_ONLY_IF_FROZEN_BEFORE_TARGET; ANY_POST_D2_SELECTION_IS_PROHIBITED",
+      "motivating_evidence": [
+        "U1_U2_U3_PROSPECTIVELY_DEFINED_FROM_TRAINING_FOLD_OBSERVABLES_ONLY",
+        "D1_ROUTE_A_TARGET_BLIND_GEOMETRY_CANDIDATE_NOT_ESTABLISHED",
+        "SELECTED_CANDIDATE_ID_NULL_AND_NO_LEGAL_T3_NONIDENTITY_COMPARISON"
+      ],
+      "new_information_or_reparameterization": "TARGET_BLIND_REPARAMETERIZATION_ONLY",
+      "overlap_with_ddo02b": "NO_PRINCIPAL_FRAME; GEOMETRY_TRANSFORM_CLASS_NOT_DDO02B_FRAME_DESCRIPTOR",
+      "overlap_with_existing_110d": "EXACT_SAME_COLUMNS_WITH_SCALING_PROJECTION_OR_WHITENING",
+      "pressure_viscosity_primary_role": "MOMENTUM_PRIMARY_COMPONENTS_IF_A_FUTURE_INTERVENTION_EVER_EXISTS",
+      "prospective_contract_design_recommended": false,
+      "single_variable_intervention": "NOT_ESTABLISHED_BECAUSE_NO_UNIQUE_TRANSFORM_EXISTS",
+      "status": "NOT_SUPPORTED",
+      "why_not_post_hoc_h_mso01r_rescue": "TARGET_INFORMED_RETURN_TO_D1_SELECTION_IS_FORBIDDEN_AND_NO_CANDIDATE_WAS_ESTABLISHED"
+    },
+    {
+      "candidate_id": "H2-B",
+      "candidate_name": "O2_EQUIVARIANT_DIRECTION_RESOLVED_SCALE_RESPONSE",
+      "definition_scope_limitation": {
+        "P1_materialized": [
+          "DELTA_0p75_1p25_1p50",
+          "G_LOG_SECANT_0p75_1p25_1p50"
+        ],
+        "interpretation": "NO_ROUTE_B_EVIDENCE_IS_CLAIMED_FOR_UNMATERIALIZED_S_OR_C_VECTOR_SCOPE",
+        "not_materialized_as_P1_vectors": [
+          "S_0p75_1p25",
+          "S_1p00_1p50",
+          "C_0p75_1p00_1p25",
+          "C_1p00_1p25_1p50"
+        ]
+      },
+      "density_role": "NONDEGRADATION_NEGATIVE_CONTROL_GUARD_FOR_MOMENTUM_SPECIFIC_DIRECTIONAL_TEST",
+      "deployment_availability": "P1_P4_FIXED_ALGEBRA_AVAILABLE; P5_NOT_RECONSTRUCTIBLE_FROM_FROZEN_STORE",
+      "evidence_strength": "NOT_SUPPORTED_NO_TWO_INCREMENTAL_PROXIES_OR_REQUIRED_REPLICATION",
+      "expected_deployment_cost": "P1_ZERO; P2_P4_FIXED_SCALAR_ARITHMETIC; P5_NEW_TENSOR_MOMENT_EVALUATION",
+      "fresh_compute_authorized": false,
+      "fresh_falsifiable_test": "A_SEPARATE_PRETARGET_CONTRACT_COULD_ADD_ONE_P5_TENSOR_RESPONSE_ON_FRESH_LINEAGES_WITH_DENSITY_GUARD",
+      "leakage_risk": "LOW_FOR_FROZEN_P1_P5_DEFINITIONS; INVENTING_OR_SELECTING_AFTER_TARGET_IS_PROHIBITED",
+      "motivating_evidence": [
+        "P1_P4_USE_NO_PRINCIPAL_EIGENFRAME_SIGN_CONVENTION_OR_ARBITRARY_FALLBACK",
+        "P1_P4_FULL_POPULATION_ASSOCIATIONS_WERE_EVALUATED",
+        "ALL_70_EVALUATED_PROXIES_ARE_EXISTING_110D_ALGEBRAIC_REPARAMETERIZATIONS",
+        "P5_IS_THE_ONLY_NEW_INFORMATION_CLASS_AND_WAS_UNAVAILABLE_UNEVALUATED",
+        "G1_65_54_FULL_POPULATION_REPLICATION_NOT_ESTABLISHED"
+      ],
+      "new_information_or_reparameterization": "NO_EVALUATED_NEW_INFORMATION_PROXY",
+      "overlap_with_ddo02b": "PRINCIPLED_NO_FRAME_DIFFERENCE_BUT_NO_EVALUATED_INCREMENTAL_INFORMATION",
+      "overlap_with_existing_110d": "P1_P4_DETERMINISTIC_ALGEBRA; P5_WOULD_REQUIRE_NEW_NONBASE_PER_SCALE_TENSOR_MOMENTS",
+      "pressure_viscosity_primary_role": "JOINT_MOMENTUM_PRIMARY_COMPONENTS_IN_A_SEPARATE_FUTURE_CONTRACT_ONLY",
+      "prospective_contract_design_recommended": false,
+      "single_variable_intervention": "POTENTIAL_P5_ONLY_ADDITION_NOT_ESTABLISHED_OR_AUTHORIZED",
+      "status": "NOT_SUPPORTED",
+      "why_not_post_hoc_h_mso01r_rescue": "P1_P4_ADD_NO_INFORMATION_P5_WAS_NOT_PRESENT_AND_G1_FULL_POPULATION_REPLICATION_WAS_NOT_ESTABLISHED"
+    },
+    {
+      "candidate_id": "H2-S",
+      "candidate_name": "SUPERVISED_REPRESENTATION_LEARNING",
+      "density_role": "AT_MINIMUM_NONDEGRADATION_CONTROL_UNDER_ANY_SEPARATE_FUTURE_CONTRACT",
+      "deployment_availability": "NOT_EVALUATED; OFFLINE_TARGET_SUPERVISION_WOULD_BE_REQUIRED",
+      "evidence_strength": "OUTSIDE_PRELEARNING_SCOPE_NOT_EVALUATED",
+      "expected_deployment_cost": "UNKNOWN_UNREGISTERED_MODEL_TRAINING_VALIDATION_AND_GOVERNANCE",
+      "fresh_compute_authorized": false,
+      "fresh_falsifiable_test": "WOULD_REQUIRE_SEPARATE_CONTRACT_TRAINING_AND_FRESH_LINEAGE_HELD_OUT_EVALUATION",
+      "leakage_risk": "CATEGORICALLY_OUTSIDE_CURRENT_PRELEARNING_FIREWALL",
+      "motivating_evidence": [
+        "FROZEN_NONNEURAL_ORACLE_SHOWS_GLOBAL_PREDICTIVE_STRUCTURE",
+        "TARGET_BLIND_A_AND_INCREMENTAL_B_ARE_NOT_ACTIONABLE",
+        "THIS_DOES_NOT_ESTABLISH_THAT_SUPERVISION_CLOSES_LOCAL_OPERATIONAL_AMBIGUITY"
+      ],
+      "neural_training_authorized": false,
+      "new_information_or_reparameterization": "TARGET_DERIVED_GEOMETRY_OUTSIDE_PRELEARNING_SCOPE",
+      "overlap_with_ddo02b": "SEPARATE_SUPERVISED_PROJECT_CLASS",
+      "overlap_with_existing_110d": "MAY_USE_110D_INPUT_BUT_ADDS_TARGET_DERIVED_PARAMETERS",
+      "pressure_viscosity_primary_role": "POTENTIAL_RESEARCH_TARGETS_ONLY_IN_A_SEPARATE_PROJECT",
+      "prospective_contract_design_recommended": false,
+      "single_variable_intervention": "NOT_DEFINED_IN_MSO02D",
+      "status": "OUTSIDE_PRELEARNING_SCOPE",
+      "why_not_post_hoc_h_mso01r_rescue": "LEARNED_GEOMETRY_DOES_NOT_ANSWER_NATURAL_PRELEARNING_IDENTIFIABILITY_AND_CANNOT_REVERDICT_H_MSO01R"
+    }
+  ],
+  "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+  "governance": {
+    "attention_authorized": false,
+    "formal_feature_modification": false,
+    "formal_metric_modification": false,
+    "fresh_compute_authorized": false,
+    "h_mso01r_reverdict": false,
+    "learned_operator_authorized": false,
+    "mso03_authorized": false,
+    "neural_training_authorized": false,
+    "new_prospective_hypothesis_design_recommended": false,
+    "transformer_authorized": false
+  },
+  "project": "SPH-MSO-PoC",
+  "route_summary": {
+    "paper_route_recommended": true,
+    "route_a": "NOT_SUPPORTED",
+    "route_b": "NOT_SUPPORTED",
+    "route_c": "SUPPORT_SCALE_ROUTE_CLOSURE_RECOMMENDED"
+  },
+  "schema_version": "1.0.0",
+  "stage": "MSO-02D-D3",
+  "status": "FUTURE_HYPOTHESIS_CANDIDATES_ADJUDICATED"
+}

@@ -1,0 +1,84 @@
+{
+  "cvar_reporting_correction": {
+    "canonical_validation": [
+      {
+        "arm": "SS",
+        "component": "density_rate",
+        "exact_match": true,
+        "expected": 0.1979805059681546,
+        "observed": 0.1979805059681546
+      },
+      {
+        "arm": "SS",
+        "component": "pressure_gradient_acceleration",
+        "exact_match": true,
+        "expected": 0.33004874531366607,
+        "observed": 0.33004874531366607
+      },
+      {
+        "arm": "SS",
+        "component": "viscosity_laplacian_acceleration",
+        "exact_match": true,
+        "expected": 0.4603784149469809,
+        "observed": 0.4603784149469809
+      },
+      {
+        "arm": "MS",
+        "component": "density_rate",
+        "exact_match": true,
+        "expected": 0.03056365431814069,
+        "observed": 0.03056365431814069
+      },
+      {
+        "arm": "MS",
+        "component": "pressure_gradient_acceleration",
+        "exact_match": true,
+        "expected": 0.34510363491800494,
+        "observed": 0.34510363491800494
+      },
+      {
+        "arm": "MS",
+        "component": "viscosity_laplacian_acceleration",
+        "exact_match": true,
+        "expected": 0.4727550234388798,
+        "observed": 0.4727550234388798
+      }
+    ],
+    "corrected_row_count": 165,
+    "corrected_sha256": "43d035dc76fdc3fe7dee587080f5e0c19807621167dab7fcf39dd421368a83da",
+    "correction": "REPLACE_NONCANONICAL_EQUAL_LINEAGE_CASE_SCOPE_REPORTING_WITH_FROZEN_EQUAL_FOLD_FAMILY_CELL_CASE_MEAN",
+    "input_sha256_before_this_invocation": "43d035dc76fdc3fe7dee587080f5e0c19807621167dab7fcf39dd421368a83da",
+    "original_sha256": "0776176ae20b1e2167656c46c95688e65b79ea96e6a326277c93def7052d0f58",
+    "rows_rewritten_this_invocation": 0,
+    "scientific_primitive_modified": false,
+    "target_payload_read": false
+  },
+  "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+  "formal_artifacts_modified": false,
+  "fresh_scientific_evidence_generated": false,
+  "g1_full_population_audit_path": "06_experiments/mso02d/g1_full_population_polarization_audit.json",
+  "g1_full_population_audit_sha256": "100cb8009db7d235bcd36ee4127751ece5c9deadd54832c4065aa1af384369cf",
+  "h_mso01r_reverdict": false,
+  "mechanism_taxonomy_correction": {
+    "corrected_mechanism_evidence_sha256": "ed81e307f1237cdc68aa687cadc1be66db3d127d6682bd4f0cdb85b44eb4ecd2",
+    "corrected_mechanism_verdicts_sha256": "7ecba0887333c0b90546663089ca78ed498044368cf2e1fe6d9dd12a41db90b1",
+    "correction": "ENFORCE_PREREGISTERED_INDEPENDENT_DIAGNOSTIC_MINIMA_AND_D3_TAXONOMY",
+    "formal_verdict_modified": false,
+    "h_mso01r_reverdict": false,
+    "input_mechanism_evidence_sha256_before_this_invocation": "ed81e307f1237cdc68aa687cadc1be66db3d127d6682bd4f0cdb85b44eb4ecd2",
+    "input_mechanism_verdicts_sha256_before_this_invocation": "7ecba0887333c0b90546663089ca78ed498044368cf2e1fe6d9dd12a41db90b1",
+    "mso02d_diagnostic_adjudication_only": true,
+    "original_mechanism_evidence_sha256": "5094b3c5392d73d77604598cfae5eca4ee785639ef7fff303923585819e410c5",
+    "original_mechanism_verdicts_sha256": "2ab05184b5afd891cfff5c4b5a3a5f920487660c33bd188451703089bfe30c65",
+    "pre_d3_reconstruction_anchor_route_matrix_sha256": "39d2da02eb6f3b6b23bf8a0928acdadeb6c6de1e016b9dd9309a36c70cdeb2a6",
+    "pre_d3_reconstruction_method": "PERSISTED_D2_INPUTS_WITH_FROZEN_D2_ADJUDICATOR_NO_TARGET_READ",
+    "target_payload_read": false
+  },
+  "observable_payload_read_by_d3": false,
+  "oracle_fit_count_by_d3": 0,
+  "project": "SPH-MSO-PoC",
+  "schema_version": "1.0.0",
+  "stage": "MSO-02D-D3",
+  "status": "D3_GOVERNANCE_ADJUDICATION_COMPLETE",
+  "target_payload_read_by_d3": false
+}

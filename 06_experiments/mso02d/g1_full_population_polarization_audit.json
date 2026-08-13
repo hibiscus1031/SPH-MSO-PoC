@@ -1,0 +1,89 @@
+{
+  "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+  "exact_65_54_count_comparison_applicable_to_full_population": false,
+  "fresh_evidence_generated": false,
+  "full_fresh_r_b_population": {
+    "component_strata": {
+      "pressure_gradient_acceleration": {
+        "longitudinal": {
+          "candidate_c": 0.0,
+          "case_count": 111,
+          "cvar": 0.0,
+          "near_collision_rate": 0.0,
+          "oracle_residual_rms": 0.02034367558700551
+        },
+        "none": {
+          "candidate_c": 0.6804796265944681,
+          "case_count": 161,
+          "cvar": 0.7832427052618455,
+          "near_collision_rate": 0.0036611995341614906,
+          "oracle_residual_rms": 0.5792349287143155
+        },
+        "transverse": {
+          "candidate_c": 0.15444872861517098,
+          "case_count": 112,
+          "cvar": 0.12732003327507552,
+          "near_collision_rate": 0.00011858258928571428,
+          "oracle_residual_rms": 0.02336692117128817
+        }
+      },
+      "viscosity_laplacian_acceleration": {
+        "longitudinal": {
+          "candidate_c": 1.0129232382422946,
+          "case_count": 111,
+          "cvar": 0.8289532114791732,
+          "near_collision_rate": 0.0,
+          "oracle_residual_rms": 0.00415311187303494
+        },
+        "none": {
+          "candidate_c": 0.11050956491142198,
+          "case_count": 161,
+          "cvar": 0.10508654252117332,
+          "near_collision_rate": 3.154114906832298e-05,
+          "oracle_residual_rms": 0.0007684372958377913
+        },
+        "transverse": {
+          "candidate_c": 0.6232855669715376,
+          "case_count": 112,
+          "cvar": 0.5419115710936281,
+          "near_collision_rate": 0.0031005859375,
+          "oracle_residual_rms": 0.0028211739037888968
+        }
+      }
+    },
+    "cross_component_direction_consistent": false,
+    "polarization_case_counts": {
+      "longitudinal": 111,
+      "none": 161,
+      "transverse": 112
+    },
+    "pressure_longitudinal_minus_transverse_candidate_c": -0.15444872861517098,
+    "source": "06_experiments/mso02d/design_only_failure_stratification.csv",
+    "source_sha256": "23a78e1b23643f7ff22b5068292a0d2d0079e1edadf815e962f93fdd48a7c081",
+    "viscosity_longitudinal_minus_transverse_candidate_c": 0.389637671270757
+  },
+  "old_zero_denominator_subset": {
+    "counts_by_arm": {
+      "MS": {
+        "longitudinal": 65,
+        "transverse": 54
+      },
+      "SS": {
+        "longitudinal": 65,
+        "transverse": 54
+      }
+    },
+    "load_bearing_for_full_population_route_b": false,
+    "population_scope": "OLD_G1_ZERO_DENOMINATOR_PRESSURE_SUBSET_ONLY",
+    "source": "06_experiments/mso02c/zero_denominator_ab_attribution.csv",
+    "source_sha256": "6916c092d554bbe1836959d544430bd6116f313e529830380510db5530133e6c"
+  },
+  "project": "SPH-MSO-PoC",
+  "reason": "THE_OLD_COUNTS_DESCRIBE_A_BINARY_ZERO_DENOMINATOR_SUBSET; FULL_POPULATION_POLARIZATION_STRATA_HAVE_111_112_161_CASES_AND_OPPOSITE_PRESSURE_VISCOSITY_CANDIDATE_C_DIRECTIONS",
+  "replication_status": "REPLICATION_NOT_ESTABLISHED",
+  "route_b_may_rely_on_old_fingerprint": false,
+  "schema_version": "1.0.0",
+  "stage": "MSO-02D-D3",
+  "status": "G1_65_54_FULL_POPULATION_REPLICATION_NOT_ESTABLISHED",
+  "target_payload_read_by_d3": false
+}
