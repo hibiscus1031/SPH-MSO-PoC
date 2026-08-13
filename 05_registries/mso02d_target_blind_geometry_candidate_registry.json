@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO-PoC",
+  "stage": "MSO-02D_D0",
+  "status": "FROZEN_BEFORE_TARGET_PAYLOAD_ACCESS",
+  "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+  "definition_scope": "TARGET_BLIND_OBSERVABLE_ONLY",
+  "target_payload_accessed_for_definition": false,
+  "candidate_set_closed": true,
+  "formal_geometry_modified": false,
+  "input_arm": "MS",
+  "input_feature_dimension": 110,
+  "fit_partition": "TRAINING_FOLD_OBSERVABLE_ROWS_ONLY",
+  "evaluation_partition": "HELD_OUT_FOLD_OBSERVABLE_ROWS_WITH_FROZEN_LEGAL_TRAINING_POOLS",
+  "normalization_source": "FROZEN_TRAIN_FOLD_MEDIAN_IQR_WITH_UNIT_FALLBACK_RETAIN",
+  "distance": "EUCLIDEAN_AFTER_REGISTERED_TRANSFORM",
+  "neighbor_count": 10,
+  "tie_semantics": "ASCENDING_DISTANCE_THEN_ASCENDING_CASE_ID_THEN_ASCENDING_PARTICLE_ID",
+  "numeric_dtype": "float64",
+  "source_artifacts": [
+    {
+      "path": "00_project_contract/mso02d_componentwise_failure_attribution_contract.md",
+      "sha256": "727a33cc17301bc65435e8752e07b3c835a84636d46c9eb1a6dadd7651ffb36e",
+      "role": "D0_CONTRACT"
+    },
+    {
+      "path": "06_experiments/mso02a/ms_observable_schema.json",
+      "sha256": "51ff5e04dde4b862f3cab19c80e2aea93c151006fe7b3f497001e43475ec18cb",
+      "role": "FROZEN_MS_OBSERVABLE_SCHEMA"
+    },
+    {
+      "path": "06_experiments/mso02a/ss_observable_schema.json",
+      "sha256": "b2237506cac4bbc67dfda981f15daea47c32535259d394b962263a82190e2ec4",
+      "role": "FROZEN_SS_OBSERVABLE_SCHEMA"
+    },
+    {
+      "path": "03_multiscale_definitions/multiscale_response_definition.md",
+      "sha256": "9ad1200e4fb91dcd533362331752533d9d6dbb944d943980a1dda7ef35132e90",
+      "role": "FROZEN_MULTISCALE_DEFINITION"
+    },
+    {
+      "path": "03_multiscale_definitions/qualified_scale_registry.json",
+      "sha256": "43f55d1e58880486dd99d7970369c50144210e1eec2384e24ec9d91057751d87",
+      "role": "QUALIFIED_SCALE_LADDER"
+    }
+  ],
+  "runtime_versions_frozen_for_U3": {
+    "python": "3.13.9",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.0"
+  },
+  "candidates": [
+    {
+      "candidate_id": "U0",
+      "candidate_name": "FORMAL_IDENTITY_GEOMETRY",
+      "target_blind": true,
+      "formal_baseline": true,
+      "fit_scope": "PER_TRAINING_FOLD",
+      "input_arm": "MS",
+      "input_dimension": 110,
+      "output_dimension_rule": "110",
+      "transformation": {
+        "operation": "FROZEN_COLUMNWISE_MEDIAN_IQR_NORMALIZATION_THEN_IDENTITY",
+        "formula": "z_j=(x_j-median_train_j)/iqr_train_j",
+        "distance": "sqrt(sum_j((z_query_j-z_train_j)^2))"
+      },
+      "zero_or_constant_semantics": "EXACT_ZERO_TRAIN_IQR_USES_DIVISOR_ONE_AND_COLUMN_IS_RETAINED",
+      "applicability": "ALWAYS_APPLICABLE",
+      "feature_deletion": false,
+      "group_deletion": false,
+      "target_or_reference_required_at_fit": false,
+      "target_or_reference_required_at_deployment": false
+    },
+    {
+      "candidate_id": "U1",
+      "candidate_name": "SEMANTIC_GROUP_EQUAL_NORM",
+      "target_blind": true,
+      "formal_baseline": false,
+      "fit_scope": "PER_TRAINING_FOLD",
+      "input_arm": "MS",
+      "input_dimension": 110,
+      "output_dimension_rule": "110",
+      "semantic_group_source": "05_registries/mso02d_feature_group_registry.json",
+      "included_group_ids": ["G0", "G1", "G2", "G3", "G4"],
+      "transformation": {
+        "operation": "GROUP_TOTAL_SQUARED_ENERGY_EQUALIZATION_AFTER_U0",
+        "formula": "E_g=mean_train(sum_{j_in_g}(z_ij^2)); z'_ij=z_ij/sqrt(E_g) for E_g>0",
+        "within_group_structure_changed": false,
+        "common_post_multiplier": "OMITTED_AS_DISTANCE_IMMATERIAL"
+      },
+      "zero_or_constant_semantics": "IF_E_g_EQUALS_ZERO_USE_MULTIPLIER_ONE_AND_RECORD_ZERO_ENERGY_UNIT_FALLBACK",
+      "applicability": "APPLICABLE_WITH_REGISTERED_UNIT_FALLBACK",
+      "feature_deletion": false,
+      "group_deletion": false,
+      "target_or_reference_required_at_fit": false,
+      "target_or_reference_required_at_deployment": false
+    },
+    {
+      "candidate_id": "U2",
+      "candidate_name": "OBSERVABLE_PARTICIPATION_SUBSPACE",
+      "target_blind": true,
+      "formal_baseline": false,
+      "fit_scope": "PER_TRAINING_FOLD",
+      "input_arm": "MS",
+      "input_dimension": 110,
+      "output_dimension_rule": "r=clip(ceil((tr(C)^2)/tr(C^2)),1,110)",
+      "transformation": {
+        "operation": "CENTERED_POPULATION_COVARIANCE_PARTICIPATION_RANK_PROJECTION_AFTER_U0",
+        "covariance_denominator": "N_TRAIN",
+        "rank_formula": "r=ceil((tr(C)^2)/tr(C^2))",
+        "rank_clipping": [1, 110],
+        "eigendecomposition": "SYMMETRIC_DESCENDING_EIGENVALUE_WITH_STABLE_ORIGINAL_INDEX_TIE_ORDER",
+        "whitening": false,
+        "distance": "EUCLIDEAN_IN_PROJECTED_COORDINATES"
+      },
+      "zero_or_constant_semantics": "IF_tr(C^2)_EQUALS_ZERO_MARK_NOT_APPLICABLE_ZERO_COVARIANCE_AND_DO_NOT_SELECT",
+      "applicability": "CONDITIONAL_ON_POSITIVE_TOTAL_COVARIANCE",
+      "feature_deletion": false,
+      "group_deletion": false,
+      "target_or_reference_required_at_fit": false,
+      "target_or_reference_required_at_deployment": false
+    },
+    {
+      "candidate_id": "U3",
+      "candidate_name": "SHRINKAGE_WHITENED_GEOMETRY",
+      "target_blind": true,
+      "formal_baseline": false,
+      "fit_scope": "PER_TRAINING_FOLD",
+      "input_arm": "MS",
+      "input_dimension": 110,
+      "output_dimension_rule": "110",
+      "transformation": {
+        "operation": "LEDOIT_WOLF_FULL_RANK_INVERSE_SQUARE_ROOT_AFTER_U0",
+        "implementation": "sklearn.covariance.LedoitWolf",
+        "implementation_parameters": {
+          "assume_centered": false,
+          "store_precision": false,
+          "block_size": 1000
+        },
+        "centering": "LEDOITWOLF_LOCATION_FIT_ON_TRAINING_OBSERVABLES",
+        "eigendecomposition": "SYMMETRIZED_COVARIANCE_SYMMETRIC_EIGH",
+        "eigenvalue_floor": "max_eigenvalue*1e-12",
+        "distance": "EUCLIDEAN_AFTER_FULL_RANK_INVERSE_SQUARE_ROOT"
+      },
+      "zero_or_constant_semantics": "IF_MAX_EIGENVALUE_EQUALS_ZERO_MARK_NOT_APPLICABLE_ZERO_COVARIANCE_AND_DO_NOT_SELECT; OTHERWISE CLIP ONLY BELOW THE FROZEN NUMERICAL FLOOR",
+      "applicability": "CONDITIONAL_ON_POSITIVE_MAXIMUM_EIGENVALUE",
+      "feature_deletion": false,
+      "group_deletion": false,
+      "target_or_reference_required_at_fit": false,
+      "target_or_reference_required_at_deployment": false
+    }
+  ],
+  "selection_rule": {
+    "selection_uses_targets": false,
+    "selection_uses_target_informed_metrics": false,
+    "baseline_candidate_id": "U0",
+    "eligible_nonidentity_candidate_ids": ["U1", "U2", "U3"],
+    "per_stratum_pass": {
+      "k10_to_median_ratio": "candidate <= U0*1.01",
+      "nearest_to_median_ratio": "candidate <= U0*1.01",
+      "neighbor_occurrence_gini": "candidate <= U0+0.01",
+      "semantic_group_domination": "candidate <= U0+0.01",
+      "finite_required": true,
+      "transform_applicable_required": true
+    },
+    "minimum_replication": {
+      "concentration": {"folds": 5, "fold_total": 6, "families": 3, "family_total": 4},
+      "hubness": {"folds": 5, "fold_total": 6, "families": 3, "family_total": 4},
+      "semantic_group_domination": {"folds": 5, "fold_total": 6, "families": 3, "family_total": 4}
+    },
+    "transform_stability": {
+      "minimum_median_pairwise_fold_similarity": 0.75,
+      "minimum_median_pairwise_family_similarity": 0.75,
+      "U1_measure": "COSINE_SIMILARITY_OF_LOG_GROUP_MULTIPLIERS",
+      "U2_measure": "TOP_MIN_RANK_PROJECTOR_OVERLAP_DIVIDED_BY_MIN_RANK",
+      "U3_measure": "NORMALIZED_FROBENIUS_SIMILARITY_OF_INVERSE_SQUARE_ROOT_TRANSFORMS"
+    },
+    "composite_rank": {
+      "direction": "LOWER_IS_BETTER",
+      "terms": [
+        "MEDIAN_FOLD_K10_TO_MEDIAN_RATIO_RANK",
+        "MEDIAN_FOLD_NEIGHBOR_OCCURRENCE_GINI_RANK",
+        "MEDIAN_FOLD_SEMANTIC_GROUP_DOMINATION_RANK",
+        "FOLD_FAMILY_TRANSPORT_COEFFICIENT_OF_VARIATION_RANK"
+      ],
+      "aggregation": "SUM_OF_ORDINAL_RANKS",
+      "exact_tie_order": ["U1", "U2", "U3"]
+    },
+    "selection_additional_requirement": {
+      "minimum_number_of_improved_primary_median_fold_criteria": 2,
+      "primary_criteria": [
+        "K10_TO_MEDIAN_RATIO",
+        "NEIGHBOR_OCCURRENCE_GINI",
+        "SEMANTIC_GROUP_DOMINATION"
+      ],
+      "strict_improvement_tolerance": 1e-12
+    },
+    "unique_selection_required": true,
+    "no_candidate_status": "ROUTE_A_TARGET_BLIND_GEOMETRY_CANDIDATE_NOT_ESTABLISHED",
+    "selected_candidate_frozen_before_any_target_access": true,
+    "candidate_addition_after_D0": false
+  },
+  "governance": {
+    "formal_feature_add": false,
+    "formal_feature_delete": false,
+    "formal_feature_reweight": false,
+    "formal_distance_change": false,
+    "formal_K_change": false,
+    "D1_is_diagnostic_copy_only": true,
+    "fresh_compute_authorized": false
+  }
+}

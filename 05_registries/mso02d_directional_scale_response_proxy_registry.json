@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO-PoC",
+  "stage": "MSO-02D_D0",
+  "status": "FROZEN_BEFORE_TARGET_PAYLOAD_ACCESS",
+  "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+  "definition_scope": "DEPLOYMENT_ONLY_DIRECTION_RESOLVED_SCALE_RESPONSE",
+  "target_payload_accessed_for_definition": false,
+  "candidate_set_closed": true,
+  "principles": {
+    "NO_PRINCIPAL_FRAME_EIGENVECTOR_DEPENDENCE": true,
+    "NO_EIGENVECTOR_SIGN_CONVENTION": true,
+    "NO_DEGENERACY_FALLBACK_TO_ARBITRARY_FRAME": true,
+    "O2_EQUIVARIANT_OR_INVARIANT_CONSTRUCTION": true,
+    "DEPLOYMENT_AVAILABLE": true,
+    "TARGET_OR_REFERENCE_REQUIRED_AT_DEPLOYMENT": false
+  },
+  "source_artifacts": [
+    {
+      "path": "06_experiments/mso02a/ms_observable_schema.json",
+      "sha256": "51ff5e04dde4b862f3cab19c80e2aea93c151006fe7b3f497001e43475ec18cb",
+      "role": "FROZEN_ORDERED_DEPLOYMENT_OBSERVABLE_SCHEMA"
+    },
+    {
+      "path": "03_multiscale_definitions/multiscale_response_definition.md",
+      "sha256": "9ad1200e4fb91dcd533362331752533d9d6dbb944d943980a1dda7ef35132e90",
+      "role": "FROZEN_SCALE_RESPONSE_SEMANTICS"
+    },
+    {
+      "path": "00_project_contract/mso02d_componentwise_failure_attribution_contract.md",
+      "sha256_at_pre_diagnostic_commit": "c13f3e7a8c081b3b579e5b8cf9577654b9ebd021e571b0a3795886c1a362a665",
+      "sha256_after_d0_formal_tie_semantics_clarification": "727a33cc17301bc65435e8752e07b3c835a84636d46c9eb1a6dadd7651ffb36e",
+      "role": "MSO02D_PROTOCOL"
+    }
+  ],
+  "components": [
+    "pressure_gradient_acceleration",
+    "viscosity_laplacian_acceleration"
+  ],
+  "scales": [
+    "0p75",
+    "1p25",
+    "1p50"
+  ],
+  "vector_building_blocks": [
+    {
+      "vector_id_pattern": "DELTA_{component}_{scale}",
+      "x_column_pattern": "obs__delta_L_{scale}__{component_schema_stem}_x",
+      "y_column_pattern": "obs__delta_L_{scale}__{component_schema_stem}_y",
+      "component_schema_stems": {
+        "pressure_gradient_acceleration": "pressure_acceleration",
+        "viscosity_laplacian_acceleration": "viscosity_acceleration"
+      },
+      "transformation_law": "O2_EQUIVARIANT_VECTOR",
+      "information_class": "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+      "zero_semantics": "THE_ZERO_VECTOR_IS_VALID_AND REQUIRES_NO_FRAME"
+    },
+    {
+      "vector_id_pattern": "LOG_SECANT_{component}_{scale}",
+      "x_column_pattern": "obs__G_{scale}__{component_schema_stem}_x",
+      "y_column_pattern": "obs__G_{scale}__{component_schema_stem}_y",
+      "component_schema_stems": {
+        "pressure_gradient_acceleration": "pressure_acceleration",
+        "viscosity_laplacian_acceleration": "viscosity_acceleration"
+      },
+      "transformation_law": "O2_EQUIVARIANT_VECTOR",
+      "information_class": "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+      "zero_semantics": "THE_ZERO_VECTOR_IS_VALID_AND REQUIRES_NO_FRAME"
+    },
+    {
+      "vector_id_pattern": "BASE_{component}",
+      "x_column_pattern": "obs__L_1p00__{component_schema_stem}_x",
+      "y_column_pattern": "obs__L_1p00__{component_schema_stem}_y",
+      "component_schema_stems": {
+        "pressure_gradient_acceleration": "pressure_acceleration",
+        "viscosity_laplacian_acceleration": "viscosity_acceleration"
+      },
+      "transformation_law": "O2_EQUIVARIANT_VECTOR",
+      "information_class": "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+      "zero_semantics": "THE_ZERO_VECTOR_IS_VALID; ALIGNMENT RATIOS USE EXPLICIT ZERO_BASE STATUS"
+    }
+  ],
+  "proxy_families": [
+    {
+      "proxy_family_id": "P1_VECTOR_SCALE_RESPONSES",
+      "availability": "AVAILABLE",
+      "definition": "The registered DELTA and LOG_SECANT two-vectors at each nonbaseline support scale.",
+      "operations": [
+        "IDENTITY_VECTOR"
+      ],
+      "o2_type": "EQUIVARIANT_VECTOR",
+      "reflection_parity": "VECTOR",
+      "information_class": "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+      "incremental_deployment_cost": "ZERO_BEYOND_EXISTING_110D_EVALUATION",
+      "zero_or_fallback_semantics": "ZERO_VECTOR_VALID; NO DIRECTION OR FRAME IS CHOSEN",
+      "ddo02b_overlap": "PRINCIPLED_DIFFERENCE_NO_PRINCIPAL_EIGENFRAME_BUT_NO_NEW_INFORMATION"
+    },
+    {
+      "proxy_family_id": "P2_CROSS_SCALE_GRAM",
+      "availability": "AVAILABLE",
+      "definition": "For each component and unordered scale pair k,l, compute DELTA_k dot DELTA_l and the separately labeled two-dimensional signed cross product DELTA_k_x DELTA_l_y - DELTA_k_y DELTA_l_x.",
+      "operations": [
+        "DOT_PRODUCT_FOR_ALL_UNORDERED_SCALE_PAIRS_INCLUDING_DIAGONAL",
+        "SIGNED_2D_CROSS_PRODUCT_FOR_ALL_STRICT_SCALE_PAIRS"
+      ],
+      "o2_type": "INVARIANT_FOR_DOT; PSEUDOSCALAR_FOR_SIGNED_CROSS",
+      "reflection_parity": "DOT_REFLECTION_EVEN; SIGNED_CROSS_REFLECTION_ODD",
+      "information_class": "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+      "incremental_deployment_cost": "FIXED_SCALAR_ARITHMETIC_ONLY",
+      "zero_or_fallback_semantics": "DOT AND CROSS ARE EXACTLY ZERO WHEN INPUTS REQUIRE IT; NO NORMALIZED ANGLE IS FORMED",
+      "ddo02b_overlap": "PRINCIPLED_DIFFERENCE_COORDINATE_FREE_NO_EIGENVECTOR_OR_SIGN_FALLBACK"
+    },
+    {
+      "proxy_family_id": "P3_BASE_OPERATOR_ALIGNMENT",
+      "availability": "AVAILABLE",
+      "definition": "For each component and scale response d with base vector a, compute d dot a, ||d||^2, ||a||^2, squared parallel magnitude, squared orthogonal magnitude, and norm ratio.",
+      "operations": [
+        "DOT_DELTA_BASE",
+        "DELTA_NORM_SQUARED",
+        "BASE_NORM_SQUARED",
+        "PARALLEL_SQUARED=(DELTA_DOT_BASE)^2/BASE_NORM_SQUARED",
+        "ORTHOGONAL_SQUARED=MAX(DELTA_NORM_SQUARED-PARALLEL_SQUARED,0)",
+        "NORM_RATIO=SQRT(DELTA_NORM_SQUARED/BASE_NORM_SQUARED)"
+      ],
+      "o2_type": "INVARIANT_SCALARS",
+      "reflection_parity": "REFLECTION_EVEN",
+      "information_class": "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+      "incremental_deployment_cost": "FIXED_SCALAR_ARITHMETIC_ONLY",
+      "zero_or_fallback_semantics": "IF BASE_NORM_SQUARED EQUALS ZERO, DOT AND RAW NORMS REMAIN VALID; PARALLEL, ORTHOGONAL-DECOMPOSED, AND RATIO VALUES ARE NOT_APPLICABLE_ZERO_BASE; NO ARBITRARY DIRECTION IS CHOSEN",
+      "ddo02b_overlap": "PRINCIPLED_DIFFERENCE_USES_PHYSICAL_BASE_OPERATOR_VECTOR_WITH_EXPLICIT_ZERO_STATUS_NOT_PRINCIPAL_FRAME"
+    },
+    {
+      "proxy_family_id": "P4_TENSOR_SCALE_RESPONSE_CONTRACTIONS",
+      "availability": "AVAILABLE_ONLY_AS_BASE_TENSOR_CONTRACTIONS",
+      "definition": "Contract each DELTA vector with the already-deployed symmetric base support covariance tensor and local velocity second-moment tensor; also retain tensor trace and deviatoric-norm invariants.",
+      "tensor_inputs": [
+        [
+          "obs__base_cov_xx_over_h2",
+          "obs__base_cov_xy_over_h2",
+          "obs__base_cov_yy_over_h2"
+        ],
+        [
+          "obs__local_dv_second_xx",
+          "obs__local_dv_second_xy",
+          "obs__local_dv_second_yy"
+        ]
+      ],
+      "operations": [
+        "TRACE=T_XX+T_YY",
+        "DEVIATORIC_NORM_SQUARED=0.5*(T_XX-T_YY)^2+2*T_XY^2",
+        "VECTOR_TENSOR_VECTOR=DELTA_X^2*T_XX+2*DELTA_X*DELTA_Y*T_XY+DELTA_Y^2*T_YY"
+      ],
+      "o2_type": "INVARIANT_SCALARS_FROM_TENSOR_CONTRACTION",
+      "reflection_parity": "REFLECTION_EVEN",
+      "information_class": "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+      "incremental_deployment_cost": "FIXED_SCALAR_ARITHMETIC_ONLY",
+      "zero_or_fallback_semantics": "ZERO VECTOR OR ZERO TENSOR GIVES ZERO CONTRACTION; NO EIGENDECOMPOSITION OR FRAME",
+      "ddo02b_overlap": "PRINCIPLED_DIFFERENCE_DIRECT_TENSOR_CONTRACTION_WITHOUT_EIGENVECTORS"
+    },
+    {
+      "proxy_family_id": "P5_DIRECTIONAL_TOPOLOGY_SUPPORT_ANISOTROPY",
+      "availability": "NOT_AVAILABLE_FROM_FROZEN_110D_OR_FROZEN_OBSERVABLE_STORE",
+      "definition": "A nonbaseline support-anisotropy tensor would be needed for a directional topology response; the frozen representation contains only scalar nonself-neighbour counts and count differences at nonbaseline scales.",
+      "operations": [],
+      "o2_type": "NOT_APPLICABLE",
+      "reflection_parity": "NOT_APPLICABLE",
+      "information_class": "NEW_DEPLOYMENT_INFORMATION_NOT_RECONSTRUCTIBLE_FROM_CONSUMED_STORE",
+      "incremental_deployment_cost": "WOULD_REQUIRE_NEW_PER_SCALE_TENSOR_MOMENT_EVALUATION",
+      "zero_or_fallback_semantics": "NO PROXY IS FABRICATED; STATUS REMAINS NOT_AVAILABLE",
+      "ddo02b_overlap": "POTENTIALLY_DISTINCT_BUT_NOT_EVALUABLE_IN_MSO02D_WITHOUT_NEW_OBSERVABLE_GENERATION"
+    }
+  ],
+  "overlap_audit_rule": {
+    "existing_110d_columns_or_deterministic_algebra_only": "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+    "requires_unstored_deployment_tensor_or_moment": "NEW_DEPLOYMENT_INFORMATION",
+    "algebraic_reparameterization_alone_cannot_satisfy_route_b_incremental_information_criterion": true
+  },
+  "target_diagnostic_freeze": {
+    "diagnostics": [
+      "PROXY_TARGET_DISAGREEMENT_SPEARMAN",
+      "PROXY_FORMAL_ORACLE_RESIDUAL_SPEARMAN",
+      "AMBIGUITY_HOTSPOT_STRATIFICATION",
+      "NEAR_COLLISION_STRATIFICATION",
+      "INVARIANT_DIRECTIONAL_CLASS",
+      "FIXED_RIDGE_RESIDUAL_DIAGNOSTIC_ALPHA_1"
+    ],
+    "components": [
+      "pressure_gradient_acceleration",
+      "viscosity_laplacian_acceleration"
+    ],
+    "replication_requirement": {
+      "minimum_folds": 4,
+      "fold_total": 6,
+      "minimum_families": 3,
+      "family_total": 4
+    },
+    "full_population_g1_65_54_recheck_required": true,
+    "no_formal_model_or_oracle_modification": true
+  },
+  "governance": {
+    "formal_feature_addition": false,
+    "formal_feature_reweighting": false,
+    "formal_metric_change": false,
+    "fresh_compute_authorized": false,
+    "neural_attention_transformer_training_authorized": false
+  }
+}

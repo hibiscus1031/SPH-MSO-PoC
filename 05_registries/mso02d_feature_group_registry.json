@@ -1,0 +1,272 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO-PoC",
+  "stage": "MSO-02D_D0",
+  "status": "FROZEN_BEFORE_TARGET_PAYLOAD_ACCESS",
+  "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+  "definition_scope": "SCHEMA_AND_FROZEN_MATHEMATICAL_CONSTRUCTION_ONLY",
+  "target_payload_accessed_for_definition": false,
+  "arm": "MS",
+  "schema_feature_dimension": 110,
+  "index_base": 0,
+  "partition_semantics": "DISJOINT_EXHAUSTIVE_PRIMARY_ABLATION_GROUPS",
+  "classification_precedence": ["G0", "G1", "G2", "G3", "G4", "G5", "G6"],
+  "source_artifacts": [
+    {
+      "path": "06_experiments/mso02a/ms_observable_schema.json",
+      "sha256": "51ff5e04dde4b862f3cab19c80e2aea93c151006fe7b3f497001e43475ec18cb",
+      "role": "FROZEN_MS_OBSERVABLE_SCHEMA"
+    },
+    {
+      "path": "06_experiments/mso02a/ss_observable_schema.json",
+      "sha256": "b2237506cac4bbc67dfda981f15daea47c32535259d394b962263a82190e2ec4",
+      "role": "FROZEN_SS_OBSERVABLE_SCHEMA"
+    },
+    {
+      "path": "03_multiscale_definitions/multiscale_response_definition.md",
+      "sha256": "9ad1200e4fb91dcd533362331752533d9d6dbb944d943980a1dda7ef35132e90",
+      "role": "FROZEN_MULTISCALE_CONSTRUCTION_SEMANTICS"
+    },
+    {
+      "path": "05_registries/formal_quantity_registry.json",
+      "sha256": "2a07c5b82ebe7046c1a017b1e6970b4bdca5f52e188acdf2fb6a70022e96790b",
+      "role": "FROZEN_DEPLOYMENT_QUANTITY_ROLES"
+    },
+    {
+      "path": "00_project_contract/mso02d_componentwise_failure_attribution_contract.md",
+      "sha256": "727a33cc17301bc65435e8752e07b3c835a84636d46c9eb1a6dadd7651ffb36e",
+      "role": "D0_CONTRACT"
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G0",
+      "group_name": "BASE_SINGLE_SCALE",
+      "definition": "The exact 39-column common SS/MS base representation, including baseline lambda=1 operator values.",
+      "feature_indices_zero_based": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38],
+      "feature_names": [
+        "obs__mass",
+        "obs__rho",
+        "obs__support_h",
+        "obs__dx",
+        "obs__rho0",
+        "obs__c0",
+        "obs__kinematic_viscosity",
+        "obs__h_over_dx",
+        "obs__base_nonself_neighbor_count",
+        "obs__base_neighbor_count_over_nominal",
+        "obs__base_cov_xx_over_h2",
+        "obs__base_cov_xy_over_h2",
+        "obs__base_cov_yy_over_h2",
+        "obs__base_cov_eig_min_over_h2",
+        "obs__base_cov_eig_max_over_h2",
+        "obs__base_cov_eig_ratio",
+        "obs__base_anisotropy_condition",
+        "obs__base_neighbor_distance_cv",
+        "obs__base_kernel_s0_minus_1",
+        "obs__base_kernel_s0",
+        "obs__base_first_moment_error_xx",
+        "obs__base_first_moment_error_xy",
+        "obs__base_first_moment_error_yx",
+        "obs__base_first_moment_error_yy",
+        "obs__base_first_moment_error_fro",
+        "obs__base_grad_constant_x_times_h",
+        "obs__base_grad_constant_y_times_h",
+        "obs__base_grad_constant_norm_times_h",
+        "obs__local_dv_mean_x",
+        "obs__local_dv_mean_y",
+        "obs__local_dv_rms",
+        "obs__local_dv_second_xx",
+        "obs__local_dv_second_xy",
+        "obs__local_dv_second_yy",
+        "obs__L_1p00__density_rate",
+        "obs__L_1p00__pressure_acceleration_x",
+        "obs__L_1p00__pressure_acceleration_y",
+        "obs__L_1p00__viscosity_acceleration_x",
+        "obs__L_1p00__viscosity_acceleration_y"
+      ],
+      "feature_count": 39,
+      "ablation_eligible": true,
+      "ablation_role": "MANDATORY_BASE; NEVER REMOVED"
+    },
+    {
+      "group_id": "G1",
+      "group_name": "RAW_MULTI_SCALE_OPERATOR_VALUES",
+      "definition": "Raw nonbaseline operator evaluations O_k=L_{lambda_k h}(q_h) for qualified lambda in {0.75,1.25,1.50}; lambda=1 baseline remains in G0.",
+      "feature_indices_zero_based": [39, 40, 41, 42, 43, 54, 55, 56, 57, 58, 69, 70, 71, 72, 73],
+      "feature_names": [
+        "obs__L_0p75__density_rate",
+        "obs__L_0p75__pressure_acceleration_x",
+        "obs__L_0p75__pressure_acceleration_y",
+        "obs__L_0p75__viscosity_acceleration_x",
+        "obs__L_0p75__viscosity_acceleration_y",
+        "obs__L_1p25__density_rate",
+        "obs__L_1p25__pressure_acceleration_x",
+        "obs__L_1p25__pressure_acceleration_y",
+        "obs__L_1p25__viscosity_acceleration_x",
+        "obs__L_1p25__viscosity_acceleration_y",
+        "obs__L_1p50__density_rate",
+        "obs__L_1p50__pressure_acceleration_x",
+        "obs__L_1p50__pressure_acceleration_y",
+        "obs__L_1p50__viscosity_acceleration_x",
+        "obs__L_1p50__viscosity_acceleration_y"
+      ],
+      "feature_count": 15,
+      "ablation_eligible": true,
+      "ablation_role": "SINGLE_MS_GROUP_AND_LEAVE_ONE_GROUP_OUT"
+    },
+    {
+      "group_id": "G2",
+      "group_name": "BASELINE_SCALE_DIFFERENCES",
+      "definition": "Nonbaseline differences Delta O_k=O_k-O_0 at qualified lambda in {0.75,1.25,1.50}.",
+      "feature_indices_zero_based": [44, 45, 46, 47, 48, 59, 60, 61, 62, 63, 74, 75, 76, 77, 78],
+      "feature_names": [
+        "obs__delta_L_0p75__density_rate",
+        "obs__delta_L_0p75__pressure_acceleration_x",
+        "obs__delta_L_0p75__pressure_acceleration_y",
+        "obs__delta_L_0p75__viscosity_acceleration_x",
+        "obs__delta_L_0p75__viscosity_acceleration_y",
+        "obs__delta_L_1p25__density_rate",
+        "obs__delta_L_1p25__pressure_acceleration_x",
+        "obs__delta_L_1p25__pressure_acceleration_y",
+        "obs__delta_L_1p25__viscosity_acceleration_x",
+        "obs__delta_L_1p25__viscosity_acceleration_y",
+        "obs__delta_L_1p50__density_rate",
+        "obs__delta_L_1p50__pressure_acceleration_x",
+        "obs__delta_L_1p50__pressure_acceleration_y",
+        "obs__delta_L_1p50__viscosity_acceleration_x",
+        "obs__delta_L_1p50__viscosity_acceleration_y"
+      ],
+      "feature_count": 15,
+      "ablation_eligible": true,
+      "ablation_role": "SINGLE_MS_GROUP_AND_LEAVE_ONE_GROUP_OUT"
+    },
+    {
+      "group_id": "G3",
+      "group_name": "LOG_SCALE_DIVIDED_DIFFERENCES",
+      "definition": "All frozen log-scale secants G, pairwise slopes S, and nonuniform second divided differences C.",
+      "feature_indices_zero_based": [49, 50, 51, 52, 53, 64, 65, 66, 67, 68, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103],
+      "feature_names": [
+        "obs__G_0p75__density_rate",
+        "obs__G_0p75__pressure_acceleration_x",
+        "obs__G_0p75__pressure_acceleration_y",
+        "obs__G_0p75__viscosity_acceleration_x",
+        "obs__G_0p75__viscosity_acceleration_y",
+        "obs__G_1p25__density_rate",
+        "obs__G_1p25__pressure_acceleration_x",
+        "obs__G_1p25__pressure_acceleration_y",
+        "obs__G_1p25__viscosity_acceleration_x",
+        "obs__G_1p25__viscosity_acceleration_y",
+        "obs__G_1p50__density_rate",
+        "obs__G_1p50__pressure_acceleration_x",
+        "obs__G_1p50__pressure_acceleration_y",
+        "obs__G_1p50__viscosity_acceleration_x",
+        "obs__G_1p50__viscosity_acceleration_y",
+        "obs__S_0p75_1p25__density_rate",
+        "obs__S_0p75_1p25__pressure_acceleration_x",
+        "obs__S_0p75_1p25__pressure_acceleration_y",
+        "obs__S_0p75_1p25__viscosity_acceleration_x",
+        "obs__S_0p75_1p25__viscosity_acceleration_y",
+        "obs__S_1p00_1p50__density_rate",
+        "obs__S_1p00_1p50__pressure_acceleration_x",
+        "obs__S_1p00_1p50__pressure_acceleration_y",
+        "obs__S_1p00_1p50__viscosity_acceleration_x",
+        "obs__S_1p00_1p50__viscosity_acceleration_y",
+        "obs__C_0p75_1p00_1p25__density_rate",
+        "obs__C_0p75_1p00_1p25__pressure_acceleration_x",
+        "obs__C_0p75_1p00_1p25__pressure_acceleration_y",
+        "obs__C_0p75_1p00_1p25__viscosity_acceleration_x",
+        "obs__C_0p75_1p00_1p25__viscosity_acceleration_y",
+        "obs__C_1p00_1p25_1p50__density_rate",
+        "obs__C_1p00_1p25_1p50__pressure_acceleration_x",
+        "obs__C_1p00_1p25_1p50__pressure_acceleration_y",
+        "obs__C_1p00_1p25_1p50__viscosity_acceleration_x",
+        "obs__C_1p00_1p25_1p50__viscosity_acceleration_y"
+      ],
+      "feature_count": 35,
+      "ablation_eligible": true,
+      "ablation_role": "SINGLE_MS_GROUP_AND_LEAVE_ONE_GROUP_OUT"
+    },
+    {
+      "group_id": "G4",
+      "group_name": "TOPOLOGY_SUPPORT_SUMMARIES",
+      "definition": "Qualified nonbaseline support-neighbor counts and their differences from the base-support count.",
+      "feature_indices_zero_based": [104, 105, 106, 107, 108, 109],
+      "feature_names": [
+        "obs__topology_nonself_neighbor_count_0p75",
+        "obs__topology_neighbor_count_delta_vs_base_0p75",
+        "obs__topology_nonself_neighbor_count_1p25",
+        "obs__topology_neighbor_count_delta_vs_base_1p25",
+        "obs__topology_nonself_neighbor_count_1p50",
+        "obs__topology_neighbor_count_delta_vs_base_1p50"
+      ],
+      "feature_count": 6,
+      "ablation_eligible": true,
+      "ablation_role": "SINGLE_MS_GROUP_AND_LEAVE_ONE_GROUP_OUT"
+    },
+    {
+      "group_id": "G5",
+      "group_name": "DIRECTIONAL_OR_TENSOR_QUANTITIES_ALREADY_REGISTERED",
+      "definition": "Reserved for distinct MS-only directional/tensor constructions not already classified by raw/difference/divided-difference construction. No such distinct column exists in the frozen 110D schema; vector component columns retain their construction group and receive secondary tags below.",
+      "feature_indices_zero_based": [],
+      "feature_names": [],
+      "feature_count": 0,
+      "ablation_eligible": false,
+      "ablation_role": "NOT_APPLICABLE_EMPTY_FROZEN_SCHEMA_GROUP"
+    },
+    {
+      "group_id": "G6",
+      "group_name": "OTHER_PROSPECTIVELY_REGISTERED_MS_QUANTITIES",
+      "definition": "Reserved for unambiguous prospectively registered MS quantities outside G0-G5. None exists in the frozen 110D schema.",
+      "feature_indices_zero_based": [],
+      "feature_names": [],
+      "feature_count": 0,
+      "ablation_eligible": false,
+      "ablation_role": "NOT_APPLICABLE_EMPTY_FROZEN_SCHEMA_GROUP"
+    }
+  ],
+  "secondary_semantic_tags": {
+    "VECTOR_COMPONENT_SUFFIXES": ["pressure_acceleration_x", "pressure_acceleration_y", "viscosity_acceleration_x", "viscosity_acceleration_y"],
+    "BASE_SYMMETRIC_TENSOR_COMPONENTS": [
+      "obs__base_cov_xx_over_h2",
+      "obs__base_cov_xy_over_h2",
+      "obs__base_cov_yy_over_h2",
+      "obs__local_dv_second_xx",
+      "obs__local_dv_second_xy",
+      "obs__local_dv_second_yy"
+    ],
+    "tag_semantics": "NONPARTITIONING_OVERLAP_AUDIT_ONLY; DOES_NOT_CHANGE_PRIMARY_ABLATION_GROUP"
+  },
+  "mapping_audit": {
+    "mapped_feature_count": 110,
+    "unmapped_feature_count": 0,
+    "duplicate_primary_assignment_count": 0,
+    "expected_feature_count": 110,
+    "schema_order_preserved_within_groups": true,
+    "all_feature_names_exactly_match_schema": true,
+    "empty_groups": ["G5", "G6"],
+    "mapping_complete": true
+  },
+  "fixed_ablation_design": {
+    "base_group_id": "G0",
+    "nonempty_ms_group_ids": ["G1", "G2", "G3", "G4"],
+    "arms": [
+      "BASE_ONLY",
+      "BASE_PLUS_EACH_ONE_OF_G1_G2_G3_G4_SEPARATELY",
+      "FULL_MS_LEAVE_ONE_OF_G1_G2_G3_G4_OUT_SEPARATELY",
+      "FULL_MS"
+    ],
+    "adaptive_group_search": false,
+    "arbitrary_group_combinations": false,
+    "feature_level_selection": false,
+    "target_informed_group_definition": false,
+    "output_evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY"
+  },
+  "governance": {
+    "formal_feature_add": false,
+    "formal_feature_delete": false,
+    "formal_feature_reweight": false,
+    "formal_schema_modified": false,
+    "fresh_compute_authorized": false
+  }
+}
