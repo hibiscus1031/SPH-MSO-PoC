@@ -1,0 +1,632 @@
+{
+  "authorization": {
+    "attention_authorized": false,
+    "fresh_compute_authorized": false,
+    "h_mso02_authorized": false,
+    "mso03_authorized": false,
+    "neural_training_authorized": false,
+    "new_hypothesis_test_authorized": false,
+    "paper_route_authorized": true,
+    "publication_packaging_only": true,
+    "transformer_authorized": false
+  },
+  "date": "2026-08-13",
+  "external_literature_registry": [
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L01",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "learned SPH kernels",
+      "url": "https://doi.org/10.1103/PhysRevFluids.8.054602"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L02",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "Neural SPH",
+      "url": "https://proceedings.mlr.press/v235/toshev24a.html"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L03",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "symmetric particle convolutions",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/1386faadf55462905db1548cff151a78-Abstract-Conference.html"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L04",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "momentum-conserving particle networks",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/2dd7f33ffbb59b4ff987be5442a13016-Abstract-Conference.html"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L05",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "differentiable SPH",
+      "url": "https://arxiv.org/abs/2403.04750"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L06",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "differentiable SPH and ML",
+      "url": "https://arxiv.org/abs/2507.21684"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L07",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "learned mesh-free operators",
+      "url": "https://arxiv.org/abs/1909.05371"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L08",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "point-cloud graph neural operators",
+      "url": "https://proceedings.neurips.cc/paper/2020/hash/4b21cf96d4cf612f239a6c322b10c8fe-Abstract.html"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L09",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "multiscale graph fluid models",
+      "url": "https://arxiv.org/abs/2106.04900"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L10",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "particle Transformers",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0893608026000936"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L11",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "scale-aware Lagrangian ML",
+      "url": "https://doi.org/10.1073/pnas.2213638120"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L12",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "particle-to-kinetic limits",
+      "url": "https://annals.math.princeton.edu/articles/22284"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L13",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "kinetic-to-fluid limits",
+      "url": "https://arxiv.org/abs/2503.01800"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L14",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "self-supervised learned mesh-free differential operators",
+      "url": "https://arxiv.org/abs/2603.24641"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L15",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "Gaussian particle operator and cross-scale attention",
+      "url": "https://arxiv.org/abs/2602.21551"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L16",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "learned meshfree-particle boundary correction",
+      "url": "https://arxiv.org/abs/2510.17813"
+    },
+    {
+      "access_date": "2026-08-13",
+      "record_id": "L17",
+      "role": "PUBLICATION_CLAIM_BOUNDARY_ONLY",
+      "topic": "quantum neural SPH",
+      "url": "https://arxiv.org/abs/2604.24159"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "mso02d_final_commit": "337207223e559db2e793cee6c437399091843d7c",
+    "mso02z_final_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_USER_HANDOFF",
+    "prior_commit_amended": false,
+    "push_performed": false,
+    "remote": null
+  },
+  "manifest_self_binding": {
+    "path": "08_manifests/mso02z_manifest.json",
+    "resolved_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_USER_HANDOFF",
+    "sha256": "FINAL_GIT_BLOB_AT_MSO02Z_FINAL_COMMIT"
+  },
+  "project": "SPH-MSO-PoC",
+  "publication_artifact_registry": [
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "publication/final_hypothesis_ledger.csv",
+      "sha256": "257bffb30d747c5efad7ae3e713ac0c5d3f898a75c15ceed5255a106300d48dd",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "publication/cross_stage_evidence_matrix.md",
+      "sha256": "3c294495aba79ab8c63ab688d3d968bf4b9fafef1edba4a2578fb3c427c19dc5",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "publication/final_innovation_register.md",
+      "sha256": "da62c22869276facff85d0be3162df1e1279ecbe140b111a17b8d122fe413e84",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "publication/final_failure_taxonomy.md",
+      "sha256": "488d87462a5a38ac903d081c52ec9d1f1f136ea50a6d2e59a522ea3f32483631",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "publication/final_claim_freeze.md",
+      "sha256": "2827a1e6c8075e7ba1fb9aa436a56baba8707aeb57834ea4e8562c2120b0d4f8",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "publication/manuscript_narrative_source_pack.md",
+      "sha256": "8c52d5ba60093eece1492096073344d5ea4e30a883cda07c01d3b4d3fc8ed2f7",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "publication/figure_table_plan.md",
+      "sha256": "7a4063c9db52421516b917f16023220d8110878632e040e6a0fe3c2652389432",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_CLAIM_BOUNDARY",
+      "path": "publication/literature_gap_matrix_2026-08-13.csv",
+      "sha256": "4b9e4fb6603c93f911a458a8cac9aeb08e4009c50964aeef99fbe0d25ca77779",
+      "source": "PUBLICATION_STAGE_PRIMARY_SOURCE_VERIFICATION_AND_FROZEN_BOUNDARY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_CLAIM_BOUNDARY",
+      "path": "publication/literature_verification_2026-08-13.md",
+      "sha256": "9e47710faf22f002d8627014ff5e46c6515cc0fc6394fc8f22212cabd98d5aa9",
+      "source": "PUBLICATION_STAGE_PRIMARY_SOURCE_VERIFICATION_AND_FROZEN_BOUNDARY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "publication/finalize_mso02z_release.py",
+      "sha256": "bf02a52ad8cb79a3d0102680e2de4d468b38939dc4a376ad194bdc6e28140eec",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "07_reports/mso02z_project_closure_report.md",
+      "sha256": "ff830fd9e0fbf7ad93b43837eac9e132c6c385a28f425957cbc11db9ba05f66a",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_PUBLICATION_CLOSURE_OUTPUT",
+      "evidence_class": "PUBLICATION_DERIVED_EVIDENCE_PACKAGE",
+      "path": "08_manifests/mso02z_status_ledger.json",
+      "sha256": "3e8f6e07d0bd3f318812c97e10886f05782d7facd2054a95c88f5a3bccb34b10",
+      "source": "DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+      "stage": "MSO-02Z"
+    },
+    {
+      "consumption_status": "FINAL_GIT_COMMIT_AND_USER_HANDOFF_SELF_BINDING",
+      "evidence_class": "PUBLICATION_RELEASE_MANIFEST",
+      "path": "08_manifests/mso02z_manifest.json",
+      "sha256": "FINAL_GIT_BLOB_AT_MSO02Z_FINAL_COMMIT",
+      "source": "MANIFEST_SELF_BINDING",
+      "stage": "MSO-02Z"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scientific_immutability": {
+    "fresh_scientific_evidence_generated": false,
+    "frozen_upstream_artifacts_modified": false,
+    "scientific_values_recomputed": false,
+    "target_or_observable_payload_read": false,
+    "upstream_identity_count": 44
+  },
+  "stage": "MSO-02Z",
+  "stop_after_mso02z": true,
+  "terminal_status": "PROJECT_SUPPORT_SCALE_MULTISCALE_ROUTE_CLOSED_PUBLICATION_EVIDENCE_FROZEN",
+  "timezone": "Asia/Shanghai",
+  "upstream_artifact_registry": [
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso_project_charter.md",
+      "sha256": "3437fc03474bc7855b7ea4f58159ce2f1a0c5f6f8d439962e3debf55e59c4f94",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso_scope_and_claim_boundary.md",
+      "sha256": "1a785d074d2a5fac336ce4339f4cfe3d748af1989d62880ec110f07988757fa4",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso01_target_blind_numerical_qualification_contract.md",
+      "sha256": "a5c124b3b2c14d43d6853dc7110025174310012b1a925e2a5ab7fe81bc7b9677",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso02a_fresh_atlas_and_representation_freeze_contract.md",
+      "sha256": "228b9f7b837454cdc7eaccc52c28dce271b3416fccaf39e9cfd85f1bb9c379be",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso02b_paired_prelearning_identifiability_execution_contract.md",
+      "sha256": "e7a73313fd3ff65c6126267f2e940f071d35fd12c4f93ee28c097309d56bfd0e",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso02c_dnn_degeneracy_diagnostic_contract.md",
+      "sha256": "781618a8cf52f05bded1b3af99b897815df78c1eefcde3c70d32ae60ac92753f",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso02c_g1_descriptor_neighbour_reconstruction_authorization.md",
+      "sha256": "4da29a3d73b675ef2be98d1195aea0566d8b5cc86b3d1b6d1b945ccb85c8c3a1",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso02c_g2_zero_safe_metric_selection_contract.md",
+      "sha256": "c89ff65187389bbd5d5b27b0122f3384f6ffdbbe2e1cd41e80e0db2b2e29b80b",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso02c_g2_zero_safe_metric_selection_protocol_erratum.md",
+      "sha256": "2d88b5bc92c833127b0c922710f40a895899e0f062eda692db2c264403b7b14c",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/hmso01r_a_fresh_requalification_atlas_freeze_contract.md",
+      "sha256": "e2aa0c65089121c22af8c408923bdeed1c7eab3bf88c560db8405ccec46607a3",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/hmso01r_b_fresh_confirmatory_execution_contract.md",
+      "sha256": "f65bfa98b3a10469b7583650296618fe8467a92dc65c79cc74bda08b3a4a71c6",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "00_project_contract/mso02d_componentwise_failure_attribution_contract.md",
+      "sha256": "727a33cc17301bc65435e8752e07b3c835a84636d46c9eb1a6dadd7651ffb36e",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "01_provenance/parent_project_provenance_audit.md",
+      "sha256": "6005426f2a9ebd3dfe80d06f3bca902400137162ba49cf7d8cd10b111ff8906c",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "02_literature_boundary/literature_gap_matrix.csv",
+      "sha256": "74887d8aa72ae4ca6df522e105da1deae43e0f6ce76cea4c7cb6206d7a4b1bde",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "02_literature_boundary/literature_boundary_report.md",
+      "sha256": "89362ab2c4f0c5310be3b43b3d66c516cd3d6b2d6f6d606bd5338db8ec941e76",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "06_experiments/hmso01r_b/formal_summary.json",
+      "sha256": "8542704e7af90f0984dada30b7e44eda315ef527f257437fd6b1deaa5ff9d966",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "06_experiments/hmso01r_b/component_verdicts.csv",
+      "sha256": "d539fc41a33e528ce3ba8a7517b3abcbf6188e23b4e3982984e8fc0cb1cbb8a6",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "06_experiments/hmso01r_b/candidate_c_paired_rescue_metrics.csv",
+      "sha256": "246c1d4906f01a1829d7eff9643c0ee73c2acdf4dddca1635b54b2a892440f0a",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "06_experiments/hmso01r_b/paired_non_dnn_rescue_metrics.csv",
+      "sha256": "afc784ea5015f88073d9652748292fc8fce673452c964c130c8f3b664af69a3f",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "06_experiments/mso02d/canonical_result_identity_audit.json",
+      "sha256": "57bd0fead2c21ae39fd825b822d975c9277588013ac1489b847d72a8380fe2d0",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "06_experiments/mso02d/mechanism_evidence_matrix.csv",
+      "sha256": "ed81e307f1237cdc68aa687cadc1be66db3d127d6682bd4f0cdb85b44eb4ecd2",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "06_experiments/mso02d/mechanism_verdicts.csv",
+      "sha256": "7ecba0887333c0b90546663089ca78ed498044368cf2e1fe6d9dd12a41db90b1",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "06_experiments/mso02d/route_adjudication_matrix.csv",
+      "sha256": "39d2da02eb6f3b6b23bf8a0928acdadeb6c6de1e016b9dd9309a36c70cdeb2a6",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/mso00_final_report.md",
+      "sha256": "e02458a5243d0721f5eabd41b19c80b013fb06c617c19b92474c076ae79e9b7d",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/mso01_numerical_qualification_report.md",
+      "sha256": "5409db77f4c7d1fb051c39590cde89d612269f418fc7a8233712ac42122adc00",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/mso02a_fresh_atlas_report.md",
+      "sha256": "3622fd32d08c8a42359ab4e65eb51da13d37b04bb4fa00bdf464875c625af206",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/mso02b_identifiability_requalification_report.md",
+      "sha256": "b883523e0d9d8d0db3ea73aad6a567db5f83a6292f7b155243abbd0afad1ba8d",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/mso02c_g1_ab_attribution_report.md",
+      "sha256": "8aca5a277c700fb528a3fe5fa5d07019b3683385d95a62b8ea3c10472a07376d",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/mso02c_g2_zero_safe_metric_selection_report.md",
+      "sha256": "a0583f288cc44844f8c23d3d813ccef86a6f91ea08b3e7deb84aa4be62d8648a",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/hmso01r_a_fresh_requalification_atlas_report.md",
+      "sha256": "13ca8bb5c51960ee2a7b32bb2cf15fb18b96365068bb8f63f216e8e44fb9e5d0",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/hmso01r_b_fresh_confirmatory_identifiability_report.md",
+      "sha256": "c3dbfdb01b6f05c8f41418b23228adfcc5a93dadafda80edc863472e12c117f4",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "07_reports/mso02d_componentwise_failure_attribution_report.md",
+      "sha256": "eb5227045c0e6ff99160be5cb620d9ce1cbba2666b1790fba9cbc5d9921944be",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/mso00_manifest.json",
+      "sha256": "c00261aac588f8b1f34e0a606259512ea8d45cf3e9cb0a10f40ab0970a2f7d95",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/mso01_status_ledger.json",
+      "sha256": "425ad0dd0cf4ba62bd802024d7a3b44243f15ad0cc93f122ed1983cf4eb448ef",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/mso02a_status_ledger.json",
+      "sha256": "f59196a1de2adffbc6ba1eda2c737c628ae63a3caeb88e969b98e3fc36cb7212",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/mso02b_status_ledger.json",
+      "sha256": "cb9864b34c94f4ae022745fa9b6040bd2baaf6bdae7156a3905b22584a268815",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/mso02c_g1_ab_attribution_status_ledger.json",
+      "sha256": "d076ef93d145a00bddcf278bd593e9d5971d5b3596f7cea3ac018ebe82375fb1",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/mso02c_g2_status_ledger.json",
+      "sha256": "9d677839d3035ca4a16eb414bf13b958b3fcce9af24caa7416043f3b7b251b1d",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/hmso01r_a_status_ledger.json",
+      "sha256": "d59aaa656da136c9291c8be58b4ae10b9017a9731daebcef96cae06542548bf3",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/hmso01r_a_git_handoff.json",
+      "sha256": "06aa82d39185c843ed91959fab41f4f3f8e4738d393d1728f92c61560eafd20b",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/hmso01r_b_status_ledger.json",
+      "sha256": "2b5f81605cbe2ccf4c72a31797de38e2bee74f5fce796f90b613dcd6f74bdfbc",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/hmso01r_b_git_handoff.json",
+      "sha256": "904198edd0f813862d1ba4231b9ad5696a6b783b9686c69c87f95ab08e9cc2e9",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/mso02d_status_ledger.json",
+      "sha256": "d926f1574c53d53feeade032806e9601e81b4a4747ab23c7898e5aaa1d8ffd0b",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    },
+    {
+      "consumption_status": "READ_ONLY_CONSUMED_FOR_PUBLICATION_PACKAGING",
+      "evidence_class": "FROZEN_UPSTREAM_EVIDENCE",
+      "path": "08_manifests/mso02d_manifest.json",
+      "sha256": "5761c6aba9a623a95add9a89afaba6905f89a652c20103b0f37a74d7fd789f0b",
+      "source": "SPH-MSO-PoC@337207223e559db2e793cee6c437399091843d7c",
+      "stage": "MSO-02Z-UPSTREAM-IDENTITY"
+    }
+  ],
+  "validation": {
+    "all_nonself_output_paths_exist": true,
+    "all_upstream_bytes_equal_source_commit": true,
+    "all_upstream_paths_exist": true,
+    "external_literature_count": 17,
+    "only_allowlisted_untracked_outputs_present": true,
+    "publication_registry_count": 13,
+    "staged_diff_empty_before_release": true,
+    "tracked_worktree_diff_empty_before_release": true,
+    "upstream_registry_count": 44
+  }
+}

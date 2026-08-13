@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO-PoC",
+  "stage": "MSO-02Z",
+  "date": "2026-08-13",
+  "timezone": "Asia/Shanghai",
+  "terminal_status": "PROJECT_SUPPORT_SCALE_MULTISCALE_ROUTE_CLOSED_PUBLICATION_EVIDENCE_FROZEN",
+  "evidence_class": "PUBLICATION_DERIVED_FROM_FROZEN_ARTIFACTS_ONLY",
+  "source_mso02d_final_commit": "337207223e559db2e793cee6c437399091843d7c",
+  "permanent_scientific_statuses": {
+    "h_mso01": "H_MSO01_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_EVALUABLE",
+    "h_mso01r": "H_MSO01R_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_QUALIFIED",
+    "density_rate": "H_MSO01R_COMPONENT_QUALIFIED",
+    "pressure_gradient_acceleration": "H_MSO01R_COMPONENT_NOT_QUALIFIED",
+    "viscosity_laplacian_acceleration": "H_MSO01R_COMPONENT_NOT_QUALIFIED"
+  },
+  "route_adjudication": {
+    "route_a": "NOT_SUPPORTED",
+    "route_b": "NOT_SUPPORTED",
+    "route_c": "SUPPORT_SCALE_ROUTE_CLOSURE_RECOMMENDED"
+  },
+  "dominant_mechanism": {
+    "id": "F-MS6",
+    "verdict": "SUPPORTED_DOMINANT",
+    "label": "GLOBAL_PREDICTABILITY_LOCAL_OPERATIONAL_IDENTIFIABILITY_SEPARATION"
+  },
+  "authorization": {
+    "fresh_compute_authorized": false,
+    "h_mso02_authorized": false,
+    "mso03_authorized": false,
+    "neural_training_authorized": false,
+    "attention_authorized": false,
+    "transformer_authorized": false,
+    "learned_operator_authorized": false,
+    "optimizer_authorized": false,
+    "time_integration_authorized": false,
+    "solver_in_loop_authorized": false,
+    "rollout_authorized": false,
+    "paper_route_authorized": true
+  },
+  "prohibited_activity_counts": {
+    "fresh_case_generation": 0,
+    "fresh_target_generation": 0,
+    "fresh_reference_generation": 0,
+    "new_hypothesis_test": 0,
+    "h_mso02": 0,
+    "mso03": 0,
+    "neural_model": 0,
+    "attention": 0,
+    "transformer": 0,
+    "learned_operator": 0,
+    "optimizer": 0,
+    "training": 0,
+    "time_integration": 0,
+    "solver_in_loop": 0,
+    "rollout": 0,
+    "target_payload_read": 0,
+    "observable_payload_read": 0,
+    "scientific_metric_recompute": 0,
+    "bootstrap_redraw": 0
+  },
+  "publication_activity": {
+    "frozen_artifact_derived_tables": true,
+    "frozen_artifact_derived_summaries": true,
+    "claim_maps": true,
+    "evidence_matrices": true,
+    "manuscript_source_material": true,
+    "literature_verification_current_through": "2026-08-13",
+    "fresh_scientific_evidence_generated": false,
+    "scientific_verdict_modified": false,
+    "frozen_scientific_artifact_modified": false
+  },
+  "git": {
+    "branch": "main",
+    "remote": null,
+    "push_performed": false,
+    "prior_commit_amended": false,
+    "mso02d_final_commit": "337207223e559db2e793cee6c437399091843d7c",
+    "mso02z_final_commit": "RECORDED_BY_FINAL_GIT_COMMIT_AND_USER_HANDOFF"
+  },
+  "paper_route_authorized": true,
+  "fresh_compute_authorized": false,
+  "h_mso02_authorized": false,
+  "mso03_authorized": false,
+  "neural_training_authorized": false,
+  "attention_authorized": false,
+  "transformer_authorized": false,
+  "stop_after_mso02z": true
+}
