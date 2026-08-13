@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO-PoC",
+  "stage": "MSO-02D-D2",
+  "artifact_kind": "POST_FIRST_CONSUMED_TARGET_READ_PREPUBLICATION_EXECUTION_ERRATUM",
+  "status": "FROZEN_BEFORE_ANY_MSO02D_D2_SCIENTIFIC_OUTPUT_PUBLICATION",
+  "parent_commit": "5cadd4b19d17d385a0cbc4213f7442dc34c1a6e8",
+  "corrected_path": "06_experiments/mso02d/run_mso02d_target_diagnostics.py",
+  "original_sha256": "b2600a5c100098c18c11d68becf6835ca370774581ed76e045ee4ba904b7cc60",
+  "corrected_sha256": "739e83fd26b5c53bc02fa2b0a38e74f89459f146e05a81c08b0c59ec87912d7d",
+  "triggered_error": "numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1",
+  "trigger_location": "density_rate K10 scalar target disagreement aggregation",
+  "corrections": [
+    "Use an explicit target-rank branch so scalar edge disagreements retain the K edge axis and vector disagreements sum only the physical-vector axis.",
+    "Expand the already-frozen P1-P5 proxy-family patterns into deterministic concrete diagnostic proxies; no proxy definition, input field, operation, or admissibility class is added beyond the D0 registry."
+  ],
+  "consumed_target_read_count_before_correction": 1,
+  "d2_output_publication_count_before_correction": 0,
+  "target_values_or_outcome_directions_used_to_choose_correction": false,
+  "scientific_definition_modification_counts": {
+    "candidate_set": 0,
+    "target_blind_geometry_selection": 0,
+    "feature_group": 0,
+    "directional_proxy_family": 0,
+    "directional_proxy_operation": 0,
+    "metric": 0,
+    "threshold": 0,
+    "gate": 0,
+    "fold": 0,
+    "normalization": 0,
+    "oracle_family": 0,
+    "bootstrap": 0,
+    "target": 0
+  },
+  "d1_result_artifacts_modified": false,
+  "formal_artifacts_modified": false,
+  "fresh_scientific_evidence_generated": false,
+  "h_mso01r_reverdict": false,
+  "fresh_compute_authorized": false
+}

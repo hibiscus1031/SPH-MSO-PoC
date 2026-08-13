@@ -736,6 +736,13 @@ def row_norm(value: np.ndarray) -> np.ndarray:
     return np.abs(value) if value.ndim == 1 else np.linalg.norm(value, axis=-1)
 
 
+def target_edge_disagreement(target: np.ndarray, identities: np.ndarray) -> np.ndarray:
+    """Squared scalar/vector target disagreement for a query-by-edge identity table."""
+    target = np.asarray(target, dtype=np.float64)
+    difference = target[identities] - target[:, None]
+    return difference * difference if target.ndim == 1 else np.sum(difference * difference, axis=-1)
+
+
 def case_mean(values: np.ndarray, meta: dict[str, np.ndarray]) -> np.ndarray:
     values = np.asarray(values, dtype=np.float64)
     output = np.empty((384,) + values.shape[1:], dtype=np.float64)
@@ -750,8 +757,8 @@ def case_mean(values: np.ndarray, meta: dict[str, np.ndarray]) -> np.ndarray:
 def disagreement(
     target: np.ndarray, identities: np.ndarray, comparator: np.ndarray
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    neighbour = norm_sq(target[identities] - target[:, None])
-    random = norm_sq(target[comparator] - target[:, None])
+    neighbour = target_edge_disagreement(target, identities)
+    random = target_edge_disagreement(target, comparator)
     return np.mean(neighbour, axis=1), np.mean(random, axis=1), neighbour
 
 
@@ -1091,8 +1098,8 @@ def near_collision_diagnostics(
         formal_arm = "SS" if geometry == "U0_SS" else "MS" if geometry == "U0_MS" else None
         for component in COMPONENTS:
             target = data["targets"][component]
-            neighbour_target_edge = norm_sq(target[identities] - target[:, None])
-            random_target_edge = norm_sq(target[comparator] - target[:, None])
+            neighbour_target_edge = target_edge_disagreement(target, identities)
+            random_target_edge = target_edge_disagreement(target, comparator)
             target_edge = np.column_stack([neighbour_target_edge, random_target_edge])
             descriptor_edge = np.column_stack([
                 np.asarray(distances, dtype=np.float64), random_distances[geometry]
@@ -1172,12 +1179,12 @@ def route_a_alignment(
     random_cache: dict[str, np.ndarray] = {}
     for component in COMPONENTS:
         target = data["targets"][component]
-        random_cache[component] = norm_sq(target[comparator] - target[:, None])
+        random_cache[component] = target_edge_disagreement(target, comparator)
     for geometry in (("U0_MS",) if no_candidate else ("U0_MS", "D1_SELECTED")):
         identities, distances = geometries[geometry]
         for component in COMPONENTS:
             target = data["targets"][component]
-            target_edge = norm_sq(target[identities] - target[:, None])
+            target_edge = target_edge_disagreement(target, identities)
             n_particle = np.mean(target_edge, axis=1)
             b_particle = np.mean(random_cache[component], axis=1)
             local = target[identities]
@@ -1450,6 +1457,129 @@ def replay_frozen_oracles(
 def proxy_values_from_registry(
     registry: dict[str, Any], features: np.ndarray, names: list[str]
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, np.ndarray]]:
+    if not registry.get("proxies"):
+        expanded: list[dict[str, Any]] = []
+        stems = {
+            "pressure_gradient_acceleration": "pressure_acceleration",
+            "viscosity_laplacian_acceleration": "viscosity_acceleration",
+        }
+        scales = ("0p75", "1p25", "1p50")
+
+        def register(
+            proxy_id: str,
+            proxy_class: str,
+            component: str,
+            input_names: list[str],
+            operation: str,
+            parity: str,
+            overlap_class: str = "ALGEBRAIC_REPARAMETERIZATION_OF_EXISTING_110D_FEATURES",
+            deployment_available: bool = True,
+            zero_semantics: str = "ZERO_INPUTS_PROPAGATE_WITHOUT_FRAME_FALLBACK",
+        ) -> None:
+            expanded.append({
+                "proxy_id": proxy_id,
+                "proxy_class": proxy_class,
+                "component": component,
+                "input_feature_names": input_names,
+                "deterministic_operation": operation,
+                "target_blind_definition": True,
+                "deployment_available": deployment_available,
+                "principal_frame_eigenvector_dependence": False,
+                "eigenvector_sign_convention": False,
+                "arbitrary_frame_fallback": False,
+                "o2_parity": parity,
+                "zero_semantics": zero_semantics,
+                "overlap_class": overlap_class,
+                "overlap_with_existing_110d": overlap_class,
+                "overlap_with_ddo02b": "NO_PRINCIPAL_EIGENFRAME_OR_SIGN_FALLBACK",
+                "expanded_from_frozen_proxy_family_registry": True,
+            })
+
+        def vector_columns(prefix: str, scale: str, stem: str) -> list[str]:
+            return [f"obs__{prefix}_{scale}__{stem}_x", f"obs__{prefix}_{scale}__{stem}_y"]
+
+        for component, stem in stems.items():
+            short = "PRESSURE" if component.startswith("pressure") else "VISCOSITY"
+            base = [f"obs__L_1p00__{stem}_x", f"obs__L_1p00__{stem}_y"]
+            for scale in scales:
+                delta = vector_columns("delta_L", scale, stem)
+                secant = vector_columns("G", scale, stem)
+                register(f"P1_DELTA_{short}_{scale}", "P1_VECTOR_SCALE_RESPONSES", component, delta, "VECTOR", "O2_EQUIVARIANT_VECTOR")
+                register(f"P1_LOG_SECANT_{short}_{scale}", "P1_VECTOR_SCALE_RESPONSES", component, secant, "VECTOR", "O2_EQUIVARIANT_VECTOR")
+                for suffix, operation in (
+                    ("DOT_BASE", "DOT"),
+                    ("PARALLEL_SQUARED", "PARALLEL"),
+                    ("ORTHOGONAL_SQUARED", "ORTHOGONAL"),
+                    ("NORM_RATIO", "NORM_RATIO"),
+                ):
+                    register(
+                        f"P3_{suffix}_{short}_{scale}",
+                        "P3_BASE_OPERATOR_ALIGNMENT",
+                        component,
+                        delta + base,
+                        operation,
+                        "O2_INVARIANT_REFLECTION_EVEN",
+                        zero_semantics="ZERO_BASE_MAKES_NORMALIZED_DECOMPOSITION_NOT_APPLICABLE; NO_DIRECTION_IS_CHOSEN",
+                    )
+            for left_index, left in enumerate(scales):
+                left_columns = vector_columns("delta_L", left, stem)
+                for right in scales[left_index:]:
+                    right_columns = vector_columns("delta_L", right, stem)
+                    register(
+                        f"P2_GRAM_{short}_{left}_{right}",
+                        "P2_CROSS_SCALE_GRAM",
+                        component,
+                        left_columns + right_columns,
+                        "DOT",
+                        "O2_INVARIANT_REFLECTION_EVEN",
+                    )
+                for right in scales[left_index + 1:]:
+                    right_columns = vector_columns("delta_L", right, stem)
+                    register(
+                        f"P2_SIGNED_CROSS_{short}_{left}_{right}",
+                        "P2_CROSS_SCALE_GRAM",
+                        component,
+                        left_columns + right_columns,
+                        "CROSS",
+                        "O2_PSEUDOSCALAR_REFLECTION_ODD",
+                    )
+            tensors = {
+                "SUPPORT_COV": [
+                    "obs__base_cov_xx_over_h2", "obs__base_cov_xy_over_h2", "obs__base_cov_yy_over_h2"
+                ],
+                "LOCAL_DV_SECOND": [
+                    "obs__local_dv_second_xx", "obs__local_dv_second_xy", "obs__local_dv_second_yy"
+                ],
+            }
+            for tensor_id, tensor_columns in tensors.items():
+                for scale in scales:
+                    delta = vector_columns("delta_L", scale, stem)
+                    register(
+                        f"P4_VTV_{tensor_id}_{short}_{scale}",
+                        "P4_TENSOR_SCALE_RESPONSE_CONTRACTIONS",
+                        component,
+                        delta + tensor_columns,
+                        "VECTOR_TENSOR_VECTOR",
+                        "O2_INVARIANT_REFLECTION_EVEN",
+                    )
+        for tensor_id, tensor_columns in {
+            "SUPPORT_COV": ["obs__base_cov_xx_over_h2", "obs__base_cov_xy_over_h2", "obs__base_cov_yy_over_h2"],
+            "LOCAL_DV_SECOND": ["obs__local_dv_second_xx", "obs__local_dv_second_xy", "obs__local_dv_second_yy"],
+        }.items():
+            register(f"P4_TRACE_{tensor_id}", "P4_TENSOR_SCALE_RESPONSE_CONTRACTIONS", "MOMENTUM", tensor_columns, "TRACE", "O2_INVARIANT_REFLECTION_EVEN")
+            register(f"P4_DEVIATORIC_{tensor_id}", "P4_TENSOR_SCALE_RESPONSE_CONTRACTIONS", "MOMENTUM", tensor_columns, "DEVIATORIC_NORM_SQUARED", "O2_INVARIANT_REFLECTION_EVEN")
+        register(
+            "P5_NONBASE_SUPPORT_ANISOTROPY_UNAVAILABLE",
+            "P5_DIRECTIONAL_TOPOLOGY_SUPPORT_ANISOTROPY",
+            "MOMENTUM",
+            [],
+            "NOT_AVAILABLE",
+            "NOT_APPLICABLE",
+            overlap_class="NEW_DEPLOYMENT_INFORMATION",
+            deployment_available=False,
+            zero_semantics="NO_PROXY_FABRICATED_FROM_SCALAR_TOPOLOGY_COUNTS",
+        )
+        registry["proxies"] = expanded
     availability: list[dict[str, Any]] = []
     overlap: list[dict[str, Any]] = []
     values: dict[str, np.ndarray] = {}
@@ -1498,7 +1628,8 @@ def proxy_values_from_registry(
                 elif "TRACE" in operation and len(columns) >= 3:
                     value = (columns[0] + columns[2])[:, None]
                 elif "DEVIATORIC" in operation and len(columns) >= 3:
-                    value = np.sqrt(0.5 * (columns[0] - columns[2]) ** 2 + 2.0 * columns[1] ** 2)[:, None]
+                    deviatoric_squared = 0.5 * (columns[0] - columns[2]) ** 2 + 2.0 * columns[1] ** 2
+                    value = (deviatoric_squared if "SQUARED" in operation else np.sqrt(deviatoric_squared))[:, None]
                 elif "VECTOR_TENSOR_VECTOR" in operation and len(columns) >= 5:
                     value = (columns[0] ** 2 * columns[2] + 2 * columns[0] * columns[1] * columns[3] + columns[1] ** 2 * columns[4])[:, None]
                 else:
@@ -1555,7 +1686,7 @@ def directional_target_alignment(
         components = COMPONENTS if declared in {"ALL", "BOTH", "MOMENTUM"} else tuple(c for c in COMPONENTS if c == declared)
         for component in components:
             target = data["targets"][component]
-            target_edge = norm_sq(target[identities] - target[:, None])
+            target_edge = target_edge_disagreement(target, identities)
             for scope, scope_id, query_mask in scopes:
                 if scope not in {"OVERALL", "FOLD", "FAMILY", "FAMILY_FOLD"}:
                     continue
@@ -1998,6 +2129,9 @@ def initial_access_ledger(d0_commit: str, d1_commit: str) -> dict[str, Any]:
         "consumed_oracle_diagnostic_fits": 0, "consumed_bootstrap_reads": 0,
         "deployment_only_proxy_reconstruction_on_consumed_states": 0,
         "target_blind_transform_diagnostic_computations": 0,
+        "prepublication_failed_consumed_target_diagnostic_attempts": 1,
+        "prepublication_failed_consumed_target_reads": 1,
+        "prepublication_failure": "SCALAR_K10_DISAGREEMENT_AXIS_IMPLEMENTATION_ERROR_NO_OUTPUT_PUBLISHED",
         "target_payload_first_access_after_all_integrity_and_canonical_checks": True,
     }
 
