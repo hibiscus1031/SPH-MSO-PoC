@@ -7,22 +7,25 @@
   "parent_commit": "5cadd4b19d17d385a0cbc4213f7442dc34c1a6e8",
   "corrected_path": "06_experiments/mso02d/run_mso02d_target_diagnostics.py",
   "original_sha256": "b2600a5c100098c18c11d68becf6835ca370774581ed76e045ee4ba904b7cc60",
-  "corrected_sha256": "9704bd0f42ffd31151f0b77b505c7f10dfa5adebe927c4bb9888f04bff9d571d",
+  "corrected_sha256": "941dfd90bf695e77018304ff109d0fe1623dc248645f7a2c133be8779ba7e7a9",
   "triggered_errors": [
     "numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1",
-    "MSO02D_FROZEN_ORACLE_REPLAY_IDENTITY_FAILURE:SS:density_rate:0.5403988831645662:0.5403789915781142"
+    "MSO02D_FROZEN_ORACLE_REPLAY_IDENTITY_FAILURE:SS:density_rate:0.5403988831645662:0.5403789915781142",
+    "numpy.linalg.LinAlgError: Singular matrix in frozen-alpha1 directional residual diagnostic"
   ],
   "trigger_locations": [
     "density_rate K10 scalar target disagreement aggregation",
-    "component-at-a-time ridge replay instead of the frozen five-output solve followed by component slicing"
+    "component-at-a-time ridge replay instead of the frozen five-output solve followed by component slicing",
+    "an exploratory fixed-alpha ridge diagnostic that did not convert an allowed numerical failure into an explicit not-evaluable fold"
   ],
   "corrections": [
     "Use an explicit target-rank branch so scalar edge disagreements retain the K edge axis and vector disagreements sum only the physical-vector axis.",
     "Expand the already-frozen P1-P5 proxy-family patterns into deterministic concrete diagnostic proxies; no proxy definition, input field, operation, or admissibility class is added beyond the D0 registry.",
-    "Replay the frozen oracle's exact multi-output numerical solve and only then apply the registered component slice; the identity tolerance is not relaxed."
+    "Replay the frozen oracle's exact multi-output numerical solve and only then apply the registered component slice; the identity tolerance is not relaxed.",
+    "Record numerical singularity in exploratory fixed-alpha ridge diagnostics and fixed group ablations as NOT_EVALUABLE; do not change alpha, solver, features, or oracle family."
   ],
-  "consumed_target_read_count_before_correction": 2,
-  "failed_prepublication_run_count": 2,
+  "consumed_target_read_count_before_correction": 4,
+  "failed_prepublication_run_count": 3,
   "post_correction_targeted_identity_validation_read_count": 1,
   "post_correction_targeted_identity_validation": {
     "component": "density_rate",

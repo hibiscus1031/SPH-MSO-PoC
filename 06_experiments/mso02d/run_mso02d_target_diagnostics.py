@@ -1751,8 +1751,27 @@ def directional_residual_diagnostics(
                 p_iqr[p_iqr == 0] = 1.0
                 augmented = np.column_stack([baseline_x, (proxy_value - p_median) / p_iqr])
                 y = residual_norm
-                base_prediction = helper.ridge_predict(baseline_x[train], y[train], baseline_x[query], alpha=1.0)
-                augmented_prediction = helper.ridge_predict(augmented[train], y[train], augmented[query], alpha=1.0)
+                try:
+                    base_prediction = helper.ridge_predict(
+                        baseline_x[train], y[train], baseline_x[query], alpha=1.0
+                    )
+                    augmented_prediction = helper.ridge_predict(
+                        augmented[train], y[train], augmented[query], alpha=1.0
+                    )
+                except (np.linalg.LinAlgError, FloatingPointError, ValueError) as error:
+                    fold_ratios.append(math.nan)
+                    rows.append({
+                        "proxy_id": proxy_id,
+                        "component": component,
+                        "diagnostic": "FROZEN_ALPHA1_RIDGE_RESIDUAL_INCREMENT",
+                        "scope": "FOLD",
+                        "scope_id": f"FOLD_{fold}",
+                        "improved": False,
+                        "numerical_failure": f"{type(error).__name__}:{error}",
+                        "status": "NOT_EVALUABLE_FROZEN_RIDGE_NUMERICAL_FAILURE",
+                    })
+                    access["consumed_oracle_diagnostic_fits"] += 2
+                    continue
                 base_rmse = math.sqrt(float(np.mean((base_prediction - y[query]) ** 2)))
                 aug_rmse = math.sqrt(float(np.mean((augmented_prediction - y[query]) ** 2)))
                 ratio = aug_rmse / base_rmse if base_rmse > 0 else math.nan
@@ -1768,13 +1787,15 @@ def directional_residual_diagnostics(
                     "status": "EVALUABLE" if math.isfinite(ratio) else "NOT_EVALUABLE_NONFINITE",
                 })
                 access["consumed_oracle_diagnostic_fits"] += 2
+            finite_ratios = np.asarray([value for value in fold_ratios if math.isfinite(value)], dtype=np.float64)
             rows.append({
                 "proxy_id": proxy_id, "component": component,
                 "diagnostic": "FROZEN_ALPHA1_RIDGE_RESIDUAL_INCREMENT",
                 "scope": "OVERALL", "scope_id": "ALL",
-                "median_rmse_ratio": float(np.median(fold_ratios)),
-                "improved_fold_count": int(np.sum(np.asarray(fold_ratios) < 1.0 - NUMERIC_TOL)),
-                "status": "EVALUABLE",
+                "median_rmse_ratio": float(np.median(finite_ratios)) if finite_ratios.size else None,
+                "improved_fold_count": int(np.sum(finite_ratios < 1.0 - NUMERIC_TOL)),
+                "evaluable_fold_count": int(finite_ratios.size),
+                "status": "EVALUABLE" if finite_ratios.size == 6 else "NOT_EVALUABLE_INCOMPLETE_FROZEN_RIDGE_FOLDS",
             })
     if not rows:
         rows.append({"proxy_id": "NONE", "component": "ALL", "diagnostic": "ALL", "scope": "OVERALL", "scope_id": "ALL", "status": "NOT_APPLICABLE_NO_COMPUTABLE_FROZEN_PROXY"})
@@ -1833,18 +1854,22 @@ def fixed_feature_group_ablation(
                 # The frozen oracle fitted all five target outputs together and
                 # only then selected the registered component slice.  Retain
                 # that exact numerical path for the fixed group ablation.
-                bundle_prediction = predict_frozen_model(
-                    helper,
-                    winner,
-                    scaled[train],
-                    scaled[query],
-                    data["targets"]["bundle"][train],
-                    train,
-                    query,
-                    data["meta"],
-                    frozen_global_neighbors=None,
-                    polynomial_positions=poly_positions,
-                )
+                try:
+                    bundle_prediction = predict_frozen_model(
+                        helper,
+                        winner,
+                        scaled[train],
+                        scaled[query],
+                        data["targets"]["bundle"][train],
+                        train,
+                        query,
+                        data["meta"],
+                        frozen_global_neighbors=None,
+                        polynomial_positions=poly_positions,
+                    )
+                except (np.linalg.LinAlgError, FloatingPointError, ValueError) as error:
+                    status = f"NOT_EVALUABLE_FROZEN_ORACLE_NUMERICAL_FAILURE:{type(error).__name__}"
+                    break
                 component_prediction = np.asarray(bundle_prediction)[:, TARGET_SLICES[component]]
                 prediction[query] = (
                     component_prediction[:, 0]
@@ -2152,13 +2177,14 @@ def initial_access_ledger(d0_commit: str, d1_commit: str) -> dict[str, Any]:
         "consumed_oracle_diagnostic_fits": 0, "consumed_bootstrap_reads": 0,
         "deployment_only_proxy_reconstruction_on_consumed_states": 0,
         "target_blind_transform_diagnostic_computations": 0,
-        "prepublication_failed_consumed_target_diagnostic_attempts": 2,
-        "prepublication_failed_consumed_target_reads": 2,
+        "prepublication_failed_consumed_target_diagnostic_attempts": 3,
+        "prepublication_failed_consumed_target_reads": 3,
         "prepublication_successful_oracle_identity_validation_reads": 1,
-        "prepublication_consumed_target_reads_total": 3,
+        "prepublication_consumed_target_reads_total": 4,
         "prepublication_failures": [
             "SCALAR_K10_DISAGREEMENT_AXIS_IMPLEMENTATION_ERROR_NO_OUTPUT_PUBLISHED",
             "FROZEN_ORACLE_MULTI_OUTPUT_NUMERICAL_REPLAY_IDENTITY_MISMATCH_NO_OUTPUT_PUBLISHED",
+            "FROZEN_ALPHA1_DIRECTIONAL_RESIDUAL_RIDGE_NUMERICAL_SINGULARITY_NO_OUTPUT_PUBLISHED",
         ],
         "target_payload_first_access_after_all_integrity_and_canonical_checks": True,
     }

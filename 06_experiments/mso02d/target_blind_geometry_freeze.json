@@ -132,7 +132,7 @@
       "consumption_status": "CONSUMED_D0_DEFINITION",
       "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
       "path": "06_experiments/mso02d/run_mso02d_target_diagnostics.py",
-      "sha256": "9704bd0f42ffd31151f0b77b505c7f10dfa5adebe927c4bb9888f04bff9d571d",
+      "sha256": "941dfd90bf695e77018304ff109d0fe1623dc248645f7a2c133be8779ba7e7a9",
       "source": "FROZEN_D0_TARGET_BLIND_DEFINITION",
       "stage": "MSO-02D-D2-PREPUBLICATION_EXECUTION_ERRATUM"
     },
@@ -148,7 +148,7 @@
       "consumption_status": "FROZEN_PREPUBLICATION_EXECUTION_ERRATUM",
       "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
       "path": "08_manifests/mso02d_d2_execution_erratum_01.json",
-      "sha256": "cd4547a7830dffce7835ffb43db3dc70f170ebac3c82be5626f8157697b901b6",
+      "sha256": "28b9bb83ec2760b00ff07d4e347e3d0df993a238290bc2d01653dda094134fd8",
       "source": "POST_FIRST_CONSUMED_TARGET_READ_PREPUBLICATION_IMPLEMENTATION_CORRECTION",
       "stage": "MSO-02D-D2-PREPUBLICATION_EXECUTION_ERRATUM"
     }
@@ -164,7 +164,7 @@
     "06_experiments/mso02d/hubness_audit.csv": "89916ec896a1e2ab66ff491a423c57a4bc8b523498f6a6ccd69899793ef9afe0",
     "06_experiments/mso02d/neighbour_turnover_audit.csv": "1334b1f91f1e1dc63465457ceb3a9727c55c7864ca3e5e5d98788e604a2f89a1",
     "06_experiments/mso02d/run_mso02d_target_blind.py": "411deb9dea1c66424286b1af5d0f8790e73806a0a848c13bd9e697f0ccb8510a",
-    "06_experiments/mso02d/run_mso02d_target_diagnostics.py": "9704bd0f42ffd31151f0b77b505c7f10dfa5adebe927c4bb9888f04bff9d571d",
+    "06_experiments/mso02d/run_mso02d_target_diagnostics.py": "941dfd90bf695e77018304ff109d0fe1623dc248645f7a2c133be8779ba7e7a9",
     "06_experiments/mso02d/ss_ms_geometry_diagnostics.csv": "c86b36121a95cb3eeffe06703ca2429175f480e909938bb2b08ae46fd7d5f65c",
     "06_experiments/mso02d/subspace_stability_audit.csv": "32518000bfb2d0743cc16ea01cd1985a544d56e2e49bb5b62c66df24149b4d10",
     "06_experiments/mso02d/target_blind_geometry_selected_neighbours.npz": "04dcfea44ededb50e567de69becdeb3d26c6253adf9fc1f0068dad3aab0b95ee",
@@ -172,7 +172,7 @@
     "06_experiments/mso02d/target_blind_geometry_transform_parameters.npz": "71c4e520fc0e6aef2c15a46baf2ff662fc4ea25370b1634081f1078274f23e64",
     "06_experiments/mso02d/target_blind_subspace_diagnostics.csv": "07f44b7d729c819b583eef7b7103538e534aa4b6a0b20d6880eb38b6e396c5c6",
     "08_manifests/mso02d_d1_execution_erratum_01.json": "9eff05c290c6a63a07890cd83585460ee1316e3721254c9eaf805e8f7c877707",
-    "08_manifests/mso02d_d2_execution_erratum_01.json": "cd4547a7830dffce7835ffb43db3dc70f170ebac3c82be5626f8157697b901b6"
+    "08_manifests/mso02d_d2_execution_erratum_01.json": "28b9bb83ec2760b00ff07d4e347e3d0df993a238290bc2d01653dda094134fd8"
   },
   "candidate_set": [
     "U0",
@@ -225,8 +225,8 @@
   },
   "post_first_consumed_target_read_prepublication_execution_erratum": {
     "path": "08_manifests/mso02d_d2_execution_erratum_01.json",
-    "sha256": "cd4547a7830dffce7835ffb43db3dc70f170ebac3c82be5626f8157697b901b6",
-    "consumed_target_read_count_before_correction": 2,
+    "sha256": "28b9bb83ec2760b00ff07d4e347e3d0df993a238290bc2d01653dda094134fd8",
+    "consumed_target_read_count_before_correction": 4,
     "d2_output_publication_count_before_correction": 0,
     "scientific_definition_modification_count": 0
   },
