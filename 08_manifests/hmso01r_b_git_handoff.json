@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO-PoC",
+  "stage": "H-MSO-01R-B",
+  "artifact_kind": "POST_RELEASE_GIT_HANDOFF",
+  "status": "HMSO01R_B_FINAL_COMMIT_PLACEHOLDER_RESOLVED",
+  "hmso01r_a_final_commit": "9048eff137001e5f644575bd02c3856b4f4ac532",
+  "hmso01r_b_pre_target_commit": "1c99103edaf76aa05915458fd498e07b1241e272",
+  "placeholder_binding": {
+    "reported_placeholder": "RECORDED_BY_FINAL_GIT_COMMIT_AND_USER_HANDOFF",
+    "resolved_commit": "47a15ce3e38dbf13d671b9ae7275bb84761ae279",
+    "binding_applies_to": [
+      "07_reports/hmso01r_b_fresh_confirmatory_identifiability_report.md",
+      "08_manifests/hmso01r_b_manifest.json",
+      "08_manifests/hmso01r_b_status_ledger.json"
+    ],
+    "prior_artifacts_modified": false
+  },
+  "hmso01r_b_final_commit": "47a15ce3e38dbf13d671b9ae7275bb84761ae279",
+  "frozen_release_artifact_identities": {
+    "07_reports/hmso01r_b_fresh_confirmatory_identifiability_report.md": "c3dbfdb01b6f05c8f41418b23228adfcc5a93dadafda80edc863472e12c117f4",
+    "08_manifests/hmso01r_b_manifest.json": "034cd59d700d605e11a91c9ae98b8ac9bba47c2374a6432d13e147ac06bfe7cb",
+    "08_manifests/hmso01r_b_status_ledger.json": "2b5f81605cbe2ccf4c72a31797de38e2bee74f5fce796f90b613dcd6f74bdfbc"
+  },
+  "git": {
+    "branch": "main",
+    "remote": null,
+    "working_tree_clean_before_handoff_creation": true,
+    "push_performed": false
+  },
+  "scientific_values_modified": false,
+  "h_mso01r_b_terminal_status": "HMSO01R_B_FRESH_CONFIRMATORY_MULTISCALE_IDENTIFIABILITY_RESCUE_NOT_QUALIFIED",
+  "mso02d_executed_by_this_handoff": false,
+  "mso03_executed": false,
+  "fresh_scientific_evidence_generated": false,
+  "neural_attention_transformer_training_executed": false
+}
