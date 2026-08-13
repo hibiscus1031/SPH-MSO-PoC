@@ -7,14 +7,30 @@
   "parent_commit": "5cadd4b19d17d385a0cbc4213f7442dc34c1a6e8",
   "corrected_path": "06_experiments/mso02d/run_mso02d_target_diagnostics.py",
   "original_sha256": "b2600a5c100098c18c11d68becf6835ca370774581ed76e045ee4ba904b7cc60",
-  "corrected_sha256": "739e83fd26b5c53bc02fa2b0a38e74f89459f146e05a81c08b0c59ec87912d7d",
-  "triggered_error": "numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1",
-  "trigger_location": "density_rate K10 scalar target disagreement aggregation",
+  "corrected_sha256": "9704bd0f42ffd31151f0b77b505c7f10dfa5adebe927c4bb9888f04bff9d571d",
+  "triggered_errors": [
+    "numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1",
+    "MSO02D_FROZEN_ORACLE_REPLAY_IDENTITY_FAILURE:SS:density_rate:0.5403988831645662:0.5403789915781142"
+  ],
+  "trigger_locations": [
+    "density_rate K10 scalar target disagreement aggregation",
+    "component-at-a-time ridge replay instead of the frozen five-output solve followed by component slicing"
+  ],
   "corrections": [
     "Use an explicit target-rank branch so scalar edge disagreements retain the K edge axis and vector disagreements sum only the physical-vector axis.",
-    "Expand the already-frozen P1-P5 proxy-family patterns into deterministic concrete diagnostic proxies; no proxy definition, input field, operation, or admissibility class is added beyond the D0 registry."
+    "Expand the already-frozen P1-P5 proxy-family patterns into deterministic concrete diagnostic proxies; no proxy definition, input field, operation, or admissibility class is added beyond the D0 registry.",
+    "Replay the frozen oracle's exact multi-output numerical solve and only then apply the registered component slice; the identity tolerance is not relaxed."
   ],
-  "consumed_target_read_count_before_correction": 1,
+  "consumed_target_read_count_before_correction": 2,
+  "failed_prepublication_run_count": 2,
+  "post_correction_targeted_identity_validation_read_count": 1,
+  "post_correction_targeted_identity_validation": {
+    "component": "density_rate",
+    "arm": "SS",
+    "replayed_oracle_nrmse": 0.5403789915781142,
+    "frozen_oracle_nrmse": 0.5403789915781142,
+    "exact_match": true
+  },
   "d2_output_publication_count_before_correction": 0,
   "target_values_or_outcome_directions_used_to_choose_correction": false,
   "scientific_definition_modification_counts": {

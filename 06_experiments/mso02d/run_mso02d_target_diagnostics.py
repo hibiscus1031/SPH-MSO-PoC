@@ -1346,17 +1346,23 @@ def replay_frozen_oracles(
                 winner = str(winners[str(fold)])
                 selected_models[(arm, component, fold)] = winner
                 frozen_global = np.asarray(formal[f"{arm.lower()}_neighbor_row_index"])[query_global]
-                prediction[query_global] = predict_frozen_model(
+                bundle_prediction = predict_frozen_model(
                     helper,
                     winner,
                     scaled[train_global],
                     scaled[query_global],
-                    target[train_global],
+                    data["targets"]["bundle"][train_global],
                     train_global,
                     query_global,
                     data["meta"],
                     frozen_global_neighbors=frozen_global,
                     polynomial_positions=poly_positions,
+                )
+                component_prediction = np.asarray(bundle_prediction)[:, TARGET_SLICES[component]]
+                prediction[query_global] = (
+                    component_prediction[:, 0]
+                    if component_prediction.shape[1] == 1
+                    else component_prediction
                 )
                 access["consumed_oracle_diagnostic_fits"] += 1
             if not np.isfinite(prediction).all():
@@ -1824,9 +1830,26 @@ def fixed_feature_group_ablation(
                 train = helper.ordered_training_indices(np.flatnonzero(data["meta"]["fold"] != fold), data["meta"])
                 query = np.flatnonzero(data["meta"]["fold"] == fold)
                 poly_positions = [positions[names.index(name)] for name in POLY_SUBSET if names.index(name) in positions]
-                prediction[query] = predict_frozen_model(
-                    helper, winner, scaled[train], scaled[query], target[train], train, query, data["meta"],
-                    frozen_global_neighbors=None, polynomial_positions=poly_positions,
+                # The frozen oracle fitted all five target outputs together and
+                # only then selected the registered component slice.  Retain
+                # that exact numerical path for the fixed group ablation.
+                bundle_prediction = predict_frozen_model(
+                    helper,
+                    winner,
+                    scaled[train],
+                    scaled[query],
+                    data["targets"]["bundle"][train],
+                    train,
+                    query,
+                    data["meta"],
+                    frozen_global_neighbors=None,
+                    polynomial_positions=poly_positions,
+                )
+                component_prediction = np.asarray(bundle_prediction)[:, TARGET_SLICES[component]]
+                prediction[query] = (
+                    component_prediction[:, 0]
+                    if component_prediction.shape[1] == 1
+                    else component_prediction
                 )
                 access["consumed_oracle_diagnostic_fits"] += 1
             if status != "EVALUABLE" or not np.isfinite(prediction).all():
@@ -2129,9 +2152,14 @@ def initial_access_ledger(d0_commit: str, d1_commit: str) -> dict[str, Any]:
         "consumed_oracle_diagnostic_fits": 0, "consumed_bootstrap_reads": 0,
         "deployment_only_proxy_reconstruction_on_consumed_states": 0,
         "target_blind_transform_diagnostic_computations": 0,
-        "prepublication_failed_consumed_target_diagnostic_attempts": 1,
-        "prepublication_failed_consumed_target_reads": 1,
-        "prepublication_failure": "SCALAR_K10_DISAGREEMENT_AXIS_IMPLEMENTATION_ERROR_NO_OUTPUT_PUBLISHED",
+        "prepublication_failed_consumed_target_diagnostic_attempts": 2,
+        "prepublication_failed_consumed_target_reads": 2,
+        "prepublication_successful_oracle_identity_validation_reads": 1,
+        "prepublication_consumed_target_reads_total": 3,
+        "prepublication_failures": [
+            "SCALAR_K10_DISAGREEMENT_AXIS_IMPLEMENTATION_ERROR_NO_OUTPUT_PUBLISHED",
+            "FROZEN_ORACLE_MULTI_OUTPUT_NUMERICAL_REPLAY_IDENTITY_MISMATCH_NO_OUTPUT_PUBLISHED",
+        ],
         "target_payload_first_access_after_all_integrity_and_canonical_checks": True,
     }
 
