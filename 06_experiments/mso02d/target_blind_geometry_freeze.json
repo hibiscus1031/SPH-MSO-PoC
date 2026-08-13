@@ -132,9 +132,17 @@
       "consumption_status": "CONSUMED_D0_DEFINITION",
       "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
       "path": "06_experiments/mso02d/run_mso02d_target_diagnostics.py",
-      "sha256": "e3ba03f08cdd3c9515a82e8ceaaf27809aaedb39e4518d55d1e10bcb37fcdf6d",
+      "sha256": "b2600a5c100098c18c11d68becf6835ca370774581ed76e045ee4ba904b7cc60",
       "source": "FROZEN_D0_TARGET_BLIND_DEFINITION",
-      "stage": "MSO-02D-D1"
+      "stage": "MSO-02D-D1-PRE_TARGET_EXECUTION_ERRATUM"
+    },
+    {
+      "consumption_status": "FROZEN_PRE_TARGET_EXECUTION_ERRATUM",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "08_manifests/mso02d_d1_execution_erratum_01.json",
+      "sha256": "9eff05c290c6a63a07890cd83585460ee1316e3721254c9eaf805e8f7c877707",
+      "source": "PRE_TARGET_NOSCIENTIFIC_SELF_BINDING_CORRECTION",
+      "stage": "MSO-02D-D1-PRE_TARGET_EXECUTION_ERRATUM"
     }
   ],
   "artifact_sha256": {
@@ -148,13 +156,14 @@
     "06_experiments/mso02d/hubness_audit.csv": "89916ec896a1e2ab66ff491a423c57a4bc8b523498f6a6ccd69899793ef9afe0",
     "06_experiments/mso02d/neighbour_turnover_audit.csv": "1334b1f91f1e1dc63465457ceb3a9727c55c7864ca3e5e5d98788e604a2f89a1",
     "06_experiments/mso02d/run_mso02d_target_blind.py": "411deb9dea1c66424286b1af5d0f8790e73806a0a848c13bd9e697f0ccb8510a",
-    "06_experiments/mso02d/run_mso02d_target_diagnostics.py": "e3ba03f08cdd3c9515a82e8ceaaf27809aaedb39e4518d55d1e10bcb37fcdf6d",
+    "06_experiments/mso02d/run_mso02d_target_diagnostics.py": "b2600a5c100098c18c11d68becf6835ca370774581ed76e045ee4ba904b7cc60",
     "06_experiments/mso02d/ss_ms_geometry_diagnostics.csv": "c86b36121a95cb3eeffe06703ca2429175f480e909938bb2b08ae46fd7d5f65c",
     "06_experiments/mso02d/subspace_stability_audit.csv": "32518000bfb2d0743cc16ea01cd1985a544d56e2e49bb5b62c66df24149b4d10",
     "06_experiments/mso02d/target_blind_geometry_selected_neighbours.npz": "04dcfea44ededb50e567de69becdeb3d26c6253adf9fc1f0068dad3aab0b95ee",
     "06_experiments/mso02d/target_blind_geometry_selection_matrix.csv": "d1c2e8ca253afcb6e4a885bfc84e2d26f51e414eb8a216a1ba3c5737f0af47d2",
     "06_experiments/mso02d/target_blind_geometry_transform_parameters.npz": "71c4e520fc0e6aef2c15a46baf2ff662fc4ea25370b1634081f1078274f23e64",
-    "06_experiments/mso02d/target_blind_subspace_diagnostics.csv": "07f44b7d729c819b583eef7b7103538e534aa4b6a0b20d6880eb38b6e396c5c6"
+    "06_experiments/mso02d/target_blind_subspace_diagnostics.csv": "07f44b7d729c819b583eef7b7103538e534aa4b6a0b20d6880eb38b6e396c5c6",
+    "08_manifests/mso02d_d1_execution_erratum_01.json": "9eff05c290c6a63a07890cd83585460ee1316e3721254c9eaf805e8f7c877707"
   },
   "candidate_set": [
     "U0",
@@ -197,6 +206,13 @@
     "06_experiments/mso02d/run_mso02d_target_diagnostics.py": "e3ba03f08cdd3c9515a82e8ceaaf27809aaedb39e4518d55d1e10bcb37fcdf6d",
     "08_manifests/hmso01r_a_manifest.json": "3b182be2bd8a6a2622548ab51f91b363ef9b38b9f3142314f7166516d43776a1",
     "08_manifests/hmso01r_a_status_ledger.json": "d59aaa656da136c9291c8be58b4ae10b9017a9731daebcef96cae06542548bf3"
+  },
+  "post_d1_pre_target_execution_erratum": {
+    "path": "08_manifests/mso02d_d1_execution_erratum_01.json",
+    "sha256": "9eff05c290c6a63a07890cd83585460ee1316e3721254c9eaf805e8f7c877707",
+    "original_d1_execution_input_sha256_retained_for_audit": true,
+    "scientific_definition_modification_count": 0,
+    "target_payload_read_before_correction": false
   },
   "neighbour_artifact": {
     "k": 10,

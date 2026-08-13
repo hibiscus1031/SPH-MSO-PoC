@@ -278,8 +278,13 @@ def validate_git_and_d1() -> tuple[dict[str, Any], str, str]:
         {"d1_commit", "mso02d_d1_commit", "target_blind_geometry_freeze_commit"},
     )
     if marker in {"SELF_GIT_COMMIT", "SELF_BINDING_GIT_COMMIT", "HEAD"}:
-        tracked = git("show", f"HEAD:{D1_FREEZE.relative_to(ROOT).as_posix()}")
-        if tracked.encode("utf-8") != D1_FREEZE.read_bytes():
+        tracked = subprocess.run(
+            ["git", "show", f"HEAD:{D1_FREEZE.relative_to(ROOT).as_posix()}"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+        ).stdout
+        if tracked != D1_FREEZE.read_bytes():
             raise Stop(f"{INTEGRITY_STOP}:D1_FREEZE_NOT_SELF_BOUND_AT_HEAD")
         d1_commit = head
     else:

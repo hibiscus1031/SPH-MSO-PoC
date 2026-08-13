@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SPH-MSO-PoC",
+  "stage": "MSO-02D-D1",
+  "artifact_kind": "POST_D1_PRE_TARGET_NOSCIENTIFIC_EXECUTION_ERRATUM",
+  "status": "FROZEN_BEFORE_FIRST_MSO02D_TARGET_PAYLOAD_ACCESS",
+  "original_d1_commit": "6d4456ec40d58456141e34f64a2c4ef9af355309",
+  "original_target_blind_geometry_freeze_sha256": "b02408a3303192fa2631fdaea8e4179ff5cfa1dff8cfec4a55f98c7c1259996e",
+  "corrected_path": "06_experiments/mso02d/run_mso02d_target_diagnostics.py",
+  "original_sha256": "e3ba03f08cdd3c9515a82e8ceaaf27809aaedb39e4518d55d1e10bcb37fcdf6d",
+  "corrected_sha256": "b2600a5c100098c18c11d68becf6835ca370774581ed76e045ee4ba904b7cc60",
+  "correction": "Compare the committed D1 freeze with raw git-show bytes instead of a text helper that strips the terminal newline.",
+  "triggered_stop": "MSO02D_UPSTREAM_EVIDENCE_INTEGRITY_CONFLICT:D1_FREEZE_NOT_SELF_BOUND_AT_HEAD",
+  "target_payload_read_before_stop": false,
+  "consumed_target_read_count_before_correction": 0,
+  "scientific_definition_modification_counts": {
+    "candidate_set": 0,
+    "selection_rule": 0,
+    "selected_candidate": 0,
+    "feature_group": 0,
+    "directional_proxy": 0,
+    "metric": 0,
+    "gate": 0,
+    "fold": 0,
+    "normalization": 0,
+    "neighbour_identity": 0,
+    "target": 0
+  },
+  "d1_result_artifacts_modified": false,
+  "fresh_scientific_evidence_generated": false,
+  "h_mso01r_reverdict": false,
+  "fresh_compute_authorized": false
+}
