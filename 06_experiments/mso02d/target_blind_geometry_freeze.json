@@ -1,0 +1,229 @@
+{
+  "artifact_registry": [
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/target_blind_subspace_diagnostics.csv",
+      "sha256": "07f44b7d729c819b583eef7b7103538e534aa4b6a0b20d6880eb38b6e396c5c6",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/subspace_stability_audit.csv",
+      "sha256": "32518000bfb2d0743cc16ea01cd1985a544d56e2e49bb5b62c66df24149b4d10",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/feature_group_energy_audit.csv",
+      "sha256": "26d15bc518bc8e5047290629d6ee2db0a3d32025db505d36110b7c11fd21c36f",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/target_blind_geometry_selection_matrix.csv",
+      "sha256": "d1c2e8ca253afcb6e4a885bfc84e2d26f51e414eb8a216a1ba3c5737f0af47d2",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/ss_ms_geometry_diagnostics.csv",
+      "sha256": "c86b36121a95cb3eeffe06703ca2429175f480e909938bb2b08ae46fd7d5f65c",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/distance_concentration_audit.csv",
+      "sha256": "96ee9f3a19fdc702506b48d21bec62a3c7c9366ac8a37a5b9cfa56e115daab49",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/hubness_audit.csv",
+      "sha256": "89916ec896a1e2ab66ff491a423c57a4bc8b523498f6a6ccd69899793ef9afe0",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/neighbour_turnover_audit.csv",
+      "sha256": "1334b1f91f1e1dc63465457ceb3a9727c55c7864ca3e5e5d98788e604a2f89a1",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/target_blind_geometry_transform_parameters.npz",
+      "sha256": "71c4e520fc0e6aef2c15a46baf2ff662fc4ea25370b1634081f1078274f23e64",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/target_blind_geometry_selected_neighbours.npz",
+      "sha256": "04dcfea44ededb50e567de69becdeb3d26c6253adf9fc1f0068dad3aab0b95ee",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "FROZEN_FOR_D2_READ_ONLY_CONSUMPTION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/d1_target_blind_execution_audit.json",
+      "sha256": "7a7df885c448f79985f695ed33dd7452356ac9834d4f8532bc7b6043b4a7b667",
+      "source": "MSO02D_D1_OBSERVABLE_ONLY_DETERMINISTIC_COMPUTATION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "CONSUMED_D0_DEFINITION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "00_project_contract/mso02d_componentwise_failure_attribution_contract.md",
+      "sha256": "727a33cc17301bc65435e8752e07b3c835a84636d46c9eb1a6dadd7651ffb36e",
+      "source": "FROZEN_D0_TARGET_BLIND_DEFINITION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "CONSUMED_D0_DEFINITION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "05_registries/mso02d_feature_group_registry.json",
+      "sha256": "7a7d949d866820139b16342875c4173e3d3197642048738ccd0228993ab2f019",
+      "source": "FROZEN_D0_TARGET_BLIND_DEFINITION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "CONSUMED_D0_DEFINITION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "05_registries/mso02d_target_blind_geometry_candidate_registry.json",
+      "sha256": "91f933752ace12eed5c560c02e9dbc0e9453bc126dba21703d6168924f65c38c",
+      "source": "FROZEN_D0_TARGET_BLIND_DEFINITION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "CONSUMED_D0_DEFINITION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "05_registries/mso02d_directional_scale_response_proxy_registry.json",
+      "sha256": "163d1a4d35e917077dcc28c5c3312383969877beae6c70993f4fac5f66e0aeee",
+      "source": "FROZEN_D0_TARGET_BLIND_DEFINITION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "CONSUMED_D0_DEFINITION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/run_mso02d_target_blind.py",
+      "sha256": "411deb9dea1c66424286b1af5d0f8790e73806a0a848c13bd9e697f0ccb8510a",
+      "source": "FROZEN_D0_TARGET_BLIND_DEFINITION",
+      "stage": "MSO-02D-D1"
+    },
+    {
+      "consumption_status": "CONSUMED_D0_DEFINITION",
+      "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+      "path": "06_experiments/mso02d/run_mso02d_target_diagnostics.py",
+      "sha256": "e3ba03f08cdd3c9515a82e8ceaaf27809aaedb39e4518d55d1e10bcb37fcdf6d",
+      "source": "FROZEN_D0_TARGET_BLIND_DEFINITION",
+      "stage": "MSO-02D-D1"
+    }
+  ],
+  "artifact_sha256": {
+    "00_project_contract/mso02d_componentwise_failure_attribution_contract.md": "727a33cc17301bc65435e8752e07b3c835a84636d46c9eb1a6dadd7651ffb36e",
+    "05_registries/mso02d_directional_scale_response_proxy_registry.json": "163d1a4d35e917077dcc28c5c3312383969877beae6c70993f4fac5f66e0aeee",
+    "05_registries/mso02d_feature_group_registry.json": "7a7d949d866820139b16342875c4173e3d3197642048738ccd0228993ab2f019",
+    "05_registries/mso02d_target_blind_geometry_candidate_registry.json": "91f933752ace12eed5c560c02e9dbc0e9453bc126dba21703d6168924f65c38c",
+    "06_experiments/mso02d/d1_target_blind_execution_audit.json": "7a7df885c448f79985f695ed33dd7452356ac9834d4f8532bc7b6043b4a7b667",
+    "06_experiments/mso02d/distance_concentration_audit.csv": "96ee9f3a19fdc702506b48d21bec62a3c7c9366ac8a37a5b9cfa56e115daab49",
+    "06_experiments/mso02d/feature_group_energy_audit.csv": "26d15bc518bc8e5047290629d6ee2db0a3d32025db505d36110b7c11fd21c36f",
+    "06_experiments/mso02d/hubness_audit.csv": "89916ec896a1e2ab66ff491a423c57a4bc8b523498f6a6ccd69899793ef9afe0",
+    "06_experiments/mso02d/neighbour_turnover_audit.csv": "1334b1f91f1e1dc63465457ceb3a9727c55c7864ca3e5e5d98788e604a2f89a1",
+    "06_experiments/mso02d/run_mso02d_target_blind.py": "411deb9dea1c66424286b1af5d0f8790e73806a0a848c13bd9e697f0ccb8510a",
+    "06_experiments/mso02d/run_mso02d_target_diagnostics.py": "e3ba03f08cdd3c9515a82e8ceaaf27809aaedb39e4518d55d1e10bcb37fcdf6d",
+    "06_experiments/mso02d/ss_ms_geometry_diagnostics.csv": "c86b36121a95cb3eeffe06703ca2429175f480e909938bb2b08ae46fd7d5f65c",
+    "06_experiments/mso02d/subspace_stability_audit.csv": "32518000bfb2d0743cc16ea01cd1985a544d56e2e49bb5b62c66df24149b4d10",
+    "06_experiments/mso02d/target_blind_geometry_selected_neighbours.npz": "04dcfea44ededb50e567de69becdeb3d26c6253adf9fc1f0068dad3aab0b95ee",
+    "06_experiments/mso02d/target_blind_geometry_selection_matrix.csv": "d1c2e8ca253afcb6e4a885bfc84e2d26f51e414eb8a216a1ba3c5737f0af47d2",
+    "06_experiments/mso02d/target_blind_geometry_transform_parameters.npz": "71c4e520fc0e6aef2c15a46baf2ff662fc4ea25370b1634081f1078274f23e64",
+    "06_experiments/mso02d/target_blind_subspace_diagnostics.csv": "07f44b7d729c819b583eef7b7103538e534aa4b6a0b20d6880eb38b6e396c5c6"
+  },
+  "candidate_set": [
+    "U0",
+    "U1",
+    "U2",
+    "U3"
+  ],
+  "evidence_class": "EXPLORATORY_CONSUMED_DIAGNOSTIC_ONLY",
+  "formal_ss_ms_matrices_modified": false,
+  "fresh_compute_authorized": false,
+  "fresh_scientific_evidence_generated": false,
+  "git_binding": {
+    "branch": "main",
+    "d0_commit": "8c2ea721c28fd94b5a71b117d8ce93a657b723e5",
+    "d0_required_subject": "MSO-02D D0: freeze target-blind alignment and directional proxy definitions",
+    "d1_commit": "SELF_GIT_COMMIT",
+    "d1_required_subject": "MSO-02D D1: freeze target-blind alignment selection before target diagnostics",
+    "protocol_commit": "78ba0d5518909c96e3bf34383e0d95f30ca9ba17",
+    "remote": null,
+    "working_tree_clean_required_after_d1_commit": true
+  },
+  "input_sha256": {
+    "00_project_contract/mso02d_componentwise_failure_attribution_contract.md": "727a33cc17301bc65435e8752e07b3c835a84636d46c9eb1a6dadd7651ffb36e",
+    "05_registries/hmso01r_a_formal_fresh_atlas_registry.json": "7fd7aa6c8415051ad83f0028b75b4684121886cb3645060e4e5c3ac54ebc268a",
+    "05_registries/hmso01r_a_formal_particle_sample_registry.json": "a4b7da1a9f6e4efab7ccbc9ec3bb5e4235a82aef30ce64017895df05ab1c2b01",
+    "05_registries/hmso01r_a_lineage_fold_registry.json": "941edc1827e55ca2ffec1125734e0791786e2d157c3aa873ae0a24f520f8815b",
+    "05_registries/hmso01r_a_paired_ss_ms_registry.json": "2a7debb68218d1b1e488f64f2bd831031d7e16aa4f0f125d77c7676b8dc95e4a",
+    "05_registries/hmso01r_a_random_baseline_identity_registry.json": "cc6fa10eb77fbbd7a9b8db00d9214ff971a351fbbefdfee38b0c7db898bace99",
+    "05_registries/mso02d_directional_scale_response_proxy_registry.json": "163d1a4d35e917077dcc28c5c3312383969877beae6c70993f4fac5f66e0aeee",
+    "05_registries/mso02d_feature_group_registry.json": "7a7d949d866820139b16342875c4173e3d3197642048738ccd0228993ab2f019",
+    "05_registries/mso02d_target_blind_geometry_candidate_registry.json": "91f933752ace12eed5c560c02e9dbc0e9453bc126dba21703d6168924f65c38c",
+    "06_experiments/hmso01r_a/descriptor_geometry_freeze.json": "1641f0a68bf59a9f3f949e8ee058971db154d0f68eccf6e23efe6122f4067768",
+    "06_experiments/hmso01r_a/descriptor_neighbor_identities.npz": "1d98e7c2038c9d6b7391b1ab953084dfafb47ef3ade7c62815c9f676694408b4",
+    "06_experiments/hmso01r_a/fold_normalization_registry.json": "d9842a2ba2b347d0aeb1e950118bf62d3c89d0f80639a5f475cd9c5acb683018",
+    "06_experiments/hmso01r_a/ms_observable_schema_identity.json": "13a6e83f03576619afa335e69df737547947501c63dd691066119fd9d2823fb3",
+    "06_experiments/hmso01r_a/observable/hmso01r_a_observable_store.npz": "65ca1a7fea58248207fc5a22e14855b4a84c392c7ef17cefdf2d396687cc38cd",
+    "06_experiments/hmso01r_a/random_baseline_identities.npz": "74268059f33c5fc9ec885ccb1ef7f61b22120f4eac7e9862bab6fddc844d8b07",
+    "06_experiments/hmso01r_a/ss_observable_schema_identity.json": "2bfe3b7f0b1869cade1e9e8d7554eff589c3b017512470b9e8eabf8b18130e70",
+    "06_experiments/mso02d/run_mso02d_target_blind.py": "411deb9dea1c66424286b1af5d0f8790e73806a0a848c13bd9e697f0ccb8510a",
+    "06_experiments/mso02d/run_mso02d_target_diagnostics.py": "e3ba03f08cdd3c9515a82e8ceaaf27809aaedb39e4518d55d1e10bcb37fcdf6d",
+    "08_manifests/hmso01r_a_manifest.json": "3b182be2bd8a6a2622548ab51f91b363ef9b38b9f3142314f7166516d43776a1",
+    "08_manifests/hmso01r_a_status_ledger.json": "d59aaa656da136c9291c8be58b4ae10b9017a9731daebcef96cae06542548bf3"
+  },
+  "neighbour_artifact": {
+    "k": 10,
+    "no_candidate_semantics": "SELECTED_ARRAYS_ABSENT_AND_SELECTED_CANDIDATE_ID_NONE",
+    "path": "06_experiments/mso02d/target_blind_geometry_selected_neighbours.npz",
+    "sha256": "04dcfea44ededb50e567de69becdeb3d26c6253adf9fc1f0068dad3aab0b95ee"
+  },
+  "outcome_metric_payload_read_count": 0,
+  "schema_version": "1.0.0",
+  "selected_candidate_frozen_before_any_consumed_outcome_diagnostic": true,
+  "selected_candidate_id": null,
+  "selection_rule": {
+    "composite_rank": "SUM_OF_ORDINAL_RANKS_FOR_FOLD_K10_RATIO_GINI_GROUP_DOMINATION_AND_FOLD_FAMILY_TRANSPORT_CV",
+    "concentration_nonworsening": "K10_AND_K1_RANDOM_MEDIAN_RATIOS <= U0*1.01",
+    "group_domination_nonworsening": "SEMANTIC_GROUP_DOMINATION <= U0+0.01",
+    "hubness_nonworsening": "OCCURRENCE_GINI <= U0+0.01",
+    "minimum_replication": "EACH_CRITERION_AT_LEAST_5_OF_6_FOLDS_AND_3_OF_4_FAMILIES",
+    "selection_additional_requirement": "AT_LEAST_2_OF_FIRST_3_MEDIAN_FOLD_CRITERIA_IMPROVE_BEYOND_1E-12",
+    "tie_order": "U1<U2<U3",
+    "transform_stability": "MEDIAN_CROSS_FOLD_AND_CROSS_FAMILY_SIMILARITY >= 0.75"
+  },
+  "stage": "MSO-02D-D1",
+  "status": "ROUTE_A_TARGET_BLIND_GEOMETRY_CANDIDATE_NOT_ESTABLISHED",
+  "target_payload_read_count": 0,
+  "transform_parameter_artifact": {
+    "path": "06_experiments/mso02d/target_blind_geometry_transform_parameters.npz",
+    "sha256": "71c4e520fc0e6aef2c15a46baf2ff662fc4ea25370b1634081f1078274f23e64",
+    "use_in_later_stage": "AUDIT_ONLY; D1 K10 IDENTITIES_AND_DISTANCES_ARE_FROZEN"
+  }
+}
